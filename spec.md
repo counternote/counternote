@@ -66,6 +66,12 @@ Manifold acoustic vibrations
 * [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
+### [NIB][nib]
+
+Odds and ends
+
+  * [__mark__][mark]: the separator `'`
+
 [gloss]: #gloss
 
 [base]: #base
@@ -115,6 +121,10 @@ Manifold acoustic vibrations
 [chord]: #chord
 [braid]: #braid
 [weave]: #weave
+
+[nib]: #nib
+
+[mark]: #mark
 
 ***
 
@@ -371,7 +381,7 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 
 ## Span
 
-A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
+A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `ta` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
 
 ### Span Start
 
@@ -473,7 +483,7 @@ A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is 
 
 ## Stop
 
-A [stop][stop] is two [voices][voices] sounding simultaneously. They can be written by concatenating a [span] onto a [tone][tone] or [span][span] [root][root].
+A [stop][stop] is two [voices][voice] sounding simultaneously. They can be written by concatenating a [span] onto a [tone][tone] or [span][span] [root][root].
 
     ————————————————————————————————
       WORD      VALUE        IPA
@@ -483,14 +493,14 @@ A [stop][stop] is two [voices][voices] sounding simultaneously. They can be writ
       dahe    major 3rd      dɑhe
       dahi   perfect 4th     dɑhi
       daht  diminished 5th  dɑhɑ˞t
-      dahv   perfect 5th    dɑhiv
-      dahl    minor 6th     dɑhel
-      dahm    major 6th     dɑhom
-      dahn    minor 7th     dɑhun
-      dahs    major 7th     dɑhɚs
+      datv   perfect 5th    dɑtiv
+      datl    minor 6th     dɑtel
+      datm    major 6th     dɑtom
+      datn    minor 7th     dɑtun
+      dats    major 7th     dɑtɚs
     ————————————————————————————————
 
-[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a mark `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
+[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a [mark][mark] `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
 
     —————————————————————————————————————
       WORD             VALUE
@@ -562,7 +572,7 @@ A [braid][braid] is a “metachord”, like in Roman Numeral Analysis or the Nas
 
 ## Weave
 
-A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with two added details. First, no octave is specified, so the [span start][span start] of the lowest played sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread.
+A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with two added details. First, no octave is specified, so the [span start][span start] of the lowest sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread.
 
     ——————————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
@@ -590,3 +600,11 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
     ——————————————————————————————————————————————————————————————————————————————————————
 
 ***
+
+# Nib
+
+A [nib][nib] is an odd end that fits in the odds and ends.
+
+### Mark
+
+A [mark][mark] is the [term][term] for a 'single straight quote' or 'hashmark' `'`. It serves as a separator in Counternote.
