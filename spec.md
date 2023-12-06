@@ -215,6 +215,28 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ***
 
+# Form
+
+A [form][form] is a structural element of a composition and how these elements connect together.
+
+## Score
+
+A [score][score] is an entire composition in Counternote.
+
+## Track
+
+A [track][track] is an individual piece that may or may not occur simultaneously within a score.
+
+## Round
+
+A [round][round] is a block of repeated music marked with an unindented letter or string on its own line for legibility.
+
+## Bar
+
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indentation on its own line, again for legibility.
+
+***
+
 # Note
 
 A [note][note] is a [sound][sound] for a [hold][hold].
@@ -391,27 +413,5 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `ck` shook              `cp` chirp, cheep
       `jz` the licc           `mt` handmute
     ———————————————————————————————————————————————
-
-***
-
-# Form
-
-A [form][form] is a structural element of a composition and how these elements connect together.
-
-## Score
-
-A [score][score] is an entire composition in Counternote.
-
-## Track
-
-A [track][track] is an individual piece that may or may not occur simultaneously within a score.
-
-## Round
-
-A [round][round] is a block of repeated music marked with an unindented letter or string on its own line for legibility.
-
-## Bar
-
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indentation on its own line, again for legibility.
 
 ***
