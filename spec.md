@@ -161,7 +161,9 @@ A [phone][phone] is an indivisible articulation of spoken Counternote represente
 
 ### Start
 
-The standard consonants with their points of articulation are as follows:
+A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word].
+
+The standard starting consonants with their points of articulation are as follows:
 
     ——————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
@@ -210,7 +212,9 @@ Some [glyphs][glyph] can cluster:
 
 ### Rhyme
 
-Vowels are pure spanish vowels plus the rhoticized mid vowel 'r':
+A [rhyme][rhyme] is the rhyming part or *linguistic coda* of a [word][word].
+
+All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are pure spanish vowels plus the rhoticized mid vowel 'r':
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
@@ -603,8 +607,8 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Nib
 
-A [nib][nib] is an odd end that fits in the odds and ends.
+A [nib][nib] is the odd end that fits in the odds and ends.
 
 ### Mark
 
-A [mark][mark] is the [term][term] for a 'single straight quote' or 'hashmark' `'`. It serves as a separator in Counternote.
+A [mark][mark] is the name for a 'single straight quote' or 'hashmark' `'` in Counternote. It serves as a separator.
