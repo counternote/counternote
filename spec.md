@@ -10,9 +10,9 @@ This is a terse description of Counternote with definitions and examples.
 
 This [gloss][gloss] serves as a glossary and table of contents for all things Counternote.
 
-### [THE BASES][base]
+### [BASE][base]
 
-The foundational elements of Counternote
+Foundational elements of Counternote
 
 * [__term__][term]: a precise concept in music and Counternote, linked here in the [gloss][gloss]
 * [__glyph__][glyph]: any typed character in Counternote
@@ -22,7 +22,7 @@ The foundational elements of Counternote
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
 
 
-### [THE FORMS][form]
+### [FORM][form]
 
 Structural elements of Counternote
 
@@ -31,7 +31,7 @@ Structural elements of Counternote
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: a sequence of lines that detail what and how to play
 
-### [THE NOTES][note]
+### [NOTE][note]
 
 Acoustic vibrations held in time
 
@@ -217,7 +217,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 # Form
 
-A [form][form] is a structural element of a composition and how these elements connect together.
+A [form][form] is a structural element of a composition and how such elements connect together.
 
 ## Score
 
