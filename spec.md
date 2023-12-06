@@ -63,7 +63,7 @@ Manifold acoustic vibrations
 
 * [__thread__][thread]: a single [voice][voice] within a [knit][knit]
 * [__chord__][chord]: a [knit][knit] constructed using [tones][tone] as a starting point
-* [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point
+* [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
 [gloss]: #gloss
