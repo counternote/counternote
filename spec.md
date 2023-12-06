@@ -30,6 +30,7 @@ Structural elements of Counternote
 * [__track__][track]: an individual piece within a score
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: a sequence of lines that detail what and how to play
+* [__voice__][voice]: a monophonic [sound][sound] or sequence of [sounds][sound]
 
 ### [NOTE][note]
 
@@ -51,8 +52,17 @@ Acoustic vibrations held in time
 * [__span__][span]: a [word][word] indicating the relative [rank][rank] and [file][file] of a [sound][sound]
   * [__span start__][span start]: the [start][start] that denotes [file][file]
   * [__span rhyme__][span rhyme]: the [rhyme][rhyme] that denotes relative [rank][rank]
-* [__tie__][tie]: a [word][word] indicating that a [sound][sound] from a previous [bar][bar] is being held
 * [__rap__][rap]: a [word][word] indicating a [sound][sound] where [pitch][pitch] is indeterminate or incidental
+* [__tie__][tie]: a [sound][sound] from a previous [bar][bar] is still being held
+* [__breath__][breath]: a breath of fresh quiet
+* [__stop__][stop]: two [sounds][sound] occuring at the same time.
+
+### [KNIT][knit]
+
+* [__thread__][thread]:
+* [__chord__][chord]:
+* [__braid__][braid]:
+* [__weave__][weave]:
 
 [gloss]: #gloss
 
@@ -71,6 +81,7 @@ Acoustic vibrations held in time
 [track]: #track
 [round]: #round
 [bar]: #bar
+[voice]: #voice
 
 [note]: #note
 
@@ -92,6 +103,15 @@ Acoustic vibrations held in time
   [span start]: #span-start
   [span rhyme]: #span-rhyme
 [rap]: #rap
+[tie]: #tie
+[stop]: #stop
+
+[knit]: #knit
+
+[thread]: #thread
+[chord]: #chord
+[braid]: #braid
+[weave]: #weave
 
 ***
 
@@ -130,7 +150,7 @@ A [phone][phone] is an indivisible articulation of spoken Counternote represente
 
 The standard consonants with their points of articulation are as follows:
 
-    —————————————————————————————————
+    ——————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
       ~~~~~~ BILABIAL ~~~~~~~~~~~~~
        M,m      m     'm' in 'muse'
@@ -151,7 +171,8 @@ The standard consonants with their points of articulation are as follows:
        J,j      dʒ    'j' in 'jam'
       ~~~~~~ PALATAL ~~~~~~~~~~~~~~
        X,x      ʃ    'sh' in 'ship'
-       Y,y      j     'y' in 'yes'
+       Y,y      ʒ    'si' in 'vision'
+        -       j     'y' in 'yes'
        R,r     ɹ,r    'r' in 'run'
       ~~~~~~~ VELAR ~~~~~~~~~~~~~~~
        K,k      k     'k' in 'kick'
@@ -162,9 +183,9 @@ The standard consonants with their points of articulation are as follows:
       ~~~~~~ GLOTTAL ~~~~~~~~~~~~~~
        H,h      h     'h' in 'hit'
         -       ʔ     '-' in 'uh-oh'
-    —————————————————————————————————
+    ——————————————————————————————————
 
-All vowels are preceeded by an unwritten 'ʔ', which has no corresponding [glyph][glyph].
+Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. A unwritten [j] ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
 
 Some [glyphs][glyph] can cluster:
 
@@ -182,7 +203,7 @@ Vowels are pure spanish vowels plus the rhoticized mid vowel 'r':
       GLYPH    IPA   PRONUNCIATION
         a       ɑ        'ah'
         r      ɚ,r̩       'er'
-        u       u        'oo' 
+        u       u        'oo'
         o       o        'oh'
         e       e        'eh'
         i       i        'ee'
@@ -197,7 +218,7 @@ Like with [starts][start], some [glyphs][glyph] can cluster:
       GLYPHS   IPA   PRONUNCIATION
         -il     il       'eel'
         -al   al,æl      'al'
-        -ar   ɑ˞,ar      'ar'  
+        -ar   ɑ˞,ar      'ar'
         -or   ɔ˞,or      'or'
     ————————————————————————————————
 
@@ -234,6 +255,10 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 ## Bar
 
 A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indentation on its own line, again for legibility.
+
+## Voice
+
+A [voice][voice] is akin to a line of music performed by a human *voice*. [Knits][knit] are multiple [voices][voice] even if performed by the same instrument.
 
 ***
 
@@ -385,7 +410,7 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
         -i      4       i        'ee'
         -e      3      ɛ,e       'eh'
         -o     ♭3       o        'oh'
-        -u      2       u        'oo' 
+        -u      2       u        'oo'
         -r     ♭2      ɚ,r̩       'er'
         -a      1       ɑ        'ah'
     ——————————————————————————————————————————
@@ -394,24 +419,169 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
 
 A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, [raps][rap] are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone] or [spans][span]. These are some of the proposed [raps][rap]:
 
-    ———————————————————————————————————————————————
-      `hh` breath (rest)      `hx` hush, silence
-      `nh` inhale             `xh` exhale
-      `pf` pf snare           `ks` k snare
-      `bm` bass drum, boom    `kk` kick drum
-      `dn` high tom           `dm` low tom
-      `tx` opening hi-hat     `tc` open hi-hat
-      `xt` closing hi-hat     `ct` closed hi-hat
-      `xs` blue noise         `xx` white noise
-      `xw` pink noise         `kt` rim shot
-      `cx` crash              `cs` ride
-      `kl` clap               `rk` rake
-      `dp` deep tap           `tp` light tap
-      `dk` dark tick          `tk` bright tick
-      `td` bright clave       `dt` dark clave
-      `rf` ref whistle        `ws` Wilhelm scream
-      `ck` shook              `cp` chirp, cheep
-      `jz` the licc           `mt` handmute
-    ———————————————————————————————————————————————
+    ————————————————————————
+      `aa` tie
+      `hh` breath (rest)
+      `hx` hush, silence
+      `nh` inhale
+      `xh` exhale
+      `xs` blue noise
+      `xx` white noise
+      `xw` pink noise
+      `pf` pf snare
+      `ks` k snare
+      `bm` bass drum
+      `kk` kick drum
+      `dn` high tom
+      `dm` mid tom
+      `gn` low tom
+      `gm` floor tom
+      `tx` opening hi-hat
+      `dx` open hi-hat
+      `xt` closing hi-hat
+      `xd` closed hi-hat
+      `kt` rim shot
+      `cx` crash
+      `cs` ride
+      `kl` clap
+      `rk` rake
+      `dp` deep tap
+      `tp` light tap
+      `dk` dark tick
+      `tk` bright tick
+      `dt` bright clave
+      `dd` dark clave
+      `rf` ref whistle
+      `ws` Wilhelm scream
+      `ck` shook
+      `cp` chirp, cheep
+      `jz` the licc
+      `hd` handmute
+      `sd` strum mute
+    ————————————————————————
+
+## Tie
+
+A [tie][tie] is a [rap][rap] used to show a [sound][sound] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sound] being held.
+
+## Breath
+
+A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is notated with the [word][word] `hh` and not explicitly pronounced.
+
+## Stop
+
+A [stop][stop] is two [voices][voices] sounding simultaneously. They can be written by concatenating a [span] onto a [tone][tone] or [span][span] [root][root].
+
+    ————————————————————————————————
+      WORD      VALUE        IPA
+      dahr    minor 2nd      dɑhɚ
+      dahu    major 2nd      dɑhu
+      daho    minor 3rd      dɑho
+      dahe    major 3rd      dɑhe
+      dahi   perfect 4th     dɑhi
+      daht  diminished 5th  dɑhɑ˞t
+      dahv   perfect 5th    dɑhiv
+      dahl    minor 6th     dɑhel
+      dahm    major 6th     dɑhom
+      dahn    minor 7th     dɑhun
+      dahs    major 7th     dɑhɚs
+    ————————————————————————————————
+
+[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a mark `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
+
+    —————————————————————————————————————
+      WORD             VALUE
+      bm'xd   bass drum + closed hi-hat
+      ck'kl       shook + clap
+      rk'we        rake + high E
+    —————————————————————————————————————
 
 ***
+
+# Knit
+
+A [knit][knit] is a collection of notes occuring simultaneously. While such can be achieved with [stops][stop], it quickly gets unruly and hard to read. [Knits][knit] come in three varieties: [chords][chord], [braids][braid], and [weaves][weave].
+
+## Thread
+
+A [thread][thread] is a single [voice][voice] within a [knit][knit]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation:
+
+    —————————————————————————————————
+      V:  a,r,u,o,e,i
+      C:  t,v,l,m,n,s
+      G:  any glyph
+      X:  end of string
+      -:  syllable break
+    —————————————————————————————————
+      GLYPH  BEFORE   ADDS    IPA
+        a      V     soft y   a-jV
+        r      V       w      a-wV
+        u      V     soft y   u-jV
+        o      V       w      o-wV
+        e      V     soft y   e-jV
+        i      V       w      i-wV
+    —————————————————————————————————
+        VC     CV      -     VC-CV
+        VC     CC      ə     VC-CəC
+        VC     CX      ə     V-CəC
+    —————————————————————————————————
+
+The [glyph][glyph] `r` as a thread is always its vowel [phone][phone] except when capitalized in [braids][braid] and [weaves][weave].
+
+## Chord
+
+A [chord][chord] is a [knit][knit] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices.
+
+    ————————————————————————————————————————————————————————
+        CHORD      WORD         IPA        TRANSLITERATION
+         B5        Zav         ˈzɑv            'ZAHV'
+         Cm        Dov         ˈdov            'DOHV'
+         C♯7       Fevn       ˈfe.vən        'FEH-vuhn'
+         D13      Bevnuim   ˌbev.nuˈyim    'Behv-noo-YEEM'
+      E♭13(♭5♯9)  Petnoim   ˌpet.noˈwim    'Peht-noh-WEEM'
+    ————————————————————————————————————————————————————————
+
+
+## Braid
+
+A [braid][braid] is a “metachord”, like in Roman Numeral Analysis or the Nashville Number System. They are built exactly like [chords][chord] but use capitalized [threads][thread] as the starting [glyph][glyph].
+
+    —————————————————————————————————————————————————————————
+      KEY: da
+    —————————————————————————————————————————————————————————
+        CHORD      WORD         IPA        TRANSLITERATION
+         B5        Sav         ˈsɑv            'SAHV'
+         Cm        Aov         ʔɑˈov          'ah-OHV'
+         C♯7       Revn       ˈre.vən        'REH-vuhn'
+         D13      Uevnuim  ʔuˌjev.nuˈjim  'oo-Yehv-noo-YEEM'
+      E♭13(♭5♯9)  Oetnoim  ʔoˌwet.noˈwim  'oh-Weht-noh-WEEM'
+    —————————————————————————————————————————————————————————
+
+## Weave
+
+A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with two added details. First, no octave is specified, so the [span start][span start] of the lowest played sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread.
+
+    ——————————————————————————————————————————————————————————————————————————————————————
+      COMMON GUITAR VOICINGS
+      KEY: da
+    ——————————————————————————————————————————————————————————————————————————————————————
+      CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
+        E    022100   avaeva  sWavaeva     səˌwa.vaˈje.va     suh-Wah-vah-YEH-vah
+                      avaeva  sEavaeva   səˌʔe.ja.vaˈje.va   suh-Eh-yah-vah-YEH-vah
+        A    x02220   avaev    nJavaev     nəˌdʒa.vaˈjev        nuh-Jah-vah-YEHV
+                      avaev    nMavaev      nəˌma.vaˈjev        nuh-Mah-vah-YEHV
+       A/E   002220   vavaev  nJvavaev    nəˌdʒə.va.vaˈjev    nuh-Juh-vah-vah-YEHV
+                      vavaev  nMvavaev     nəˌmə.va.vaˈjev    nuh-Muh-vah-vah-YEHV
+        D    xx0232    avae    nBavae       nəˈba.vaˌje         nuh-BAH-vah-Yeh
+                       avae    nUavae      nə.ʔuˈja.vaˌje      nuh-oo-YAH-vah-Yeh
+       D/F♯  200232   evavae  sBevavae     sə.beˈva.vaˌje      suh-beh-VAH-vah-Yeh
+                      evavae  sUevavae   səˌʔu.jeˈva.vaˌje   suh-Oo-yeh-VAH-vah-Yeh
+        G    320033   aevava  nYaevava     nəˌʒa.jeˈva.va     nuh-Zhah-yeh-VAH-vah
+                      aevava  nVaevava     nəˌva.jeˈva.va      nuh-Vah-yeh-VAH-vah
+        G    320003   aevaea  nYaevaea   nəˌʒa.jeˈva.jeˌja  nuh-Zhah-yeh-VAH-yeh-Yah
+                      aevaea  nVaevaea   nəˌva.jeˈva.jeˌja   nuh-Vah-yeh-VAH-yeh-Yah
+        C    x32010    aevae   nDaevae     nə.daˈje.vaˌje      nuh-dah-YEH-vah-Yeh
+                       aevae   nAaevae   nəˌʔa.jaˈje.vaˌje   nuh-Ah-yah-YEH-vah-Yeh
+       C/G   332010   vaevae  nDvaevae   nəˌdə.vaˈje.vaˌje   nuh-Duh-vah-YEH-vah-Yeh
+                      vaevae  nAvaevae   nəˌʔa.vaˈje.vaˌje   nuh-Ah-vah-YEH-vah-Yeh
+    ——————————————————————————————————————————————————————————————————————————————————————
