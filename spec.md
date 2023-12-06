@@ -188,7 +188,7 @@ The standard consonants with their points of articulation are as follows:
         -       ʔ     '-' in 'uh-oh'
     ——————————————————————————————————
 
-Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. A unwritten [j] ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
+Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten 'ʔ'. A unwritten 'j' ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
 
 Some [glyphs][glyph] can cluster:
 
