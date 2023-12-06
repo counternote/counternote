@@ -59,10 +59,12 @@ Acoustic vibrations held in time
 
 ### [KNIT][knit]
 
-* [__thread__][thread]:
-* [__chord__][chord]:
-* [__braid__][braid]:
-* [__weave__][weave]:
+Manifold acoustic vibrations
+
+* [__thread__][thread]: a single [voice][voice] within a [knit][knit]
+* [__chord__][chord]: a [knit][knit] constructed using [tones][tone] as a starting point
+* [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point
+* [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
 [gloss]: #gloss
 
@@ -104,6 +106,7 @@ Acoustic vibrations held in time
   [span rhyme]: #span-rhyme
 [rap]: #rap
 [tie]: #tie
+[breath]: #breath
 [stop]: #stop
 
 [knit]: #knit
