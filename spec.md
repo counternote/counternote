@@ -69,6 +69,20 @@ Manifold acoustic vibrations
 * [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
+### [SCHEME][scheme]
+
+Toward a deeper understanding
+
+* [__clock__][clock]:
+  * [__hue clock__][hue clock]:
+  * [__shade clock__][shade clock]:
+  * [__shade__][shade]:
+  * [__bright__][bright]:
+  * [__dark__][dark]:
+  * [__blend__][blend]:
+  * [__mood__][mood]:
+  * [__rub__][rub]:
+
 ### [NIB][nib]
 
 Odds and ends
@@ -127,6 +141,18 @@ Odds and ends
 [chord]: #chord
 [braid]: #braid
 [weave]: #weave
+
+[scheme]: #scheme
+
+[clock]: #clock
+  [hue clock]: #hue-clock
+  [shade clock]: #shade-clock
+  [shade]: #shade
+  [bright]: #bright
+  [dark]: #dark
+  [blend]: #blend
+  [mood]: #mood
+  [rub]: #rub
 
 [nib]: #nib
 
@@ -620,6 +646,86 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
        C/G   332010   vaevae  nDvaevae   nəˌdə.vaˈje.vaˌje   nuh-Duh-vah-YEH-vah-Yeh
                       vaevae  nAvaevae   nəˌʔa.vaˈje.vaˌje   nuh-Ah-vah-YEH-vah-Yeh
     ——————————————————————————————————————————————————————————————————————————————————————
+
+***
+
+# Scheme
+
+A [scheme][scheme] is an informational diagram to help learn and understand Counternote and the underlying music theory.
+
+## Clock
+
+A [clock][clock] is a [scheme][scheme] for visualizing the relationships between [tones][tone] or [spans][span]. Since there are twelve equal [tones][tone], only the [spans][span] as [span rhymes][span rhyme] are demonstrated here.
+
+### Hue Clock
+
+The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic sequence around a clockface so that stepping clockwise goes up a [notch][notch] and counterclockwise goes down a [notch][notch].
+
+    ————————————————————————————————————————————————
+                                             notch
+                         1                    diff
+               7        -a        ♭2            0
+                 -s  ===||===  -r              ±1
+         ♭7             ||              2
+            -n  ========||========  -u         ±2
+                        ||
+                        ||
+       6  -m  ==========||==========  -o  ♭3   ±3
+                        ||
+                        ||
+            -l  ========||========  -e         ±4
+         ♭6             ||              3
+                 -v  ===||===  -i              ±5
+               5        -t        4            +6
+                      ♯4/♭5
+    ————————————————————————————————————————————————
+
+### Shade Clock
+
+Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 with 11) makes the [shade][shade] [clock][clock] with all of the [spans][span] written in harmonic sequence around the clockface. All of the [bright][bright] [shades][shade] are on the right and all of the [dark][dark] [shades][shade] are on the left. The [blends][blend], [moods][mood], and [rubs][rub] slice the [shade][shade] [clock][clock] horizontally into three sections. 
+
+    —————————————————————————————————————————————————
+       |-----DARK-----|    |----BRIGHT----|  SHADE   
+                         1
+                4       -a        5          BLENDS
+                  -i  ==||==  -v               |
+          ♭7            ||             2       |
+             -n  =======||=======  -u        —————
+                        ||
+                        ||
+       ♭3  -o  =========||=========  -m   6  MOODS
+                        ||                     |
+                        ||                     |
+             -l  =======||=======  -e        —————
+          ♭6            ||             3
+                  -r  ==||==  -s              RUBS
+               ♭2       -t        7            |
+                      ♭5/♯4                  —————
+    —————————————————————————————————————————————————
+
+### Shade
+
+A [shade][shade] is a measure of how [bright][bright] or [dark][dark] an interval is. This lines up mostly with major (big) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
+
+### Bright
+
+A [bright][bright] [shade][shade] is one that yields a sense of opening up, turning outward. It includes all major intervals plus the perfect fifth.
+
+### Dark
+
+A [dark][dark] [shade][shade] is one that yields a sense of settling down, turning inward. It includes all minor intervals plus the perfect fourth.
+
+### Blend
+
+A [blend][blend] is a more harmonious sounding interval: `-a`, `-u`, `-i`, `-v`, `-m`. They are the high vowels, some paired with labial consonants, plus the [root][root] which is an open vowel. If these were colors, they’d be neutrals that go with anything.
+
+### Mood
+
+A [mood][mood] is an interval that gives a major or minor quality: `-o`, `-e`, `-l`, `-n`. All are  mid vowels, some paired with alveolar consonants. If these were colors, they would be more saturated and vibrant, but not stridently so.
+
+### Rub
+
+A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants. If these were colors, they’d be best used as accents due to their intensity.
 
 ***
 
