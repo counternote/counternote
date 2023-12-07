@@ -31,7 +31,7 @@ Structural elements of Counternote
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
 * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
-* [__stack__][stack]: multiple [voices][voice] in the same [bar][bar].
+* [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
 * [__jump__][jump]: a directive on what to play next
 * [__lap__][lap]: a variation on a [bar][bar]
 
