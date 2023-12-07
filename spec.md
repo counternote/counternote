@@ -27,10 +27,13 @@ Foundational elements of Counternote
 Structural elements of Counternote
 
 * [__score__][score]: an entire composition in Counternote
-* [__track__][track]: an individual piece within a score
+* [__track__][track]: an individual piece within a [score][score]
 * [__round__][round]: a block of repeated music
-* [__bar__][bar]: a sequence of lines that detail what and how to play
-* [__voice__][voice]: a monophonic [sound][sound] or sequence of [sounds][sound]
+* [__bar__][bar]: details on how and what to play
+* [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
+* [__stack__][stack]: multiple [voices][voice] in the same [bar][bar].
+* [__jump__][jump]: a directive on what to play next
+* [__lap__][lap]: a variation on a [bar][bar]
 
 ### [NOTE][note]
 
@@ -38,9 +41,9 @@ Acoustic vibrations held in time
 
 * [__sound__][sound]: any acoustic vibration
   * [__pitch__][pitch]: the number of vibrations per second, the frequency
-  * [__rank__][rank]: the set of pitches separated by powers of two, the pitch-class
-  * [__file__][file]: the octave range that contains a pitch
-  * [__band__][band]: any range of pitches
+  * [__rank__][rank]: the set of [pitches][pitch] separated by powers of two, the pitch-class
+  * [__file__][file]: the octave range that contains a [pitch][pitch]
+  * [__band__][band]: any range of [pitches][pitch]
   * [__notch__][notch]: the range of a single *semitone* or *half-step*
 * [__root__][root]: the starting point for a [span][span] and the like
 * [__key__][key]: the starting point for a [track][track]
@@ -90,6 +93,9 @@ Odds and ends
 [round]: #round
 [bar]: #bar
 [voice]: #voice
+[stack]: #stack
+[jump]: #jump
+[lap]: #lap
 
 [note]: #note
 
@@ -271,7 +277,7 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics as [cues][cue] and [comps][comp] and [lines][line], respectively.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics.
 
 ## Voice
 
