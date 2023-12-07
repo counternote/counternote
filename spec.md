@@ -271,11 +271,23 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indentation on its own line, again for legibility.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics as [cues][cue] and [comps][comp] and [lines][line], respectively.
 
 ## Voice
 
-A [voice][voice] is akin to a line of music performed by a human *voice*. [Knits][knit] are multiple [voices][voice] even if performed by the same instrument.
+A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice*. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
+
+## Stack
+
+A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature.
+
+## Jump
+
+A [jump][jump] is a directive on what part to play next.
+
+## Lap
+
+A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round].
 
 ***
 
