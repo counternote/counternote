@@ -73,15 +73,15 @@ Manifold acoustic vibrations
 
 Toward a deeper understanding
 
-* [__clock__][clock]:
-  * [__hue clock__][hue clock]:
-  * [__shade clock__][shade clock]:
-  * [__shade__][shade]:
-  * [__bright__][bright]:
-  * [__dark__][dark]:
-  * [__blend__][blend]:
-  * [__mood__][mood]:
-  * [__rub__][rub]:
+* [__clock__][clock]: a [scheme][scheme] for visualization the relationships between [tones][tone] or [spans][span]
+  * [__hue clock__][hue clock]: [tones][tone] and [spans][span] arranged in chromatic order
+  * [__shade clock__][shade clock]: [tones][tone] and [spans][span] arranged in harmonic order
+  * [__shade__][shade]: a measure of relative brightness or darkness
+  * [__bright__][bright]: a harmonic relationship evoking a sense of opening up
+  * [__dark__][dark]: a harmonic relationship evoking a sense of settling down
+  * [__blend__][blend]: a consonant sounding interval
+  * [__mood__][mood]: a major/minor sounding interval
+  * [__rub__][rub]: a dissonant sounding interval
 
 ### [NIB][nib]
 
@@ -705,15 +705,15 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
 ### Shade
 
-A [shade][shade] is a measure of how [bright][bright] or [dark][dark] an interval is. This lines up mostly with major (big) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
+A [shade][shade] is a measure of how [bright][bright] or [dark][dark] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
 
 ### Bright
 
-A [bright][bright] [shade][shade] is one that yields a sense of opening up, turning outward. It includes all major intervals plus the perfect fifth.
+A [bright][bright] [shade][shade] is a harmonic relationship that evokes a sense of opening up, turning outward. It includes all major (large) intervals plus the (larger) perfect fifth.
 
 ### Dark
 
-A [dark][dark] [shade][shade] is one that yields a sense of settling down, turning inward. It includes all minor intervals plus the perfect fourth.
+A [dark][dark] [shade][shade] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
 ### Blend
 
