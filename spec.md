@@ -21,12 +21,15 @@ Foundational elements of Counternote
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
 
+### [STAGE][stage]
+
+Compositional and instrumental details
 
 ### [FORM][form]
 
 Structural elements of Counternote
 
-* [__score__][score]: an entire composition in Counternote
+* [__score__][score]: an entire composition
 * [__track__][track]: an individual piece within a [score][score]
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
@@ -100,16 +103,18 @@ Odds and ends
   [start]: #start
   [rhyme]: #rhyme
 
+[stage]: #stage
+
 [form]: #form
 
 [score]: #score
 [track]: #track
 [round]: #round
 [bar]: #bar
-[voice]: #voice
-[stack]: #stack
+  [voice]: #voice
+  [stack]: #stack
+  [lap]: #lap
 [jump]: #jump
-[lap]: #lap
 
 [note]: #note
 
@@ -193,7 +198,7 @@ A [phone][phone] is an indivisible articulation of spoken Counternote represente
 
 ### Start
 
-A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word].
+A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters 
 
 The standard starting consonants with their points of articulation are as follows:
 
@@ -258,10 +263,10 @@ All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are p
         o       o        'oh'
         e       e        'eh'
         i       i        'ee'
-        -       ə        'uh'
+        h       ə        'uh'
     ————————————————————————————————
 
-The schwa [ə] is inserted between consonants in some instances, but there is no corresponding [glyph][glyph].
+The schwa [ə] is inserted between consonants in some instances, but there is no corresponding [glyph][glyph] in that case.
 
 Like with [starts][start], some [glyphs][glyph] can cluster:
 
@@ -287,6 +292,12 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ***
 
+# Stage
+
+A [stage][stage] holds compositional and instrumental details such as title, author, instrument voices and tunings, and the like.
+
+***
+
 # Form
 
 A [form][form] is a structural element of a composition and how such elements connect together.
@@ -307,21 +318,21 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics.
 
-## Voice
+### Voice
 
 A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice*. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
 
-## Stack
+### Stack
 
 A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature.
+
+### Lap
+
+A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round].
 
 ## Jump
 
 A [jump][jump] is a directive on what part to play next.
-
-## Lap
-
-A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round].
 
 ***
 
@@ -369,20 +380,20 @@ A [break][break] is the point where the [file][file] changes based on the [key][
 
 A [hold][hold] is punctuation character that represents a duration. They come in eight varieties, six ordered by powers of two and two special ones for no duration and indefinite duration that can also have articulation properties:
 
-    ———————————————————————————
-      HOLD  VALUE  WORD  IPA
-    ———————————————————————————
-      `!`    0x    ql    kʷɛl
-    ———————————————————————————
-      `;`    1x    qi    kʷi
-      `:`    2x    qe    kʷe
-      `,`    4x    qa    kʷɑ
-      `.`    8x    qo    kʷo
-      `-`   16x    qu    kʷu
-      `=`   32x    qr    kʷɚ
-    ———————————————————————————
-      `?`    ?x    qh    kʷə
-    ———————————————————————————
+    ————————————————————————————
+      HOLD  VALUE  WORD   IPA
+    ————————————————————————————
+      `!`    0x     qh    kʷə
+    ————————————————————————————
+      `;`    1x     qi    kʷi
+      `:`    2x     qe    kʷe
+      `,`    4x     qa    kʷɑ
+      `.`    8x     qo    kʷo
+      `-`   16x     qu    kʷu
+      `=`   32x     qr    kʷɚ
+    ————————————————————————————
+      `?`    ?x     ql    kʷɛl
+    ————————————————————————————
 
 ## Tone
 
