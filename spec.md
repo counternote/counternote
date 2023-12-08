@@ -2,7 +2,7 @@
 
 # Counternote Specification version 0.8.0
 
-This is a terse description of Counternote with definitions and examples.
+This is a terse description of Counternote with minimal definitions and examples. Musical ideas not expressed here are likely already done, at least aspirationally, just not written here.
 
 ***
 
@@ -238,8 +238,10 @@ Some [glyphs][glyph] can cluster:
 
     ————————————————————————————————
       GLYPHS   IPA   PRONUNCIATION
-        hy-     hʲ       'hy'
-        hw-     hʷ       'hw'
+        my-     mʲ       'my'
+        mw-     mʷ       'mw'
+        ny-     nʲ       'ny'
+        nw-     nʷ       'nw'
     ————————————————————————————————
 
 ### Rhyme
@@ -367,18 +369,20 @@ A [break][break] is the point where the [file][file] changes based on the [key][
 
 A [hold][hold] is punctuation character that represents a duration. They come in eight varieties, six ordered by powers of two and two special ones for no duration and indefinite duration that can also have articulation properties:
 
-    —————————————————————————————
-      `!`   bang    0x duration
-    —————————————————————————————
-      `;`   shred   1x duration
-      `:`   split   2x duration
-      `,`   fast    4x duration
-      `.`   short   8x duration
-      `-`   long   16x duration
-      `=`   slow   32x duration
-    —————————————————————————————
-      `?`   broad   ?x duration
-    —————————————————————————————
+    ———————————————————————————
+      HOLD  VALUE  WORD  IPA
+    ———————————————————————————
+      `!`    0x    ql    kʷɛl
+    ———————————————————————————
+      `;`    1x    qi    kʷi
+      `:`    2x    qe    kʷe
+      `,`    4x    qa    kʷɑ
+      `.`    8x    qo    kʷo
+      `-`   16x    qu    kʷu
+      `=`   32x    qr    kʷɚ
+    ———————————————————————————
+      `?`    ?x    qh    kʷə
+    ———————————————————————————
 
 ## Tone
 
@@ -386,46 +390,46 @@ A [tone][tone] is closest to a *note* in a traditional sense, like the [rank][ra
 
 ### Tone Start
 
-The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank].
+The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank]. The traditional “naturals” are voiced consonants and the “accidentals” voiceless. The points of articulation move from the back of the mouth up through to the lips (labiovelar —> velar —> palatal —> postalveolar —> alveolar —> labiodental —> bilabial).
 
-    ————————————————
-      START  VALUE
-    ————————————————
-        p-   D♯/E♭
-        b-     D
-        f-   C♯/D♭
-        d-     C
-        z-     B
-        c-   A♯/B♭
-        j-     A
-        x-   G♯/A♭
-        y-     G
-        k-   F♯/G♭
-        g-     F
-        w-     E
-    ————————————————
+    —————————————————————
+      START  VALUE  IPA
+    —————————————————————
+        p-   D♯/E♭   p
+        b-     D     b
+        f-   C♯/D♭   f
+        d-     C     d
+        z-     B     z
+        c-   A♯/B♭   tʃ
+        j-     A     dʒ
+        x-   G♯/A♭   ʃ
+        y-     G     ʒ
+        k-   F♯/G♭   k
+        g-     F     g
+        w-     E     w
+    —————————————————————
 
 ### Tone Rhyme
 
 The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `da` is middle C in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
 
-    ————————————————
-      RHYME   FILE
-    ————————————————
-       -il     +5
-       -al     +4
-       -l      +3
-       -i      +2
-       -e      +1
-    ————————————————
-       -a      ±0
-    ————————————————
-       -o      -1
-       -u      -2
-       -r      -3
-       -ar     -4
-       -or     -5
-    ————————————————
+    ————————————————————
+      RHYME  FILE  IPA
+    ————————————————————
+       -il    +5    il
+       -al    +4    al
+       -l     +3    ɛl
+       -i     +2    i
+       -e     +1    e
+    ————————————————————
+       -a     ±0    ɑ
+    ————————————————————
+       -o     -1    o
+       -u     -2    u
+       -r     -3    ɚ
+       -ar    -4    ɑ˞
+       -or    -5    ɔ˞
+    ————————————————————
 
 ## Span
 
@@ -435,23 +439,23 @@ A [span][span] is an interval *and* a distinct [tone][tone] relative to some [ro
 
 The [start][start] of a [span][span] indicates the [file][file] above or below the [root][root] or [key][key].
 
-    ———————————————
-      START  FILE
-    ———————————————
-       hy-    +5
-       m-     +4
-       v-     +3
-       l-     +2
-       t-     +1
-    ———————————————
-       h-     ±0
-    ———————————————
-       n-     -1
-       s-     -2
-       r-     -3
-       q-     -4
-       hw-    -5
-    ———————————————
+    ————————————————————
+      START  FILE  IPA
+    ————————————————————
+       my-    +5    mʲ  
+       mw-    +4    mʷ
+       m-     +3    n
+       v-     +2    v
+       l-     +1    l
+    ————————————————————
+       h-     ±0    h
+    ————————————————————
+       t-     -1    t
+       s-     -2    s
+       n-     -3    n
+       ny-    -4    nʲ
+       nw-    -5    nʷ
+    ————————————————————
 
 
 ### Span Rhyme
@@ -459,9 +463,9 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
 The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [key][key]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
 
 
-    ——————————————————————————————————————————
-      RHYME   VALUE    IPA   TRANSLITERATION
-    ——————————————————————————————————————————
+    ————————————————————————————————————————
+      RHYME   VALUE    IPA   PRONUNCIATION
+    ————————————————————————————————————————
         -s      7     ɚs,r̩s      'ers'
         -n     ♭7       un       'oon'
         -m      6       om       'ohm'
@@ -474,7 +478,7 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
         -u      2       u        'oo'
         -r     ♭2      ɚ,r̩       'er'
         -a      1       ɑ        'ah'
-    ——————————————————————————————————————————
+    ————————————————————————————————————————
 
 ## Rap
 
@@ -595,6 +599,7 @@ A [chord][chord] is a [knit][knit] constructed using the capitalized [tone start
 
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
+    ————————————————————————————————————————————————————————
          B5        Zav         ˈzɑv            'ZAHV'
          Cm        Dov         ˈdov            'DOHV'
          C♯7       Fevn       ˈfe.vən        'FEH-vuhn'
@@ -611,6 +616,7 @@ A [braid][braid] is a “metachord”, like in Roman Numeral Analysis or the Nas
       KEY: da
     —————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
+    —————————————————————————————————————————————————————————
          B5        Sav         ˈsɑv            'SAHV'
          Cm        Aov         ʔɑˈov          'ah-OHV'
          C♯7       Revn       ˈre.vən        'REH-vuhn'
@@ -627,6 +633,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
       KEY: da
     ——————————————————————————————————————————————————————————————————————————————————————
       CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
+    ——————————————————————————————————————————————————————————————————————————————————————
         E    022100   avaeva  sWavaeva     səˌwa.vaˈje.va     suh-Wah-vah-YEH-vah
                       avaeva  sEavaeva   səˌʔe.ja.vaˈje.va   suh-Eh-yah-vah-YEH-vah
         A    x02220   avaev    nJavaev     nəˌdʒa.vaˈjev        nuh-Jah-vah-YEHV
