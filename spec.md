@@ -232,7 +232,7 @@ The standard starting consonants with their points of articulation are as follow
         -       ʔ     '-' in 'uh-oh'
     ——————————————————————————————————
 
-Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten 'ʔ'. A unwritten 'j' ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
+Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. A unwritten [j] ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
 
 Some [glyphs][glyph] can cluster:
 
@@ -248,7 +248,7 @@ Some [glyphs][glyph] can cluster:
 
 A [rhyme][rhyme] is the rhyming part or *linguistic coda* of a [word][word].
 
-All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are pure spanish vowels plus the rhoticized mid vowel 'r':
+All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are pure spanish vowels plus the rhoticized mid vowel [ɚ]:
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
@@ -261,7 +261,7 @@ All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are p
         -       ə        'uh'
     ————————————————————————————————
 
-The schwa 'ə' is inserted between consonants in some instances, but there is no corresponding [glyph][glyph].
+The schwa [ə] is inserted between consonants in some instances, but there is no corresponding [glyph][glyph].
 
 Like with [starts][start], some [glyphs][glyph] can cluster:
 
@@ -339,7 +339,7 @@ A [pitch][pitch] is the number of vibrations per second, the frequency.
 
 ### Rank
 
-A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the '-a' [rhyme][rhyme] such as `da` for *C* or [spans][span] with the 'h-' [start][start] such as `ha` for *C* in the [key][key] of `da`.
+A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `da` for *C* or [spans][span] with the `h-` [start][start] such as `ha` for *C* in the [key][key] of `da`.
 
 ### File
 
@@ -742,4 +742,4 @@ A [nib][nib] is the odd end that fits in the odds and ends.
 
 ### Mark
 
-A [mark][mark] is the name for a 'single straight quote' or 'hashmark' `'` in Counternote. It serves as a separator.
+A [mark][mark] is a 'single straight quote' or 'hashmark' `'` in Counternote. It serves as a separator.
