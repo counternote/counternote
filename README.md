@@ -8,7 +8,9 @@ Counternote is an answer to a question that a lot of people have asked despite a
 
 However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music —> staff —> ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music —> Counternote).
 
-Counternote has been created as a complementary foil to the venerable staff notation, so that even the most seasoned of musicians is likely to gain a deeper understand of the craft of music by learning it. But wait — there’s more — Counternote has also been devised to be a musical *programming* language, capable of designing synths and effects, making generative and aleatoric music, and integrating with live performance.
+Counternote has been created as a complementary foil to the venerable staff notation, so that even the most seasoned of musicians is likely to gain a deeper understand of the craft of music by learning it.
+
+But wait — there’s more! Counternote has also been devised to be a musical *programming* language, capable of designing synths and effects, making generative and aleatoric music, and integrating with live performance.
 
 [md]:https://daringfireball.net/projects/markdown/ "John Gruber’s Markdown Spectacular"
 [abc]:https://abcnotation.com/ "ABC notation"
