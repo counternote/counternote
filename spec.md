@@ -581,27 +581,27 @@ A [knit][knit] is a collection of notes occuring simultaneously. While such can 
 
 A [thread][thread] is a single [voice][voice] within a [knit][knit]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation:
 
-    —————————————————————————————————
+    ——————————————————————————————
       V:  a,r,u,o,e,i
       C:  t,v,l,m,n,s
       G:  any glyph
       X:  end of string
       -:  syllable break
-    —————————————————————————————————
-      GLYPH  BEFORE   ADDS    IPA
-        a      V     soft y   a-jV
-        r      V       w      a-wV
-        u      V     soft y   u-jV
-        o      V       w      o-wV
-        e      V     soft y   e-jV
-        i      V       w      i-wV
-    —————————————————————————————————
-        VC     CV      -     VC-CV
-        VC     CC      ə     VC-CəC
-        VC     CX      ə     V-CəC
-    —————————————————————————————————
+    ——————————————————————————————
+      GLYPH  BEFORE  ADDS   IPA
+        a      V      j     a-jV
+        r      V      w     ɚ-wV
+        u      V      j     u-jV
+        o      V      w     o-wV
+        e      V      w     e-wV
+        i      V      j     i-jV
+    ——————————————————————————————
+        VC     CV     -    VC-CV
+        VC     CC     ə    VC-CəC
+        VC     CX     ə    V-CəC
+    ——————————————————————————————
 
-The [glyph][glyph] `r` as a thread is always its vowel [phone][phone] except when capitalized in [braids][braid] and [weaves][weave].
+The [blends][blend] that are vowels always get the patalal glide [j] starting the next syllable whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone] except when capitalized in [braids][braid] and [weaves][weave].
 
 ## Chord
 
