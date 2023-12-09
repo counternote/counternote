@@ -1,6 +1,6 @@
 ***
 
-# Counternote Specification version 0.8.0
+# Counternote Specification version 0.8.1
 
 This is a terse description of Counternote with minimal definitions and examples. Musical ideas not expressed here are likely already done, at least aspirationally, just not written here.
 
@@ -645,24 +645,24 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
     ——————————————————————————————————————————————————————————————————————————————————————
       CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————————
-        E    022100   avaeva  sWavaeva     səˌwa.vaˈje.va     suh-Wah-vah-YEH-vah
-                      avaeva  sEavaeva   səˌʔe.ja.vaˈje.va   suh-Eh-yah-vah-YEH-vah
-        A    x02220   avaev    nJavaev     nəˌdʒa.vaˈjev        nuh-Jah-vah-YEHV
-                      avaev    nMavaev      nəˌma.vaˈjev        nuh-Mah-vah-YEHV
-       A/E   002220   vavaev  nJvavaev    nəˌdʒə.va.vaˈjev    nuh-Juh-vah-vah-YEHV
-                      vavaev  nMvavaev     nəˌmə.va.vaˈjev    nuh-Muh-vah-vah-YEHV
-        D    xx0232    avae    nBavae       nəˈba.vaˌje         nuh-BAH-vah-Yeh
-                       avae    nUavae      nə.ʔuˈja.vaˌje      nuh-oo-YAH-vah-Yeh
-       D/F♯  200232   evavae  sBevavae     sə.beˈva.vaˌje      suh-beh-VAH-vah-Yeh
-                      evavae  sUevavae   səˌʔu.jeˈva.vaˌje   suh-Oo-yeh-VAH-vah-Yeh
-        G    320033   aevava  nYaevava     nəˌʒa.jeˈva.va     nuh-Zhah-yeh-VAH-vah
-                      aevava  nVaevava     nəˌva.jeˈva.va      nuh-Vah-yeh-VAH-vah
-        G    320003   aevaea  nYaevaea   nəˌʒa.jeˈva.jeˌja  nuh-Zhah-yeh-VAH-yeh-Yah
-                      aevaea  nVaevaea   nəˌva.jeˈva.jeˌja   nuh-Vah-yeh-VAH-yeh-Yah
-        C    x32010    aevae   nDaevae     nə.daˈje.vaˌje      nuh-dah-YEH-vah-Yeh
-                       aevae   nAaevae   nəˌʔa.jaˈje.vaˌje   nuh-Ah-yah-YEH-vah-Yeh
-       C/G   332010   vaevae  nDvaevae   nəˌdə.vaˈje.vaˌje   nuh-Duh-vah-YEH-vah-Yeh
-                      vaevae  nAvaevae   nəˌʔa.vaˈje.vaˌje   nuh-Ah-vah-YEH-vah-Yeh
+        E    022100   avaeva  tWavaeva     təˌwa.vaˈje.va     tuh-Wah-vah-YEH-vah
+                      avaeva  tEavaeva   təˌʔe.ja.vaˈje.va   tuh-Eh-yah-vah-YEH-vah
+        A    x02220   avaev    sJavaev     səˌdʒa.vaˈjev        suh-Jah-vah-YEHV
+                      avaev    sMavaev      səˌma.vaˈjev        suh-Mah-vah-YEHV
+       A/E   002220   vavaev  sJvavaev    səˌdʒə.va.vaˈjev    suh-Juh-vah-vah-YEHV
+                      vavaev  sMvavaev     səˌmə.va.vaˈjev    suh-Muh-vah-vah-YEHV
+        D    xx0232    avae    sBavae       səˈba.vaˌje         suh-BAH-vah-Yeh
+                       avae    sUavae      sə.ʔuˈja.vaˌje      suh-oo-YAH-vah-Yeh
+       D/F♯  200232   evavae  tBevavae     tə.beˈva.vaˌje      tuh-beh-VAH-vah-Yeh
+                      evavae  tUevavae   təˌʔu.jeˈva.vaˌje   tuh-Oo-yeh-VAH-vah-Yeh
+        G    320033   aevava  sYaevava     səˌʒa.jeˈva.va     suh-Zhah-yeh-VAH-vah
+                      aevava  sVaevava     səˌva.jeˈva.va      suh-Vah-yeh-VAH-vah
+        G    320003   aevaea  sYaevaea   səˌʒa.jeˈva.jeˌja  suh-Zhah-yeh-VAH-yeh-Yah
+                      aevaea  sVaevaea   səˌva.jeˈva.jeˌja   suh-Vah-yeh-VAH-yeh-Yah
+        C    x32010    aevae   sDaevae     sə.daˈje.vaˌje      suh-dah-YEH-vah-Yeh
+                       aevae   sAaevae   səˌʔa.jaˈje.vaˌje   suh-Ah-yah-YEH-vah-Yeh
+       C/G   332010   vaevae  sDvaevae   səˌdə.vaˈje.vaˌje   suh-Duh-vah-YEH-vah-Yeh
+                      vaevae  sAvaevae   səˌʔa.vaˈje.vaˌje   suh-Ah-vah-YEH-vah-Yeh
     ——————————————————————————————————————————————————————————————————————————————————————
 
 ***
