@@ -12,10 +12,10 @@ This [gloss][gloss] serves as a glossary and table of contents for all things Co
 
 ### [BASE][base]
 
-Foundational elements of Counternote
+Foundational elements
 
 * [__term__][term]: a precise concept in music and Counternote, linked here in the [gloss][gloss]
-* [__glyph__][glyph]: any typed character in Counternote
+* [__glyph__][glyph]: any typed character
 * [__word__][word]: a connected sequence of [phones][phone]
 * [__phone__][phone]: the pronunciation of a speakable [glyph][glyph] or cluster of [glyphs][glyph]
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
