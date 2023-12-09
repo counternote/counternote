@@ -223,8 +223,7 @@ The standard starting consonants with their points of articulation are as follow
        J,j      dʒ    'j' in 'jam'
       ~~~~~~ PALATAL ~~~~~~~~~~~~~~
        X,x      ʃ    'sh' in 'ship'
-       Y,y      ʒ    'si' in 'vision'
-        -       j     'y' in 'yes'
+       Y,y      j     'y' in 'yes'
        R,r     ɹ,r    'r' in 'run'
       ~~~~~~~ VELAR ~~~~~~~~~~~~~~~
        K,k      k     'k' in 'kick'
@@ -414,7 +413,7 @@ The [start][start] of a [tone][tone] will always be a consonant represented by a
         c-   A♯/B♭   tʃ
         j-     A     dʒ
         x-   G♯/A♭   ʃ
-        y-     G     ʒ
+        y-     G     j
         k-   F♯/G♭   k
         g-     F     g
         w-     E     w
@@ -655,9 +654,9 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
                        avae    sUavae      sə.ʔuˈja.vaˌje      suh-oo-YAH-vah-Yeh
        D/F♯  200232   evavae  tBevavae     tə.beˈva.vaˌje      tuh-beh-VAH-vah-Yeh
                       evavae  tUevavae   təˌʔu.jeˈva.vaˌje   tuh-Oo-yeh-VAH-vah-Yeh
-        G    320033   aevava  sYaevava     səˌʒa.jeˈva.va     suh-Zhah-yeh-VAH-vah
+        G    320033   aevava  sYaevava     səˌja.jeˈva.va      suh-Yah-yeh-VAH-vah
                       aevava  sVaevava     səˌva.jeˈva.va      suh-Vah-yeh-VAH-vah
-        G    320003   aevaea  sYaevaea   səˌʒa.jeˈva.jeˌja  suh-Zhah-yeh-VAH-yeh-Yah
+        G    320003   aevaea  sYaevaea   səˌja.jeˈva.jeˌja   suh-Yah-yeh-VAH-yeh-Yah
                       aevaea  sVaevaea   səˌva.jeˈva.jeˌja   suh-Vah-yeh-VAH-yeh-Yah
         C    x32010    aevae   sDaevae     sə.daˈje.vaˌje      suh-dah-YEH-vah-Yeh
                        aevae   sAaevae   səˌʔa.jaˈje.vaˌje   suh-Ah-yah-YEH-vah-Yeh
