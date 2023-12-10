@@ -97,6 +97,7 @@ Composer directives
   * [__grace__][grace]: a quick [sound][sound] before another
   * [__lick__][lick]: a quick run of [sounds][sound]
   * [__trill__][trill]: a quick alternating between [sounds][sound]
+* [__line__][line]: lyrics beneath the [voices][voice]
 
 ### [SCHEMES][schemes]
 
@@ -200,6 +201,7 @@ Odds and ends
   [grace]: #grace
   [lick]: #lick
   [trill]: #trill
+[line]: #line
 
 [schemes]: #schemes
 
@@ -643,12 +645,16 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
     ————————————————————————
       `aa` tie
       `hh` breath (rest)
+    ————————————————————————
+      `sp` speech
       `hx` hush, silence
       `nh` inhale
       `xh` exhale
+    ————————————————————————
       `xs` blue noise
       `xx` white noise
       `xw` pink noise
+    ————————————————————————
       `pf` pf snare
       `ks` k snare
       `bm` bass drum
@@ -665,20 +671,22 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `cx` crash
       `cs` ride
       `kl` clap
+      `dt` bright clave
+      `dd` dark clave
+    ————————————————————————
       `rk` rake
       `dp` deep tap
       `tp` light tap
       `dk` dark tick
       `tk` bright tick
-      `dt` bright clave
-      `dd` dark clave
+      `hd` handmute
+      `sd` strum mute
+    ————————————————————————
       `rf` ref whistle
       `ws` Wilhelm scream
       `ck` shook
       `cp` chirp, cheep
       `jz` the licc
-      `hd` handmute
-      `sd` strum mute
     ————————————————————————
 
 ## Tie
@@ -873,6 +881,9 @@ A [lick][lick] is quick run of [sounds][sound], often repeated. It is an [art][a
 
 A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
 
+## Line
+
+A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with syllable getting at least one [sound][sound] and underscores `_` for multiple [sounds][sound]. Speech is denoted by the [rap][rap] `sp`.
 ***
 
 # Schemes
