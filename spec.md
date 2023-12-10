@@ -22,7 +22,7 @@ Foundational elements
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
 
-### [FORM][form]
+### [FORMS][forms]
 
 Structural elements of Counternote
 
@@ -41,7 +41,7 @@ Structural elements of Counternote
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
 
-### [NOTE][note]
+### [NOTES][notes]
 
 Acoustic vibrations held in time
 
@@ -66,7 +66,7 @@ Acoustic vibrations held in time
 * [__breath__][breath]: a breath of fresh quiet
 * [__stop__][stop]: two [sounds][sound] occuring at the same time
 
-### [KNIT][knit]
+### [KNITS][knits]
 
 Manifold acoustic vibrations
 
@@ -75,7 +75,7 @@ Manifold acoustic vibrations
 * [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
-### [SCHEME][scheme]
+### [SCHEMES][schemes]
 
 Toward a deeper understanding
 
@@ -89,7 +89,7 @@ Toward a deeper understanding
   * [__mood__][mood]: a major/minor sounding interval
   * [__rub__][rub]: a dissonant sounding interval
 
-### [NIB][nib]
+### [NIBS][nibs]
 
 Odds and ends
 
@@ -100,7 +100,7 @@ Odds and ends
 
 [gloss]: #gloss
 
-[base]: #base
+[bases]: #bases
 
 [term]: #term
 [glyph]: #glyph
@@ -110,7 +110,7 @@ Odds and ends
   [start]: #start
   [rhyme]: #rhyme
 
-[form]: #form
+[forms]: #forms
 
 [score]: #score
 [stage]: #stage
@@ -127,7 +127,7 @@ Odds and ends
   [lap]: #lap
 [jump]: #jump
 
-[note]: #note
+[notes]: #notes
 
 [sound]: #sound
   [pitch]: #pitch
@@ -151,14 +151,14 @@ Odds and ends
 [breath]: #breath
 [stop]: #stop
 
-[knit]: #knit
+[knits]: #knits
 
 [thread]: #thread
 [chord]: #chord
 [braid]: #braid
 [weave]: #weave
 
-[scheme]: #scheme
+[schemes]: #schemes
 
 [clock]: #clock
   [hue clock]: #hue-clock
@@ -170,7 +170,7 @@ Odds and ends
   [mood]: #mood
   [rub]: #rub
 
-[nib]: #nib
+[nibs]: #nibs
 
   [head]: #head
   [mid]: #mid
@@ -179,7 +179,7 @@ Odds and ends
 
 ***
 
-# Base
+# Bases
 
 A [base][base] is a foundational element for learning and understanding Counternote.
 
@@ -309,7 +309,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ***
 
-# Form
+# Forms
 
 A [form][form] is a structural element of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
@@ -417,7 +417,7 @@ A [jump][jump] is a directive on what part to play next.
 
 ***
 
-# Note
+# Notes
 
 A [note][note] is a [sound][sound] for a [hold][hold].
 
@@ -655,7 +655,7 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
 
 ***
 
-# Knit
+# Knits
 
 A [knit][knit] is a collection of notes occuring simultaneously. While such can be achieved with [stops][stop], it quickly gets unruly and hard to read. [Knits][knit] come in three varieties: [chords][chord], [braids][braid], and [weaves][weave].
 
@@ -748,7 +748,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 ***
 
-# Scheme
+# Schemes
 
 A [scheme][scheme] is an informational diagram to help learn and understand Counternote and the underlying music theory.
 
@@ -828,7 +828,7 @@ A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t
 
 ***
 
-# Nib
+# Nibs
 
 A [nib][nib] is the odd end that fits in the odds and ends.
 
