@@ -24,7 +24,7 @@ Foundational elements
 
 ### [FORMS][forms]
 
-Structural elements of Counternote
+Structural elements
 
 * [__score__][score]: an entire composition
 * [__stage__][stage]: a place for compositional and instrumental details
@@ -37,6 +37,17 @@ Structural elements of Counternote
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
 
+### [Beats][beats]
+
+Rhythmic elements
+
+* [__hold__][hold]: the duration of a [note][notes]
+* [__groove__][groove]: the arrangement of [beats][beats] in a [bar][bar]
+* [__click__][click]: the tempo
+* [__cut__][cut]: a tuplet
+* [__shift__][shift]: a section of polymeter
+* [__rift__][rift]: a section of polyrhythm
+
 ### [NOTES][notes]
 
 Acoustic vibrations held in time
@@ -47,10 +58,9 @@ Acoustic vibrations held in time
   * [__file__][file]: the octave range that contains a [pitch][pitch]
   * [__band__][band]: any range of [pitches][pitch]
   * [__notch__][notch]: the range of a single *semitone* or *half-step*
-* [__root__][root]: the starting point for a [span][span] and the like
-* [__key__][key]: the starting point for a [track][track]
+* [__root__][root]: the centerpoint for a [span][span] and the like
+* [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
 * [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
-* [__hold__][hold]: the duration of a [note][notes]
 * [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sound]
   * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
@@ -75,9 +85,6 @@ Manifold acoustic vibrations
 
 Composer directives
 
-* [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
-* [__groove__][groove]: the arrangement of beats in a [bar][bar]
-* [__click__][click]: the tempo
 * [__art__][art]: an inline cue
   * [__smooth__][smooth]: a legato line
   * [__ring__][ring]: a sustained line
@@ -134,6 +141,15 @@ Odds and ends
   [lap]: #lap
 [jump]: #jump
 
+[beats]: #beats
+
+[hold]: #hold
+[groove]: #groove
+[click]: #click
+[cut]: #cut
+[shift]: #shift
+[rift]: #rift
+
 [notes]: #notes
 
 [sound]: #sound
@@ -145,7 +161,6 @@ Odds and ends
 [root]: #root
 [key]: #key
 [break]: #break
-[hold]: #hold
 [tone]: #tone
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
@@ -167,9 +182,6 @@ Odds and ends
 
 [cues]: #cues
 
-[key]: #key
-[groove]: #groove
-[click]: #click
 [art]: #art
   [smooth]: #smooth
   [ring]: #ring
@@ -397,7 +409,7 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first beat. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a [mark][mark] in between, for example `A'1`.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a [mark][mark] in between, for example `A'1`.
 
 ### Voice
 
@@ -418,6 +430,49 @@ A [rep][rep] is a directive to repeat a [bar][bar] or [round][round].
 ### Jump
 
 A [jump][jump] is a directive on what part to play next.
+
+***
+
+# Beats
+
+[Beats][beats] are basic rhythmic elements
+
+## Hold
+
+A [hold][hold] is punctuation character that represents a duration. They come in seven varieties, six ordered by powers of two and a special one for indefinite duration:
+
+    ————————————————————————————
+      HOLD  VALUE  WORD   IPA
+    ————————————————————————————
+      `;`    1x     qi    kʷi
+      `:`    2x     qe    kʷe
+      `,`    4x     qa    kʷɑ
+      `.`    8x     qo    kʷo
+      `-`   16x     qu    kʷu
+      `=`   32x     qr    kʷɚ
+    ————————————————————————————
+      `?`    ?x     qh    kʷə
+    ————————————————————————————
+
+## Groove
+
+A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar].
+
+## Click
+
+A [click][click] gives the tempo.
+
+## Cut
+
+A [cut][cut] is a subdivision of the [beat][beats].
+
+## Shift
+
+A [shift][shift] is a section of polymeter.
+
+## Rift
+
+A [rift][rift] is a section of polyrhythm.
 
 ***
 
@@ -451,34 +506,27 @@ A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *sem
 
 ## Root
 
-A [root][root] is the [tone][tone] that serves as the starting point for harmony within [spans][span] and chords.
+A [root][root] is the [tone][tone] or [span][span] that serves as the centerpoint for harmony within [spans][span] and [chords][chord].
 
 ## Key
 
-A [key][key] is like a [root][root] but for an entire composition denoted by a [tone][tone]. By default it’s `da`. It does not imply a particular scale.
+A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track]. It is like a [root][root] but for an entire composition denoted by a [tone][tone]. By default it’s `da` which does not imply a particular tonality. If a [chord][chord] is used, it will imply the following:
+
+    ————————————————————————
+      WORD    TONALITY
+    ————————————————————————
+      Dtv     Lydian
+      Dev     Major/Ionian
+      Devn    Mixolydian
+      Dovm    Dorian
+      Dov     Minor/Aeolian
+      Drv     Phrygian
+      Dot     Locrian
+    ————————————————————————
 
 ## Break
 
 A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
-
-## Hold
-
-A [hold][hold] is punctuation character that represents a duration. They come in eight varieties, six ordered by powers of two and two special ones for no duration and indefinite duration that can also have articulation properties:
-
-    ————————————————————————————
-      HOLD  VALUE  WORD   IPA
-    ————————————————————————————
-      `!`    0x     qh    kʷə
-    ————————————————————————————
-      `;`    1x     qi    kʷi
-      `:`    2x     qe    kʷe
-      `,`    4x     qa    kʷɑ
-      `.`    8x     qo    kʷo
-      `-`   16x     qu    kʷu
-      `=`   32x     qr    kʷɚ
-    ————————————————————————————
-      `?`    ?x     ql    kʷɛl
-    ————————————————————————————
 
 ## Tone
 
@@ -753,19 +801,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
-
-## Key
-
-A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track].
-
-## Groove
-
-A [groove][groove] tells the arrangement of beats in a [bar][bar].
-
-## Click
-
-A [click][click] gives the tempo.
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four [beats][beats] `|4.|`, all at an allegretto [click][click].
 
 ## Art
 
@@ -896,13 +932,13 @@ A [tap][tap] is a way of vocalizing the [groove][groove] as [words][word] design
     ————————————————————————————————————————
 
 The rules for generating these [taps][tap] are rather simple:
-* The first beat is a bilabial consonant `p` `b`
-* The even beats (off beats) are velar consonants `k` `g`
-* The rest of the beats are alveolar consonants `t` `d`
+* The first [beat][beats] is a bilabial consonant `p` `b`
+* The even [beats][beats] (off [beats][beats]) are velar consonants `k` `g`
+* The rest of the [beats][beats] are alveolar consonants `t` `d`
 * The accent is a voiceless consonant `p` `t` `k` paired with mid rounded `o`
 * The lax syllables are voiced consonants `b` `d` `g` paired mid unrounded `e`
 
-The lips will be rounded on the accent and will close at the beginning of the sequence. This is so that the first beat and the accent of the sequence can be seen even if not heard.
+The lips will be rounded on the accent and will close at the beginning of the sequence. This is so that the first [beat][beats] and the accent of the sequence can be seen even if not heard.
 
 For typical four-on-the-floor rhythms, we split them into two-syllable [words][word]:
 
