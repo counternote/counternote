@@ -1,5 +1,5 @@
-***
 
+***
 # Counternote Specification version 0.8.1
 
 This is a terse description of Counternote with minimal definitions and examples. Musical ideas not expressed here are likely already done, at least aspirationally, just not written here.
@@ -17,6 +17,7 @@ Foundational elements
 * [__term__][term]: a precise concept in music and Counternote, linked here in the [gloss][gloss]
 * [__glyph__][glyph]: any typed character
 * [__word__][word]: a connected sequence of [phones][phone]
+* [__sign__][sign]: a connected sequence of [glyphs][glyph] that do not make a [word][word]
 * [__phone__][phone]: the pronunciation of a speakable [glyph][glyph] or cluster of [glyphs][glyph]
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
@@ -31,13 +32,18 @@ Structural elements of Counternote
 
 * [__score__][score]: an entire composition
 * [__stage__][stage]: metadata for [scores][score] and [tracks][track]
+  * [__scribe__][scribe]: a composer of the [score][score]
 * [__track__][track]: an individual piece within a [score][score]
+  * [__cue__][cue]: a composer directive
+  * [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
+  * [__groove__][groove]: the arrangement of beats in a [bar][bar]
+  * [__click__][click]: the tempo
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
-* [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
-* [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
-* [__jump__][jump]: a directive on what to play next
-* [__lap__][lap]: a variation on a [bar][bar]
+  * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
+  * [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
+  * [__jump__][jump]: a directive on what to play next
+  * [__lap__][lap]: a variation on a [bar][bar]
 
 ### [NOTE][note]
 
@@ -103,6 +109,7 @@ Odds and ends
 [term]: #term
 [glyph]: #glyph
 [word]: #word
+[sign]: #sign
 [phone]: #phone
   [start]: #start
   [rhyme]: #rhyme
@@ -113,7 +120,12 @@ Odds and ends
 
 [score]: #score
 [stage]: #stage
+  [scribe]: #scribe
 [track]: #track
+  [cue]: #cue
+  [key]: #key
+  [groove]: #groove
+  [click]: #click
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -199,6 +211,10 @@ All [glyphs][glyph] are presented here in `monospace`.
 ## Word
 
 A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da`.
+
+## Sign
+
+A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the head `++*`.
 
 ## Phone
 
@@ -307,41 +323,107 @@ A [stage][stage] holds compositional and instrumental details such as title, aut
 
 # Form
 
-A [form][form] is a structural element of a composition and how such elements connect together.
+A [form][form] is a structural element of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
+
+    ++*
+    SCORE: Lute Suite in E Minor BWV 996
+    SCRIBE: Bach
+    +++
+    TRACK: Bourrée
+    VOICES:
+      f: fingers
+      t: thumb 
+    +++
+    # Wov |4.| @allegretto
+
+    A
+      0
+        f| -               .       wa, ka, |
+        t| -               .       yu, ku, |
+      1
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
+      2
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
+      3
+        f| za.     jo, yo, ko.     yo, jo, |
+        t| yu.     ju.     zo.     ju,     |
+      4
+        f| za, jo, yo, ko, wo.     wa, ka, |
+        t| yu.     zo.     wu, ku, yu, ku, |
+      5
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
+      6
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
+      7
+        f| za.     ja, ya, ka^y.   ,   ya, |
+        t| yu.     do.     bo.     bo.     |
+      8
+        f| tYeva-          .       *       |
+        t| yu-             .       %A @B   |
+
+    *++
 
 ## Score
 
-A [score][score] is an entire composition in Counternote. It is enclosed in the [head][head] `++*` and the [tail][tail] `*++` terms. 
+A [score][score] is an entire composition in Counternote. It is enclosed in the [head][head] `++*` and the [tail][tail] `*++` signs. When detailed in the [stage][stage], it is the title of work.
 
 ## Stage
 
-A [stage][stage] contains details on entire [scores] and individual [tracks]. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` terms. The [track][track] [stage][stage] is between [mid][mid] `+++` terms.
+A [stage][stage] contains details on entire [scores] and individual [tracks]. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
+
+### Scribe
+
+A [scribe][scribe] is a composer of a [score][score] or [track][track].
 
 ## Track
 
-A [track][track] is an individual piece that may or may not occur simultaneously within a score.
+A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with mid `+++` signs.
+
+## Cue
+
+A [cue][cue] is a composer directive, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
+
+### Key
+
+A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track].
+
+### Groove
+
+A [groove][groove] tells the arrangement of beats in a [bar][bar].
+
+### Click
+
+A [click][click] gives the tempo.
 
 ## Round
 
-A [round][round] is a block of repeated music marked with an unindented letter or string on its own line for legibility.
+A [round][round] is a block of repeated music marked with an unindented letter or string on its own line for legibility, denoted above with `A`.
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first beat. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a [mark][mark] in between, for example `A'1`.
 
 ### Voice
 
-A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice*. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
+A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in pipe `|` terms. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
 
 ### Stack
 
-A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature.
+A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. Above, “thumb” and “fingers” were chosen.
 
 ### Lap
 
-A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round].
+A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a [mark][mark] in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
 
-## Jump
+### Rep
+
+A [rep][rep] is a directive to repeat a [bar][bar] or [round][round].
+
+### Jump
 
 A [jump][jump] is a directive on what part to play next.
 
