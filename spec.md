@@ -37,7 +37,7 @@ Structural elements
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
 
-### [Beats][beats]
+### [BEATS][beats]
 
 Rhythmic elements
 
