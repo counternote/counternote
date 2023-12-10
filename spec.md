@@ -30,6 +30,7 @@ Compositional and instrumental details
 Structural elements of Counternote
 
 * [__score__][score]: an entire composition
+* [__stage__][stage]: metadata for [scores][score] and [tracks][track]
 * [__track__][track]: an individual piece within a [score][score]
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
@@ -90,7 +91,10 @@ Toward a deeper understanding
 
 Odds and ends
 
-  * [__mark__][mark]: the separator `'`
+  * [__head__][head]: the start of a [score][score] term `++*`
+  * [__mid__][mid]: the [track][track] and [stage][stage] separator term `+++`
+  * [__tail__][tail]: the end of a [score][score] term `*++`
+  * [__mark__][mark]: the term `'`
 
 [gloss]: #gloss
 
@@ -108,6 +112,7 @@ Odds and ends
 [form]: #form
 
 [score]: #score
+[stage]: #stage
 [track]: #track
 [round]: #round
 [bar]: #bar
@@ -161,7 +166,10 @@ Odds and ends
 
 [nib]: #nib
 
-[mark]: #mark
+  [head]: #head
+  [mid]: #mid
+  [tail]: #tail
+  [mark]: #mark
 
 ***
 
@@ -303,7 +311,11 @@ A [form][form] is a structural element of a composition and how such elements co
 
 ## Score
 
-A [score][score] is an entire composition in Counternote.
+A [score][score] is an entire composition in Counternote. It is enclosed in the [head][head] `++*` and the [tail][tail] `*++` terms. 
+
+## Stage
+
+A [stage][stage] contains details on entire [scores] and individual [tracks]. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` terms. The [track][track] [stage][stage] is between [mid][mid] `+++` terms.
 
 ## Track
 
@@ -644,24 +656,24 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
     ——————————————————————————————————————————————————————————————————————————————————————
       CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————————
-        E    022100   avaeva  tWavaeva     təˌwa.vaˈje.va     tuh-Wah-vah-YEH-vah
-                      avaeva  tEavaeva   təˌʔe.ja.vaˈje.va   tuh-Eh-yah-vah-YEH-vah
-        A    x02220   avaev    sJavaev     səˌdʒa.vaˈjev        suh-Jah-vah-YEHV
-                      avaev    sMavaev      səˌma.vaˈjev        suh-Mah-vah-YEHV
-       A/E   002220   vavaev  sJvavaev    səˌdʒə.va.vaˈjev    suh-Juh-vah-vah-YEHV
-                      vavaev  sMvavaev     səˌmə.va.vaˈjev    suh-Muh-vah-vah-YEHV
-        D    xx0232    avae    sBavae       səˈba.vaˌje         suh-BAH-vah-Yeh
-                       avae    sUavae      sə.ʔuˈja.vaˌje      suh-oo-YAH-vah-Yeh
-       D/F♯  200232   evavae  tBevavae     tə.beˈva.vaˌje      tuh-beh-VAH-vah-Yeh
-                      evavae  tUevavae   təˌʔu.jeˈva.vaˌje   tuh-Oo-yeh-VAH-vah-Yeh
-        G    320033   aevava  sYaevava     səˌja.jeˈva.va      suh-Yah-yeh-VAH-vah
-                      aevava  sVaevava     səˌva.jeˈva.va      suh-Vah-yeh-VAH-vah
-        G    320003   aevaea  sYaevaea   səˌja.jeˈva.jeˌja   suh-Yah-yeh-VAH-yeh-Yah
-                      aevaea  sVaevaea   səˌva.jeˈva.jeˌja   suh-Vah-yeh-VAH-yeh-Yah
-        C    x32010    aevae   sDaevae     sə.daˈje.vaˌje      suh-dah-YEH-vah-Yeh
-                       aevae   sAaevae   səˌʔa.jaˈje.vaˌje   suh-Ah-yah-YEH-vah-Yeh
-       C/G   332010   vaevae  sDvaevae   səˌdə.vaˈje.vaˌje   suh-Duh-vah-YEH-vah-Yeh
-                      vaevae  sAvaevae   səˌʔa.vaˈje.vaˌje   suh-Ah-vah-YEH-vah-Yeh
+        E    022100   avaeva  tWavaeva     təˌwɑ.vɑˈje.vɑ     tuh-Wah-vah-YEH-vah
+                      avaeva  tEavaeva   təˌʔe.jɑ.vɑˈje.vɑ   tuh-Eh-yah-vah-YEH-vah
+        A    x02220   avaev    sJavaev     səˌdʒa.vɑˈjev        suh-Jah-vah-YEHV
+                      avaev    sMavaev      səˌma.vɑˈjev        suh-Mah-vah-YEHV
+       A/E   002220   vavaev  sJvavaev    səˌdʒə.vɑ.vɑˈjev    suh-Juh-vah-vah-YEHV
+                      vavaev  sMvavaev     səˌmə.vɑ.vɑˈjev    suh-Muh-vah-vah-YEHV
+        D    xx0232    avae    sBavae       səˈbɑ.vɑˌje         suh-BAH-vah-Yeh
+                       avae    sUavae      sə.ʔuˈjɑ.vɑˌje      suh-oo-YAH-vah-Yeh
+       D/F♯  200232   evavae  tBevavae     tə.beˈvɑ.vɑˌje      tuh-beh-VAH-vah-Yeh
+                      evavae  tUevavae   təˌʔu.jeˈvɑ.vɑˌje   tuh-Oo-yeh-VAH-vah-Yeh
+        G    320033   aevava  sYaevava     səˌja.jeˈvɑ.vɑ      suh-Yah-yeh-VAH-vah
+                      aevava  sVaevava     səˌvɑ.jeˈvɑ.vɑ      suh-Vah-yeh-VAH-vah
+        G    320003   aevaea  sYaevaea   səˌjɑ.jeˈvɑ.jeˌjɑ   suh-Yah-yeh-VAH-yeh-Yah
+                      aevaea  sVaevaea   səˌvɑ.jeˈvɑ.jeˌjɑ   suh-Vah-yeh-VAH-yeh-Yah
+        C    x32010    aevae   sDaevae     sə.dɑˈje.vɑˌje      suh-dah-YEH-vah-Yeh
+                       aevae   sAaevae   səˌʔɑ.jɑˈje.vɑˌje   suh-Ah-yah-YEH-vah-Yeh
+       C/G   332010   vaevae  sDvaevae   səˌdə.vɑˈje.vɑˌje   suh-Duh-vah-YEH-vah-Yeh
+                      vaevae  sAvaevae   səˌʔɑ.vɑˈje.vɑˌje   suh-Ah-vah-YEH-vah-Yeh
     ——————————————————————————————————————————————————————————————————————————————————————
 
 ***
@@ -750,6 +762,18 @@ A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t
 
 A [nib][nib] is the odd end that fits in the odds and ends.
 
+### Head
+
+A [head][head] is the term `++*` that opens a Counternote document.
+
+### Mid
+
+A [mid][mid] is the term `+++` that separates [tracks][track] and [stages][stage].
+
+### Tail
+
+A [tail][tail] is the term `*++` that closes a Counternote document. All other input will be ignored.
+
 ### Mark
 
-A [mark][mark] is a 'single straight quote' or 'hashmark' `'` in Counternote. It serves as a separator.
+A [mark][mark] is a single straight quote `'`. It serves as a separator.
