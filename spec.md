@@ -81,10 +81,10 @@ Toward a deeper understanding
 
 * [__clock__][clock]: a [scheme][schemes] for visualization the relationships between [tones][tone] or [spans][span]
   * [__hue clock__][hue clock]: [tones][tone] and [spans][span] arranged in chromatic order
-  * [__shade clock__][shade clock]: [tones][tone] and [spans][span] arranged in harmonic order
-  * [__shade__][shade]: a measure of relative brightness or darkness
-  * [__bright__][bright]: a harmonic relationship evoking a sense of opening up
-  * [__dark__][dark]: a harmonic relationship evoking a sense of settling down
+  * [__lux clock__][lux clock]: [tones][tone] and [spans][span] arranged in harmonic order
+  * [__lux__][lux]: a measure of relative brightness or darkness
+  * [__bright lux__][bright lux]: a harmonic relationship evoking a sense of opening up
+  * [__dark lux__][dark lux]: a harmonic relationship evoking a sense of settling down
   * [__blend__][blend]: a consonant sounding interval
   * [__mood__][mood]: a major/minor sounding interval
   * [__rub__][rub]: a dissonant sounding interval
@@ -162,10 +162,10 @@ Odds and ends
 
 [clock]: #clock
   [hue clock]: #hue-clock
-  [shade clock]: #shade-clock
-  [shade]: #shade
-  [bright]: #bright
-  [dark]: #dark
+  [lux clock]: #lux-clock
+  [lux]: #lux
+  [bright lux]: #bright-lux
+  [dark lux]: #dark-lux
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
@@ -761,8 +761,8 @@ A [clock][clock] is a [scheme][schemes] for visualizing the relationships betwee
 The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic sequence around a clockface so that stepping clockwise goes up a [notch][notch] and counterclockwise goes down a [notch][notch].
 
     ————————————————————————————————————————————————
-                                             notch
-                         1                    diff
+                                             NOTCH
+                         1                    DIFF
                7        -a        ♭2            0
                  -s  ===||===  -r              ±1
          ♭7             ||              2
@@ -777,16 +777,17 @@ The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic se
                  -v  ===||===  -i              ±5
                5        -t        4            +6
                       ♯4/♭5
+             BREAK ↑ 
     ————————————————————————————————————————————————
 
-### Shade Clock
+### Lux Clock
 
-Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 with 11) makes the [shade][shade] [clock][clock] with all of the [spans][span] written in harmonic sequence around the clockface. All of the [bright][bright] [shades][shade] are on the right and all of the [dark][dark] [shades][shade] are on the left. The [blends][blend], [moods][mood], and [rubs][rub] slice the [shade][shade] [clock][clock] horizontally into three sections. 
+Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 with 11) makes the [lux clock][lux clock] with all of the [spans][span] written in harmonic sequence around the clockface. All of the [bright luxes][bright lux] are on the right and all of the [dark luxes][dark lux] are on the left. The [blends][blend], [moods][mood], and [rubs][rub] slice the [lux clock][lux clock] horizontally into three sections. 
 
     —————————————————————————————————————————————————
-       |-----DARK-----|    |----BRIGHT----|  SHADE   
+       |-----DARK-----|    |----BRIGHT----|   LUX   
                          1
-                4       -a        5          BLENDS
+                4       -a        5         BLENDS
                   -i  ==||==  -v               |
           ♭7            ||             2       |
              -n  =======||=======  -u        —————
@@ -802,17 +803,17 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
                       ♭5/♯4                  —————
     —————————————————————————————————————————————————
 
-### Shade
+### Lux
 
-A [shade][shade] is a measure of how [bright][bright] or [dark][dark] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
+A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
 
-### Bright
+### Bright Lux
 
-A [bright][bright] [shade][shade] is a harmonic relationship that evokes a sense of opening up, turning outward. It includes all major (large) intervals plus the (larger) perfect fifth.
+A [bright lux][bright lux] is a harmonic relationship that evokes a sense of opening up, turning outward. It includes all major (large) intervals plus the (larger) perfect fifth.
 
-### Dark
+### Dark Lux
 
-A [dark][dark] [shade][shade] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
+A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
 ### Blend
 
