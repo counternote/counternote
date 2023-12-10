@@ -357,49 +357,51 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 # Forms
 
-[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
+[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach using [tones][tone]:
 
-    ++*
-    SCORE: Lute Suite in E Minor BWV 996
-    SCRIBE: Bach
-    +++
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb 
-    +++
-    # Wov |4.| @allegretto
+    ————————————————————————————————————————————
+      ++*
+      SCORE: Lute Suite in E Minor BWV 996
+      SCRIBE: Bach
+      +++
+      TRACK: Bourrée
+      VOICES:
+        f: fingers
+        t: thumb 
+      +++
+      # Wov |4.| @allegretto
 
-    A
-      0
-        f| -               .       wa, ka, |
-        t| -               .       yu, ku, |
-      1
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
-      2
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
-      3
-        f| za.     jo, yo, ko.     yo, jo, |
-        t| yu.     ju.     zo.     ju,     |
-      4
-        f| za, jo, yo, ko, wo.     wa, ka, |
-        t| yu.     zo.     wu, ku, yu, ku, |
-      5
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
-      6
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
-      7
-        f| za.     ja, ya, ka^^y.  ,   ya, |
-        t| yu.     do.     bo.     bo.     |
-      8
-        f| tYeva-          .       __      |
-        t| yu-             .       %A @B   |
+      A
+        0
+          f| -               .       wa, ka, |
+          t| -               .       yu, ku, |
+        1
+          f| ya.     ka, wa, pa.     wa, ka, |
+          t| wu.     ju.     zo.     ju.     |
+        2
+          f| za.     fa, pa, wa.     ba, da, |
+          t| yu.     ku.     wu.     ku.     |
+        3
+          f| za.     jo, yo, ko.     yo, jo, |
+          t| yu.     ju.     zo.     ju,     |
+        4
+          f| za, jo, yo, ko, wo.     wa, ka, |
+          t| yu.     zo.     wu, ku, yu, ku, |
+        5
+          f| ya.     ka, wa, pa.     wa, ka, |
+          t| wu.     ju.     zo.     ju.     |
+        6
+          f| za.     fa, pa, wa.     ba, da, |
+          t| yu.     ku.     wu.     ku.     |
+        7
+          f| za.     ja, ya, ka^^y.  ,   ya, |
+          t| yu.     do.     bo.     bo.     |
+        8
+          f| tYeva-          .       __      |
+          t| yu-             .       %A @B   |
 
-    *++
+      *++
+    ————————————————————————————————————————————
 
 ## Score
 
@@ -592,6 +594,55 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 ## Span
 
 A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `ta` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
+
+In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][note]. However, there is another way to write it using [spans][spans]:
+
+    ————————————————————————————————————————————
+      ++*
+      SCORE: Lute Suite in E Minor BWV 996
+      SCRIBE: Bach
+      SPAN: wa
+      +++
+      TRACK: Bourrée
+      VOICES:
+        f: fingers
+        t: thumb 
+      +++
+      # Aov |4.| @allegretto
+
+      A
+        0
+          f| -               .       ha, hu, |
+          t| -               .       so, su, |
+        1
+          f| ho.     hu, ha, hs.     ha, hu, |
+          t| sa.     si.     tv.     si.     |
+        2
+          f| hv.     hm, hs, ha.     hn, hl, |
+          t| so.     su.     sa.     su.     |
+        3
+          f| hv.     ti, to, tu.     to, ti, |
+          t| so.     si.     tv.     si,     |
+        4
+          f| hv, ti, to, tu, ta.     ha, hu, |
+          t| so.     tv.     sa, su, so, su, |
+        5
+          f| ho.     hu, ha, hs.     ha, hu, |
+          t| sa.     si.     tv.     si.     |
+        6
+          f| hv.     hm, hs, ha.     hn, hl, |
+          t| so.     su.     sa.     su.     |
+        7
+          f| hv.     hi, ho, hu^^o.  ,   ho, |
+          t| so.     tl.     tn.     tn.     |
+        8
+          f| tOeva-          .       __      |
+          t| so-             .       %A @B   |
+
+      *++
+    ————————————————————————————————————————————
+
+These complementary ways of looking music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center tailored for that instrument.
 
 ### Span Start
 
@@ -880,6 +931,29 @@ A [lick][lick] is quick run of [sounds][sound], often repeated. It is an [art][a
 ### Trill
 
 A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
+
+## Drift
+
+A [drift][drift] is a microtonal adjustment. These can be adjusted globally or inline. They are just like the [span rhymes][span rhyme] added to whole [spans][span] or [tones][tone].
+
+    ————————————
+      -t  +50
+      -i  +42
+      -e  +33
+      -o  +25
+      -u  +17
+      -r  +8
+      -a  ±0
+      -x  -8
+      -n  -17
+      -m  -25
+      -l  -33
+      -v  -42
+    ————————————
+
+`da/hut` is a whole step and a quarter bend. `dat` is a C half-sharp.
+
+Like with [weaves][weaves], there are rules for pronounciation. Guide coming soon.
 
 ## Line
 
