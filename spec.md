@@ -54,7 +54,7 @@ Acoustic vibrations held in time
 * [__root__][root]: the starting point for a [span][span] and the like
 * [__key__][key]: the starting point for a [track][track]
 * [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
-* [__hold__][hold]: the duration of a [note][note]
+* [__hold__][hold]: the duration of a [note][notes]
 * [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sound]
   * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
@@ -70,16 +70,16 @@ Acoustic vibrations held in time
 
 Manifold acoustic vibrations
 
-* [__thread__][thread]: a single [voice][voice] within a [knit][knit]
-* [__chord__][chord]: a [knit][knit] constructed using [tones][tone] as a starting point
-* [__braid__][braid]: a [knit][knit] constucted using [spans][span] as a starting point to make “metachords”
+* [__thread__][thread]: a single [voice][voice] within a [knit][knits]
+* [__chord__][chord]: a [knit][knits] constructed using [tones][tone] as a starting point
+* [__braid__][braid]: a [knit][knits] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
 ### [SCHEMES][schemes]
 
 Toward a deeper understanding
 
-* [__clock__][clock]: a [scheme][scheme] for visualization the relationships between [tones][tone] or [spans][span]
+* [__clock__][clock]: a [scheme][schemes] for visualization the relationships between [tones][tone] or [spans][span]
   * [__hue clock__][hue clock]: [tones][tone] and [spans][span] arranged in chromatic order
   * [__shade clock__][shade clock]: [tones][tone] and [spans][span] arranged in harmonic order
   * [__shade__][shade]: a measure of relative brightness or darkness
@@ -181,7 +181,7 @@ Odds and ends
 
 # Bases
 
-A [base][base] is a foundational element for learning and understanding Counternote.
+[Bases][bases] are a foundational element for learning and understanding Counternote.
 
 ## Term
 
@@ -311,7 +311,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 # Forms
 
-A [form][form] is a structural element of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
+[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
     ++*
     SCORE: Lute Suite in E Minor BWV 996
@@ -419,7 +419,7 @@ A [jump][jump] is a directive on what part to play next.
 
 # Notes
 
-A [note][note] is a [sound][sound] for a [hold][hold].
+[Notes][notes] are [sounds][sound] for a [hold][hold].
 
 ## Sound
 
@@ -657,11 +657,11 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
 
 # Knits
 
-A [knit][knit] is a collection of notes occuring simultaneously. While such can be achieved with [stops][stop], it quickly gets unruly and hard to read. [Knits][knit] come in three varieties: [chords][chord], [braids][braid], and [weaves][weave].
+[Knits][knits] are collections of notes occuring simultaneously. While such can be achieved with [stops][stop], it quickly gets unruly and hard to read. [Knits][knits] come in three varieties: [chords][chord], [braids][braid], and [weaves][weave].
 
 ## Thread
 
-A [thread][thread] is a single [voice][voice] within a [knit][knit]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation:
+A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation:
 
     ——————————————————————————————
       V:  a,r,u,o,e,i
@@ -687,7 +687,7 @@ The [blends][blend] that are vowels always get the patalal glide [j] starting th
 
 ## Chord
 
-A [chord][chord] is a [knit][knit] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices.
+A [chord][chord] is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices.
 
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
@@ -750,11 +750,11 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Schemes
 
-A [scheme][scheme] is an informational diagram to help learn and understand Counternote and the underlying music theory.
+[Schemes][schemes] are informational diagrams to help learn and understand Counternote and the underlying music theory.
 
 ## Clock
 
-A [clock][clock] is a [scheme][scheme] for visualizing the relationships between [tones][tone] or [spans][span]. Since there are twelve equal [tones][tone], only the [spans][span] as [span rhymes][span rhyme] are demonstrated here.
+A [clock][clock] is a [scheme][schemes] for visualizing the relationships between [tones][tone] or [spans][span]. Since there are twelve equal [tones][tone], only the [spans][span] as [span rhymes][span rhyme] are demonstrated here.
 
 ### Hue Clock
 
@@ -830,7 +830,7 @@ A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t
 
 # Nibs
 
-A [nib][nib] is the odd end that fits in the odds and ends.
+[Nibs][nibs] are the odd ends that fit in the odds and ends.
 
 ### Head
 
