@@ -85,11 +85,17 @@ Manifold acoustic vibrations
 
 Composer directives
 
+* [__comp__][comp]: an accompaniment
+  * [__vamp__][vamp]: a [comp][comp] with rhythm and/or voicings
+* [__tweak__][tweak]: an instruction on effects
 * [__art__][art]: an inline cue
   * [__smooth__][smooth]: a legato line
   * [__ring__][ring]: a sustained line
+  * [__glide__][glide]: a smooth change in [pitch][pitch] of a [sound][sound]
+  * [__slide__][slide]: a stepped change in [pitch][pitch] of a [sound][sound]
   * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sound]
   * [__grace__][grace]: a quick [sound][sound] before another
+  * [__lick__][lick]: a quick run of [sounds][sound]
   * [__trill__][trill]: a quick alternating between [sounds][sound]
 
 ### [SCHEMES][schemes]
@@ -182,11 +188,17 @@ Odds and ends
 
 [cues]: #cues
 
+[comp]: #comp
+  [vamp]: #vamp
+[tweak]: #tweak
 [art]: #art
   [smooth]: #smooth
   [ring]: #ring
+  [glide]: #glide
+  [slide]: #slide
   [vibe]: #vibe
   [grace]: #grace
+  [lick]: #lick
   [trill]: #trill
 
 [schemes]: #schemes
@@ -803,6 +815,18 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 [Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four [beats][beats] `|4.|`, all at an allegretto [click][click].
 
+## Comp
+
+A [comp][comp] is a minimally specified accompaniment and harmonic background written within the [bar][bar].
+
+### Vamp
+
+A [vamp][vamp] is a [comp][comp] that specifies rhythm and/or voicings.
+
+## Tweak
+ 
+A [tweak][tweak] is an instruction on effects that occur above the [voices][voice] they modify.
+
 ## Art
 
 An [art][art] is an inline [cue][cue] each of which are denoted by special [glyphs][glyph] and rules.
@@ -815,22 +839,35 @@ A [smooth][smooth] line is legato, which is to be determined by each instrument.
 
 A [ring][ring] line shows [sounds][sound] sustaining over other [sounds][sound]. Such lines begin with the [sound][sound] with or without any [hold][hold] followed by curly brackets `{` `}` with the simultaneous [sounds][sound] notated bewteen them. The [hold][hold] lasts as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
 
+    ————————————————————————————————————————————————————
       7
         f| za.     ja, ya, ka^^y.  ,   ya, |
-        t| yu.     do.     bo.     bo.     |
-
+        t| yu.     do.     bo.     bo.     |      
       7
         | yu{za.} do{ja, ya,} bo{ka^^y.} bo{aa, ya,} |
+    ————————————————————————————————————————————————————
 
 For [sounds][sound] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
 
+### Glide
+
+A [glide][glide] is the smooth changing of a [sound][sound] to a different [pitch][pitch], like a bend. `/` is for changing a [sound][sound] up, `\` for changing a [sound][sound] down.
+
+### Slide
+
+A [slide][slide] is the stepped changing of [sound][sound] to a different [pitch][pitch] like a fret slide. `//` is for changing a [sound][sound] up, `\\` for changing a [sound][sound] down.
+
 ### Vibe
 
-A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sound]. It is an [art][art] denoted by the [vibe][vibe] [glyph][glyph] `~`.
+A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sound]. It is an [art][art] denoted by the [glyph][glyph] `~`.
 
 ### Grace
 
-A [grace][grace] is the quick articulation of one [sound][sound] before another. It is an [art][art] denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [grace][grace] [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+A [grace][grace] is the quick articulation of one [sound][sound] before another. It is an [art][art] denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+
+### Lick
+
+A [lick][lick] is quick run of [sounds][sound], often repeated. It is an [art][art] denoted with a starting [tone][tone] or [span][span] followed by a sequence of the [tone starts][tone start] or [span rhymes][span rhyme] separated by [grace][grace], [glide][glide], or [slide][slide] in the order they are articulated, finishing on a [tone][tone] or [span][span] or returning to the starting [tone][tone] or [span][span] if none are specified.
 
 ### Trill
 
