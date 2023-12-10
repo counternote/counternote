@@ -71,15 +71,17 @@ Manifold acoustic vibrations
 * [__braid__][braid]: a [knit][knits] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
-[__CUES__][cues]:
+### [CUES][cues]:
 
 Composer directives
 
 * [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
 * [__groove__][groove]: the arrangement of beats in a [bar][bar]
 * [__click__][click]: the tempo
-* [__grace__][grace]: a quick [sound][sound] before another
-* [__trill__][trill]: a quick alternating between [sounds][sound]
+* [__art__][art]: an inline cue
+  * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sound]
+  * [__grace__][grace]: a quick [sound][sound] before another
+  * [__trill__][trill]: a quick alternating between [sounds][sound]
 
 ### [SCHEMES][schemes]
 
@@ -165,8 +167,10 @@ Odds and ends
 [key]: #key
 [groove]: #groove
 [click]: #click
-[grace]: #grace
-[trill]: #trill
+[art]: #art
+  [vibe]: #vibe
+  [grace]: #grace
+  [trill]: #trill
 
 [schemes]: #schemes
 
@@ -757,13 +761,21 @@ A [groove][groove] tells the arrangement of beats in a [bar][bar].
 
 A [click][click] gives the tempo.
 
-## Grace
+## Art
 
-A [grace][grace] is the quick articulation of one [sound][sound] before another. It is denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [grace][grace] [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+An [art][art] is an inline [cue][cue]. 
 
-## Trill
+### Vibe
 
-A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
+A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sound]. It is an [art][art] denoted by the [vibe][vibe] [glyph][glyph] `~`.
+
+### Grace
+
+A [grace][grace] is the quick articulation of one [sound][sound] before another. It is an [art][art] denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [grace][grace] [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+
+### Trill
+
+A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
 
 ***
 
