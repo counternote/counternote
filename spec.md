@@ -112,7 +112,7 @@ Toward a deeper understanding
   * [__blend__][blend]: a consonant sounding interval
   * [__mood__][mood]: a major/minor sounding interval
   * [__rub__][rub]: a dissonant sounding interval
-* [__tap__][tap]: [words][word] for vocalizing rhythms and [grooves][groove]
+* [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
 ### [NIBS][nibs]
 
