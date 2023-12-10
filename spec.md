@@ -1,5 +1,5 @@
-
 ***
+
 # Counternote Specification version 0.8.1
 
 This is a terse description of Counternote with minimal definitions and examples. Musical ideas not expressed here are likely already done, at least aspirationally, just not written here.
@@ -30,10 +30,6 @@ Structural elements of Counternote
 * [__stage__][stage]: a place for compositional and instrumental details
   * [__scribe__][scribe]: a composer of the [score][score]
 * [__track__][track]: an individual piece within a [score][score]
-  * [__cue__][cue]: a composer directive
-  * [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
-  * [__groove__][groove]: the arrangement of beats in a [bar][bar]
-  * [__click__][click]: the tempo
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
@@ -74,6 +70,16 @@ Manifold acoustic vibrations
 * [__chord__][chord]: a [knit][knits] constructed using [tones][tone] as a starting point
 * [__braid__][braid]: a [knit][knits] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
+
+[__CUES__][cues]:
+
+Composer directives
+
+* [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
+* [__groove__][groove]: the arrangement of beats in a [bar][bar]
+* [__click__][click]: the tempo
+* [__grace__][grace]: a quick [sound][sound] before another
+* [__trill__][trill]: a quick alternating between [sounds][sound]
 
 ### [SCHEMES][schemes]
 
@@ -116,10 +122,6 @@ Odds and ends
 [stage]: #stage
   [scribe]: #scribe
 [track]: #track
-  [cue]: #cue
-  [key]: #key
-  [groove]: #groove
-  [click]: #click
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -157,6 +159,14 @@ Odds and ends
 [chord]: #chord
 [braid]: #braid
 [weave]: #weave
+
+[cues]: #cues
+
+[key]: #key
+[groove]: #groove
+[click]: #click
+[grace]: #grace
+[trill]: #trill
 
 [schemes]: #schemes
 
@@ -347,7 +357,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
         f| za.     fa, pa, wa.     ba, da, |
         t| yu.     ku.     wu.     ku.     |
       7
-        f| za.     ja, ya, ka^y.   ,   ya, |
+        f| za.     ja, ya, ka^^y.  ,   ya, |
         t| yu.     do.     bo.     bo.     |
       8
         f| tYeva-          .       *       |
@@ -370,22 +380,6 @@ A [scribe][scribe] is a composer of a [score][score] or [track][track].
 ## Track
 
 A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with mid `+++` signs.
-
-## Cue
-
-A [cue][cue] is a composer directive, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
-
-### Key
-
-A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track].
-
-### Groove
-
-A [groove][groove] tells the arrangement of beats in a [bar][bar].
-
-### Click
-
-A [click][click] gives the tempo.
 
 ## Round
 
@@ -745,6 +739,31 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
        C/G   332010   vaevae  sDvaevae   səˌdə.vɑˈje.vɑˌje   suh-Duh-vah-YEH-vah-Yeh
                       vaevae  sAvaevae   səˌʔɑ.vɑˈje.vɑˌje   suh-Ah-vah-YEH-vah-Yeh
     ——————————————————————————————————————————————————————————————————————————————————————
+***
+
+# Cues
+
+[Cues][cues] are composer directive, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
+
+## Key
+
+A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track].
+
+## Groove
+
+A [groove][groove] tells the arrangement of beats in a [bar][bar].
+
+## Click
+
+A [click][click] gives the tempo.
+
+## Grace
+
+A [grace][grace] is the quick articulation of one [sound][sound] before another. It is denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [grace][grace] [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+
+## Trill
+
+A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
 
 ***
 
