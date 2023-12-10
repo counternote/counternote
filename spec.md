@@ -224,7 +224,7 @@ All [glyphs][glyph] are presented here in `monospace`.
 
 ## Word
 
-A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da`.
+A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da` or the [hold][hold] `qo` (`.`).
 
 ## Sign
 
