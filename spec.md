@@ -10,7 +10,7 @@ This is a terse description of Counternote with minimal definitions and examples
 
 This [gloss][gloss] serves as a glossary and table of contents for all things Counternote.
 
-### [BASE][base]
+### [BASES][bases]
 
 Foundational elements
 
@@ -22,16 +22,12 @@ Foundational elements
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
 
-### [STAGE][stage]
-
-Compositional and instrumental details
-
 ### [FORM][form]
 
 Structural elements of Counternote
 
 * [__score__][score]: an entire composition
-* [__stage__][stage]: metadata for [scores][score] and [tracks][track]
+* [__stage__][stage]: a place for compositional and instrumental details
   * [__scribe__][scribe]: a composer of the [score][score]
 * [__track__][track]: an individual piece within a [score][score]
   * [__cue__][cue]: a composer directive
@@ -68,7 +64,7 @@ Acoustic vibrations held in time
 * [__rap__][rap]: a [word][word] indicating a [sound][sound] where [pitch][pitch] is indeterminate or incidental
 * [__tie__][tie]: a [sound][sound] from a previous [bar][bar] is still being held
 * [__breath__][breath]: a breath of fresh quiet
-* [__stop__][stop]: two [sounds][sound] occuring at the same time.
+* [__stop__][stop]: two [sounds][sound] occuring at the same time
 
 ### [KNIT][knit]
 
@@ -113,8 +109,6 @@ Odds and ends
 [phone]: #phone
   [start]: #start
   [rhyme]: #rhyme
-
-[stage]: #stage
 
 [form]: #form
 
@@ -315,12 +309,6 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ***
 
-# Stage
-
-A [stage][stage] holds compositional and instrumental details such as title, author, instrument voices and tunings, and the like.
-
-***
-
 # Form
 
 A [form][form] is a structural element of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
@@ -373,7 +361,7 @@ A [score][score] is an entire composition in Counternote. It is enclosed in the 
 
 ## Stage
 
-A [stage][stage] contains details on entire [scores] and individual [tracks]. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
+A [stage][stage] holds compositional and instrumental details on entire [scores] and individual [tracks] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
 
 ### Scribe
 
