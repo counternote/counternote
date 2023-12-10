@@ -593,7 +593,7 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 
 ## Span
 
-A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `ta` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
+A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root] or [key][key]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
 
 In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][note]. However, there is another way to write it using [spans][spans]:
 
@@ -601,7 +601,7 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
       ++*
       SCORE: Lute Suite in E Minor BWV 996
       SCRIBE: Bach
-      SPAN: wa
+      KEY: wa
       +++
       TRACK: Bourrée
       VOICES:
