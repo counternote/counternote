@@ -71,7 +71,7 @@ Manifold acoustic vibrations
 * [__braid__][braid]: a [knit][knits] constucted using [spans][span] as a starting point to make “metachords”
 * [__weave__][weave]: a [chord][chord] or [braid][braid] with the exact voicing
 
-### [CUES][cues]:
+### [CUES][cues]
 
 Composer directives
 
@@ -364,7 +364,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
         f| za.     ja, ya, ka^^y.  ,   ya, |
         t| yu.     do.     bo.     bo.     |
       8
-        f| tYeva-          .       *       |
+        f| tYeva-          .       __      |
         t| yu-             .       %A @B   |
 
     *++
@@ -747,7 +747,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directive, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four beats `|4.|`, all at an allegretto [click][click].
 
 ## Key
 
@@ -763,7 +763,23 @@ A [click][click] gives the tempo.
 
 ## Art
 
-An [art][art] is an inline [cue][cue]. 
+An [art][art] is an inline [cue][cue] each of which are denoted by special [glyphs][glyph] and rules.
+
+### Smooth
+
+A [smooth][smooth] line is legato, which is to be determined by each instrument. Such lines are bracketed by parentheses `(` `)`.
+
+### Ring
+
+A [ring][ring] line shows [sounds][sound] sustaining over other [sounds][sound]. Such lines begin with the [sound][sound] with or without any [hold][hold] followed by curly brackets `{` `}` with the simultaneous [sounds][sound] notated bewteen them. The [hold][hold] lasts as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
+
+      7
+        f| za.     ja, ya, ka^^y.  ,   ya, |
+        t| yu.     do.     bo.     bo.     |
+
+      7
+        | yu{za.} do{ja, ya,} bo{ka^^y.} bo{aa, ya,} |
+        
 
 ### Vibe
 
