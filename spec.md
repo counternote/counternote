@@ -79,6 +79,8 @@ Composer directives
 * [__groove__][groove]: the arrangement of beats in a [bar][bar]
 * [__click__][click]: the tempo
 * [__art__][art]: an inline cue
+  * [__smooth__][smooth]: a legato line
+  * [__ring__][ring]: a sustained line
   * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sound]
   * [__grace__][grace]: a quick [sound][sound] before another
   * [__trill__][trill]: a quick alternating between [sounds][sound]
@@ -96,6 +98,7 @@ Toward a deeper understanding
   * [__blend__][blend]: a consonant sounding interval
   * [__mood__][mood]: a major/minor sounding interval
   * [__rub__][rub]: a dissonant sounding interval
+* [__tap__][tap]: [words][word] for vocalizing rhythms and [grooves][groove]
 
 ### [NIBS][nibs]
 
@@ -168,6 +171,8 @@ Odds and ends
 [groove]: #groove
 [click]: #click
 [art]: #art
+  [smooth]: #smooth
+  [ring]: #ring
   [vibe]: #vibe
   [grace]: #grace
   [trill]: #trill
@@ -183,6 +188,7 @@ Odds and ends
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
+[tap]: #tap
 
 [nibs]: #nibs
 
@@ -779,7 +785,8 @@ A [ring][ring] line shows [sounds][sound] sustaining over other [sounds][sound].
 
       7
         | yu{za.} do{ja, ya,} bo{ka^^y.} bo{aa, ya,} |
-        
+
+For [sounds][sound] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
 
 ### Vibe
 
@@ -810,19 +817,19 @@ The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic se
     ————————————————————————————————————————————————
                                              NOTCH
                          1                    DIFF
-               7        -a        ♭2            0
-                 -s  ===||===  -r              ±1
+               7        ha        ♭2            0
+                 hs  ===||===  hr              ±1
          ♭7             ||              2
-            -n  ========||========  -u         ±2
+            hn  ========||========  hu         ±2
                         ||
                         ||
-       6  -m  ==========||==========  -o  ♭3   ±3
+       6  hm  ==========||==========  ho  ♭3   ±3
                         ||
                         ||
-            -l  ========||========  -e         ±4
+            hl  ========||========  he         ±4
          ♭6             ||              3
-                 -v  ===||===  -i              ±5
-               5        -t        4            +6
+                 hv  ===||===  hi              ±5
+               5        ht        4            +6
                       ♯4/♭5
              BREAK ↑ 
     ————————————————————————————————————————————————
@@ -873,6 +880,60 @@ A [mood][mood] is an interval that gives a major or minor quality: `-o`, `-e`, `
 ### Rub
 
 A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants. If these were colors, they’d be best used as accents due to their intensity.
+
+## Tap
+
+A [tap][tap] is a way of vocalizing the [groove][groove] as [words][word] designed to be understandable by lipreading alone. The classic Greek rhythms are as follows:
+
+    ——————————————————————————————————————————
+      |!.|  (trochee)     PO-ge       poge
+      |.!|  (iamb)        be-KO       beko
+      |!..| (dactyl)      PO-ge-de    pogede
+      |.!.| (amphibrach)  be-KO-de    bekode
+      |..!| (anapest)     be-ge-TO    begeto
+      |!!|  (spondee)     PO-KO       poko
+      |..|  (pyrrhic)     be-ge       bege
+    ————————————————————————————————————————
+
+The rules for generating these [taps][tap] are rather simple:
+* The first beat is a bilabial consonant `p` `b`
+* The even beats (off beats) are velar consonants `k` `g`
+* The rest of the beats are alveolar consonants `t` `d`
+* The accent is a voiceless consonant `p` `t` `k` paired with mid rounded `o`
+* The lax syllables are voiced consonants `b` `d` `g` paired mid unrounded `e`
+
+The lips will be rounded on the accent and will close at the beginning of the sequence. This is so that the first beat and the accent of the sequence can be seen even if not heard.
+
+For typical four-on-the-floor rhythms, we split them into two-syllable [words][word]:
+
+    ————————————————————————————————
+      |4.|  PO-ge de-ge  poge dege
+      |4.|  be-KO de-ge  beko dege
+      |4.|  be-ge TO-ge  bege toge
+      |4.|  be-ge de-KO  bege deko
+    ————————————————————————————————
+
+Now we can break these up into eigth notes using the `i` for unaccented even eights and `u` for the accented ones:
+
+    ——————————————————————————————————————————————————————
+      |8,|  PO-ni ge-ni de-ni ge-ni  poni geni deni geni
+      |8,|  be-NU ge-ni de-ni ge-ni  benu geni deni geni
+    ——————————————————————————————————————————————————————
+
+And even further into sixteenth notes using the `a` for the unaccented even sixteenths and `o` for the accented ones:
+
+    ———————————————————————————————————————————————————————————————————————————————
+      |16:|  PO-a-ni-a ge-a-ni-a de-a-ni-a ge-a-ni-a  poania geania deania geania
+      |16:|  be-O-ni-a ge-a-ni-a de-a-ni-a ge-a-ni-a  beonia geania deania geania
+      |16:|  be-a-NU-a ge-a-ni-a de-a-ni-a ge-a-ni-a  beanua geania deania geania
+      |16:|  be-a-ni-O ge-a-ni-a de-a-ni-a ge-a-ni-a  beanio geania deania geania
+    ———————————————————————————————————————————————————————————————————————————————
+
+For complex meter, we break things up into two- and three-syllable [taps][tap]:
+
+    ————————————————————————————————————————————————————————————————————
+      |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
+    ————————————————————————————————————————————————————————————————————
 
 ***
 
