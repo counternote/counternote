@@ -277,9 +277,9 @@ The standard starting consonants with their points of articulation are as follow
     ——————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
       ~~~~~~ BILABIAL ~~~~~~~~~~~~~
-       M,m      m     'm' in 'muse'
-       B,b      b     'b' in 'bow'
        P,p      p     'p' in 'pick'
+       B,b      b     'b' in 'bow'
+       M,m      m     'm' in 'muse'
       ~~~~~ LABIODENTAL ~~~~~~~~~~~
        F,f      f     'f' in 'fun'
        V,v      v     'v' in 'vibe'
@@ -293,10 +293,10 @@ The standard starting consonants with their points of articulation are as follow
       ~~~~ POSTALVEOLAR ~~~~~~~~~~~
        C,c      tʃ   'ch' in 'chip'
        J,j      dʒ    'j' in 'jam'
+       R,r     ɹ,r    'r' in 'run'
       ~~~~~~ PALATAL ~~~~~~~~~~~~~~
        X,x      ʃ    'sh' in 'ship'
        Y,y      j     'y' in 'yes'
-       R,r     ɹ,r    'r' in 'run'
       ~~~~~~~ VELAR ~~~~~~~~~~~~~~~
        K,k      k     'k' in 'kick'
        G,g      g     'g' in 'good'
@@ -367,7 +367,6 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 [Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach using [tones][tone]:
 
-    ————————————————————————————————————————————
       ++*
       SCORE: Lute Suite in E Minor BWV 996
       SCRIBE: Bach
@@ -391,7 +390,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
           t| yu.     ku.     wu.     ku.     |
         3
           f| za.     jo, yo, ko.     yo, jo, |
-          t| yu.     ju.     zo.     ju,     |
+          t| yu.     ju.     zo.     ju.     |
         4
           f| za, jo, yo, ko, wo.     wa, ka, |
           t| yu.     zo.     wu, ku, yu, ku, |
@@ -409,7 +408,6 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
           t| yu-             .       %A @B   |
 
       *++
-    ————————————————————————————————————————————
 
 ## Score
 
@@ -549,7 +547,6 @@ Those rules add up to:
 
 [Short cuts][short cut] can condense the Bourrée from above:
 
-    ————————————————————————————————————————————
       ++*
       SCORE: Lute Suite in E Minor BWV 996
       SCRIBE: Bach
@@ -573,7 +570,7 @@ Those rules add up to:
           t| yu.   ku.   wu.   ku.    |
         3
           f| za.   jo.yo ko.   yo.jo  |
-          t| yu.   ju.   zo.   ju,    |
+          t| yu.   ju.   zo.   ju.    |
         4
           f| za.jo yo.ko wo.   wa.ka  |
           t| yu.   zo.   wu.ku yu.ku  |
@@ -591,7 +588,6 @@ Those rules add up to:
           t| yu-         .      %A @B |
 
       *++
-    ————————————————————————————————————————————
 
 ### Long Cut
 
@@ -772,7 +768,6 @@ A [span][span] is an interval *and* a distinct [tone][tone] relative to some [ro
 
 In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
 
-    ————————————————————————————————————————————
       ++*
       SCORE: Lute Suite in E Minor BWV 996
       SCRIBE: Bach
@@ -787,35 +782,35 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
 
       A
         0
-          f| -               .       ha, hu, |
-          t| -               .       so, su, |
+          f| -           .     ha.hu  |
+          t| -           .     so.su  |
         1
-          f| ho.     hu, ha, hs.     ha, hu, |
-          t| sa.     si.     tv.     si.     |
+          f| ho.   hu.ha hs.   ha.hu  |
+          t| sa.   si.   tv.   si.    |
         2
-          f| hv.     hm, hs, ha.     hn, hl, |
-          t| so.     su.     sa.     su.     |
+          f| hv.   hm.hs ha.   hn.hl  |
+          t| so.   su.   sa.   su.    |
         3
-          f| hv.     ti, to, tu.     to, ti, |
-          t| so.     si.     tv.     si,     |
+          f| hv.   ti.to tu.   to.ti  |
+          t| so.   si.   tv.   si.    |
         4
-          f| hv, ti, to, tu, ta.     ha, hu, |
-          t| so.     tv.     sa, su, so, su, |
+          f| hv.ti to.tu ta.   ha.hu  |
+          t| so.   tv.   sa.su so.su  |
         5
-          f| ho.     hu, ha, hs.     ha, hu, |
-          t| sa.     si.     tv.     si.     |
+          f| ho.   hu.ha hs.   ha.hu  |
+          t| sa.   si.   tv.   si.    |
         6
-          f| hv.     hm, hs, ha.     hn, hl, |
-          t| so.     su.     sa.     su.     |
+          f| hv.   hm.hs ha.   hn.hl  |
+          t| so.   su.   sa.   su.    |
         7
-          f| hv.     hi, ho, hu^^o.  ,   ho, |
-          t| so.     tl.     tn.     tn.     |
+           | aa.aa.aa.aa aa.aa.aa.aa. | 
+          f| hv.   hi.ho hu^^o.  ,ho, |
+          t| so.   tl.   tn.   tn.    |
         8
-          f| tOeva-          .       __      |
-          t| so-             .       %A @B   |
+          f| tOeva-      .     __     |
+          t| so-         .     %A @B  |
 
       *++
-    ————————————————————————————————————————————
 
 These complementary ways of looking music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center tailored for that instrument.
 
