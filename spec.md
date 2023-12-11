@@ -2,7 +2,7 @@
 
 # Counternote Specification version 0.8.1
 
-This is a terse description of Counternote with minimal definitions and examples.
+This is a terse description of Counternote with minimal definitions and examples. It is not a guide and does not aim to be such.
 
 ***
 
