@@ -45,6 +45,8 @@ Rhythmic elements
 * [__groove__][groove]: the arrangement of [beats][beats] in a [bar][bar]
 * [__click__][click]: the tempo
 * [__cut__][cut]: a tuplet
+  * [__short cut__][short cut]: a quick [cut][cut] notation
+  * [__long cut__][long cut]: a robust [cut][cut] notation
 * [__shift__][shift]: a section of polymeter
 * [__rift__][rift]: a section of polyrhythm
 
@@ -154,6 +156,8 @@ Odds and ends
 [groove]: #groove
 [click]: #click
 [cut]: #cut
+  [short cut]: #short-cut
+  [long cut]: #long-cut
 [shift]: #shift
 [rift]: #rift
 
@@ -480,7 +484,175 @@ A [click][click] gives the tempo.
 
 ## Cut
 
-A [cut][cut] is a subdivision of the [beat][beats].
+A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [holds][hold] that do duple meter, many more can be achieved without redefining holds or changing the [click][click].
+
+### Short Cut
+
+A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
+
+* no whitespace exists between the [sounds][sound]
+* [holds][hold] act as separators of the [sounds][sound] in the [cut][cut]
+* the last [sound][sound] does *not* receive a [hold][hold]
+* the total duration of all the [holds][hold] is the duration the [cut][cut] fills
+* a [mark][mark] `'` can be used as a separator that does not add duration
+* quadruplets and sextuplets should be written as two duplets/triplets connected by a [mark][mark]
+* septuplets and longer just add [sounds][sound] and [marks][mark]
+* a [tie][tie] `aa` may be used to signal that one [sound][sound] is held
+
+Those rules add up to:
+
+    —————————————————————————————————————————
+      |4.|
+      1
+        # one beat for =
+        | da=                             |
+        # is equivalent to
+        | da-aa                           |
+      2
+        # two beats over =
+        | da=da                           |
+        # is equivalent to
+        | da-         da-                 |
+      3
+        # three beats over --
+        | da-da-da                        |
+      4
+        # four beats over --
+        | da-da'da-da                     |
+        # is equivalent to
+        | da.   da.   da.   da.           |
+      5
+        # five beats over ....
+        | da.da.da.da.da                  |
+      6
+        # six beats over ....
+        | da.da.da'da.da.da               |
+        # is equivalent to
+        | da.da.da    da.da.da            |
+      7
+        # seven beats over ....
+        | da.da.da'da'da.da.da            |
+      8
+        # eight beats over ....
+        | da.da   da.da   da.da   da.da   |
+        # is equivalent to
+        | da.da'da.da     da.da'da.da     |
+        # is equivalent to
+        | da.da.da'da'da'da.da.da         |
+        # is equivalent to
+        | da, da, da, da, da, da, da, da, |
+    —————————————————————————————————————————
+
+[Short cuts][short cut] can condense the Bourrée from above:
+
+    ————————————————————————————————————————————
+      ++*
+      SCORE: Lute Suite in E Minor BWV 996
+      SCRIBE: Bach
+      +++
+      TRACK: Bourrée
+      VOICES:
+        f: fingers
+        t: thumb 
+      +++
+      # Wov |4.| @allegretto
+
+      A
+        0
+          f| -           .     wa.ka  |
+          t| -           .     yu.ku  |
+        1
+          f| ya.   ka.wa pa.   wa.ka  |
+          t| wu.   ju.   zo.   ju.    |
+        2
+          f| za.   fa.pa wa.   ba.da  |
+          t| yu.   ku.   wu.   ku.    |
+        3
+          f| za.   jo.yo ko.   yo.jo  |
+          t| yu.   ju.   zo.   ju,    |
+        4
+          f| za.jo yo.ko wo.   wa.ka  |
+          t| yu.   zo.   wu.ku yu.ku  |
+        5
+          f| ya.   ka.wa pa.   wa.ka  |
+          t| wu.   ju.   zo.   ju.    |
+        6
+          f| za.   fa.pa wa.   ba.da  |
+          t| yu.   ku.   wu.   ku.    |
+        7
+          f| za.   ja.ya ka^^y.  ,ya, |
+          t| yu.   do.   bo.   bo.    |
+        8
+          f| tYeva-      .      __    |
+          t| yu-         .      %A @B |
+
+      *++
+    ————————————————————————————————————————————
+
+### Long Cut
+
+A [long cut][long cut] uses square brackets with [marks][mark] `'` between [sounds][sound] and [holds][hold] at the end to slice up the [bar][bar].
+
+    —————————————————————————————————
+      |4.|
+      1
+        # one beat for =
+        | da=                     |
+      2
+        # two beats over =
+        |[da'da]=                |
+        # is equivalent to
+        | da=da                   |
+      3
+        # three beats over =
+        |[da'da'da]=             |
+        # is equivalent to
+        | da-da-da                |
+      4
+        # four beats over =
+        |[da'da'da'da]=          |
+        # is equivalent to
+        |[da'da]-    [da'da]-    |
+        # and equivalent to
+        | da-da'da-da             |
+        # and equivalent to
+        | da-da       da-da       |
+    —————————————————————————————————
+
+[Long cuts][long cut] work in two places where [short cuts][short cut] cannot: nested tuplets and across multiple bars.
+
+To nest a [cut][cut], just place a [short cut][short cut] or a [long cut][long cut] where a single cut would go:
+
+    —————————————————————————————————
+      |4.|
+      1
+        # triplet in triplet over 1
+        |[da'da'[da'da'da]]=      |
+    —————————————————————————————————
+
+If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
+
+    —————————————————————————————————
+      |4.|
+      1
+        # triplet in triplet over 2
+        |[da'[da'da'da]+aa]=      |
+    —————————————————————————————————
+
+Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `aa` are used in this case as well:
+
+    —————————————————————————————————
+      |4.|
+      1
+        # triplet over...
+        |[da'da'da]=+=            |
+      2
+        # ...2 bars
+        | aa=                     |
+    —————————————————————————————————
+
+The `+` helps the performer see what how long the [cut][cut] is.
+
 
 ## Shift
 
