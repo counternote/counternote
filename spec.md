@@ -2,7 +2,7 @@
 
 # Counternote Specification version 0.8.1
 
-This is a terse description of Counternote with minimal definitions and examples. Musical ideas not expressed here are likely already done, at least aspirationally, just not written here.
+This is a terse description of Counternote with minimal definitions and examples.
 
 ***
 
