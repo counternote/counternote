@@ -1137,7 +1137,8 @@ Like with [weaves][weave], there are rules for pronounciation. Guide coming soon
 
 ## Line
 
-A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp`.
+A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp` in the [voice][voice].
+
 ***
 
 # Schemes
