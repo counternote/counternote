@@ -8,10 +8,11 @@ Counternote is an answer to a question that a lot of people have asked despite a
 
 However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music —> staff —> ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music —> Counternote).
 
-Counternote has been created as a complementary foil to the venerable staff notation, so that even the most seasoned of musicians is likely to gain a deeper understand of the craft of music by learning it.
+Counternote has been created as a complementary foil to the venerable staff notation, not a replacement. Even the most seasoned of musicians is likely to gain another perspective on music by learning it. But this is not a one way street — any relevant feedback will be considered. You can join the [Discord][dc] and suggest away.
 
 [md]:https://daringfireball.net/projects/markdown/ "John Gruber’s Markdown Spectacular"
 [abc]:https://abcnotation.com/ "ABC notation"
+[dc]:https://discord.gg/SvWfPwpxEv "Counternote server invite"
 
 # Design
 
@@ -23,6 +24,6 @@ For typeability, everything is written in the printable characters of 7-bit ASCI
 
 For singability, each note is one syllable, as are each interval distinct from the notes. The simple idea here is that music is not an abstract notion, it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronounciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
 
-For codeability, everything is written in ASCII which is easily interpretted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals and a quick way to count the notes in a tuplet. No function invocations are necessary to make a sound. The control flow is simpler than staff notation.
+For codeability, everything is written in ASCII which is easily interpretted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
 
 For shareability, everything is just a string of plaintext, easily shared via text message and read in monospace. There is no need to translate it into a human consummable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
