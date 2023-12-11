@@ -127,8 +127,6 @@ Toward a deeper understanding
 
 Odds and ends
 
-  * [__head__][head]: the start of a [score][score] term `++*`
-  * [__tail__][tail]: the end of a [score][score] term `*++`
   * [__mark__][mark]: the term `'`
 
 [gloss]: #gloss
@@ -232,8 +230,6 @@ Odds and ends
 
 [nibs]: #nibs
 
-  [head]: #head
-  [tail]: #tail
   [mark]: #mark
 
 ***
@@ -267,7 +263,7 @@ A [word][word] is connected sequence of [phones][phone] that can be spoken like 
 
 ## Sign
 
-A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the head `++*`.
+A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
 
 ## Phone
 
@@ -416,11 +412,11 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ## Score
 
-A [score][score] is an entire composition in Counternote. It is enclosed in the [head][head] `++*` and the [tail][tail] `*++` signs. When detailed in the [stage][stage], it is the title of work.
+A [score][score] is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of work.
 
 ## Stage
 
-A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the `+++` signs. The [track][track] [stage][stage] is between `+++` signs.
+A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the `++*` and `+++` [signs][sign]. The [track][track] [stage][stage] is between `+++` [signs][sign].
 
 ### Scribe
 
@@ -428,7 +424,7 @@ A [scribe][scribe] is a composer of a [score][score] or [track][track].
 
 ## Track
 
-A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with mid `+++` signs.
+A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
 
 ### Key
 
@@ -1278,14 +1274,6 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
 # Nibs
 
 [Nibs][nibs] are the odd ends that fit in the odds and ends.
-
-### Head
-
-A [head][head] is the term `++*` that opens a Counternote document.
-
-### Tail
-
-A [tail][tail] is the term `*++` that closes a Counternote document. All other input will be ignored.
 
 ### Mark
 
