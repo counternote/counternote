@@ -37,6 +37,7 @@ Structural elements
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
+* [__pit__][pit]: a place suitable for code
 
 ### [BEATS][beats]
 
@@ -123,7 +124,6 @@ Toward a deeper understanding
 Odds and ends
 
   * [__head__][head]: the start of a [score][score] term `++*`
-  * [__mid__][mid]: the [track][track] and [stage][stage] separator term `+++`
   * [__tail__][tail]: the end of a [score][score] term `*++`
   * [__mark__][mark]: the term `'`
 
@@ -152,6 +152,7 @@ Odds and ends
   [rep]: #rep
   [jump]: #jump
   [lap]: #lap
+[pit]: #pit
 
 [beats]: #beats
 
@@ -227,7 +228,6 @@ Odds and ends
 [nibs]: #nibs
 
   [head]: #head
-  [mid]: #mid
   [tail]: #tail
   [mark]: #mark
 
@@ -415,7 +415,7 @@ A [score][score] is an entire composition in Counternote. It is enclosed in the 
 
 ## Stage
 
-A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
+A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the `+++` signs. The [track][track] [stage][stage] is between `+++` signs.
 
 ### Scribe
 
@@ -452,6 +452,10 @@ A [rep][rep] is a directive to repeat a [bar][bar] or [round][round].
 ### Jump
 
 A [jump][jump] is a directive on what part to play next.
+
+## Pit
+
+A [pit][pit] holds the programmery bits. 
 
 ***
 
@@ -600,19 +604,19 @@ A [long cut][long cut] uses square brackets with [marks][mark] `'` between [soun
         | da=                     |
       2
         # two beats over =
-        |[da'da]=                |
+        |[da'da]=                 |
         # is equivalent to
         | da=da                   |
       3
         # three beats over =
-        |[da'da'da]=             |
+        |[da'da'da]=              |
         # is equivalent to
         | da-da-da                |
       4
         # four beats over =
-        |[da'da'da'da]=          |
+        |[da'da'da'da]=           |
         # is equivalent to
-        |[da'da]-    [da'da]-    |
+        |[da'da]-    [da'da]-     |
         # and equivalent to
         | da-da'da-da             |
         # and equivalent to
@@ -1272,10 +1276,6 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
 ### Head
 
 A [head][head] is the term `++*` that opens a Counternote document.
-
-### Mid
-
-A [mid][mid] is the term `+++` that separates [tracks][track] and [stages][stage].
 
 ### Tail
 
