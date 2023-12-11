@@ -822,11 +822,11 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
 
     *++
 
-These complementary ways of looking music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center tailored for that instrument.
+These complementary ways of looking at music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center set to the lowest sounding [tone][tone] on that instrument.
 
 ### Span Start
 
-The [start][start] of a [span][span] indicates the [file][file] above or below the [root][root] or [key][key].
+The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [key][key]. Middle C would typically be in the `h-` [file][file].
 
     ————————————————————
       START  FILE  IPA
