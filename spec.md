@@ -235,7 +235,7 @@ Odds and ends
 
 # Bases
 
-[Bases][bases] are a foundational element for learning and understanding Counternote.
+[Bases][bases] are foundational elements for learning and understanding Counternote.
 
 ## Term
 
@@ -1042,7 +1042,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. Above, it is followed by the [word][word] for the [key][key] of E minor `Wov`, the [groove][groove] for four [beats][beats] `|4.|`, all at an allegretto [click][click].
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée using [tones][tone] above, a [track][track]-level [cue][cue] is followed by the [chord][chord] E minor `Wov` to specify the [key][key], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [click][click].
 
 ## Comp
 
@@ -1066,15 +1066,15 @@ A [smooth][smooth] line is legato, which is to be determined by each instrument.
 
 ### Ring
 
-A [ring][ring] line shows [sounds][sound] sustaining over other [sounds][sound]. Such lines begin with the [sound][sound] with or without any [hold][hold] followed by curly brackets `{` `}` with the simultaneous [sounds][sound] notated bewteen them. The [hold][hold] lasts as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
+A [ring][ring] shows [sounds][sound] sustaining over other [sounds][sound]. These begin with the [sound][sound] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sound] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
 
-    ————————————————————————————————————————————————————
+    ————————————————————————————————————————————————
       7
-        f| za.     ja, ya, ka^^y.  ,   ya, |
-        t| yu.     do.     bo.     bo.     |      
+        f| za.   ja.ya ka^^y.  ,ya, |
+        t| yu.   do.   bo.   bo.    |      
       7
-        | yu{za.} do{ja, ya,} bo{ka^^y.} bo{aa, ya,} |
-    ————————————————————————————————————————————————————
+        | yu{za.} do{ja.ya} bo{ka^^y.} bo{aa.ya} |
+    ————————————————————————————————————————————————
 
 For [sounds][sound] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
 
