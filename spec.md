@@ -368,8 +368,10 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 [Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach using [tones][tone]:
 
+
     ++*
-    SCORE: Lute Suite in E Minor BWV 996
+    SCORE: Lute Suite in E Minor
+    WORK: BWV 996
     SCRIBE: Bach
     +++
     TRACK: Bourrée
@@ -381,32 +383,32 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
     A
       0
-        f| -               .       wa, ka, |
-        t| -               .       yu, ku, |
+        f| -           .     wa.ka  |
+        t| -           .     yu.ku  |
       1
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
+        f| ya.   ka.wa pa.   wa.ka  |
+        t| wu.   ju.   zo.   ju.    |
       2
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
+        f| za.   fa.pa wa.   ba.da  |
+        t| yu.   ku.   wu.   ku.    |
       3
-        f| za.     jo, yo, ko.     yo, jo, |
-        t| yu.     ju.     zo.     ju.     |
+        f| za.   jo.yo ko.   yo.jo  |
+        t| yu.   ju.   zo.   ju.    |
       4
-        f| za, jo, yo, ko, wo.     wa, ka, |
-        t| yu.     zo.     wu, ku, yu, ku, |
+        f| za.jo yo.ko wo.   wa.ka  |
+        t| yu.   zo.   wu.ku yu.ku  |
       5
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
+        f| ya.   ka.wa pa.   wa.ka  |
+        t| wu.   ju.   zo.   ju.    |
       6
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
+        f| za.   fa.pa wa.   ba.da  |
+        t| yu.   ku.   wu.   ku.    |
       7
-        f| za.     ja, ya, ka^^y.  ,   ya, |
-        t| yu.     do.     bo.     bo.     |
+        f| za.   ja.ya ka^^y.  ,ya, |
+        t| yu.   do.   bo.   bo.    |
       8
-        f| tYeva-          .       __      |
-        t| yu-             .       %A @B   |
+        f| tYeva-      .      __    |
+        t| yu-         .      %A @B |
 
     *++
 
@@ -596,10 +598,11 @@ Those rules add up to:
         | da, da, da, da, da, da, da, da, |
     —————————————————————————————————————————
 
-[Short cuts][short cut] can condense the Bourrée from above:
+[Short cuts][short cut] can greatly cut down on visual noise. Consider what the Bourrée above looks like using [holds][hold] on every [note][notes]:
 
     ++*
-    SCORE: Lute Suite in E Minor BWV 996
+    SCORE: Lute Suite in E Minor
+    WORK: BWV 996
     SCRIBE: Bach
     +++
     TRACK: Bourrée
@@ -611,32 +614,32 @@ Those rules add up to:
 
     A
       0
-        f| -           .     wa.ka  |
-        t| -           .     yu.ku  |
+        f| -               .       wa, ka, |
+        t| -               .       yu, ku, |
       1
-        f| ya.   ka.wa pa.   wa.ka  |
-        t| wu.   ju.   zo.   ju.    |
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
       2
-        f| za.   fa.pa wa.   ba.da  |
-        t| yu.   ku.   wu.   ku.    |
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
       3
-        f| za.   jo.yo ko.   yo.jo  |
-        t| yu.   ju.   zo.   ju.    |
+        f| za.     jo, yo, ko.     yo, jo, |
+        t| yu.     ju.     zo.     ju.     |
       4
-        f| za.jo yo.ko wo.   wa.ka  |
-        t| yu.   zo.   wu.ku yu.ku  |
+        f| za, jo, yo, ko, wo.     wa, ka, |
+        t| yu.     zo.     wu, ku, yu, ku, |
       5
-        f| ya.   ka.wa pa.   wa.ka  |
-        t| wu.   ju.   zo.   ju.    |
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
       6
-        f| za.   fa.pa wa.   ba.da  |
-        t| yu.   ku.   wu.   ku.    |
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
       7
-        f| za.   ja.ya ka^^y.  ,ya, |
-        t| yu.   do.   bo.   bo.    |
+        f| za.     ja, ya, ka^^y.  ,   ya, |
+        t| yu.     do.     bo.     bo.     |
       8
-        f| tYeva-      .      __    |
-        t| yu-         .      %A @B |
+        f| tYeva-          .       __      |
+        t| yu-             .       %A @B   |
 
     *++
 
@@ -776,7 +779,8 @@ A [span][span] is an interval *and* a distinct [tone][tone] relative to some [ro
 In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
 
     ++*
-    SCORE: Lute Suite in E Minor BWV 996
+    SCORE: Lute Suite in E Minor
+    WORK: BWV 996
     SCRIBE: Bach
     KEY: wa
     +++
