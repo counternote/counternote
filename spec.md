@@ -34,6 +34,7 @@ Structural elements
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
   * [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
+  * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
 
@@ -100,6 +101,7 @@ Composer directives
   * [__lick__][lick]: a quick run of [sounds][sound]
   * [__trill__][trill]: a quick alternating between [sounds][sound]
 * [__line__][line]: lyrics beneath the [voices][voice]
+* [__drift__][drift]: lyrics beneath the [voices][voice]
 
 ### [SCHEMES][schemes]
 
@@ -147,8 +149,9 @@ Odds and ends
 [bar]: #bar
   [voice]: #voice
   [stack]: #stack
+  [rep]: #rep
+  [jump]: #jump
   [lap]: #lap
-[jump]: #jump
 
 [beats]: #beats
 
@@ -205,6 +208,7 @@ Odds and ends
   [grace]: #grace
   [lick]: #lick
   [trill]: #trill
+[drift]: #drift
 [line]: #line
 
 [schemes]: #schemes
@@ -413,7 +417,7 @@ A [score][score] is an entire composition in Counternote. It is enclosed in the 
 
 ## Stage
 
-A [stage][stage] holds compositional and instrumental details on entire [scores] and individual [tracks] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
+A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the [head][head] `++*` and the [mid][mid] `+++` signs. The [track][track] [stage][stage] is between [mid][mid] `+++` signs.
 
 ### Scribe
 
@@ -653,7 +657,6 @@ Because tuplets are treated as a block of one duration split evenly, the total d
 
 The `+` helps the performer see what how long the [cut][cut] is.
 
-
 ## Shift
 
 A [shift][shift] is a section of polymeter.
@@ -767,7 +770,7 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 
 A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root] or [key][key]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
 
-In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][note]. However, there is another way to write it using [spans][spans]:
+In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
 
     ————————————————————————————————————————————
       ++*
@@ -1060,7 +1063,7 @@ A [tweak][tweak] is an instruction on effects that occur above the [voices][voic
 
 ## Art
 
-An [art][art] is an inline [cue][cue] each of which are denoted by special [glyphs][glyph] and rules.
+An [art][art] is an inline [cue][cues] each of which are denoted by special [glyphs][glyph] and rules.
 
 ### Smooth
 
@@ -1125,7 +1128,7 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
 
 `da/hut` is a whole step and a quarter bend. `dat` is a C half-sharp.
 
-Like with [weaves][weaves], there are rules for pronounciation. Guide coming soon.
+Like with [weaves][weave], there are rules for pronounciation. Guide coming soon.
 
 ## Line
 
