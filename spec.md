@@ -30,14 +30,26 @@ Structural elements
 * [__stage__][stage]: a place for compositional and instrumental details
   * [__scribe__][scribe]: a composer of the [score][score]
 * [__track__][track]: an individual piece within a [score][score]
+  * [__key__][key]: the home base for a [track][track]
 * [__round__][round]: a block of repeated music
 * [__bar__][bar]: details on how and what to play
-  * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sound] to be played
+  * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
   * [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
 * [__pit__][pit]: a place suitable for code
+
+### [SOUNDS][sounds]
+
+Any acoustic vibration
+
+* [__pitch__][pitch]: the number of vibrations per second, the frequency
+* [__rank__][rank]: the set of [pitches][pitch] separated by powers of two, the pitch-class
+* [__file__][file]: the octave range that contains a [pitch][pitch]
+* [__band__][band]: any range of [pitches][pitch]
+* [__notch__][notch]: the range of a single *semitone* or *half-step*
+* [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
 
 ### [BEATS][beats]
 
@@ -56,25 +68,17 @@ Rhythmic elements
 
 Acoustic vibrations held in time
 
-* [__sound__][sound]: any acoustic vibration
-  * [__pitch__][pitch]: the number of vibrations per second, the frequency
-  * [__rank__][rank]: the set of [pitches][pitch] separated by powers of two, the pitch-class
-  * [__file__][file]: the octave range that contains a [pitch][pitch]
-  * [__band__][band]: any range of [pitches][pitch]
-  * [__notch__][notch]: the range of a single *semitone* or *half-step*
-* [__root__][root]: the centerpoint for a [span][span] and the like
-* [__key__][key]: the centerpoint for [tones][tone] and [spans][span]
-* [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
-* [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sound]
+* [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sounds]
   * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
-* [__span__][span]: a [word][word] indicating the relative [rank][rank] and [file][file] of a [sound][sound]
+* [__root__][root]: the home base for [spans][span] and [knits][knits]
+* [__span__][span]: a [word][word] indicating the relative [rank][rank] and [file][file] of a [sound][sounds]
   * [__span start__][span start]: the [start][start] that denotes [file][file]
   * [__span rhyme__][span rhyme]: the [rhyme][rhyme] that denotes relative [rank][rank]
-* [__rap__][rap]: a [word][word] indicating a [sound][sound] where [pitch][pitch] is indeterminate or incidental
-* [__tie__][tie]: a [sound][sound] from a previous [bar][bar] is still being held
+* [__rap__][rap]: a [word][word] indicating a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
+* [__tie__][tie]: a [sound][sounds] from a previous [bar][bar] is still being held
 * [__breath__][breath]: a breath of fresh quiet
-* [__stop__][stop]: two [sounds][sound] occuring at the same time
+* [__stop__][stop]: two [sounds][sounds] occuring at the same time
 
 ### [KNITS][knits]
 
@@ -95,12 +99,12 @@ Composer directives
 * [__art__][art]: an inline cue
   * [__smooth__][smooth]: a legato line
   * [__ring__][ring]: a sustained line
-  * [__glide__][glide]: a smooth change in [pitch][pitch] of a [sound][sound]
-  * [__slide__][slide]: a stepped change in [pitch][pitch] of a [sound][sound]
-  * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sound]
-  * [__grace__][grace]: a quick [sound][sound] before another
-  * [__lick__][lick]: a quick run of [sounds][sound]
-  * [__trill__][trill]: a quick alternating between [sounds][sound]
+  * [__glide__][glide]: a smooth change in [pitch][pitch] of a [sound][sounds]
+  * [__slide__][slide]: a stepped change in [pitch][pitch] of a [sound][sounds]
+  * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sounds]
+  * [__grace__][grace]: a quick [sound][sounds] before another
+  * [__lick__][lick]: a quick run of [sounds][sounds]
+  * [__trill__][trill]: a quick alternating between [sounds][sounds]
 * [__line__][line]: lyrics beneath the [voices][voice]
 * [__drift__][drift]: lyrics beneath the [voices][voice]
 
@@ -145,6 +149,7 @@ Odds and ends
 [stage]: #stage
   [scribe]: #scribe
 [track]: #track
+  [key]: #key
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -153,6 +158,15 @@ Odds and ends
   [jump]: #jump
   [lap]: #lap
 [pit]: #pit
+
+[sounds]: #sounds
+
+[pitch]: #pitch
+[rank]: #rank
+[file]: #file
+[band]: #band
+[notch]: #notch
+[break]: #break
 
 [beats]: #beats
 
@@ -167,19 +181,10 @@ Odds and ends
 
 [notes]: #notes
 
-[sound]: #sound
-  [pitch]: #pitch
-  [rank]: #rank
-  [file]: #file
-  [band]: #band
-  [notch]: #notch
-[root]: #root
-[key]: #key
-[break]: #break
 [tone]: #tone
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
-  [tie]: #tie
+[root]: #root
 [span]: #span
   [span start]: #span-start
   [span rhyme]: #span-rhyme
@@ -367,47 +372,47 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 [Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach using [tones][tone]:
 
-      ++*
-      SCORE: Lute Suite in E Minor BWV 996
-      SCRIBE: Bach
-      +++
-      TRACK: Bourrée
-      VOICES:
-        f: fingers
-        t: thumb 
-      +++
-      # Wov |4.| @allegretto
+    ++*
+    SCORE: Lute Suite in E Minor BWV 996
+    SCRIBE: Bach
+    +++
+    TRACK: Bourrée
+    VOICES:
+      f: fingers
+      t: thumb 
+    +++
+    # Wov |4.| @allegretto
 
-      A
-        0
-          f| -               .       wa, ka, |
-          t| -               .       yu, ku, |
-        1
-          f| ya.     ka, wa, pa.     wa, ka, |
-          t| wu.     ju.     zo.     ju.     |
-        2
-          f| za.     fa, pa, wa.     ba, da, |
-          t| yu.     ku.     wu.     ku.     |
-        3
-          f| za.     jo, yo, ko.     yo, jo, |
-          t| yu.     ju.     zo.     ju.     |
-        4
-          f| za, jo, yo, ko, wo.     wa, ka, |
-          t| yu.     zo.     wu, ku, yu, ku, |
-        5
-          f| ya.     ka, wa, pa.     wa, ka, |
-          t| wu.     ju.     zo.     ju.     |
-        6
-          f| za.     fa, pa, wa.     ba, da, |
-          t| yu.     ku.     wu.     ku.     |
-        7
-          f| za.     ja, ya, ka^^y.  ,   ya, |
-          t| yu.     do.     bo.     bo.     |
-        8
-          f| tYeva-          .       __      |
-          t| yu-             .       %A @B   |
+    A
+      0
+        f| -               .       wa, ka, |
+        t| -               .       yu, ku, |
+      1
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
+      2
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
+      3
+        f| za.     jo, yo, ko.     yo, jo, |
+        t| yu.     ju.     zo.     ju.     |
+      4
+        f| za, jo, yo, ko, wo.     wa, ka, |
+        t| yu.     zo.     wu, ku, yu, ku, |
+      5
+        f| ya.     ka, wa, pa.     wa, ka, |
+        t| wu.     ju.     zo.     ju.     |
+      6
+        f| za.     fa, pa, wa.     ba, da, |
+        t| yu.     ku.     wu.     ku.     |
+      7
+        f| za.     ja, ya, ka^^y.  ,   ya, |
+        t| yu.     do.     bo.     bo.     |
+      8
+        f| tYeva-          .       __      |
+        t| yu-             .       %A @B   |
 
-      *++
+    *++
 
 ## Score
 
@@ -424,6 +429,22 @@ A [scribe][scribe] is a composer of a [score][score] or [track][track].
 ## Track
 
 A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with mid `+++` signs.
+
+### Key
+
+A [key][key] is the home base for [tones][tone] and [spans][span] of a [track][track] denoted by a [tone][tone]. By default it’s `da` which does not imply a particular tonality. If a [chord][chord] is used, it will imply the following:
+
+    ————————————————————————
+      WORD    TONALITY
+    ————————————————————————
+      Dtv     Lydian
+      Dev     Major/Ionian
+      Devn    Mixolydian
+      Dovm    Dorian
+      Dov     Minor/Aeolian
+      Drv     Phrygian
+      Dot     Locrian
+    ————————————————————————
 
 ## Round
 
@@ -456,6 +477,36 @@ A [jump][jump] is a directive on what part to play next.
 ## Pit
 
 A [pit][pit] holds the programmery bits. 
+
+***
+
+# Sound
+
+A [sound][sounds] is any acoustic vibration fit to be notated. They come in three varieties: [tones][tone], [spans][span], and [raps][rap]. The first two deal with those of definite [pitch][pitch], [tones][tone] in an absolute way and [spans][span] in a relative way, whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
+
+## Pitch
+
+A [pitch][pitch] is the number of vibrations per second, the frequency.
+
+## Rank
+
+A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `da` for *C* or [spans][span] with the `h-` [start][start] such as `ha` for *C* in the [key][key] of `da`.
+
+## File
+
+A [file][file] is analogous to the octave number, for instance the [band][band] from 256Hz to 512Hz.
+
+## Band
+
+A [band][band] is a defined range of frequencies with the lower bound inclusive and the upper bound exclusive.
+
+## Notch
+
+A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
+
+## Break
+
+A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
 
 ***
 
@@ -496,14 +547,14 @@ A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While 
 
 A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
 
-* no whitespace exists between the [sounds][sound]
-* [holds][hold] act as separators of the [sounds][sound] in the [cut][cut]
-* the last [sound][sound] does *not* receive a [hold][hold]
+* no whitespace exists between the [sounds][sounds]
+* [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
+* the last [sound][sounds] does *not* receive a [hold][hold]
 * the total duration of all the [holds][hold] is the duration the [cut][cut] fills
 * a [mark][mark] `'` can be used as a separator that does not add duration
 * quadruplets and sextuplets should be written as two duplets/triplets connected by a [mark][mark]
-* septuplets and longer just add [sounds][sound] and [marks][mark]
-* a [tie][tie] `aa` may be used to signal that one [sound][sound] is held
+* septuplets and longer just add [sounds][sounds] and [marks][mark]
+* a [tie][tie] `aa` may be used to signal that one [sound][sounds] is held
 
 Those rules add up to:
 
@@ -551,51 +602,51 @@ Those rules add up to:
 
 [Short cuts][short cut] can condense the Bourrée from above:
 
-      ++*
-      SCORE: Lute Suite in E Minor BWV 996
-      SCRIBE: Bach
-      +++
-      TRACK: Bourrée
-      VOICES:
-        f: fingers
-        t: thumb 
-      +++
-      # Wov |4.| @allegretto
+    ++*
+    SCORE: Lute Suite in E Minor BWV 996
+    SCRIBE: Bach
+    +++
+    TRACK: Bourrée
+    VOICES:
+      f: fingers
+      t: thumb 
+    +++
+    # Wov |4.| @allegretto
 
-      A
-        0
-          f| -           .     wa.ka  |
-          t| -           .     yu.ku  |
-        1
-          f| ya.   ka.wa pa.   wa.ka  |
-          t| wu.   ju.   zo.   ju.    |
-        2
-          f| za.   fa.pa wa.   ba.da  |
-          t| yu.   ku.   wu.   ku.    |
-        3
-          f| za.   jo.yo ko.   yo.jo  |
-          t| yu.   ju.   zo.   ju.    |
-        4
-          f| za.jo yo.ko wo.   wa.ka  |
-          t| yu.   zo.   wu.ku yu.ku  |
-        5
-          f| ya.   ka.wa pa.   wa.ka  |
-          t| wu.   ju.   zo.   ju.    |
-        6
-          f| za.   fa.pa wa.   ba.da  |
-          t| yu.   ku.   wu.   ku.    |
-        7
-          f| za.   ja.ya ka^^y.  ,ya, |
-          t| yu.   do.   bo.   bo.    |
-        8
-          f| tYeva-      .      __    |
-          t| yu-         .      %A @B |
+    A
+      0
+        f| -           .     wa.ka  |
+        t| -           .     yu.ku  |
+      1
+        f| ya.   ka.wa pa.   wa.ka  |
+        t| wu.   ju.   zo.   ju.    |
+      2
+        f| za.   fa.pa wa.   ba.da  |
+        t| yu.   ku.   wu.   ku.    |
+      3
+        f| za.   jo.yo ko.   yo.jo  |
+        t| yu.   ju.   zo.   ju.    |
+      4
+        f| za.jo yo.ko wo.   wa.ka  |
+        t| yu.   zo.   wu.ku yu.ku  |
+      5
+        f| ya.   ka.wa pa.   wa.ka  |
+        t| wu.   ju.   zo.   ju.    |
+      6
+        f| za.   fa.pa wa.   ba.da  |
+        t| yu.   ku.   wu.   ku.    |
+      7
+        f| za.   ja.ya ka^^y.  ,ya, |
+        t| yu.   do.   bo.   bo.    |
+      8
+        f| tYeva-      .      __    |
+        t| yu-         .      %A @B |
 
-      *++
+    *++
 
 ### Long Cut
 
-A [long cut][long cut] uses square brackets with [marks][mark] `'` between [sounds][sound] and [holds][hold] at the end to slice up the [bar][bar].
+A [long cut][long cut] uses square brackets with [marks][mark] `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
       |4.|
@@ -669,55 +720,7 @@ A [rift][rift] is a section of polyrhythm.
 
 # Notes
 
-[Notes][notes] are [sounds][sound] for a [hold][hold].
-
-## Sound
-
-A [sound][sound] is any acoustic vibration fit to be notated. They come in three varieties: [tones][tone], [spans][span], and [raps][rap]. The first two deal with those of definite [pitch][pitch], [tones][tone] in an absolute way and [spans][span] in a relative way, whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
-
-### Pitch
-
-A [pitch][pitch] is the number of vibrations per second, the frequency.
-
-### Rank
-
-A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `da` for *C* or [spans][span] with the `h-` [start][start] such as `ha` for *C* in the [key][key] of `da`.
-
-### File
-
-A [file][file] is analogous to the octave number, for instance the [band][band] from 256Hz to 512Hz.
-
-### Band
-
-A [band][band] is a defined range of frequencies with the lower bound inclusive and the upper bound exclusive.
-
-### Notch
-
-A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
-
-## Root
-
-A [root][root] is the [tone][tone] or [span][span] that serves as the centerpoint for harmony within [spans][span] and [chords][chord].
-
-## Key
-
-A [key][key] is the centerpoint for [tones][tone] and [spans][span] of a [track][track]. It is like a [root][root] but for an entire composition denoted by a [tone][tone]. By default it’s `da` which does not imply a particular tonality. If a [chord][chord] is used, it will imply the following:
-
-    ————————————————————————
-      WORD    TONALITY
-    ————————————————————————
-      Dtv     Lydian
-      Dev     Major/Ionian
-      Devn    Mixolydian
-      Dovm    Dorian
-      Dov     Minor/Aeolian
-      Drv     Phrygian
-      Dot     Locrian
-    ————————————————————————
-
-## Break
-
-A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
+[Notes][notes] are [sounds][sounds] for a [hold][hold].
 
 ## Tone
 
@@ -766,55 +769,58 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
        -or    -5    ɔ˞
     ————————————————————
 
+## Root
+
+A [root][root] is the [tone][tone] or [span][span] that serves as the centerpoint for harmony within [spans][span] and [chords][chord].
+
 ## Span
 
 A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root] or [key][key]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
 
 In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
 
-      ++*
-      SCORE: Lute Suite in E Minor BWV 996
-      SCRIBE: Bach
-      KEY: wa
-      +++
-      TRACK: Bourrée
-      VOICES:
-        f: fingers
-        t: thumb 
-      +++
-      # Aov |4.| @allegretto
+    ++*
+    SCORE: Lute Suite in E Minor BWV 996
+    SCRIBE: Bach
+    KEY: wa
+    +++
+    TRACK: Bourrée
+    VOICES:
+      f: fingers
+      t: thumb 
+    +++
+    # Aov |4.| @allegretto
 
-      A
-        0
-          f| -           .     ha.hu  |
-          t| -           .     so.su  |
-        1
-          f| ho.   hu.ha hs.   ha.hu  |
-          t| sa.   si.   tv.   si.    |
-        2
-          f| hv.   hm.hs ha.   hn.hl  |
-          t| so.   su.   sa.   su.    |
-        3
-          f| hv.   ti.to tu.   to.ti  |
-          t| so.   si.   tv.   si.    |
-        4
-          f| hv.ti to.tu ta.   ha.hu  |
-          t| so.   tv.   sa.su so.su  |
-        5
-          f| ho.   hu.ha hs.   ha.hu  |
-          t| sa.   si.   tv.   si.    |
-        6
-          f| hv.   hm.hs ha.   hn.hl  |
-          t| so.   su.   sa.   su.    |
-        7
-           | aa.aa.aa.aa aa.aa.aa.aa. | 
-          f| hv.   hi.ho hu^^o.  ,ho, |
-          t| so.   tl.   tn.   tn.    |
-        8
-          f| tOeva-      .     __     |
-          t| so-         .     %A @B  |
+    A
+      0
+        f| -           .     ha.hu  |
+        t| -           .     so.su  |
+      1
+        f| ho.   hu.ha hs.   ha.hu  |
+        t| sa.   si.   tv.   si.    |
+      2
+        f| hv.   hm.hs ha.   hn.hl  |
+        t| so.   su.   sa.   su.    |
+      3
+        f| hv.   ti.to tu.   to.ti  |
+        t| so.   si.   tv.   si.    |
+      4
+        f| hv.ti to.tu ta.   ha.hu  |
+        t| so.   tv.   sa.su so.su  |
+      5
+        f| ho.   hu.ha hs.   ha.hu  |
+        t| sa.   si.   tv.   si.    |
+      6
+        f| hv.   hm.hs ha.   hn.hl  |
+        t| so.   su.   sa.   su.    |
+      7
+        f| hv.   hi.ho hu^^o.  ,ho, |
+        t| so.   tl.   tn.   tn.    |
+      8
+        f| tOeva-      .     __     |
+        t| so-         .     %A @B  |
 
-      *++
+    *++
 
 These complementary ways of looking music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center tailored for that instrument.
 
@@ -916,7 +922,7 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
 
 ## Tie
 
-A [tie][tie] is a [rap][rap] used to show a [sound][sound] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sound] being held.
+A [tie][tie] is a [rap][rap] used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sounds] being held.
 
 ## Breath
 
@@ -1046,7 +1052,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée using [tones][tone] above, a [track][track]-level [cue][cue] is followed by the [chord][chord] E minor `Wov` to specify the [key][key], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [click][click].
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée using [tones][tone] above, a [track][track]-level [cue][cues] is followed by the [chord][chord] E minor `Wov` to specify the [key][key], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [click][click].
 
 ## Comp
 
@@ -1070,7 +1076,7 @@ A [smooth][smooth] line is legato, which is to be determined by each instrument.
 
 ### Ring
 
-A [ring][ring] shows [sounds][sound] sustaining over other [sounds][sound]. These begin with the [sound][sound] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sound] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
+A [ring][ring] shows [sounds][sounds] sustaining over other [sounds][sounds]. These begin with the [sound][sounds] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sounds] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
 
     ————————————————————————————————————————————————
       7
@@ -1080,31 +1086,31 @@ A [ring][ring] shows [sounds][sound] sustaining over other [sounds][sound]. Thes
         | yu{za.} do{ja.ya} bo{ka^^y.} bo{aa.ya} |
     ————————————————————————————————————————————————
 
-For [sounds][sound] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
+For [sounds][sounds] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
 
 ### Glide
 
-A [glide][glide] is the smooth changing of a [sound][sound] to a different [pitch][pitch], like a bend. `/` is for changing a [sound][sound] up, `\` for changing a [sound][sound] down.
+A [glide][glide] is the smooth changing of a [sound][sounds] to a different [pitch][pitch], like a bend. `/` is for changing a [sound][sounds] up, `\` for changing a [sound][sounds] down.
 
 ### Slide
 
-A [slide][slide] is the stepped changing of [sound][sound] to a different [pitch][pitch] like a fret slide. `//` is for changing a [sound][sound] up, `\\` for changing a [sound][sound] down.
+A [slide][slide] is the stepped changing of [sound][sounds] to a different [pitch][pitch] like a fret slide. `//` is for changing a [sound][sounds] up, `\\` for changing a [sound][sounds] down.
 
 ### Vibe
 
-A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sound]. It is an [art][art] denoted by the [glyph][glyph] `~`.
+A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sounds]. It is an [art][art] denoted by the [glyph][glyph] `~`.
 
 ### Grace
 
-A [grace][grace] is the quick articulation of one [sound][sound] before another. It is an [art][art] denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
+A [grace][grace] is the quick articulation of one [sound][sounds] before another. It is an [art][art] denoted with the starting [tone][tone] or [spans’s][span] [start][start] followed by the [glyph][glyph] `^` and the [tone][tone] or [span][span] to land on.
 
 ### Lick
 
-A [lick][lick] is quick run of [sounds][sound], often repeated. It is an [art][art] denoted with a starting [tone][tone] or [span][span] followed by a sequence of the [tone starts][tone start] or [span rhymes][span rhyme] separated by [grace][grace], [glide][glide], or [slide][slide] in the order they are articulated, finishing on a [tone][tone] or [span][span] or returning to the starting [tone][tone] or [span][span] if none are specified.
+A [lick][lick] is quick run of [sounds][sounds], often repeated. It is an [art][art] denoted with a starting [tone][tone] or [span][span] followed by a sequence of the [tone starts][tone start] or [span rhymes][span rhyme] separated by [grace][grace], [glide][glide], or [slide][slide] in the order they are articulated, finishing on a [tone][tone] or [span][span] or returning to the starting [tone][tone] or [span][span] if none are specified.
 
 ### Trill
 
-A [trill][trill] is the quick alternating between two [sounds][sound] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
+A [trill][trill] is the quick alternating between two [sounds][sounds] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
 
 ## Drift
 
@@ -1131,7 +1137,7 @@ Like with [weaves][weave], there are rules for pronounciation. Guide coming soon
 
 ## Line
 
-A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with syllable getting at least one [sound][sound] and underscores `_` for multiple [sounds][sound]. Speech is denoted by the [rap][rap] `sp`.
+A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp`.
 ***
 
 # Schemes
