@@ -265,9 +265,9 @@ A [phone][phone] is an indivisible articulation of spoken Counternote represente
 
 ### Start
 
-A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters 
+A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `q`, and `x` have been reassigned to tʃ 'ch', kʷ 'qu', and ʃ 'sh'. Because the American English 'r' is exceptionally weird, a trilled 'r' is also right. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A ʒ 'zh' consonant can be substituted, but it does mess with the order of articulation.
 
-The standard starting consonants with their points of articulation are as follows:
+The standard starting consonants with their points of articulation going from “high”  to “low” are as follows:
 
     —————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
@@ -303,7 +303,7 @@ The standard starting consonants with their points of articulation are as follow
         -       ʔ     '-' in 'uh-oh'
     —————————————————————————————————
 
-Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. A unwritten [j] ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
+Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. An unwritten [j] and an unwritten [w] are sometimes used to break up consecutive vowels.
 
 Some [glyphs][glyph] can cluster:
 
@@ -408,7 +408,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
 ## Score
 
-A [score][score] is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of work.
+A [score][score] is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a work.
 
 ## Stage
 
@@ -448,7 +448,7 @@ A [bar][bar] contains all of the details of what to play when and how to play it
 
 ### Voice
 
-A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in pipe `|` terms. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
+A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
 
 ### Stack
 
@@ -685,13 +685,14 @@ A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] an
 
 [Long cuts][long cut] work in two places where [short cuts][short cut] cannot: nested tuplets and across multiple bars.
 
-To nest a [cut][cut], just place a [short cut][short cut] or a [long cut][long cut] where a single cut would go:
+To nest a [cut][cut], just place a [long cut][long cut] where a single cut would go:
 
     —————————————————————————————————
       |4.|
       1
         # triplet in triplet over 1
         |[da'da'[da'da'da]]=      |
+        | da-da-[da'da'da]        |
     —————————————————————————————————
 
 If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
@@ -715,7 +716,7 @@ Because tuplets are treated as a block of one duration split evenly, the total d
         | aa=                     |
     —————————————————————————————————
 
-The `+` helps the performer see what how long the [cut][cut] is.
+The `+` with the extra [hold][hold] `=` helps the performer see what how long the [cut][cut] is.
 
 ## Shift
 
