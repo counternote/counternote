@@ -430,7 +430,7 @@ A [track][track] is an individual piece that may or may not occur simultaneously
 
 ### Key
 
-A [key][key] is the home base for [tones][tone] and [spans][span] of a [track][track] denoted by a [tone][tone]. By default it’s `da` which does not imply a particular tonality. If a [chord][chord] is used, it will imply the following:
+A [key][key] is the home base for [tones][tone] and [spans][span] of a [track][track] denoted by a [tone][tone]. By default it’s `ja` which does not imply a particular tonality. If a [chord][chord] is used, it will imply the following:
 
     ————————————————————————
       WORD    TONALITY
@@ -1034,6 +1034,7 @@ A [chord][chord] is a [knit][knits] constructed using the capitalized [tone star
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
     ————————————————————————————————————————————————————————
+         A         Jev         ˈdʒev           'JEHV'
          B5        Zav         ˈzɑv            'ZAHV'
          Cm        Dov         ˈdov            'DOHV'
          C♯7       Fevn       ˈfe.vən        'FEH-vuhn'
@@ -1044,49 +1045,50 @@ A [chord][chord] is a [knit][knits] constructed using the capitalized [tone star
 
 ## Braid
 
-A [braid][braid] is a “metachord”, like in Roman Numeral Analysis or the Nashville Number System. They are built exactly like [chords][chord] but use capitalized [threads][thread] as the starting [glyph][glyph].
+A [braid][braid] is a [chord][chord] built with a [span][span] as the [root][root]. In addition to [chords][chord] for transposing instruments, [braids][braid] can act as “metachords”, like in Roman Numeral Analysis or the Nashville Number System. They are built using capitalized [threads][thread] as the starting [glyph][glyph].
 
     —————————————————————————————————————————————————————————
-      KEY: da
+      KEY: ja
     —————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
     —————————————————————————————————————————————————————————
-         B5        Sav         ˈsɑv            'SAHV'
-         Cm        Aov         ʔɑˈov          'ah-OHV'
-         C♯7       Revn       ˈre.vən        'REH-vuhn'
-         D13      Uevnuim  ʔuˌjev.nuˈjim  'oo-Yehv-noo-YEEM'
-      E♭13(♭5♯9)  Oetnoim  ʔoˌwet.noˈwim  'oh-Weht-noh-WEEM'
+         A         Aev         ʔɑˈev          'ah-YEHV'
+         B5        Uav         ʔuˈɑv          'oo-YAHV'
+         Cm        Oov         ʔoˈov          'oh-WOHV'
+         C♯7       Eevn       ʔeˈe.vən       'eh-WEH-vuhn'
+         D13      Ievnuim  ʔiˌjev.nuˈjim  'oo-Yehv-noo-YEEM'
+      E♭13(♭5♯9)  Tetnoim   ˌtet.noˈwim    'teht-noh-WEEM'
     —————————————————————————————————————————————————————————
 
 ## Weave
 
 A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with two added details. First, no octave is specified, so the [span start][span start] of the lowest sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread.
 
-    ——————————————————————————————————————————————————————————————————————————————————————
+    ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
-      KEY: da
-    ——————————————————————————————————————————————————————————————————————————————————————
+      KEY: ja
+    ——————————————————————————————————————————————————————————————————————————————————
       CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
-    ——————————————————————————————————————————————————————————————————————————————————————
+    ——————————————————————————————————————————————————————————————————————————————————
         E    022100   avaeva  tWavaeva     təˌwɑ.vɑˈje.vɑ     tuh-Wah-vah-YEH-vah
                       avaeva  tEavaeva   təˌʔe.jɑ.vɑˈje.vɑ   tuh-Eh-yah-vah-YEH-vah
-        A    x02220   avaev    sJavaev     səˌdʒa.vɑˈjev        suh-Jah-vah-YEHV
-                      avaev    sMavaev      səˌma.vɑˈjev        suh-Mah-vah-YEHV
-       A/E   002220   vavaev  sJvavaev    səˌdʒə.vɑ.vɑˈjev    suh-Juh-vah-vah-YEHV
-                      vavaev  sMvavaev     səˌmə.vɑ.vɑˈjev    suh-Muh-vah-vah-YEHV
-        D    xx0232    avae    sBavae       səˈbɑ.vɑˌje         suh-BAH-vah-Yeh
-                       avae    sUavae      sə.ʔuˈjɑ.vɑˌje      suh-oo-YAH-vah-Yeh
+        A    x02220   avaev    tJavaev     təˌdʒa.vɑˈjev        tuh-Jah-vah-YEHV
+                      avaev    tMavaev      təˌma.vɑˈjev        tuh-Mah-vah-YEHV
+       A/E   002220   vavaev  tJvavaev    təˌdʒə.vɑ.vɑˈjev    tuh-Juh-vah-vah-YEHV
+                      vavaev  tMvavaev     təˌmə.vɑ.vɑˈjev    tuh-Muh-vah-vah-YEHV
+        D    xx0232    avae    tBavae       təˈbɑ.vɑˌje         tuh-BAH-vah-Yeh
+                       avae    tUavae      tə.ʔuˈjɑ.vɑˌje      tuh-oo-YAH-vah-Yeh
        D/F♯  200232   evavae  tBevavae     tə.beˈvɑ.vɑˌje      tuh-beh-VAH-vah-Yeh
                       evavae  tUevavae   təˌʔu.jeˈvɑ.vɑˌje   tuh-Oo-yeh-VAH-vah-Yeh
-        G    320033   aevava  sYaevava     səˌja.jeˈvɑ.vɑ      suh-Yah-yeh-VAH-vah
-                      aevava  sVaevava     səˌvɑ.jeˈvɑ.vɑ      suh-Vah-yeh-VAH-vah
-        G    320003   aevaea  sYaevaea   səˌjɑ.jeˈvɑ.jeˌjɑ   suh-Yah-yeh-VAH-yeh-Yah
-                      aevaea  sVaevaea   səˌvɑ.jeˈvɑ.jeˌjɑ   suh-Vah-yeh-VAH-yeh-Yah
-        C    x32010    aevae   sDaevae     sə.dɑˈje.vɑˌje      suh-dah-YEH-vah-Yeh
-                       aevae   sAaevae   səˌʔɑ.jɑˈje.vɑˌje   suh-Ah-yah-YEH-vah-Yeh
-       C/G   332010   vaevae  sDvaevae   səˌdə.vɑˈje.vɑˌje   suh-Duh-vah-YEH-vah-Yeh
-                      vaevae  sAvaevae   səˌʔɑ.vɑˈje.vɑˌje   suh-Ah-vah-YEH-vah-Yeh
-    ——————————————————————————————————————————————————————————————————————————————————————
+        G    320033   aevava  tYaevava     təˌja.jeˈvɑ.vɑ      tuh-Yah-yeh-VAH-vah
+                      aevava  tVaevava     təˌvɑ.jeˈvɑ.vɑ      tuh-Vah-yeh-VAH-vah
+        G    320003   aevaea  tYaevaea   təˌjɑ.jeˈvɑ.jeˌjɑ   tuh-Yah-yeh-VAH-yeh-Yah
+                      aevaea  tVaevaea   təˌvɑ.jeˈvɑ.jeˌjɑ   tuh-Vah-yeh-VAH-yeh-Yah
+        C    x32010    aevae   tDaevae     tə.dɑˈje.vɑˌje      tuh-dah-YEH-vah-Yeh
+                       aevae   tAaevae   təˌʔɑ.jɑˈje.vɑˌje   tuh-Ah-yah-YEH-vah-Yeh
+       C/G   332010   vaevae  tDvaevae   təˌdə.vɑˈje.vɑˌje   tuh-Duh-vah-YEH-vah-Yeh
+                      vaevae  tAvaevae   təˌʔɑ.vɑˈje.vɑˌje   tuh-Ah-vah-YEH-vah-Yeh
+    ——————————————————————————————————————————————————————————————————————————————————
 ***
 
 # Cues
