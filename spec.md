@@ -715,12 +715,14 @@ A [rift][rift] is a section of polyrhythm.
 
 A [tone][tone] is closest to a *note* in a traditional sense, like the [rank][rank] of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `da`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `ja` including *A440*, *A444*, and *A432*, which does not include the baroque tuning *A415*, falling into the [rank][rank] just below called `xa`.
 
-A list of all the two-[glyph][glyph] [tones][tone] moving left to right, bottom to top:
+A matrix of all the [tones][tone] moving left to right, bottom to top:
 
     ——————————————————————————————————————————————————————
       RANK (pitch class) →
     ——————————————————————————————————————————————————————
           E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
+      +3 wil gil kil yil xil jil cil zil dil fil bil pil 
+      +3 wal gal kal yal xal jal cal zal dal fal bal pal 
       +3  wl  gl  kl  yl  xl  jl  cl  zl  dl  fl  bl  pl 
       +2  wi  gi  ki  yi  xi  ji  ci  zi  di  fi  bi  pi 
       +1  we  ge  ke  ye  xe  je  ce  ze  de  fe  be  pe 
@@ -728,6 +730,8 @@ A list of all the two-[glyph][glyph] [tones][tone] moving left to right, bottom 
       -1  wo  go  ko  yo  xo  jo  co  zo  do  fo  bo  po 
       -2  wu  gu  ku  yu  xu  ju  cu  zu  du  fu  bu  pu 
       -3  wr  gr  kr  yr  xr  jr  cr  zr  dr  fr  br  pr
+      -3 war gar kar yar xar jar car zar dar far bar par
+      -3 wor gor kor yor xor jor cor zor dor for bor por
     ——————————————————————————————————————————————————————
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
@@ -833,12 +837,14 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
 
 These complementary ways of looking at music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center set to the lowest sounding [tone][tone] on that instrument.
 
-A list of all the two-[glyph][glyph] [spans][span] moving left to right, bottom to top:
+A matrix of all the [spans][span] moving left to right, bottom to top:
 
     ——————————————————————————————————————————————————————
       RANK (pitch class) →
     ——————————————————————————————————————————————————————
           -4  -3 -♭3  -2 -♭2   1  ♭2   2  ♭3   3   4  ♭5 
+      +5 myv myl mym myn mys mya myr myu myo mye myi myt 
+      +4 mwv mwl mwm mwn mws mwa mwr mwu mwo mwe mwi mwt 
       +3  mv  ml  mm  mn  ms  ma  mr  mu  mo  me  mi  mt 
       +2  vv  vl  vm  vn  vs  va  vr  vu  vo  ve  vi  vt
       +1  lv  ll  lm  ln  ls  la  lr  lu  lo  le  li  lt
@@ -846,6 +852,8 @@ A list of all the two-[glyph][glyph] [spans][span] moving left to right, bottom 
       -1  tv  tl  tm  tn  ts  ta  tr  tu  to  te  ti  tt
       -2  sv  sl  sm  sn  ss  sa  sr  su  so  se  si  st
       -3  nv  nl  nm  nn  ns  na  nr  nu  no  ne  ni  nt
+      -4 nyv nyl nym nyn nys nya nyr nyu nyo nye nyi nyt
+      -5 nwv nwl nwm nwn nws nwa nwr nwu nwo nwe nwi nwt
     ——————————————————————————————————————————————————————
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
