@@ -1169,6 +1169,16 @@ A [lick][lick] is quick run of [sounds][sounds], often repeated. It is an [art][
 
 A [trill][trill] is the quick alternating between two [sounds][sounds] used as ornamentation. It is an [art][art] denoted with the starting [tone][tone] or [span][span] a double [grace][grace] [glyph][glyph] `^^` followed by the [start][start] of the [tone][tone] or [span][span] to be alternated with.
 
+### Bang
+
+A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by `!`. It is written directly before the [note][notes] it modifies `!ja.` for accents, directly after the the note for staccato `ja!.`, or even directly after a [hold][hold] for that abrupt ending `ja.!`.
+
+### Trem
+
+A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `ja!!.`.
+
+###
+
 ## Drift
 
 A [drift][drift] is a microtonal adjustment. These can be adjusted globally or inline. They are just like the [span rhymes][span rhyme] added to whole [spans][span] or [tones][tone].
@@ -1188,9 +1198,9 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
       -v  -42
     ————————————
 
-`da/hut` is a whole step and a quarter bend. `dat` is a C half-sharp.
+`da/hut` ˌdɑ.huˈjɑ˞t is a whole step and a quarter bend to D half-sharp. `dat` dɑˈjɑ˞t is a C half-sharp.
 
-Like with [weaves][weave], there are rules for pronounciation. Guide coming soon.
+Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
 ## Line
 
@@ -1327,7 +1337,7 @@ And even further into sixteenth notes using the `a` for the unaccented even sixt
 For complex meter, we break things up into two- and three-syllable [taps][tap]:
 
     ————————————————————————————————————————————————————————————————————
-      |3,3,2,2| PO-ge-de KO-de-ge TO-ge TO-ge  pogede kodege toge toge
+      |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
     ————————————————————————————————————————————————————————————————————
 
 ***
