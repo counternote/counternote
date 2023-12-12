@@ -275,7 +275,7 @@ A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][w
 
 The standard starting consonants with their points of articulation are as follows:
 
-    ——————————————————————————————————
+    —————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
       ~~~~~~ BILABIAL ~~~~~~~~~~~~~
        P,p      p     'p' in 'pick'
@@ -307,7 +307,7 @@ The standard starting consonants with their points of articulation are as follow
       ~~~~~~ GLOTTAL ~~~~~~~~~~~~~~
        H,h      h     'h' in 'hit'
         -       ʔ     '-' in 'uh-oh'
-    ——————————————————————————————————
+    —————————————————————————————————
 
 Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. A unwritten [j] ('soft y' like the 'y' in 'yes') is sometimes used to break up consecutive vowels.
 
@@ -383,32 +383,32 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
     A
       0
-        f| -           .     wa.ka  |
-        t| -           .     yu.ku  |
+        f| -           .     we.ke  |
+        t| -           .     yo.ko  |
       1
-        f| ya.   ka.wa pa.   wa.ka  |
-        t| wu.   ju.   zo.   ju.    |
+        f| ye.   ke.we pe.   we.ke  |
+        t| wo.   jo.   za.   jo.    |
       2
-        f| za.   fa.pa wa.   ba.da  |
-        t| yu.   ku.   wu.   ku.    |
+        f| ze.   fe.pe we.   be.de  |
+        t| yo.   ko.   wo.   ko.    |
       3
-        f| za.   jo.yo ko.   yo.jo  |
-        t| yu.   ju.   zo.   ju.    |
+        f| ze.   ja.ya ka.   ya.ja  |
+        t| yo.   jo.   za.   jo.    |
       4
-        f| za.jo yo.ko wo.   wa.ka  |
-        t| yu.   zo.   wu.ku yu.ku  |
+        f| ze.ja ya.ka wa.   we.ke  |
+        t| yo.   za.   wo.ko yo.ko  |
       5
-        f| ya.   ka.wa pa.   wa.ka  |
-        t| wu.   ju.   zo.   ju.    |
+        f| ye.   ke.we pe.   we.ke  |
+        t| wo.   jo.   za.   jo.    |
       6
-        f| za.   fa.pa wa.   ba.da  |
-        t| yu.   ku.   wu.   ku.    |
+        f| ze.   fe.pe we.   be.de  |
+        t| yo.   ko.   wo.   ko.    |
       7
-        f| za.   ja.ya ka^^y.  ,ya, |
-        t| yu.   do.   bo.   bo.    |
+        f| ze.   je.ye ke^^y.  ,ye, |
+        t| yo.   da.   ba.   ba.    |
       8
-        f| tYeva-      .      __    |
-        t| yu-         .      %A @B |
+        f| hYeva-      .      __    |
+        t| yo-         .      %A @B |
 
     *++
 
@@ -516,18 +516,18 @@ A [break][break] is the point where the [file][file] changes based on the [key][
 
 A [hold][hold] is punctuation character that represents a duration. They come in seven varieties, six ordered by powers of two and a special one for indefinite duration:
 
-    ————————————————————————————
+    ———————————————————————————
       HOLD  VALUE  WORD   IPA
-    ————————————————————————————
+    ———————————————————————————
       `;`    1x     qi    kʷi
       `:`    2x     qe    kʷe
       `,`    4x     qa    kʷɑ
       `.`    8x     qo    kʷo
       `-`   16x     qu    kʷu
       `=`   32x     qr    kʷɚ
-    ————————————————————————————
+    ———————————————————————————
       `?`    ?x     qh    kʷə
-    ————————————————————————————
+    ———————————————————————————
 
 ## Groove
 
@@ -612,34 +612,34 @@ Those rules add up to:
     +++
     # Wov |4.| @allegretto
 
-    A
+    e
       0
-        f| -               .       wa, ka, |
-        t| -               .       yu, ku, |
+        f| -               .       we, ke, |
+        t| -               .       yo, ko, |
       1
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
+        f| ye.     ke, we, pe.     we, ke, |
+        t| wo.     jo.     za.     jo.     |
       2
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
+        f| ze.     fe, pe, we.     be, de, |
+        t| yo.     ko.     wo.     ko.     |
       3
-        f| za.     jo, yo, ko.     yo, jo, |
-        t| yu.     ju.     zo.     ju.     |
+        f| ze.     ja, ya, ka.     ya, ja, |
+        t| yo.     jo.     za.     jo.     |
       4
-        f| za, jo, yo, ko, wo.     wa, ka, |
-        t| yu.     zo.     wu, ku, yu, ku, |
+        f| ze, ja, ya, ka, wa.     we, ke, |
+        t| yo.     za.     wo, ko, yo, ko, |
       5
-        f| ya.     ka, wa, pa.     wa, ka, |
-        t| wu.     ju.     zo.     ju.     |
+        f| ye.     ke, we, pe.     we, ke, |
+        t| wo.     jo.     za.     jo.     |
       6
-        f| za.     fa, pa, wa.     ba, da, |
-        t| yu.     ku.     wu.     ku.     |
+        f| ze.     fe, pe, we.     be, de, |
+        t| yo.     ko.     wo.     ko.     |
       7
-        f| za.     ja, ya, ka^^y.  ,   ya, |
-        t| yu.     do.     bo.     bo.     |
+        f| ze.     je, ye, ke^^y.  ,   ye, |
+        t| yo.     da.     ba.     ba.     |
       8
-        f| tYeva-          .       __      |
-        t| yu-             .       %A @B   |
+        f| hYeva-          .       __      |
+        t| yo-             .       %A @B   |
 
     *++
 
@@ -742,6 +742,8 @@ A list of all the two-[glyph][glyph] [tones][tone] moving left to right, bottom 
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
 
+In this order, it naturally falls into the key `ja` with the [break][break] between `wa` and `pe`.
+
 ### Tone Start
 
 The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank]. The traditional “naturals” are voiced consonants and the “accidentals” voiceless. The points of articulation move from the back of the mouth up through to the lips (labiovelar —> velar —> palatal —> postalveolar —> alveolar —> labiodental —> bilabial).
@@ -765,7 +767,7 @@ The [start][start] of a [tone][tone] will always be a consonant represented by a
 
 ### Tone Rhyme
 
-The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `da` is middle C in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
+The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `ja` is A220 in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -810,32 +812,32 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
 
     A
       0
-        f| -           .     ha.hu  |
-        t| -           .     so.su  |
+        f| -           .     la.lu  |
+        t| -           .     to.tu  |
       1
-        f| ho.   hu.ha hs.   ha.hu  |
-        t| sa.   si.   tv.   si.    |
+        f| lo.   lu.la lt.   la.lu  |
+        t| ta.   ti.   hv.   ti.    |
       2
-        f| hv.   hm.hs ha.   hn.hl  |
-        t| so.   su.   sa.   su.    |
+        f| lv.   lm.lt la.   ln.ll  |
+        t| to.   tu.   ta.   tu.    |
       3
-        f| hv.   ti.to tu.   to.ti  |
-        t| so.   si.   tv.   si.    |
+        f| lv.   hi.ho hu.   ho.hi  |
+        t| to.   ti.   hv.   ti.    |
       4
-        f| hv.ti to.tu ta.   ha.hu  |
-        t| so.   tv.   sa.su so.su  |
+        f| lv.hi ho.hu ha.   la.lu  |
+        t| to.   hv.   ta.tu to.tu  |
       5
-        f| ho.   hu.ha hs.   ha.hu  |
-        t| sa.   si.   tv.   si.    |
+        f| lo.   lu.la lt.   la.lu  |
+        t| ta.   ti.   hv.   ti.    |
       6
-        f| hv.   hm.hs ha.   hn.hl  |
-        t| so.   su.   sa.   su.    |
+        f| lv.   lm.lt la.   ln.ll  |
+        t| to.   tu.   ta.   tu.    |
       7
-        f| hv.   hi.ho hu^^o.  ,ho, |
-        t| so.   tl.   tn.   tn.    |
+        f| lv.   li.lo lu^^o.  ,lo, |
+        t| to.   hl.   hn.   hn.    |
       8
-        f| tOeva-      .     __     |
-        t| so-         .     %A @B  |
+        f| hOeva-      .     __     |
+        t| to-         .     %A @B  |
 
     *++
 
