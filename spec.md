@@ -105,8 +105,10 @@ Composer directives
   * [__grace__][grace]: a quick [sound][sounds] before another
   * [__lick__][lick]: a quick run of [sounds][sounds]
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
-* [__line__][line]: lyrics beneath the [voices][voice]
+  * [__bang__][bang]: an accent or sudden ending of a [sound][sounds]
+  * [__trem__][trem]: a rapid articulation of a [sound][sounds]
 * [__drift__][drift]: lyrics beneath the [voices][voice]
+* [__line__][line]: lyrics beneath the [voices][voice]
 
 ### [SCHEMES][schemes]
 
@@ -206,6 +208,8 @@ Toward a deeper understanding
   [grace]: #grace
   [lick]: #lick
   [trill]: #trill
+  [bang]: #bang
+  [trem]: #trem
 [drift]: #drift
 [line]: #line
 
