@@ -1327,7 +1327,7 @@ And even further into sixteenth notes using the `a` for the unaccented even sixt
 For complex meter, we break things up into two- and three-syllable [taps][tap]:
 
     ————————————————————————————————————————————————————————————————————
-      |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
+      |3,3,2,2| PO-ge-de KO-de-ge TO-ge TO-ge  pogede kodege toge toge
     ————————————————————————————————————————————————————————————————————
 
 ***
