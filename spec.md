@@ -1062,7 +1062,7 @@ A [braid][braid] is a [chord][chord] built with a [span][span] as the [root][roo
 
 ## Weave
 
-A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with two added details. First, no octave is specified, so the [span start][span start] of the lowest sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread.
+A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the [span start][span start] of the lowest sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread. Third, if an entire octave is skipped, the [glyph][glyph] `x` is inserted.
 
     ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
@@ -1071,23 +1071,25 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
       CHORD   TAB    THREADS    WORD            IPA             TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————
         E    022100   avaeva  tWavaeva     təˌwɑ.vɑˈje.vɑ     tuh-Wah-vah-YEH-vah
-                      avaeva  tEavaeva   təˌʔe.jɑ.vɑˈje.vɑ   tuh-Eh-yah-vah-YEH-vah
-        A    x02220   avaev    tJavaev     təˌdʒa.vɑˈjev        tuh-Jah-vah-YEHV
-                      avaev    tMavaev      təˌma.vɑˈjev        tuh-Mah-vah-YEHV
+                      avaeva  tVavaeva     təˌvɑ.vɑˈje.vɑ     tuh-Vah-vah-YEH-vah
+        A    x02220   avaev    tJavaev      təˌdʒa.vɑˈjev       tuh-Jah-vah-YEHV
+                      avaev    tAavaev     təˌʔɑ.jɑ.vɑˈjev     tuh-Ah-yah-vah-YEHV
        A/E   002220   vavaev  tJvavaev    təˌdʒə.vɑ.vɑˈjev    tuh-Juh-vah-vah-YEHV
-                      vavaev  tMvavaev     təˌmə.vɑ.vɑˈjev    tuh-Muh-vah-vah-YEHV
+                      vavaev  tAvavaev     təˌʔɑ.vɑ.vɑˈjev    tuh-Ah-vah-vah-YEHV
         D    xx0232    avae    tBavae       təˈbɑ.vɑˌje         tuh-BAH-vah-Yeh
-                       avae    tUavae      tə.ʔuˈjɑ.vɑˌje      tuh-oo-YAH-vah-Yeh
+                       avae    tIavae      tə.ʔiˈjɑ.vɑˌje      tuh-ee-YAH-vah-Yeh
        D/F♯  200232   evavae  tBevavae     tə.beˈvɑ.vɑˌje      tuh-beh-VAH-vah-Yeh
-                      evavae  tUevavae   təˌʔu.jeˈvɑ.vɑˌje   tuh-Oo-yeh-VAH-vah-Yeh
+                      evavae  tIevavae   təˌʔi.jeˈvɑ.vɑˌje   tuh-Ee-yeh-VAH-vah-Yeh
         G    320033   aevava  tYaevava     təˌja.jeˈvɑ.vɑ      tuh-Yah-yeh-VAH-vah
-                      aevava  tVaevava     təˌvɑ.jeˈvɑ.vɑ      tuh-Vah-yeh-VAH-vah
+                      aevava  tNaevava     təˌnɑ.jeˈvɑ.vɑ      tuh-Nah-yeh-VAH-vah
         G    320003   aevaea  tYaevaea   təˌjɑ.jeˈvɑ.jeˌjɑ   tuh-Yah-yeh-VAH-yeh-Yah
-                      aevaea  tVaevaea   təˌvɑ.jeˈvɑ.jeˌjɑ   tuh-Vah-yeh-VAH-yeh-Yah
+                      aevaea  tNaevaea   təˌnɑ.jeˈvɑ.jeˌjɑ   tuh-Nah-yeh-VAH-yeh-Yah
         C    x32010    aevae   tDaevae     tə.dɑˈje.vɑˌje      tuh-dah-YEH-vah-Yeh
-                       aevae   tAaevae   təˌʔɑ.jɑˈje.vɑˌje   tuh-Ah-yah-YEH-vah-Yeh
+                       aevae   tOaevae   təˌʔo.jɑˈje.vɑˌje   tuh-Oh-yah-YEH-vah-Yeh
        C/G   332010   vaevae  tDvaevae   təˌdə.vɑˈje.vɑˌje   tuh-Duh-vah-YEH-vah-Yeh
-                      vaevae  tAvaevae   təˌʔɑ.vɑˈje.vɑˌje   tuh-Ah-vah-YEH-vah-Yeh
+                      vaevae  tOvaevae   təˌʔo.vɑˈje.vɑˌje   tuh-Oh-vah-YEH-vah-Yeh
+        F    1x3211   axaeva  tGaxaeva     təˌgɑ.ʃɑˈje.vɑ     tuh-Gah-shah-YEH-vah
+                      axaeva  tLaxaeva     təˌlɑ.ʃɑˈje.vɑ     tuh-Lah-shah-YEH-vah
     ——————————————————————————————————————————————————————————————————————————————————
 ***
 
@@ -1165,7 +1167,7 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
       -u  +17
       -r  +8
       -a  ±0
-      -x  -8
+      -s  -8
       -n  -17
       -m  -25
       -l  -33
