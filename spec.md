@@ -496,6 +496,22 @@ A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *sem
 
 A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
 
+    ———————————————
+      KEY  BREAK
+      ba  xa - je
+      fa  ya - xe
+      da  ka - ye
+      za  ga - ke
+      ca  wa - ge
+      ja  pa - we
+      xa  ba - pe
+      ya  fa - be
+      ka  da - fe
+      ga  za - de
+      wa  ca - ze
+      pa  ja - ce
+    ———————————————
+
 ***
 
 # Beats
