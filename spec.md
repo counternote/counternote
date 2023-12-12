@@ -2,7 +2,7 @@
 
 # Counternote Specification version 0.8.1
 
-This is a terse description of Counternote with minimal definitions and examples. It is not a guide and does not aim to be such.
+This is a terse description of Counternote with minimal definitions and examples.
 
 ***
 
@@ -123,6 +123,12 @@ Toward a deeper understanding
   * [__rub__][rub]: a dissonant sounding interval
 * [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
+### [NIBS][nibs]
+
+Odds and ends
+
+  * [__mark__][mark]: the term `'`
+
 [gloss]: #gloss
 
 [bases]: #bases
@@ -221,6 +227,10 @@ Toward a deeper understanding
   [mood]: #mood
   [rub]: #rub
 [tap]: #tap
+
+[nibs]: #nibs
+
+  [mark]: #mark
 
 ***
 
@@ -440,7 +450,7 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a [mark][mark] in between, for example `A'1`.
 
 ### Voice
 
@@ -452,7 +462,7 @@ A [stack][stack] is separate voices in the same [bar][bar]. These can be separat
 
 ### Lap
 
-A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a `'` in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
+A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a [mark][mark] in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
 
 ### Rep
 
@@ -539,9 +549,9 @@ A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun 
 * [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
 * the last [sound][sounds] does *not* receive a [hold][hold]
 * the total duration of all the [holds][hold] is the duration the [cut][cut] fills
-* a `'` can be used as a separator that does not add duration
-* quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
-* septuplets and longer just add [sounds][sounds] and `'`
+* a [mark][mark] `'` can be used as a separator that does not add duration
+* quadruplets and sextuplets should be written as two duplets/triplets connected by a [mark][mark]
+* septuplets and longer just add [sounds][sounds] and [marks][mark]
 * a [tie][tie] `aa` may be used to signal that one [sound][sounds] is held
 
 Those rules add up to:
@@ -635,7 +645,7 @@ Those rules add up to:
 
 ### Long Cut
 
-A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
+A [long cut][long cut] uses square brackets with [marks][mark] `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
       |4.|
@@ -715,48 +725,65 @@ A [rift][rift] is a section of polyrhythm.
 
 A [tone][tone] is closest to a *note* in a traditional sense, like the [rank][rank] of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `da`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `ja` including *A440*, *A444*, and *A432*, which does not include the baroque tuning *A415*, falling into the [rank][rank] just below called `xa`.
 
+A list of all the two-[glyph][glyph] [tones][tone] moving left to right, bottom to top:
+
+    ——————————————————————————————————————————————————————
+      RANK (pitch class) →
+    ——————————————————————————————————————————————————————
+          E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
+      +3  wl  gl  kl  yl  xl  jl  cl  zl  dl  fl  bl  pl 
+      +2  wi  gi  ki  yi  xi  ji  ci  zi  di  fi  bi  pi 
+      +1  we  ge  ke  ye  xe  je  ce  ze  de  fe  be  pe 
+       0  wa  ga  ka  ya  xa  ja  ca  za  da  fa  ba  pa 
+      -1  wo  go  ko  yo  xo  jo  co  zo  do  fo  bo  po 
+      -2  wu  gu  ku  yu  xu  ju  cu  zu  du  fu  bu  pu 
+      -3  wr  gr  kr  yr  xr  jr  cr  zr  dr  fr  br  pr
+    ——————————————————————————————————————————————————————
+      ↑ FILE (octave)
+    ——————————————————————————————————————————————————————
+
 ### Tone Start
 
 The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank]. The traditional “naturals” are voiced consonants and the “accidentals” voiceless. The points of articulation move from the back of the mouth up through to the lips (labiovelar —> velar —> palatal —> postalveolar —> alveolar —> labiodental —> bilabial).
 
-    —————————————————————
-      START  VALUE  IPA
-    —————————————————————
-        p-   D♯/E♭   p
-        b-     D     b
-        f-   C♯/D♭   f
-        d-     C     d
-        z-     B     z
-        c-   A♯/B♭   tʃ
-        j-     A     dʒ
-        x-   G♯/A♭   ʃ
-        y-     G     j
-        k-   F♯/G♭   k
-        g-     F     g
-        w-     E     w
-    —————————————————————
+    ——————————————————————————————
+      START  VALUE  IPA  ENGLISH
+    ——————————————————————————————
+        p-   D♯/E♭   p     'p'
+        b-     D     b     'b'
+        f-   C♯/D♭   f     'f'
+        d-     C     d     'd'
+        z-     B     z     'z'
+        c-   A♯/B♭   tʃ   'ch'
+        j-     A     dʒ    'j'
+        x-   G♯/A♭   ʃ    'sh'
+        y-     G     j     'y'
+        k-   F♯/G♭   k     'k'
+        g-     F     g     'g'
+        w-     E     w     'w'
+    ——————————————————————————————
 
 ### Tone Rhyme
 
 The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `da` is middle C in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
 
-    ————————————————————
-      RHYME  FILE  IPA
-    ————————————————————
-       -il    +5    il
-       -al    +4    al
-       -l     +3    ɛl
-       -i     +2    i
-       -e     +1    e
-    ————————————————————
-       -a     ±0    ɑ
-    ————————————————————
-       -o     -1    o
-       -u     -2    u
-       -r     -3    ɚ
-       -ar    -4    ɑ˞
-       -or    -5    ɔ˞
-    ————————————————————
+    —————————————————————————————
+      RHYME  FILE  IPA  ENGLISH
+    —————————————————————————————
+       -il    +5    il   'eel'
+       -al    +4    al   'ahl'
+       -l     +3    ɛl   'ehl'
+       -i     +2    i     'ee'
+       -e     +1    e     'eh'
+    —————————————————————————————
+       -a     ±0    ɑ     'ah'
+    —————————————————————————————
+       -o     -1    o     'oh'
+       -u     -2    u     'oo'
+       -r     -3    ɚ     'er'
+       -ar    -4    ɑ˞    'ar'
+       -or    -5    ɔ˞    'or'
+    —————————————————————————————
 
 ## Root
 
@@ -814,27 +841,44 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
 
 These complementary ways of looking at music, one using absolute [pitch][pitch], one using relative [pitch][pitch], are central to the ethos of Counternote. Both should be used and learned because they teach different aspects of music. That said, some instruments will favor one style over another. The piano and various stringed instruments including guitar will favor [tones][tone] while transposing instruments including a capoed guitar will favor [spans][span] with a [key][key] center set to the lowest sounding [tone][tone] on that instrument.
 
+A list of all the two-[glyph][glyph] [spans][span] moving left to right, bottom to top:
+
+    ——————————————————————————————————————————————————————
+      RANK (pitch class) →
+    ——————————————————————————————————————————————————————
+          -4  -3 -♭3  -2 -♭2   1  ♭2   2  ♭3   3   4  ♭5 
+      +3  mv  ml  mm  mn  ms  ma  mr  mu  mo  me  mi  mt 
+      +2  vv  vl  vm  vn  vs  va  vr  vu  vo  ve  vi  vt
+      +1  lv  ll  lm  ln  ls  la  lr  lu  lo  le  li  lt
+       0  hv  hl  hm  hn  hs  ha  hr  hu  ho  he  hi  ht
+      -1  tv  tl  tm  tn  ts  ta  tr  tu  to  te  ti  tt
+      -2  sv  sl  sm  sn  ss  sa  sr  su  so  se  si  st
+      -3  nv  nl  nm  nn  ns  na  nr  nu  no  ne  ni  nt
+    ——————————————————————————————————————————————————————
+      ↑ FILE (octave)
+    ——————————————————————————————————————————————————————
+
 ### Span Start
 
 The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [key][key]. Middle C would typically be in the `h-` [file][file].
 
-    ————————————————————
-      START  FILE  IPA
-    ————————————————————
-       my-    +5    mʲ  
-       mw-    +4    mʷ
-       m-     +3    n
-       v-     +2    v
-       l-     +1    l
-    ————————————————————
-       h-     ±0    h
-    ————————————————————
-       t-     -1    t
-       s-     -2    s
-       n-     -3    n
-       ny-    -4    nʲ
-       nw-    -5    nʷ
-    ————————————————————
+    —————————————————————————————
+      START  FILE  IPA  ENGLISH
+    —————————————————————————————
+       my-    +5    mʲ    'my'
+       mw-    +4    mʷ    'mw'
+       m-     +3    n      'm'
+       v-     +2    v      'v'
+       l-     +1    l      'l'
+    —————————————————————————————
+       h-     ±0    h      'h'
+    —————————————————————————————
+       t-     -1    t      't'
+       s-     -2    s      's'
+       n-     -3    n      'n'
+       ny-    -4    nʲ    'ny'
+       nw-    -5    nʷ    'nw'
+    —————————————————————————————
 
 
 ### Span Rhyme
@@ -842,22 +886,22 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
 The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [key][key]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
 
 
-    ————————————————————————————————————————
-      RHYME   VALUE    IPA   PRONUNCIATION
-    ————————————————————————————————————————
-        -s      7     ɚs,r̩s      'ers'
-        -n     ♭7       un       'oon'
-        -m      6       om       'ohm'
-        -l     ♭6     ɛl,el      'ehl'
-        -v      5       iv       'eev'
-        -t    ♯4/♭5  ɑ˞t,art     'art'
-        -i      4       i        'ee'
-        -e      3      ɛ,e       'eh'
-        -o     ♭3       o        'oh'
-        -u      2       u        'oo'
-        -r     ♭2      ɚ,r̩       'er'
-        -a      1       ɑ        'ah'
-    ————————————————————————————————————————
+    ———————————————————————————————————
+      RHYME   VALUE    IPA    ENGLISH
+    ———————————————————————————————————
+        -s      7     ɚs,r̩s    'ers'
+        -n     ♭7       un     'oon'
+        -m      6       om     'ohm'
+        -l     ♭6     ɛl,el    'ehl'
+        -v      5       iv     'eev'
+        -t    ♯4/♭5  ɑ˞t,art   'art'
+        -i      4       i       'ee'
+        -e      3      ɛ,e      'eh'
+        -o     ♭3       o       'oh'
+        -u      2       u       'oo'
+        -r     ♭2      ɚ,r̩      'er'
+        -a      1       ɑ       'ah'
+    ———————————————————————————————————
 
 ## Rap
 
@@ -924,6 +968,7 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
 
     ————————————————————————————————
       WORD      VALUE        IPA
+    ————————————————————————————————
       dahr    minor 2nd      dɑhɚ
       dahu    major 2nd      dɑhu
       daho    minor 3rd      dɑho
@@ -937,10 +982,11 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
       dats    major 7th     dɑtɚs
     ————————————————————————————————
 
-[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
+[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a [mark][mark] `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
 
     —————————————————————————————————————
       WORD             VALUE
+    —————————————————————————————————————
       bm'xd   bass drum + closed hi-hat
       ck'kl       shook + clap
       rk'we        rake + high E
@@ -964,6 +1010,7 @@ A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are t
       -:  syllable break
     ——————————————————————————————
       GLYPH  BEFORE  ADDS   IPA
+    ——————————————————————————————
         a      V      j     a-jV
         r      V      w     ɚ-wV
         u      V      j     u-jV
@@ -1159,8 +1206,7 @@ The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic se
          ♭6             ||              3
                  hv  ===||===  hi              ±5
                5        ht        4            +6
-                      ♯4/♭5
-             BREAK ↑ 
+             BREAK ↑  ♯4/♭5
     ————————————————————————————————————————————————
 
 ### Lux Clock
@@ -1265,3 +1311,11 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
     ————————————————————————————————————————————————————————————————————
 
 ***
+
+# Nibs
+
+[Nibs][nibs] are the odd ends that fit in the odds and ends.
+
+### Mark
+
+A [mark][mark] is a single straight quote `'`. It serves as a separator.
