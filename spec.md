@@ -123,12 +123,6 @@ Toward a deeper understanding
   * [__rub__][rub]: a dissonant sounding interval
 * [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
-### [NIBS][nibs]
-
-Odds and ends
-
-  * [__mark__][mark]: the term `'`
-
 [gloss]: #gloss
 
 [bases]: #bases
@@ -227,10 +221,6 @@ Odds and ends
   [mood]: #mood
   [rub]: #rub
 [tap]: #tap
-
-[nibs]: #nibs
-
-  [mark]: #mark
 
 ***
 
@@ -450,7 +440,7 @@ A [round][round] is a block of repeated music marked with an unindented letter o
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a [mark][mark] in between, for example `A'1`.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
 
 ### Voice
 
@@ -462,7 +452,7 @@ A [stack][stack] is separate voices in the same [bar][bar]. These can be separat
 
 ### Lap
 
-A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a [mark][mark] in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
+A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a `'` in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
 
 ### Rep
 
@@ -549,9 +539,9 @@ A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun 
 * [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
 * the last [sound][sounds] does *not* receive a [hold][hold]
 * the total duration of all the [holds][hold] is the duration the [cut][cut] fills
-* a [mark][mark] `'` can be used as a separator that does not add duration
-* quadruplets and sextuplets should be written as two duplets/triplets connected by a [mark][mark]
-* septuplets and longer just add [sounds][sounds] and [marks][mark]
+* a `'` can be used as a separator that does not add duration
+* quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
+* septuplets and longer just add [sounds][sounds] and `'`
 * a [tie][tie] `aa` may be used to signal that one [sound][sounds] is held
 
 Those rules add up to:
@@ -645,7 +635,7 @@ Those rules add up to:
 
 ### Long Cut
 
-A [long cut][long cut] uses square brackets with [marks][mark] `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
+A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
       |4.|
@@ -984,7 +974,7 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
       dats    major 7th     dɑtɚs
     ————————————————————————————————
 
-[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a [mark][mark] `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
+[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
 
     —————————————————————————————————————
       WORD             VALUE
@@ -1317,11 +1307,3 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
     ————————————————————————————————————————————————————————————————————
 
 ***
-
-# Nibs
-
-[Nibs][nibs] are the odd ends that fit in the odds and ends.
-
-### Mark
-
-A [mark][mark] is a single straight quote `'`. It serves as a separator.
