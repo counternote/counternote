@@ -107,7 +107,7 @@ Composer directives
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
   * [__bang__][bang]: an accent or sudden ending of a [sound][sounds]
   * [__trem__][trem]: a rapid articulation of a [sound][sounds]
-* [__drift__][drift]: lyrics beneath the [voices][voice]
+* [__drift__][drift]: microtonal adjustments
 * [__line__][line]: lyrics beneath the [voices][voice]
 
 ### [SCHEMES][schemes]
@@ -267,7 +267,7 @@ A [phone][phone] is an indivisible articulation of spoken Counternote represente
 
 A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `q`, and `x` have been reassigned to tʃ 'ch', kʷ 'qu', and ʃ 'sh'. Because the American English 'r' is exceptionally weird, a trilled 'r' is also right. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A ʒ 'zh' consonant can be substituted, but it does mess with the order of articulation.
 
-The standard starting consonants with their points of articulation going from “high”  to “low” are as follows:
+The standard starting consonants with their points of articulation going from “high” to “low” (to the “neutral” glottal consonants) are as follows:
 
     —————————————————————————————————
       GLYPH    IPA    PRONUNCIATION
@@ -1181,8 +1181,6 @@ A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by
 ### Trem
 
 A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `ja!!.`.
-
-###
 
 ## Drift
 
