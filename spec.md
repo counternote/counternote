@@ -28,10 +28,12 @@ Structural elements
 
 * [__score__][score]: an entire composition
 * [__stage__][stage]: a place for compositional and instrumental details
-  * [__scribe__][scribe]: a composer of the [score][score]
+  * [__scribe__][scribe]: a composer of the [score][score] or [track][track]
+  * [__work__][work]: the collection a [score][score] or [track][track] belongs to
+  * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
   * [__key__][key]: the home base for a [track][track]
-* [__round__][round]: a block of repeated music
+* [__round__][round]: a block of music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
   * [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
@@ -57,12 +59,12 @@ Rhythmic elements
 
 * [__hold__][hold]: the duration of a [note][notes]
 * [__groove__][groove]: the arrangement of [beats][beats] in a [bar][bar]
+  * [__shift__][shift]: a section of polymeter
+  * [__rift__][rift]: a section of polyrhythm
 * [__click__][click]: the tempo
 * [__cut__][cut]: a tuplet
   * [__short cut__][short cut]: a quick [cut][cut] notation
   * [__long cut__][long cut]: a robust [cut][cut] notation
-* [__shift__][shift]: a section of polymeter
-* [__rift__][rift]: a section of polyrhythm
 
 ### [NOTES][notes]
 
@@ -142,6 +144,8 @@ Toward a deeper understanding
 [score]: #score
 [stage]: #stage
   [scribe]: #scribe
+  [work]: #work
+  [act]: #act
 [track]: #track
   [key]: #key
 [round]: #round
@@ -166,12 +170,12 @@ Toward a deeper understanding
 
 [hold]: #hold
 [groove]: #groove
+  [shift]: #shift
+  [rift]: #rift
 [click]: #click
 [cut]: #cut
   [short cut]: #short-cut
   [long cut]: #long-cut
-[shift]: #shift
-[rift]: #rift
 
 [notes]: #notes
 
@@ -401,8 +405,8 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
         f| ze.   je.ye ke^^y.  ,ye, |
         t| yo.   da.   ba.   ba.    |
       8
-        f| hYeva-      .      __    |
-        t| yo-         .      %A @B |
+        f| hYeva-      .      _     |
+        t| yo-         .      @A @B |
 
     *++
 
@@ -417,6 +421,14 @@ A [stage][stage] holds compositional and instrumental details on entire [scores]
 ### Scribe
 
 A [scribe][scribe] is a composer of a [score][score] or [track][track].
+
+### Work
+
+A [work][work] is collection of music a [score][score] or [track][track] belongs to.
+
+### Act
+
+An [act][act] is the performer of a [score][score] or [track][track].
 
 ## Track
 
@@ -440,7 +452,7 @@ A [key][key] is the home base for [tones][tone] and [spans][span] of a [track][t
 
 ## Round
 
-A [round][round] is a block of repeated music marked with an unindented letter or string on its own line for legibility, denoted above with `A`.
+A [round][round] is a block of music, often repeated, marked with an unindented letter or string on its own line for legibility, denoted above with `A`.
 
 ## Bar
 
@@ -448,11 +460,45 @@ A [bar][bar] contains all of the details of what to play when and how to play it
 
 ### Voice
 
-A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`. Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack].
+A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`:
+
+    —————————————————————————————————————————
+      # |4.|
+      1
+        | da=                             |
+      2
+        | da-             da-             |
+      3
+        | da.     da.     da.     da.     |
+      4
+        | da, da, da, da, da, da, da, da, |
+    —————————————————————————————————————————
+
+A [voice][voice] can be extended to another line using `+` at the end of the next to last lines and at the start of the next lines:
+
+    —————————————————————————————————————————
+      # |4.|
+      5
+        | da: da: da: da: da: da: da: da: +
+        + da: da: da: da: da: da: da: da: |
+      6
+        | da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; |
+    —————————————————————————————————————————
+
+Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
 
 ### Stack
 
-A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. Above, “thumb” and “fingers” were chosen.
+A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. The individual [voices][voice] can be labeled like in the Bourrée:
+
+    ———————————————————————————————————
+      1
+        f| ye.   ke.we pe.   we.ke  |
+        t| wo.   jo.   za.   jo.    |
+    ———————————————————————————————————
 
 ### Lap
 
@@ -482,11 +528,11 @@ A [pitch][pitch] is the number of vibrations per second, the frequency.
 
 ## Rank
 
-A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `da` for *C* or [spans][span] with the `h-` [start][start] such as `ha` for *C* in the [key][key] of `da`.
+A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `ja` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [key][key] of `ja`.
 
 ## File
 
-A [file][file] is analogous to the octave number, for instance the [band][band] from 256Hz to 512Hz.
+A [file][file] is analogous to the octave number, for instance the [band][band] from 220Hz to 440Hz.
 
 ## Band
 
@@ -541,11 +587,75 @@ A [hold][hold] is punctuation character that represents a duration. They come in
 
 ## Groove
 
-A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar].
+A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It is notated `|4.|` with the number of [holds][hold] summing to the total length of a [bar][bar].
+
+    —————————————————————————————————————————
+      # |4.|
+      1
+        | da=                             |
+      2
+        | da-             da-             |
+      3
+        | da.     da.     da.     da.     |
+      4
+        | da, da, da, da, da, da, da, da, |
+      5
+        | da: da: da: da: da: da: da: da: +
+        + da: da: da: da: da: da: da: da: |
+      6
+        | da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; +
+        + da; da; da; da; da; da; da; da; |
+    —————————————————————————————————————————
+
+ But [grooves][groove] can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [holds][hold] in the [groove][groove].
+
+### Shift
+
+A [shift][shift] is a section of polymeter. It is notated `|3./2.|` *three over two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+
+    ———————————————————————————
+      # |3./2.|
+      1
+        # three over two
+        | da.   da.   da.   |
+    ———————————————————————————
+
+Like with [grooves][groove], the [shift][shift] can be notated within the [voice][voice]:
+
+    ————————————————————————————————
+      # |2.|
+      1
+        # three over two
+        |3./2. da.   da.   da.   |
+    ————————————————————————————————
+
+### Rift
+
+A [rift][rift] is a section of polyrhythm.It is notated `|3.\2.|` *three against two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+
+    ———————————————————————————
+      # |3.\2.|
+      1
+        # three against two
+        | da.   da.   da.   |
+    ———————————————————————————
+
+Like with [grooves][groove], the [right][right] can be notated within the [voice][voice]:
+
+    ————————————————————————————————
+      # |2.|
+      1
+        # three against two
+        |3.\2. da.   da.   da.   |
+    ————————————————————————————————
 
 ## Click
 
-A [click][click] gives the tempo.
+A [click][click] gives the tempo. It is denoted in a [cue][cues] `#` by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor:
+
+
 
 ## Cut
 
@@ -567,7 +677,7 @@ A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun 
 Those rules add up to:
 
     —————————————————————————————————————————
-      |4.|
+      # |4.|
       1
         # one beat for =
         | da=                             |
@@ -622,7 +732,7 @@ Those rules add up to:
     +++
     # Wov |4.| @allegretto
 
-    e
+    A
       0
         f| -               .       we, ke, |
         t| -               .       yo, ko, |
@@ -648,8 +758,8 @@ Those rules add up to:
         f| ze.     je, ye, ke^^y.  ,   ye, |
         t| yo.     da.     ba.     ba.     |
       8
-        f| hYeva-          .       __      |
-        t| yo-             .       %A @B   |
+        f| hYeva-          .       _       |
+        t| yo-             .       @A @B   |
 
     *++
 
@@ -658,7 +768,7 @@ Those rules add up to:
 A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
-      |4.|
+      # |4.|
       1
         # one beat for =
         | da=                     |
@@ -685,10 +795,10 @@ A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] an
 
 [Long cuts][long cut] work in two places where [short cuts][short cut] cannot: nested tuplets and across multiple bars.
 
-To nest a [cut][cut], just place a [long cut][long cut] where a single cut would go:
+To nest a [cut][cut], just place a [long cut][long cut] where a single sound would go:
 
     —————————————————————————————————
-      |4.|
+      # |4.|
       1
         # triplet in triplet over 1
         |[da'da'[da'da'da]]=      |
@@ -698,7 +808,7 @@ To nest a [cut][cut], just place a [long cut][long cut] where a single cut would
 If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
 
     —————————————————————————————————
-      |4.|
+      # |4.|
       1
         # triplet in triplet over 2
         |[da'[da'da'da]+aa]=      |
@@ -707,7 +817,7 @@ If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [
 Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `aa` are used in this case as well:
 
     —————————————————————————————————
-      |4.|
+      # |4.|
       1
         # triplet over...
         |[da'da'da]=+=            |
@@ -717,14 +827,6 @@ Because tuplets are treated as a block of one duration split evenly, the total d
     —————————————————————————————————
 
 The `+` with the extra [hold][hold] `=` helps the performer see what how long the [cut][cut] is.
-
-## Shift
-
-A [shift][shift] is a section of polymeter.
-
-## Rift
-
-A [rift][rift] is a section of polyrhythm.
 
 ***
 
@@ -851,8 +953,8 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| lv.   li.lo lu^^o.  ,lo, |
         t| to.   hl.   hn.   hn.    |
       8
-        f| hOeva-      .     __     |
-        t| to-         .     %A @B  |
+        f| hOeva-      .     _      |
+        t| to-         .     @A @B  |
 
     *++
 
