@@ -4,9 +4,11 @@
 
 Counternote is a musical language, but do not let that idea trouble you if you failed Spanish. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things, unlike Spanish class.
 
+Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is, if determinable, are incidental, *raps*.
+
 ## Tones
 
-First up to practice are the twelve *tones*. These refer to absolute pitch, each named uniquely, kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
+First up to practice are the twelve *tones*. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
 
     ——————————————————————————————————————————————————
       E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
@@ -19,7 +21,7 @@ With those two tweaks in mind, speak each tone aloud paying attention to where y
 
 The tones in Counternote are ordered by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from — and come back around with `wa` which has two points of articulation: the lips and the back of the tongue. 
 
-With that in mind, pick up a piano or sit at a guitar and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice. Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
+Now you are ready pick up a piano or sit at a guitar and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice. Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
 
 ### Starts and Rhymes
 
@@ -73,7 +75,7 @@ Hopefully that wasn’t so tedious that you never want to look at a clockface ag
 
 ## Spans
 
-While tones let us talk about pitch in an absolute way, spans let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. Spans are the Counternote term for interval.
+While tones let us talk about pitch in an absolute way, spans let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
 
 Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6). Notice that they share the same vowel 'oh'. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
@@ -99,7 +101,60 @@ A great way of seeing these relationships is on the hue clock with intervals lab
                     BREAK ↑  ♯4/♭5
     ————————————————————————————————————————————————————————
 
+This time, starts and rhymes go file and rank, the inverse of the tones.
 
+    ————————————————————
+      START  FILE  IPA
+    ————————————————————
+        m-    +3    m
+        v-    +2    v
+        l-    +1    l
+        h-     0    h
+        t-    -1    t
+        s-    -2    s
+        n-    -3    n
+    ————————————————————
+
+And the rhymes contain more than meets the eye — you can think of them as abbreviations, you know, for brevity’s sake.
+
+    ——————————————————————————————————
+      RHYME  INTERVAL  IPA   ENGLISH
+    ——————————————————————————————————
+        -s      7     ɚs,r̩s   'ers'
+        -n     ♭7       un    'oon'
+        -m      6       om    'ohm'
+        -l     ♭6     ɛl,el   'ehl'
+        -v      5       iv    'eev'
+        -t    ♯4/♭5  ɑ˞t,art  'art'
+        -i      4       i      'ee'
+        -e      3      ɛ,e     'eh'
+        -o     ♭3       o      'oh'
+        -u      2       u      'oo'
+        -r     ♭2      ɚ,r̩     'er'
+        -a      1       ɑ      'ah'
+    ——————————————————————————————————
+
+If we are in the key of `ja`, everything lines up with the first clock:
+
+    ——————————————————————————————————————————
+                         12
+              11        ha/ja        1
+                hs/xa  ==||==  hr/ca
+        10               ||               2
+           hn/ya  =======||=======  hu/za
+                         ||
+                         ||
+      9  hm/ka  =========||=========  ho/da  3
+                         ||
+                         ||
+           hl/ga  =======||=======  he/fa
+         8               ||               4
+                hv/wa  ==||==  hi/ba
+              7         ht/pa        5
+              BREAK ↑    6
+    ——————————————————————————————————————————
+
+    If we keep ascending clockwise, we get 
 
     ————————————————————————————————————————————————————————
       ASCENDING CLOCKWISE
