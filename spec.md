@@ -1009,22 +1009,22 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
 The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [key][key]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
 
 
-    ———————————————————————————————————
-      RHYME   VALUE    IPA    ENGLISH
-    ———————————————————————————————————
-        -s      7     ɚs,r̩s    'ers'
-        -n     ♭7       un     'oon'
-        -m      6       om     'ohm'
-        -l     ♭6     ɛl,el    'ehl'
-        -v      5       iv     'eev'
-        -t    ♯4/♭5  ɑ˞t,art   'art'
-        -i      4       i       'ee'
-        -e      3      ɛ,e      'eh'
-        -o     ♭3       o       'oh'
-        -u      2       u       'oo'
-        -r     ♭2      ɚ,r̩      'er'
-        -a      1       ɑ       'ah'
-    ———————————————————————————————————
+    ——————————————————————————————————
+      RHYME  INTERVAL  IPA   ENGLISH
+    ——————————————————————————————————
+        -s      7     ɚs,r̩s   'ers'
+        -n     ♭7       un    'oon'
+        -m      6       om    'ohm'
+        -l     ♭6     ɛl,el   'ehl'
+        -v      5       iv    'eev'
+        -t    ♯4/♭5  ɑ˞t,art  'art'
+        -i      4       i      'ee'
+        -e      3      ɛ,e     'eh'
+        -o     ♭3       o      'oh'
+        -u      2       u      'oo'
+        -r     ♭2      ɚ,r̩     'er'
+        -a      1       ɑ      'ah'
+    ——————————————————————————————————
 
 ## Rap
 
