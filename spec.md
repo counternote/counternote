@@ -932,10 +932,10 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| -           .     la.lu  |
         t| -           .     to.tu  |
       1
-        f| lo.   lu.la lt.   la.lu  |
+        f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       2
-        f| lv.   lm.lt la.   ln.ll  |
+        f| lv.   lm.ls la.   ln.ll  |
         t| to.   tu.   ta.   tu.    |
       3
         f| lv.   hi.ho hu.   ho.hi  |
@@ -944,10 +944,10 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| lv.hi ho.hu ha.   la.lu  |
         t| to.   hv.   ta.tu to.tu  |
       5
-        f| lo.   lu.la lt.   la.lu  |
+        f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       6
-        f| lv.   lm.lt la.   ln.ll  |
+        f| lv.   lm.ls la.   ln.ll  |
         t| to.   tu.   ta.   tu.    |
       7
         f| lv.   li.lo lu^^o.  ,lo, |
@@ -1028,21 +1028,26 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
 
 ## Rap
 
-A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, [raps][rap] are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone] or [spans][span]. These are some of the proposed [raps][rap]:
+A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, [raps][rap] are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved [raps][rap]. These are some of the proposed [raps][rap]:
 
+    ————————————————————————
+      RESERVED
     ————————————————————————
       `aa` tie
       `hh` breath (rest)
+      `sp` speech, spoken
     ————————————————————————
-      `sp` speech
+      USER-DEFINABLE
+    ————————————————————————
+      NOISE
       `hx` hush, silence
       `nh` inhale
-      `xh` exhale
-    ————————————————————————
+      `eh` exhale
       `xs` blue noise
       `xx` white noise
-      `xw` pink noise
+      `xh` pink noise
     ————————————————————————
+      DRUM
       `pf` pf snare
       `ks` k snare
       `bm` bass drum
@@ -1062,6 +1067,7 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `dt` bright clave
       `dd` dark clave
     ————————————————————————
+      GUITAR
       `rk` rake
       `dp` deep tap
       `tp` light tap
@@ -1070,11 +1076,15 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `hd` handmute
       `sd` strum mute
     ————————————————————————
+      OTHER
       `rf` ref whistle
       `ws` Wilhelm scream
-      `ck` shook
+      `rn` siren
+      `xk` shook
+      `ck` crickets
       `cp` chirp, cheep
       `jz` the licc
+      `lk` laugh track
     ————————————————————————
 
 ## Tie
