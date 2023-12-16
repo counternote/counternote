@@ -374,7 +374,7 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
 
 ## Score
 
-There are obviously other details to go over, but it’s time to see some real music. This is the track Bourrée from Bach’s Lute Suite in E Minor written using tones:
+There are obviously other details to go over, but it’s time to see some real music. This is the A-section of the track Bourrée from Bach’s Lute Suite in E Minor written using tones:
 
     ++*
     SCORE: Lute Suite in E Minor
