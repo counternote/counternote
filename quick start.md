@@ -210,10 +210,10 @@ There is an inherent tension between absolute frequency like A440 and relative f
 
 This distinction is so important that there are no less than four ways of conveying relative pitch in standard western notation, none of which are standard:
 
-* as intervals like *m3* and *M6*
-* as scale degrees like *♭3* and *6*
-* as movable-do Solfège like *me* or *ma* and *la*
-* as integer notation *3* and *9*
+* as intervals like __m3__ and __M6__
+* as scale degrees like __♭3__ and __6__
+* as movable-do Solfège like __me__ or __ma__ and __la__
+* as integer notation __3__ and __9__
 
 Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do Solfège used in half the world.
 
