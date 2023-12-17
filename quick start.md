@@ -141,22 +141,22 @@ We can see all the spans starts here:
 
 And the rhymes contain more than meets the eye — you can think of them as abbreviations, you know, for brevity’s sake:
 
-    ——————————————————————————————————
-      RHYME  INTERVAL  IPA   ENGLISH
-    ——————————————————————————————————
-        -s      7     ɚs,r̩s   'ers'
-        -n     ♭7       un    'oon'
-        -m      6       om    'ohm'
-        -l     ♭6     ɛl,el   'ehl'
-        -v      5       iv    'eev'
-        -t    ♯4/♭5  ɑ˞t,art  'art'
-        -i      4       i      'ee'
-        -e      3      ɛ,e     'eh'
-        -o     ♭3       o      'oh'
-        -u      2       u      'oo'
-        -r     ♭2      ɚ,r̩     'er'
-        -a      1       ɑ      'ah'
-    ——————————————————————————————————
+    —————————————————————————————————————
+      RHYME  INTERVAL  IPA  ENGLISH-ISH
+    —————————————————————————————————————
+        -s      7     ɚs,r̩s    'ers'
+        -n     ♭7       un     'oon'
+        -m      6       om     'ohm'
+        -l     ♭6     ɛl,el    'ehl'
+        -v      5       iv     'eev'
+        -t    ♯4/♭5  ɑ˞t,art   'art'
+        -i      4       i       'ee'
+        -e      3      ɛ,e      'eh'
+        -o     ♭3       o       'oh'
+        -u      2       u       'oo'
+        -r     ♭2      ɚ,r̩      'er'
+        -a      1       ɑ       'ah'
+    —————————————————————————————————————
 
 Now it’s time to practice. Using the same instrument you used before, play the key center and then sing the interval up to an octave above as shown on this clock:
 
