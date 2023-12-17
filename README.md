@@ -4,13 +4,13 @@ Counternote is a chromatic musical language meant to be typed and sung. It is a 
 
 # Drive
 
-Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, by which they mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
+Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, by which they mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
 
 However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music —> staff —> ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music —> Counternote).
 
 Counternote has been created as a complementary foil to the venerable staff notation, not a replacement. Even the most seasoned of musicians is likely to gain another perspective on music by learning it.
 
-But this is not a one way street. Counternote is not yet set in stone and is still being tweaked, so any relevant feedback or constructive criticism will be considered and appreciated. You can join the [Discord][dc] and suggest away.
+But this is not a one way street. Counternote is not yet set in stone and is still being tweaked, so any relevant feedback or constructive criticism will be considered and appreciated. You can join the [Discord][dc] and suggest away.
 
 [md]:https://daringfireball.net/projects/markdown/ "John Gruber’s Markdown Spectacular"
 [abc]:https://abcnotation.com/ "ABC notation"
@@ -24,7 +24,7 @@ Don’t let the idea that Counternote is a musical language trouble you. The way
 
 ## Sounds
 
-Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
+Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
 
 ### Tones
 
@@ -35,11 +35,11 @@ First up to practice are the twelve *tones*. These refer to absolute pitch, each
       wa  ga  ka  ya  xa  ja  ca  za  da  fa  ba  pa
     ——————————————————————————————————————————————————
 
-You’ll notice `ka` and `ca` and maybe `za` and `xa` seem like they might sound the same, but they don’t — `c` is a 'ch' sound and `x` is a 'sh' sound in Counternote, always.
+You’ll notice `ka` and `ca` and maybe `za` and `xa` seem like they might sound the same, but they don’t — `c` is a 'ch' sound and `x` is a 'sh' sound in Counternote, always.
 
 With those two tweaks in mind, speak each tone aloud paying attention to where your tongue touches (or comes close to touching) the roof of your mouth all the way until `fa`, `ba`, and `pa` where you need to think about your lips. Now say `wa` again, this time thinking about your lips.
 
-The tones in Counternote are ordered by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from — and come back around with `wa` which has two points of articulation: the lips and the back of the tongue. 
+The tones in Counternote are ordered by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from — and come back around with `wa` which has two points of articulation: the lips and the back of the tongue. 
 
 Now you are ready pick up a guitar or sit at a piano (or open a music app on your phone, anything that does not use your mouth) and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice. Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
 
@@ -87,15 +87,15 @@ In the key of `ja`, the note directly below `wa` is `po` and directly above `pa`
              BREAK ↑    6
     ——————————————————————————————————————————
 
-Now this may seem somewhat arbitrary — why not just always have the break between `wa` and `pa`? First of all, the break is informative, giving some sense of the range of a piece. But most importantly, it makes the tones and spans symmetrical.
+Now this may seem somewhat arbitrary — why not just always have the break between `wa` and `pa`? First of all, the break is informative, giving some sense of the range of a piece. But most importantly, it makes the tones and spans symmetrical.
 
-Before we get to those spans, try taking out a piece of paper and drawing clockfaces, but instead of writing the numbers, place the tones in chromatic order. (It’s okay if you are really bad at drawing circles — you can always trace a glass — but it is important to place the tones right, so here’s a tip: put a mark at the 12, 3, 6, and 9 o’clock positions — north, east, south, west — and then put every third tone at those marks as you write them around the circle.)
+Before we get to those spans, try taking out a piece of paper and drawing clockfaces, but instead of writing the numbers, place the tones in chromatic order. (It’s okay if you are really bad at drawing circles — you can always trace a glass — but it is important to place the tones right, so here’s a tip: put a mark at the 12, 3, 6, and 9 o’clock positions — north, east, south, west — and then put every third tone at those marks as you write them around the circle.)
 
 Hopefully that wasn’t so tedious that you never want to look at a clockface again, because this next section might just go all-in on clocks.
 
 ### Spans
 
-While tones let us talk about pitch in an absolute way, spans let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
+While tones let us talk about pitch in an absolute way, spans let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
 
 Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6). Notice that they share the same vowel 'oh'. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
@@ -157,7 +157,7 @@ We can see all the spans starts here:
         n-    -3    n
     ————————————————————
 
-And the rhymes contain more than meets the eye — you can think of them as abbreviations, you know, for brevity’s sake:
+And the rhymes contain more than meets the eye — you can think of them as abbreviations, you know, for brevity’s sake:
 
     —————————————————————————————————————
       RHYME  INTERVAL  IPA  ENGLISH-ISH
@@ -237,7 +237,7 @@ Each of those has problems, chief among them is that the only one that doesn’t
 
 By representing pitch in these two different ways up front, Counternote can unambiguously handle stops and chords and *transposing instruments* without muddying the absolute pitch meaning of the tones.
 
-If you play one of these transposing instruments, you may want to spend some extra time learning these spans. Tones should never be used with transposing instruments — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up. A is the key center for E-standard tuning.
+If you play one of these transposing instruments, you may want to spend some extra time learning these spans. Tones should never be used with transposing instruments — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up. A is the key center for E-standard tuning.
 
 ### Raps
 
@@ -322,12 +322,12 @@ The six holds ordered by powers of two are as follows:
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
     ———————————————————————————
-      `;`    1/32   qi    kʷi
-      `:`    1/16   qe    kʷe
-      `,`    1/8    qa    kʷɑ
-      `.`    1/4    qo    kʷo
-      `-`    1/2    qu    kʷu
-      `=`    1/1    qr    kʷɚ
+      `;`    1/32   ql    kʷɛl
+      `:`    1/16   qi    kʷi
+      `,`    1/8    qe    kʷe
+      `.`    1/4    qa    kʷɑ
+      `-`    1/2    qo    kʷo
+      `=`    1/1    qu    kʷu
     ———————————————————————————
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
