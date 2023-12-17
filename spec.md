@@ -257,7 +257,7 @@ All [glyphs][glyph] are presented here in `monospace`.
 
 ## Word
 
-A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da` or the [hold][hold] `qo` (`.`).
+A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da` or the [hold][hold] `qa` (`.`).
 
 ## Sign
 
@@ -575,12 +575,12 @@ A [hold][hold] is punctuation character that represents a duration. They come in
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
     ———————————————————————————
-      `;`    1x     qi    kʷi
-      `:`    2x     qe    kʷe
-      `,`    4x     qa    kʷɑ
-      `.`    8x     qo    kʷo
-      `-`   16x     qu    kʷu
-      `=`   32x     qr    kʷɚ
+      `;`    1/32   ql    kʷɛl
+      `:`    1/16   qi    kʷi
+      `,`    1/8    qe    kʷe
+      `.`    1/4    qa    kʷɑ
+      `-`    1/2    qo    kʷo
+      `=`    1/1    qu    kʷu
     ———————————————————————————
       `?`    ?x     qh    kʷə
     ———————————————————————————
