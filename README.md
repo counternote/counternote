@@ -126,17 +126,17 @@ We see the *break* is in the same place that the one for tones was:
     ——————————————————————————————————————————
                          12
               11        ha/ja        1
-                hs/xa  ==||==  hr/ca
-        10               ||               2
-           hn/ya  =======||=======  hu/za
+                 hs/xa ==||== hr/ca
+         10              ||               2
+            hn/ya =======||======= hu/za
                          ||
                          ||
-      9  hm/ka  =========||=========  ho/da  3
+      9   hm/ka =========||========= ho/da   3
                          ||
                          ||
-           hl/ga  =======||=======  he/fa
+            hl/ga =======||======= he/fa
          8               ||               4
-                hv/wa  ==||==  hi/ba
+                 hv/wa ==||== hi/ba
               7         ht/pa        5
               BREAK ↑    6
     ——————————————————————————————————————————
