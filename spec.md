@@ -1056,10 +1056,10 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `dm` mid tom
       `gn` low tom
       `gm` floor tom
-      `tx` opening hi-hat
-      `dx` open hi-hat
-      `xt` closing hi-hat
-      `xd` closed hi-hat
+      `px` opening hi-hat
+      `tx` open hi-hat
+      `xp` closing hi-hat
+      `xt` closed hi-hat
       `kt` rim shot
       `cx` crash
       `cs` ride
