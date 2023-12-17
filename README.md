@@ -20,11 +20,11 @@ But this is not a one way street. Counternote is not yet set in stone and is sti
 
 # Quick Start
 
-Counternote can be thought of as a musical language, but do not let that idea trouble you. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things.
+Don’t let the idea that Counternote is a musical language trouble you. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things.
 
 ## Sounds
 
-Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminable or incidental, *raps*.
+Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
 
 ### Tones
 
