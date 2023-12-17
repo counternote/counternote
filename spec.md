@@ -119,12 +119,13 @@ Toward a deeper understanding
 * [__clock__][clock]: a [scheme][schemes] for visualization the relationships between [tones][tone] or [spans][span]
   * [__hue clock__][hue clock]: [tones][tone] and [spans][span] arranged in chromatic order
   * [__lux clock__][lux clock]: [tones][tone] and [spans][span] arranged in harmonic order
-  * [__lux__][lux]: a measure of relative brightness or darkness
+  * [__lux__][lux]: a measure of the relative brightness or darkness of an interval
   * [__bright lux__][bright lux]: a harmonic relationship evoking a sense of opening up
   * [__dark lux__][dark lux]: a harmonic relationship evoking a sense of settling down
-  * [__blend__][blend]: a consonant sounding interval
-  * [__mood__][mood]: a major/minor sounding interval
-  * [__rub__][rub]: a dissonant sounding interval
+  * [__feel__][feel]: a measure of emotional quality of an interval
+  * [__blend__][blend]: a consonant [feel][feel]
+  * [__mood__][mood]: a major/minor [feel][feel]
+  * [__rub__][rub]: a dissonant [feel][feel]
 * [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
 [gloss]: #gloss
@@ -225,6 +226,7 @@ Toward a deeper understanding
   [lux]: #lux
   [bright lux]: #bright-lux
   [dark lux]: #dark-lux
+  [feel]: #feel
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
@@ -1360,7 +1362,7 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
     —————————————————————————————————————————————————
        |-----DARK-----| LUX |----BRIGHT----|  
-                         1
+                         1                 |-FEEL-|
                 4       -a        5         BLENDS
                   -i  ==||==  -v               |
           ♭7            ||             2       |
@@ -1389,17 +1391,21 @@ A [bright lux][bright lux] is a harmonic relationship that evokes a sense of ope
 
 A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
+### Feel
+
+A [feel][feel] is the emotional quality of an interval that runs orthogonal to [lux][lux].
+
 ### Blend
 
-A [blend][blend] is a more harmonious sounding interval: `-a`, `-u`, `-i`, `-v`, `-m`. They are the high vowels, some paired with labial consonants, plus the [root][root] which is an open vowel. If these were colors, they’d be neutrals that go with anything.
+A [blend][blend] is a more harmonious [feel][feel]: `-a`, `-u`, `-i`, `-v`, `-m`. They are the high vowels, some paired with labial consonants, plus the [root][root] which is an open vowel.
 
 ### Mood
 
-A [mood][mood] is an interval that gives a major or minor quality: `-o`, `-e`, `-l`, `-n`. All are  mid vowels, some paired with alveolar consonants. If these were colors, they would be more saturated and vibrant, but not stridently so.
+A [mood][mood] is a [feel][feel] that gives a major or minor quality: `-o`, `-e`, `-l`, `-n`. All are  mid vowels, some paired with alveolar consonants.
 
 ### Rub
 
-A [rub][rub] is a dissonant interval that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants. If these were colors, they’d be best used as accents due to their intensity.
+A [rub][rub] is a dissonant [feel][feel] that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants.
 
 ## Tap
 
