@@ -1,6 +1,6 @@
 ***
 
-Counternote is a chromatic musical language meant to be typed and sung.
+Counternote is a chromatic musical language meant to be typed and sung. It is a work in progress so there may be errors.
 
 # Drive
 
