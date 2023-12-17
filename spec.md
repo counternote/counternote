@@ -1,6 +1,6 @@
 ***
 
-# Counternote Specification version 0.8.1
+# Counternote Specification version 0.8.2
 
 This is a terse description of Counternote with minimal definitions and examples.
 
@@ -353,8 +353,8 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
     ————————————————————————————————
       RHYME    IPA   PRONUNCIATION
        -s     ɚs,r̩s      'ers'
-       -n       un       'oon'
-       -m       om       'ohm'
+       -m       um       'oom'
+       -n       on       'ohn'
        -l     ɛl,el      'ehl'
        -v       iv       'eev'
        -t    ɑ˞t,art     'art'
@@ -935,7 +935,7 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       2
-        f| lv.   lm.ls la.   ln.ll  |
+        f| lv.   ln.ls la.   lm.ll  |
         t| to.   tu.   ta.   tu.    |
       3
         f| lv.   hi.ho hu.   ho.hi  |
@@ -947,11 +947,11 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       6
-        f| lv.   lm.ls la.   ln.ll  |
+        f| lv.   ln.ls la.   lm.ll  |
         t| to.   tu.   ta.   tu.    |
       7
         f| lv.   li.lo lu^^o.  ,lo, |
-        t| to.   hl.   hn.   hn.    |
+        t| to.   hl.   hm.   hm.    |
       8
         f| hOeva-      .     _      |
         t| to-         .     @A @B  |
@@ -966,17 +966,17 @@ A matrix of all the [spans][span] moving left to right, bottom to top:
       RANK (pitch class) →
     ——————————————————————————————————————————————————————
           -4  -3 -♭3  -2 -♭2   1  ♭2   2  ♭3   3   4  ♭5 
-      +5 myv myl mym myn mys mya myr myu myo mye myi myt 
-      +4 mwv mwl mwm mwn mws mwa mwr mwu mwo mwe mwi mwt 
-      +3  mv  ml  mm  mn  ms  ma  mr  mu  mo  me  mi  mt 
-      +2  vv  vl  vm  vn  vs  va  vr  vu  vo  ve  vi  vt
-      +1  lv  ll  lm  ln  ls  la  lr  lu  lo  le  li  lt
-       0  hv  hl  hm  hn  hs  ha  hr  hu  ho  he  hi  ht
-      -1  tv  tl  tm  tn  ts  ta  tr  tu  to  te  ti  tt
-      -2  sv  sl  sm  sn  ss  sa  sr  su  so  se  si  st
-      -3  nv  nl  nm  nn  ns  na  nr  nu  no  ne  ni  nt
-      -4 nyv nyl nym nyn nys nya nyr nyu nyo nye nyi nyt
-      -5 nwv nwl nwm nwn nws nwa nwr nwu nwo nwe nwi nwt
+      +5 myv myl myn mym mys mya myr myu myo mye myi myt 
+      +4 mwv mwl mwn mwm mws mwa mwr mwu mwo mwe mwi mwt 
+      +3  mv  ml  mn  mm  ms  ma  mr  mu  mo  me  mi  mt 
+      +2  vv  vl  vn  vm  vs  va  vr  vu  vo  ve  vi  vt
+      +1  lv  ll  ln  lm  ls  la  lr  lu  lo  le  li  lt
+       0  hv  hl  hn  hm  hs  ha  hr  hu  ho  he  hi  ht
+      -1  tv  tl  tn  tm  ts  ta  tr  tu  to  te  ti  tt
+      -2  sv  sl  sn  sm  ss  sa  sr  su  so  se  si  st
+      -3  nv  nl  nn  nm  ns  na  nr  nu  no  ne  ni  nt
+      -4 nyv nyl nyn nym nys nya nyr nyu nyo nye nyi nyt
+      -5 nwv nwl nwn nwm nws nwa nwr nwu nwo nwe nwi nwt
     ——————————————————————————————————————————————————————
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
@@ -1013,8 +1013,8 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
       RHYME  INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
         -s      7     ɚs,r̩s   'ers'
-        -n     ♭7       un    'oon'
-        -m      6       om    'ohm'
+        -m     ♭7       um    'oom'
+        -n      6       on    'ohn'
         -l     ♭6     ɛl,el   'ehl'
         -v      5       iv    'eev'
         -t    ♯4/♭5  ɑ˞t,art  'art'
@@ -1110,8 +1110,8 @@ A [stop][stop] is two [voices][voice] sounding simultaneously. They can be writt
       daht  diminished 5th  dɑhɑ˞t
       datv   perfect 5th    dɑtiv
       datl    minor 6th     dɑtel
-      datm    major 6th     dɑtom
-      datn    minor 7th     dɑtun
+      datn    major 6th     dɑton
+      datm    minor 7th     dɑtum
       dats    major 7th     dɑtɚs
     ————————————————————————————————
 
@@ -1168,9 +1168,9 @@ A [chord][chord] is a [knit][knits] constructed using the capitalized [tone star
          A         Jev         ˈdʒev           'JEHV'
          B5        Zav         ˈzɑv            'ZAHV'
          Cm        Dov         ˈdov            'DOHV'
-         C♯7       Fevn       ˈfe.vən        'FEH-vuhn'
-         D13      Bevnuim   ˌbev.nuˈyim    'Behv-noo-YEEM'
-      E♭13(♭5♯9)  Petnoim   ˌpet.noˈwim    'Peht-noh-WEEM'
+         C♯7       Fevm       ˈfe.vəm        'FEH-vuhm'
+         D13      Bevmuin   ˌbev.muˈyin    'Behv-moo-YEEN'
+      E♭13(♭5♯9)  Petmoin   ˌpet.moˈwin    'Peht-moh-WEEN'
     ————————————————————————————————————————————————————————
 
 
@@ -1186,9 +1186,9 @@ A [braid][braid] is a [chord][chord] built with a [span][span] as the [root][roo
          A         Aev         ʔɑˈev          'ah-YEHV'
          B5        Uav         ʔuˈɑv          'oo-YAHV'
          Cm        Oov         ʔoˈov          'oh-WOHV'
-         C♯7       Eevn       ʔeˈe.vən       'eh-WEH-vuhn'
-         D13      Ievnuim  ʔiˌjev.nuˈjim  'oo-Yehv-noo-YEEM'
-      E♭13(♭5♯9)  Tetnoim   ˌtet.noˈwim    'teht-noh-WEEM'
+         C♯7       Eevm       ʔeˈe.vəm       'eh-WEH-vuhm'
+         D13      Ievmuin  ʔiˌjev.muˈjin  'oo-Yehv-moo-YEEN'
+      E♭13(♭5♯9)  Tetmoin   ˌtet.moˈwin    'teht-moh-WEEN'
     —————————————————————————————————————————————————————————
 
 ## Weave
@@ -1212,9 +1212,9 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
        D/F♯  200232   evavae  tBevavae     tə.beˈvɑ.vɑˌje      tuh-beh-VAH-vah-Yeh
                       evavae  tIevavae   təˌʔi.jeˈvɑ.vɑˌje   tuh-Ee-yeh-VAH-vah-Yeh
         G    320033   aevava  tYaevava     təˌja.jeˈvɑ.vɑ      tuh-Yah-yeh-VAH-vah
-                      aevava  tNaevava     təˌnɑ.jeˈvɑ.vɑ      tuh-Nah-yeh-VAH-vah
+                      aevava  tMaevava     təˌmɑ.jeˈvɑ.vɑ      tuh-Mah-yeh-VAH-vah
         G    320003   aevaea  tYaevaea   təˌjɑ.jeˈvɑ.jeˌjɑ   tuh-Yah-yeh-VAH-yeh-Yah
-                      aevaea  tNaevaea   təˌnɑ.jeˈvɑ.jeˌjɑ   tuh-Nah-yeh-VAH-yeh-Yah
+                      aevaea  tMaevaea   təˌmɑ.jeˈvɑ.jeˌjɑ   tuh-Mah-yeh-VAH-yeh-Yah
         C    x32010    aevae   tDaevae     tə.dɑˈje.vɑˌje      tuh-dah-YEH-vah-Yeh
                        aevae   tOaevae   təˌʔo.jɑˈje.vɑˌje   tuh-Oh-yah-YEH-vah-Yeh
        C/G   332010   vaevae  tDvaevae   təˌdə.vɑˈje.vɑˌje   tuh-Duh-vah-YEH-vah-Yeh
@@ -1307,8 +1307,8 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
       -r  +8
       -a  ±0
       -s  -8
-      -n  -17
-      -m  -25
+      -m  -17
+      -n  -25
       -l  -33
       -v  -42
     ————————————
@@ -1341,10 +1341,10 @@ The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic se
                7        ha        ♭2            0
                  hs  ===||===  hr              ±1
          ♭7             ||              2
-            hn  ========||========  hu         ±2
+            hm  ========||========  hu         ±2
                         ||
                         ||
-       6  hm  ==========||==========  ho  ♭3   ±3
+       6  hn  ==========||==========  ho  ♭3   ±3
                         ||
                         ||
             hl  ========||========  he         ±4
@@ -1359,15 +1359,15 @@ The [hue clock][hue clock] places [tones][tone] or [spans][span] in chromatic se
 Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 with 11) makes the [lux clock][lux clock] with all of the [spans][span] written in harmonic sequence around the clockface. All of the [bright luxes][bright lux] are on the right and all of the [dark luxes][dark lux] are on the left. The [blends][blend], [moods][mood], and [rubs][rub] slice the [lux clock][lux clock] horizontally into three sections. 
 
     —————————————————————————————————————————————————
-       |-----DARK-----|    |----BRIGHT----|   LUX   
+       |-----DARK-----| LUX |----BRIGHT----|  
                          1
                 4       -a        5         BLENDS
                   -i  ==||==  -v               |
           ♭7            ||             2       |
-             -n  =======||=======  -u        —————
+             -m  =======||=======  -u        —————
                         ||
                         ||
-       ♭3  -o  =========||=========  -m   6  MOODS
+       ♭3  -o  =========||=========  -n   6  MOODS
                         ||                     |
                         ||                     |
              -l  =======||=======  -e        —————
@@ -1379,7 +1379,7 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
 ### Lux
 
-A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively. Curiously, `-t` is both very dark and very bright at the same time.
+A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth (dark and bright) respectively.
 
 ### Bright Lux
 
