@@ -6,6 +6,8 @@ Counternote is a chromatic musical language meant to be typed and sung. It is a 
 
 [quick start]: #quick-start
 
+***
+
 # Drive
 
 Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, by which they mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
