@@ -276,10 +276,10 @@ These are some proposed raps, only the first three of which cannot be defined on
       `dm` mid tom
       `gn` low tom
       `gm` floor tom
-      `tx` opening hi-hat
-      `dx` open hi-hat
-      `xt` closing hi-hat
-      `xd` closed hi-hat
+      `px` opening hi-hat
+      `tx` open hi-hat
+      `xp` closing hi-hat
+      `xt` closed hi-hat
       `kt` rim shot
       `cx` crash
       `cs` ride
