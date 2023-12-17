@@ -48,7 +48,7 @@ Sounds in Counternote come in three varieties — those where pitch is the defin
 
 ### Tones
 
-First up to practice are the twelve *tones*. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
+First up to practice are the twelve tones. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
 
     ——————————————————————————————————————————————————
       E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
@@ -57,17 +57,19 @@ First up to practice are the twelve *tones*. These refer to absolute pitch, each
 
 You’ll notice `ka` and `ca` and maybe `za` and `xa` seem like they might sound the same, but they don’t — `c` is a 'ch' sound and `x` is a 'sh' sound in Counternote, always.
 
-With those two tweaks in mind, speak each tone aloud paying attention to where your tongue touches (or comes close to touching) the roof of your mouth all the way until `fa`, `ba`, and `pa` where you need to think about your lips. Now say `wa` again, this time thinking about your lips.
+With those two tweaks in mind, speak each tone aloud paying attention to where your tongue touches (or comes close to touching) the roof of your mouth all the way until `fa` where you need to think about your lips. Now say `wa` again, this time also thinking about your lips.
 
 The tones in Counternote are ordered by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from — and come back around with `wa` which has two points of articulation: the lips and the back of the tongue. 
 
-Now you are ready pick up a guitar or sit at a piano (or open a music app on your phone, anything that does not use your mouth) and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice. Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
+Now you are ready pick up a guitar or sit at a piano (or open a music app on your phone, anything that does not use your mouth) and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice.
+
+Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
 
 ### Starts and Rhymes
 
 Maybe you’ll have noticed during that first exercise that while all of those tones start with different consonants, they all rhyme with `-a`. So that’s what it’s called, a *rhyme*. Might as well call the start of the tones the *start* while we are being Captain Obvious.
 
-The tone starts tell you the “pitch class” which is music jargon for all the notes that we label a letter, like C. Not just middle C but any and all C. In Counternote, this is the *rank* of a sound.
+The tone starts tell you the “pitch class” which is music jargon for all the notes that we label a specific letter, like C — not just middle C but any and all C. In Counternote, this is the *rank* of a sound.
 
 The tone rhyme, on the other hand, tells which specific octave a note is in. For `-a`, it could be any octave, but more specifically it’s the center octave. `da` is likely to be middle C. `-e` will be an octave up from there; `-o`, an octave down. In Counternote, this is the *file* of a sound.
 
@@ -115,11 +117,15 @@ Hopefully that wasn’t so tedious that you never want to look at a clockface ag
 
 ### Spans
 
-While tones let us talk about pitch in an absolute way, spans let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
+While tones let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
 
-Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6). Notice that they share the same vowel 'oh'. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
+Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hn` 'hone' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
-A great way of seeing these relationships is on the hue clock with intervals labeled in chromatic order (presented here with the “English-ish” pronunciation along the sides):
+(The hack for traditional interval names is that minor become major, diminished becomes augmented, perfect stays perfect, and the interval numbers always add up to 9, for instance M2 —> m7, M3 —> m6, A4 —> d5, P5 —> P4, and so on. In Counternote, we just look at the quality of the vowel.)
+
+### Hue Clock
+
+A great way of seeing these relationships is on the *hue clock* with intervals labeled in chromatic order, presented here with the “English-ish” pronunciation along the sides:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK
@@ -128,10 +134,10 @@ A great way of seeing these relationships is on the hue clock with intervals lab
       'hah'         -♭2        ha        ♭2
       'hearse'          hs  ===||===  hr             'her'
                 -2             ||              2
-      'hoon?'      hn  ========||========  hu        'who'
+      'whom'       hm  ========||========  hu        'who'
                                ||
                                ||
-      'home' -♭3 hm  ==========||==========  ho  ♭3  'hoe'
+      'hone' -♭3 hn  ==========||==========  ho  ♭3  'hoe'
                                ||
                                ||
       'hell'       hl  ========||========  he        'heh'
@@ -145,19 +151,19 @@ We see the *break* is in the same place that the one for tones was:
 
     ——————————————————————————————————————————
                          12
-              11        ha/ja        1
-                 hs/xa ==||== hr/ca
+              11        ja/ha        1
+                 xa/hs ==||== ca/hr
          10              ||               2
-            hn/ya =======||======= hu/za
+            ya/hm =======||======= za/hu
                          ||
                          ||
-      9   hm/ka =========||========= ho/da   3
+      9   ka/hn =========||========= da/ho   3
                          ||
                          ||
-            hl/ga =======||======= he/fa
+            ga/hl =======||======= fa/he
          8               ||               4
-                 hv/wa ==||== hi/ba
-              7         ht/pa        5
+                 wa/hv ==||== ba/hi
+              7         pa/ht        5
               BREAK ↑    6
     ——————————————————————————————————————————
 
@@ -183,8 +189,8 @@ And the rhymes contain more than meets the eye — you can think of them as abbr
       RHYME  INTERVAL  IPA  ENGLISH-ISH
     —————————————————————————————————————
         -s      7     ɚs,r̩s    'ers'
-        -n     ♭7       un     'oon'
-        -m      6       om     'ohm'
+        -m     ♭7       un     'oom'
+        -n      6       om     'ohn'
         -l     ♭6     ɛl,el    'ehl'
         -v      5       iv     'eev'
         -t    ♯4/♭5  ɑ˞t,art   'art'
@@ -205,10 +211,10 @@ Now it’s time to practice. Using the same instrument you used before, play the
       'hah'           7        la        ♭2
       'lerse?'          ls  ===||===  hr             'her'
                 ♭7             ||              2
-      'loon'       ln  ========||========  hu        'who'
+      'loom'       lm  ========||========  hu        'who'
                                ||
                                ||
-      'loam'  6  lm  ==========||==========  ho  ♭3  'hoe'
+      'lone'  6  ln  ==========||==========  ho  ♭3  'hoe'
                                ||
                                ||
       'lell?'      ll  ========||========  he        'heh'
@@ -227,10 +233,10 @@ Do this for no more than ten minutes, maybe changing the key center to get a fee
       'hah'         -♭2        ta        -7
       'hearse'          hs  ===||===  tr            'ter?'
                 -2             ||             -♭7
-      'hoon?'      hn  ========||========  tu        'too'
+      'whom'       hm  ========||========  tu        'too'
                                ||
                                ||
-      'home' -♭3 hm  ==========||==========  to  -6  'toe'
+      'hone' -♭3 hn  ==========||==========  to  -6  'toe'
                                ||
                                ||
       'hell'       hl  ========||========  te       'teh?'
@@ -257,7 +263,90 @@ Each of those has problems, chief among them is that the only one that doesn’t
 
 By representing pitch in these two different ways up front, Counternote can unambiguously handle stops and chords and *transposing instruments* without muddying the absolute pitch meaning of the tones.
 
-If you play one of these transposing instruments, you may want to spend some extra time learning these spans. Tones should never be used with transposing instruments — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up. A is the key center for E-standard tuning.
+If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
+
+### Lux Clock
+
+There is one additional way of arranging tones and spans around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the lux clock: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `ja` again:
+
+    ——————————————————————————————————————————
+      LUX CLOCK: TONES/SPANS
+    ——————————————————————————————————————————
+                         12
+              11        ja/ha        1
+                 ba/hi ==||== wa/hv
+         10              ||               2
+            ya/hm =======||======= za/hu
+                         ||
+                         ||
+      9   da/ho =========||========= ka/hn   3
+                         ||
+                         ||
+            ga/hl =======||======= fa/he
+         8               ||               4
+                 ca/hr ==||== xa/hs
+              7         pa/ht        5
+                          6
+    ——————————————————————————————————————————
+
+If you were to say the tones aloud without pausing between them with your hand on your throat, you might notice that your larynx vibrates continuously from the tones from 8–12–2 and stops vibrating at the start of the tones from 3–7. This mirrors the “natural” notes (the white keys on a typical piano) with *voiced* consonants and the “accidental” notes (the black keys on a typical piano) with *voiceless* consonants. Note that while the accidentals start out voiceless, they still end with a voice and are indispensable for harmony in our modern culture.
+
+This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios popularized by Pythagoras that are known as the major scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
+
+The more seasoned musicians will have already recognized the arrangement of tones and spans on the lux clock — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
+
+Let’s take a look at the clock with just the span rhymes and scale degrees written around it. You can do this with your regular circle of fifths as well:
+
+    ——————————————————————————————————————————
+      LUX CLOCK: SPAN RHYMES & SCALE DEGREES
+    ——————————————————————————————————————————
+                         1
+                4       -a        5
+                  -i  ==||==  -v
+          ♭7            ||             2
+             -m  =======||=======  -u
+                        ||
+                        ||
+       ♭3  -o  =========||=========  -n   6
+                        ||
+                        ||
+             -l  =======||=======  -e
+          ♭6            ||             3
+                  -r  ==||==  -s
+               ♭2       -t        7
+                      ♭5/♯4
+    ——————————————————————————————————————————
+
+Notice how the flattened degrees line up on the left side along with the smaller of the (non-root) perfect intervals? This is the minor (smaller) side. It evokes a sense of settling down and turning inward, a darkening. The right side is the major (larger) side that evokes a sense of opening up and turning outward, a brightening. This brightening/darkening is *lux* in Counternote:
+
+    —————————————————————————————————————————————————
+      LUX CLOCK: SPAN RHYMES & SCALE DEGREES
+    —————————————————————————————————————————————————
+       |-----DARK-----| LUX |----BRIGHT----|  
+                         1                 |-FEEL-|
+                4       -a        5         BLENDS
+                  -i  ==||==  -v               |
+          ♭7            ||             2       |
+             -m  =======||=======  -u        —————
+                        ||
+                        ||
+       ♭3  -o  =========||=========  -n   6  MOODS
+                        ||                     |
+                        ||                     |
+             -l  =======||=======  -e        —————
+          ♭6            ||             3
+                  -r  ==||==  -s              RUBS
+               ♭2       -t        7            |
+                      ♭5/♯4                  —————
+    —————————————————————————————————————————————————
+
+But there is an additional bit beyond the lux — the *feel* of a span. Counternote breaks these up into 3 sections:
+
+* the *blends*: low open and high close vowels, some with labial consonants, which are smooth spans that do not impart much tonality
+* the *moods* mid close vowels, some with alveolar consonants, which are mostly smooth but impart a lot of tonality
+* the *rubs* rhoticized vowels, some with alveolar consonants, which can be rather rough, imparting mostly dissonance and some tonality.
+
+Associating these articulations with the emotional tenor of a span will help solidify the feeling of these intervals. Practice the *blends* for five minutes or so, then the *moods*, and then the *rubs*. Separating them into these groups helps narrow the scope of what needs to be practiced in a systematic way. If you use an ear training app or are trying to transcribe a song, you can use these feels to winnow down the possibilities.
 
 ### Raps
 
@@ -480,7 +569,7 @@ And here it is written using spans:
         f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       2
-        f| lv.   lm.ls la.   ln.ll  |
+        f| lv.   ln.ls la.   lm.ll  |
         t| to.   tu.   ta.   tu.    |
       3
         f| lv.   hi.ho hu.   ho.hi  |
@@ -492,11 +581,11 @@ And here it is written using spans:
         f| lo.   lu.la ls.   la.lu  |
         t| ta.   ti.   hv.   ti.    |
       6
-        f| lv.   lm.ls la.   ln.ll  |
+        f| lv.   ln.ls la.   lm.ll  |
         t| to.   tu.   ta.   tu.    |
       7
         f| lv.   li.lo lu^^o.  ,lo, |
-        t| to.   hl.   hn.   hn.    |
+        t| to.   hl.   hm.   hm.    |
       8
         f| hOeva-      .     _      |
         t| to-         .     @A @B  |
