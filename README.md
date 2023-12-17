@@ -1,8 +1,8 @@
 ***
 
-Counternote is a chromatic musical language meant to be typed and sung. It is a work in progress so there may be errors.
+### Counternote is a chromatic musical language meant to be typed and sung. It is a work in progress so there may be errors.
 
-### Jump to [QUICK START][quick start]
+#### Jump to [QUICK START][quick start]
 
 [quick start]: #quick-start
 
