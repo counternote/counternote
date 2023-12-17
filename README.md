@@ -2,11 +2,9 @@
 
 Counternote is a chromatic musical language meant to be typed and sung. It is a work in progress so there may be errors.
 
-#### Jump to [QUICK START][quick start]
+### Jump to [QUICK START][quick start]
 
 [quick start]: #quick-start
-
-***
 
 # Drive
 
@@ -376,7 +374,7 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 ### Cuts
 
-In Counternote, cuts are groups of notes that *cut* up some duration into equal parts. There are two kinds of cuts, long and short. It’s the short cuts that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| da.da.da |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets, triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, cuts are groups of notes that *cut* up some duration into equal parts. There are two kinds of cuts, long and short. It’s the short cuts that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| da.da.da |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
