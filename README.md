@@ -542,7 +542,7 @@ There are obviously other details to go over, but it’s time to see some real m
         t| yo.   da.   ba.   ba.    |
       8
         f| hYeva-      .      _     |
-        t| yo-         .      @A @B |
+        t| yo-         .      %A %B |
 
     *++
 
@@ -588,7 +588,7 @@ And here it is written using spans:
         t| to.   hl.   hm.   hm.    |
       8
         f| hOeva-      .     _      |
-        t| to-         .     @A @B  |
+        t| to-         .     %A %B  |
 
     *++
 
