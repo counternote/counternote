@@ -352,7 +352,7 @@ Associating these articulations with the emotional tenor of a span will help sol
 
 The last kind of sound in Counternote is whatever doesn’t fit in the tones/spans. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
 
-Compared to tones and spans, raps are easier to demonstrate because they’re just a list of mostly user-defined sounds. They are also harder to learn because they’re just a list of mostly user-defined sounds. There are two basic rules for creating raps, only the first of which must be followed:
+Compared to tones and spans, raps are easier to demonstrate because they’re just a list of mostly user-defined sounds. They are also harder to learn because thy’re just a list of mostly user-defined sounds. There are two basic rules for creating raps, only the first of which must be followed:
 
 * they cannot overlap with tones, spans, or reserved raps
 * they should sound like what they stand for
