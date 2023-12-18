@@ -434,7 +434,7 @@ An [act][act] is the performer of a [score][score] or [track][track].
 
 ## Track
 
-A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
+A [track][track] is an individual piece that may or may not occur simultaneously within a score. They are separated with `+++` [signs][sign].
 
 ### Key
 
