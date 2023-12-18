@@ -408,7 +408,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
         t| yo.   da.   ba.   ba.    |
       8
         f| hYeva-      .      _     |
-        t| yo-         .      @A @B |
+        t| yo-         .      %A %B |
 
     *++
 
@@ -434,7 +434,7 @@ An [act][act] is the performer of a [score][score] or [track][track].
 
 ## Track
 
-A [track][track] is an individual piece that may or may not occur simultaneously within a score. They are separated with `+++` [signs][sign].
+A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
 
 ### Key
 
@@ -506,13 +506,13 @@ A [stack][stack] is separate voices in the same [bar][bar]. These can be separat
 
 A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a `'` in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
 
-### Rep
-
-A [rep][rep] is a directive to repeat a [bar][bar] or [round][round].
-
 ### Jump
 
-A [jump][jump] is a directive on what part to play next.
+A [jump][jump] is a directive on what part to play next. [Jumps][jump] are denoted by `%` followed by the [bar][bar] or [round][round] to continue from.
+
+### Rep
+
+A [rep][rep] is a directive to repeat some number of [holds][hold] previous. It is denoted by `%%` to repeat the previous bar or `%%..` to repeat the previous `..`.
 
 ## Pit
 
@@ -611,7 +611,7 @@ A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It i
         + da; da; da; da; da; da; da; da; |
     —————————————————————————————————————————
 
- But [grooves][groove] can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [holds][hold] in the [groove][groove].
+ But [grooves][groove] can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [holds][hold] in the [groove][groove].
 
 ### Shift
 
@@ -635,7 +635,7 @@ Like with [grooves][groove], the [shift][shift] can be notated within the [voice
 
 ### Rift
 
-A [rift][rift] is a section of polyrhythm.It is notated `|3.\2.|` *three against two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+A [rift][rift] is a section of polyrhythm. It is notated `|3.\2.|` *three against two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
 
     ———————————————————————————
       # |3.\2.|
@@ -655,9 +655,7 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
 
 ## Click
 
-A [click][click] gives the tempo. It is denoted in a [cue][cues] `#` by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor:
-
-
+A [click][click] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor.
 
 ## Cut
 
@@ -761,7 +759,7 @@ Those rules add up to:
         t| yo.     da.     ba.     ba.     |
       8
         f| hYeva-          .       _       |
-        t| yo-             .       @A @B   |
+        t| yo-             .       %A %B   |
 
     *++
 
@@ -956,7 +954,7 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         t| to.   hl.   hm.   hm.    |
       8
         f| hOeva-      .     _      |
-        t| to-         .     @A @B  |
+        t| to-         .     %A %B  |
 
     *++
 
@@ -1240,7 +1238,7 @@ A [vamp][vamp] is a [comp][comp] that specifies rhythm and/or voicings.
 
 ## Tweak
  
-A [tweak][tweak] is an instruction on effects that occur above the [voices][voice] they modify.
+A [tweak][tweak] is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#[` and `]#`.
 
 ## Art
 
@@ -1248,11 +1246,11 @@ An [art][art] is an inline [cue][cues] each of which are denoted by special [gly
 
 ### Smooth
 
-A [smooth][smooth] line is legato, which is to be determined by each instrument. Such lines are bracketed by parentheses `(` `)`.
+A [smooth][smooth] lick is legato, which is to be determined by each instrument. Such licks are bracketed by parentheses `(` `)`.
 
 ### Ring
 
-A [ring][ring] shows [sounds][sounds] sustaining over other [sounds][sounds]. These begin with the [sound][sounds] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sounds] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
+A [ring][ring] lick shows [sounds][sounds] sustaining over other [sounds][sounds]. These begin with the [sound][sounds] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sounds] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
 
     ————————————————————————————————————————————————
       7
@@ -1295,6 +1293,10 @@ A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by
 ### Trem
 
 A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `ja!!.`.
+
+### Node
+
+A [node][node] is the place where a resonating medium remains static such as at the twelfth fret with the second harmonic or an overtone accentuated in throat singing. It is denoted by `*` followed by the number for the nth harmonic: `jo*3` is the [node][node] for the third harmonic at the seventh or nineteenth fret that sounds like the first string on a guitar `we`. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
 
 ## Drift
 
