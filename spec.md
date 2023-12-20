@@ -109,6 +109,7 @@ Composer directives
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
   * [__bang__][bang]: an accent or sudden ending of a [sound][sounds]
   * [__trem__][trem]: a rapid articulation of a [sound][sounds]
+  * [__stay__][stay]: an indefinite sustaining of [sound][sounds]
 * [__drift__][drift]: microtonal adjustments
 * [__line__][line]: lyrics beneath the [voices][voice]
 
@@ -215,6 +216,7 @@ Toward a deeper understanding
   [trill]: #trill
   [bang]: #bang
   [trem]: #trem
+  [stay]: #stay
 [drift]: #drift
 [line]: #line
 
@@ -407,7 +409,7 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
         f| ze.   je.ye ke^^y.  ,ye, |
         t| yo.   da.   ba.   ba.    |
       8
-        f| hYeva-      .      _     |
+        f| hYeva-      .      %     |
         t| yo-         .      %A %B |
 
     *++
@@ -572,7 +574,7 @@ A [break][break] is the point where the [file][file] changes based on the [key][
 
 ## Hold
 
-A [hold][hold] is punctuation character that represents a duration. They come in seven varieties, six ordered by powers of two and a special one for indefinite duration:
+A [hold][hold] is punctuation character that represents a duration. They come in six varieties ordered by powers of two:
 
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
@@ -583,8 +585,6 @@ A [hold][hold] is punctuation character that represents a duration. They come in
       `.`    1/4    qa    kʷɑ
       `-`    1/2    qo    kʷo
       `=`    1/1    qu    kʷu
-    ———————————————————————————
-      `?`    ?x     qh    kʷə
     ———————————————————————————
 
 ## Groove
@@ -615,7 +615,7 @@ A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It i
 
 ### Shift
 
-A [shift][shift] is a section of polymeter. It is notated `|3./2.|` *three over two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+A [shift][shift] is a section of polymeter with one [groove][groove] superimposed over another at the same [click][click] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
 
     ———————————————————————————
       # |3./2.|
@@ -635,7 +635,7 @@ Like with [grooves][groove], the [shift][shift] can be notated within the [voice
 
 ### Rift
 
-A [rift][rift] is a section of polyrhythm. It is notated `|3.\2.|` *three against two* with the length of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+A [rift][rift] is a section of polyrhythm with one [groove][groove] mashed against another at different [clicks][click] so the first beat and total [bar][bar] length stays the same but the [grooves][groove] drift in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second [groove][groove]:
 
     ———————————————————————————
       # |3.\2.|
@@ -655,7 +655,7 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
 
 ## Click
 
-A [click][click] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor.
+A [click][click] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. It also refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [click][click].
 
 ## Cut
 
@@ -758,7 +758,7 @@ Those rules add up to:
         f| ze.     je, ye, ke^^y.  ,   ye, |
         t| yo.     da.     ba.     ba.     |
       8
-        f| hYeva-          .       _       |
+        f| hYeva-          .       %       |
         t| yo-             .       %A %B   |
 
     *++
@@ -953,7 +953,7 @@ In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in t
         f| lv.   li.lo lu^^o.  ,lo, |
         t| to.   hl.   hm.   hm.    |
       8
-        f| hOeva-      .     _      |
+        f| hOeva-      .     %      |
         t| to-         .     %A %B  |
 
     *++
@@ -1293,6 +1293,10 @@ A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by
 ### Trem
 
 A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `ja!!.`.
+
+### Stay
+
+A [stay][stay] is an indefinite sustaining of a [sound][sounds]. It is denoted by `?` and roughly equivalent to a fermata. By default, it will add at least one extra [click][click] without changing the [groove][groove]. A [stay][stay] affects an entire [bar][bar], but only the [sounds][sounds] notated with the [stay][stay] will be held. The duration of the sustain can be altered by adding [holds][hold] immediately after the [stay][stay]: `?..` will add at least two [clicks][click] to a [bar][bar] of `|4.|` for a total of six [clicks][click].
 
 ### Node
 
