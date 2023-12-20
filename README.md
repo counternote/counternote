@@ -32,7 +32,7 @@ For typeability, everything is written in the printable characters of 7-bit ASCI
 
 For singability, each note is one syllable, as are each interval distinct from the notes. The simple idea here is that music is not an abstract notion, it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronounciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
 
-For codeability, everything is written in ASCII which is easily interpretted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
+For codeability, everything is written in ASCII which is easily interpretted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
 
 For shareability, everything is just a string of plaintext, easily shared via text message and read in monospace. There is no need to translate it into a human consummable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
 
@@ -69,7 +69,7 @@ Try it singing the tones chromatically, then try just the naturals (white keys o
 
 Maybe you’ll have noticed during that first exercise that while all of those tones start with different consonants, they all rhyme with `-a`. So that’s what it’s called, a *rhyme*. Might as well call the start of the tones the *start* while we are being Captain Obvious.
 
-The tone starts tell you the “pitch class” which is music jargon for all the notes that we label a specific letter, like C — not just middle C but any and all C. In Counternote, this is the *rank* of a sound.
+The tone starts tell you the “pitch class” which is music jargon for all the notes that we label a specific letter, like C — not just middle C but any and all C. In Counternote, this is the *rank* of a sound.
 
 The tone rhyme, on the other hand, tells which specific octave a note is in. For `-a`, it could be any octave, but more specifically it’s the center octave. `da` is likely to be middle C. `-e` will be an octave up from there; `-o`, an octave down. In Counternote, this is the *file* of a sound.
 
@@ -263,11 +263,11 @@ Each of those has problems, chief among them is that the only one that doesn’t
 
 By representing pitch in these two different ways up front, Counternote can unambiguously handle stops and chords and *transposing instruments* without muddying the absolute pitch meaning of the tones.
 
-If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
+If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
 
 ### Lux Clock
 
-There is one additional way of arranging tones and spans around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the lux clock: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `ja` again:
+There is one additional way of arranging tones and spans around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the lux clock: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `ja` again:
 
     ——————————————————————————————————————————
       LUX CLOCK: TONES/SPANS
@@ -293,7 +293,7 @@ If you were to say the tones aloud without pausing between them with your hand o
 
 This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios popularized by Pythagoras that are known as the major scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
 
-The more seasoned musicians will have already recognized the arrangement of tones and spans on the lux clock — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
+The more seasoned musicians will have already recognized the arrangement of tones and spans on the lux clock — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
 
 Let’s take a look at the clock with just the span rhymes and scale degrees written around it. You can do this with your regular circle of fifths as well:
 
@@ -340,7 +340,7 @@ Notice how the flattened degrees line up on the left side along with the smaller
                       ♭5/♯4                  —————
     —————————————————————————————————————————————————
 
-But there is an additional bit beyond the lux — the *feel* of a span. Counternote breaks these up into 3 sections:
+But there is an additional bit beyond the lux — the *feel* of a span. Counternote breaks these up into 3 sections:
 
 * the *blends*: low open and high close vowels, some with labial consonants, which are smooth spans that do not impart much tonality
 * the *moods* mid close vowels, some with alveolar consonants, which are mostly smooth but impart a lot of tonality
@@ -441,7 +441,7 @@ The six holds ordered by powers of two are as follows:
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
-### Grooves
+### Grooves and Clicks
 
 Grooves tell the duration of a bar. They are written between `|` characters with the number of holds like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
@@ -460,6 +460,8 @@ Here are four rather boring bars of Counternote:
     —————————————————————————————————————————
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
+
+Clicks tell the tempo of a piece. They also refer to the hold in the groove that gets the beat, like a metronome click.
 
 ### Cuts
 
@@ -587,7 +589,7 @@ And here it is written using spans:
         f| lv.   li.lo lu^^o.  ,lo, |
         t| to.   hl.   hm.   hm.    |
       8
-        f| hOeva-      .     _      |
+        f| hOeva-      .     %      |
         t| to-         .     %A %B  |
 
     *++
