@@ -2,7 +2,7 @@
 
 # Counternote Specification version 0.8.2
 
-This is a terse description of Counternote with minimal definitions and examples.
+This is a terse description of Counternote with definitions and examples.
 
 ***
 
@@ -111,7 +111,7 @@ Composer directives
   * [__trem__][trem]: a rapid articulation of a [sound][sounds]
   * [__stay__][stay]: an indefinite sustaining of [sound][sounds]
 * [__drift__][drift]: microtonal adjustments
-* [__line__][line]: lyrics beneath the [voices][voice]
+* [__chant__][chant]: lyrics beneath the [voices][voice]
 
 ### [SCHEMES][schemes]
 
@@ -218,7 +218,7 @@ Toward a deeper understanding
   [trem]: #trem
   [stay]: #stay
 [drift]: #drift
-[line]: #line
+[chant]: #chant
 
 [schemes]: #schemes
 
@@ -1325,9 +1325,9 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
 
 Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
-## Line
+## Chant
 
-A [line][line] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp` in the [voice][voice].
+A [chant][chant] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp` in the [voice][voice].
 
 ***
 
