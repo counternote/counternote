@@ -121,7 +121,7 @@ While tones let us talk about pitch in an absolute way, *spans* let us talk abou
 
 Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hn` 'hone' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
-(The hack for traditional interval names is that minor become major, diminished becomes augmented, perfect stays perfect, and the interval numbers always add up to 9, for instance M2 —> m7, M3 —> m6, A4 —> d5, P5 —> P4, and so on. In Counternote, we just look at the quality of the vowel.)
+(The hack for traditional interval names is that minor becomes major and vice versa, diminished becomes augmented and vice versa, perfect stays perfect, and the interval numbers always add up to 9, for instance M2 —> m7, M3 —> m6, A4 —> d5, P5 —> P4, and so on. In Counternote, we just look at the quality of the vowel.)
 
 ### Hue Clock
 
@@ -167,9 +167,9 @@ We see the *break* is in the same place that the one for tones was:
               BREAK ↑    6
     ——————————————————————————————————————————
 
-Notice that the span start is always `h-` and the tone rhyme is always `-a`. That’s because spans starts and rhymes go *file then rank*, the opposite of the tones.
+Notice that the span start is always `h-` and the tone rhyme is always `-a`. That’s because span starts and rhymes go *file then rank*, the opposite of the tones.
 
-We can see all the spans starts here:
+We can see the main spans starts here:
 
     ————————————————————
       START  FILE  IPA
@@ -343,8 +343,8 @@ Notice how the flattened degrees line up on the left side along with the smaller
 But there is an additional bit beyond the lux — the *feel* of a span. Counternote breaks these up into 3 sections:
 
 * the *blends*: low open and high close vowels, some with labial consonants, which are smooth spans that do not impart much tonality
-* the *moods* mid close vowels, some with alveolar consonants, which are mostly smooth but impart a lot of tonality
-* the *rubs* rhoticized vowels, some with alveolar consonants, which can be rather rough, imparting mostly dissonance and some tonality.
+* the *moods*: mid close vowels, some with alveolar consonants, which are mostly smooth but impart a lot of tonality
+* the *rubs*: rhoticized vowels, some with alveolar consonants, which can be rather rough, imparting mostly dissonance and some tonality.
 
 Associating these articulations with the emotional tenor of a span will help solidify the feeling of these intervals. Practice the *blends* for five minutes or so, then the *moods*, and then the *rubs*. Separating them into these groups helps narrow the scope of what needs to be practiced in a systematic way. If you use an ear training app or are trying to transcribe a song, you can use these feels to winnow down the possibilities.
 
@@ -352,7 +352,7 @@ Associating these articulations with the emotional tenor of a span will help sol
 
 The last kind of sound in Counternote is whatever doesn’t fit in the tones/spans. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
 
-Compared to tones and spans, raps are easier to demonstrate because they’re just a list of mostly user-defined sounds. They are also harder to learn because thy’re just a list of mostly user-defined sounds. There are two basic rules for creating raps, only the first of which must be followed:
+Compared to tones and spans, raps are easier to demonstrate because they’re just a list of mostly user-defined sounds. They are also harder to learn because they’re just a list of mostly user-defined sounds. There are two basic rules for creating raps, only the first of which must be followed:
 
 * they cannot overlap with tones, spans, or reserved raps
 * they should sound like what they stand for
