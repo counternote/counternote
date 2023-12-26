@@ -543,7 +543,7 @@ There are obviously other details to go over, but it’s time to see some real m
         f| ze.   je.ye ke^^y.  ,ye, |
         t| yo.   da.   ba.   ba.    |
       8
-        f| hYeva-      .      _     |
+        f| hYeva-      .      %     |
         t| yo-         .      %A %B |
 
     *++
