@@ -26,7 +26,7 @@ But this is not a one way street. Counternote is not yet set in stone and is sti
 
 There are five design principles that guide Counternote’s take on a musical notation: It must be readable, typeable, singable, codeable, and shareable. Unfortunately, satisfying all five of these constraints perfectly is impossible. Design is compromise just as life is pain — *anyone who tells you differently is selling something*.
 
-For readability, the notes are simple and unambiguous — a note never has more than one name and is descriptive enough to make some intuitive and logical sense. The same goes for intervals and chords. They are organized in a way that can be sightread rather easily while still allowing for durations and articulations to appear in the same line like punctuation while dynamics, accompaniments, and other details appear in parallel above or below the line to avoid clutter. 
+For readability, the notes are simple and unambiguous — a note never has more than one name and is descriptive enough to make some intuitive and logical sense. The same goes for intervals and chords. They are organized in a way that can be sightread rather easily while still allowing for durations and articulations to appear in the same line like punctuation and dynamics, accompaniments, and other details appear in parallel above or below the line to avoid clutter. 
 
 For typeability, everything is written in the printable characters of 7-bit ASCII which are easily typed by humans. The notes require as few keystrokes as possible, both to make typing faster and to take up less space on the line. In the process of compressing the written length of the notes, some characters have had their pronunciation reassigned and common digraphs have been eliminated, limiting them to just one consonant, vowel, or vowel-consonant pair per character.
 
@@ -48,80 +48,24 @@ Sounds in Counternote come in three varieties — those where pitch is the defin
 
 ### Tones
 
-First up to practice are the twelve tones. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
+First up to introduce are the twelve *tones*. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
 
-    ——————————————————————————————————————————————————
+   ——————————————————————————————————————————————————
       E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
-      wa  ga  ka  ya  xa  ja  ca  za  da  fa  ba  pa
+      ma  ba  fa  za  sa  la  ta  na  da  ca  ra  ka
     ——————————————————————————————————————————————————
 
-You’ll notice `ka` and `ca` and maybe `za` and `xa` seem like they might sound the same, but they don’t — `c` is a 'ch' sound and `x` is a 'sh' sound in Counternote, always.
+You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. 
 
-With those two tweaks in mind, speak each tone aloud paying attention to where your tongue touches (or comes close to touching) the roof of your mouth all the way until `fa` where you need to think about your lips. Now say `wa` again, this time also thinking about your lips.
+The *tones* in Counternote are an adaptation of solfege ordered loosely by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
 
-The tones in Counternote are ordered by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from — and come back around with `wa` which has two points of articulation: the lips and the back of the tongue. 
-
-Now you are ready pick up a guitar or sit at a piano (or open a music app on your phone, anything that does not use your mouth) and in a range that is somewhat comfortable for your voice, play each note and sing the tone by its name. If you don’t yet know where the traditional notes are — look them up, it’s great practice.
-
-Try it singing the tones chromatically, then try just the naturals (white keys on the piano) or just the accidentals (black keys on the piano), maybe some major scales starting at different roots, some triads, whatever you like. Give it ten minutes at least, but no more than twenty.
-
-### Starts and Rhymes
-
-Maybe you’ll have noticed during that first exercise that while all of those tones start with different consonants, they all rhyme with `-a`. So that’s what it’s called, a *rhyme*. Might as well call the start of the tones the *start* while we are being Captain Obvious.
-
-The tone starts tell you the “pitch class” which is music jargon for all the notes that we label a specific letter, like C — not just middle C but any and all C. In Counternote, this is the *rank* of a sound.
-
-The tone rhyme, on the other hand, tells which specific octave a note is in. For `-a`, it could be any octave, but more specifically it’s the center octave. `da` is likely to be middle C. `-e` will be an octave up from there; `-o`, an octave down. In Counternote, this is the *file* of a sound.
-
-Tone starts and rhymes go rank and file.
-
-There are eleven rhymes for eleven files but we only really care about seven:
-
-    —————————————————————————————————
-      RHYME  FILE  IPA  ENGLISH-ISH
-    —————————————————————————————————
-       -l     +3    ɛl     'el'
-       -i     +2    i      'ee'
-       -e     +1    e      'eh'
-       -a      0    ɑ      'ah'
-       -o     -1    o      'oh'
-       -u     -2    u      'oo'
-       -r     -3    ɚ      'er'
-    —————————————————————————————————
-
-In the key of `ja`, the note directly below `wa` is `po` and directly above `pa` is `we`. This is called the *break*. If we place the tones around a clockface with the key center at 12, the break is bewteen 6 and 7:
-
-    ——————————————————————————————————————————
-                        12
-              11        ja         1
-                 xa  ===||===  ca
-         10             ||              2
-            ya  ========||========  za
-                        ||
-                        ||
-      9   ka  ==========||==========  da   3
-                        ||
-                        ||
-            ga  ========||========  fa
-         8              ||              4
-                 wa  ===||===  ba
-              7         pa         5
-             BREAK ↑    6
-    ——————————————————————————————————————————
-
-Now this may seem somewhat arbitrary — why not just always have the break between `wa` and `pa`? First of all, the break is informative, giving some sense of the range of a piece. But most importantly, it makes the tones and spans symmetrical.
-
-Before we get to those spans, try taking out a piece of paper and drawing clockfaces, but instead of writing the numbers, place the tones in chromatic order. (It’s okay if you are really bad at drawing circles — you can always trace a glass — but it is important to place the tones right, so here’s a tip: put a mark at the 12, 3, 6, and 9 o’clock positions — north, east, south, west — and then put every third tone at those marks as you write them around the circle.)
-
-Hopefully that wasn’t so tedious that you never want to look at a clockface again, because this next section might just go all-in on clocks.
+*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key of a piece and very little else.
 
 ### Spans
 
-While tones let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A span is just the Counternote term for interval.
+While *tones* let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is just the Counternote term for interval.
 
-Instead of the academic names of minor third and major sixth, spans give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hn` 'hone' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
-
-(The hack for traditional interval names is that minor becomes major and vice versa, diminished becomes augmented and vice versa, perfect stays perfect, and the interval numbers always add up to 9, for instance M2 —> m7, M3 —> m6, A4 —> d5, P5 —> P4, and so on. In Counternote, we just look at the quality of the vowel.)
+For *spans*, we have to introduce the notion of *starts* and *rhymes* — the onset and coda for the linguists our there. The *start* is the first letter and the *rhyme* is the second letter — the part that rhymes. Where *tones* change in their *start* for each note, *spans* change in their *rhyme* while the *start* changes the octave.
 
 ### Hue Clock
 
@@ -132,55 +76,35 @@ A great way of seeing these relationships is on the *hue clock* with intervals l
     ————————————————————————————————————————————————————————
                                 1                    
       'hah'         -♭2        ha        ♭2
-      'hearse'          hs  ===||===  hr             'her'
+      'hers'            hz  ===||===  hr             'her'
                 -2             ||              2
-      'whom'       hm  ========||========  hu        'who'
+      'hoon?'      hn  ========||========  hu        'who'
                                ||
                                ||
-      'hone' -♭3 hn  ==========||==========  ho  ♭3  'hoe'
+      'home' -♭3 hm  ==========||==========  ho  ♭3  'hoe'
                                ||
                                ||
-      'hell'       hl  ========||========  he        'heh'
+      'hell'       hl  ========||========  he        'hey'
                 -3             ||              3
       'heave'           hv  ===||===  hi             'hee'
-                     -4        ht        4         'heart'
+                     -4        hp        4          'harp'
                     BREAK ↑  ♯4/♭5
     ————————————————————————————————————————————————————————
 
-We see the *break* is in the same place that the one for tones was:
+Instead of the academic names of minor third and major sixth, *spans* give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
-    ——————————————————————————————————————————
-                         12
-              11        ja/ha        1
-                 xa/hs ==||== ca/hr
-         10              ||               2
-            ya/hm =======||======= za/hu
-                         ||
-                         ||
-      9   ka/hn =========||========= da/ho   3
-                         ||
-                         ||
-            ga/hl =======||======= fa/he
-         8               ||               4
-                 wa/hv ==||== ba/hi
-              7         pa/ht        5
-              BREAK ↑    6
-    ——————————————————————————————————————————
-
-Notice that the span start is always `h-` and the tone rhyme is always `-a`. That’s because span starts and rhymes go *file then rank*, the opposite of the tones.
-
-We can see the main spans starts here:
+We can see the main *span starts* here:
 
     ————————————————————
       START  FILE  IPA
     ————————————————————
-        m-    +3    m
-        v-    +2    v
+        n-    +3    n
+        t-    +2    t
         l-    +1    l
         h-     0    h
-        t-    -1    t
-        s-    -2    s
-        n-    -3    n
+        v-    -1    v
+        p-    -2    p
+        m-    -3    m
     ————————————————————
 
 And the rhymes contain more than meets the eye — you can think of them as abbreviations, you know, for brevity’s sake:
@@ -188,9 +112,9 @@ And the rhymes contain more than meets the eye — you can think of them as abbr
     —————————————————————————————————————
       RHYME  INTERVAL  IPA  ENGLISH-ISH
     —————————————————————————————————————
-        -s      7     ɚs,r̩s    'ers'
-        -m     ♭7       un     'oom'
-        -n      6       om     'ohn'
+        -z      7     ɚz,r̩z    'erz'
+        -n     ♭7       un     'oon'
+        -m      6       om     'ohm'
         -l     ♭6     ɛl,el    'ehl'
         -v      5       iv     'eev'
         -t    ♯4/♭5  ɑ˞t,art   'art'
@@ -209,12 +133,12 @@ Now it’s time to practice. Using the same instrument you used before, play the
     ————————————————————————————————————————————————————————
                                 8   ↓ BREAK                  
       'hah'           7        la        ♭2
-      'lerse?'          ls  ===||===  hr             'her'
+      'lerz?'           lz  ===||===  hr             'her'
                 ♭7             ||              2
-      'loom'       lm  ========||========  hu        'who'
+      'loon'       ln  ========||========  hu        'who'
                                ||
                                ||
-      'lone'  6  ln  ==========||==========  ho  ♭3  'hoe'
+      'loam'  6  lm  ==========||==========  ho  ♭3  'hoe'
                                ||
                                ||
       'lell?'      ll  ========||========  he        'heh'
@@ -230,19 +154,19 @@ Do this for no more than ten minutes, maybe changing the key center to get a fee
       HUE CLOCK: DESCENDING COUNTERCLOCKWISE
     ————————————————————————————————————————————————————————
                      BREAK ↓   -8                    
-      'hah'         -♭2        ta        -7
-      'hearse'          hs  ===||===  tr            'ter?'
+      'hah'         -♭2        va        -7
+      'hers'            hs  ===||===  vr            'ver?'
                 -2             ||             -♭7
-      'whom'       hm  ========||========  tu        'too'
+      'whom'       hm  ========||========  vu       'voo?'
                                ||
                                ||
-      'hone' -♭3 hn  ==========||==========  to  -6  'toe'
+      'hone' -♭3 hn  ==========||==========  vo  -6 'voe?'
                                ||
                                ||
-      'hell'       hl  ========||========  te       'teh?'
+      'hell'       hl  ========||========  ve        'vey'
                 -3             ||             -♭6
-      'heave'           hv  ===||===  ti             'tee'
-                     -4        tt        -5         'tart'
+      'heave'           hv  ===||===  vi             'vee'
+                     -4        vt        -5        'vart?'
                             -♯4/♭5
     ————————————————————————————————————————————————————————
 
@@ -263,58 +187,58 @@ Each of those has problems, chief among them is that the only one that doesn’t
 
 By representing pitch in these two different ways up front, Counternote can unambiguously handle stops and chords and *transposing instruments* without muddying the absolute pitch meaning of the tones.
 
-If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to *wrong* as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
+If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to wrong as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
 
 ### Lux Clock
 
-There is one additional way of arranging tones and spans around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the lux clock: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `ja` again:
+There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `da` again:
 
     ——————————————————————————————————————————
       LUX CLOCK: TONES/SPANS
     ——————————————————————————————————————————
                          12
-              11        ja/ha        1
-                 ba/hi ==||== wa/hv
+              11        da/ha        1
+                 ba/hi ==||== za/hv
          10              ||               2
-            ya/hm =======||======= za/hu
+            ta/hn =======||======= ra/hu
                          ||
                          ||
-      9   da/ho =========||========= ka/hn   3
+      9   ka/ho =========||========= la/hm   3
                          ||
                          ||
-            ga/hl =======||======= fa/he
+            sa/hl =======||======= ma/he
          8               ||               4
-                 ca/hr ==||== xa/hs
-              7         pa/ht        5
+                 ca/hr ==||== na/hz
+              7         fa/hp        5
                           6
     ——————————————————————————————————————————
 
-If you were to say the tones aloud without pausing between them with your hand on your throat, you might notice that your larynx vibrates continuously from the tones from 8–12–2 and stops vibrating at the start of the tones from 3–7. This mirrors the “natural” notes (the white keys on a typical piano) with *voiced* consonants and the “accidental” notes (the black keys on a typical piano) with *voiceless* consonants. Note that while the accidentals start out voiceless, they still end with a voice and are indispensable for harmony in our modern culture.
+If you were to say the *tones* aloud without pausing between them with your hand on your throat, you might notice that your larynx vibrates continuously from the *tones* from 8–12–2 and stops vibrating at the start of the *tones* from 3–7. This mirrors the “natural” notes (the white keys on a typical piano) with *voiced* consonants and the “accidental” notes (the black keys on a typical piano) with *voiceless* consonants. Note that while the accidentals start out voiceless, they still end with a voice and are indispensable for harmony in our modern culture.
 
-This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios popularized by Pythagoras that are known as the major scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
+This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios that date back at least as far as the Babylonians, known today as the diatonic scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
 
-The more seasoned musicians will have already recognized the arrangement of tones and spans on the lux clock — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
+The more seasoned musicians will have already recognized the arrangement of *tones* and *spans* on the *lux clock* — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
 
-Let’s take a look at the clock with just the span rhymes and scale degrees written around it. You can do this with your regular circle of fifths as well:
+Let’s take a look at the clock with just the *span rhymes* and scale degrees written around it. You can do this with your regular circle of fifths as well:
 
     ——————————————————————————————————————————
       LUX CLOCK: SPAN RHYMES & SCALE DEGREES
     ——————————————————————————————————————————
-                         1
-                4       -a        5
-                  -i  ==||==  -v
-          ♭7            ||             2
-             -m  =======||=======  -u
-                        ||
-                        ||
-       ♭3  -o  =========||=========  -n   6
-                        ||
-                        ||
-             -l  =======||=======  -e
-          ♭6            ||             3
-                  -r  ==||==  -s
-               ♭2       -t        7
-                      ♭5/♯4
+                          1
+                4        -a        5
+                  -i  ===||=== -v
+          ♭7             ||             2
+             -n  ========||======== -u
+                         ||
+                         ||
+       ♭3  -o  ==========||==========  -m   6
+                         ||
+                         ||
+             -l  ========||======== -e
+          ♭6             ||             3
+                  -r  ===||=== -z
+               ♭2        -p        7
+                       ♭5/♯4
     ——————————————————————————————————————————
 
 Notice how the flattened degrees line up on the left side along with the smaller of the (non-root) perfect intervals? This is the minor (smaller) side. It evokes a sense of settling down and turning inward, a darkening. The right side is the major (larger) side that evokes a sense of opening up and turning outward, a brightening. This brightening/darkening is *lux* in Counternote:
@@ -322,22 +246,22 @@ Notice how the flattened degrees line up on the left side along with the smaller
     —————————————————————————————————————————————————
       LUX CLOCK: SPAN RHYMES & SCALE DEGREES
     —————————————————————————————————————————————————
-       |-----DARK-----| LUX |----BRIGHT----|  
-                         1                 |-FEEL-|
-                4       -a        5         BLENDS
-                  -i  ==||==  -v               |
-          ♭7            ||             2       |
-             -m  =======||=======  -u        —————
-                        ||
-                        ||
-       ♭3  -o  =========||=========  -n   6  MOODS
-                        ||                     |
-                        ||                     |
-             -l  =======||=======  -e        —————
-          ♭6            ||             3
-                  -r  ==||==  -s              RUBS
-               ♭2       -t        7            |
-                      ♭5/♯4                  —————
+      |------DARK------| LUX |-----BRIGHT-----| FEEL |
+                          1
+                4        -a        5           BLENDS
+                  -i  ===||===  -v                |
+          ♭7             ||             2         |
+             -n  ========||========  -u         —————
+                         ||
+                         ||
+       ♭3  -o  ==========||==========  -m   6   MOODS
+                         ||                       |
+                         ||                       |
+             -l  ========||========  -e         —————
+          ♭6             ||             3
+                  -r  ===||===  -z               RUBS
+               ♭2        -p        7              |
+                       ♭5/♯4                    —————
     —————————————————————————————————————————————————
 
 But there is an additional bit beyond the lux — the *feel* of a span. Counternote breaks these up into 3 sections:
@@ -424,9 +348,9 @@ Notes in Counternote refer specifically to sounds held for some duration. That d
 
 ### Holds
 
-Holds are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they hold out. These can be extended by trailing holds in the same bar or by adding the rap `aa` with a new hold at the beginning of the next bar.
+Holds are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they hold out. These can be extended by trailing *holds* in the same bar or by adding the rap `aa` with a new hold at the beginning of the next bar.
 
-The six holds ordered by powers of two are as follows:
+The six *holds* ordered by powers of two are as follows:
 
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
@@ -443,7 +367,7 @@ The wider the character, the longer the duration, the narrower and taller the ch
 
 ### Grooves and Clicks
 
-Grooves tell the duration of a bar. They are written between `|` characters with the number of holds like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
+*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *holds* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
 Here are four rather boring bars of Counternote:
 
@@ -461,11 +385,11 @@ Here are four rather boring bars of Counternote:
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
 
-Clicks tell the tempo of a piece. They also refer to the hold in the groove that gets the beat, like a metronome click.
+*Clicks* tell the tempo of a piece. They also refer to the *hold* in the *groove* that gets the beat, like a metronome *click*.
 
 ### Cuts
 
-In Counternote, cuts are groups of notes that *cut* up some duration into equal parts. There are two kinds of cuts, long and short. It’s the short cuts that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| da.da.da |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| da.da.da |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
@@ -515,36 +439,8 @@ There are obviously other details to go over, but it’s time to see some real m
       f: fingers
       t: thumb 
     +++
-    # Wov |4.| @allegretto
+    # Mov |4.| @allegretto
 
-    A
-      0
-        f| -           .     we.ke  |
-        t| -           .     yo.ko  |
-      1
-        f| ye.   ke.we pe.   we.ke  |
-        t| wo.   jo.   za.   jo.    |
-      2
-        f| ze.   fe.pe we.   be.de  |
-        t| yo.   ko.   wo.   ko.    |
-      3
-        f| ze.   ja.ya ka.   ya.ja  |
-        t| yo.   jo.   za.   jo.    |
-      4
-        f| ze.ja ya.ka wa.   we.ke  |
-        t| yo.   za.   wo.ko yo.ko  |
-      5
-        f| ye.   ke.we pe.   we.ke  |
-        t| wo.   jo.   za.   jo.    |
-      6
-        f| ze.   fe.pe we.   be.de  |
-        t| yo.   ko.   wo.   ko.    |
-      7
-        f| ze.   je.ye ke^^y.  ,ye, |
-        t| yo.   da.   ba.   ba.    |
-      8
-        f| hYeva-      .      %     |
-        t| yo-         .      %A %B |
 
     *++
 
@@ -554,14 +450,14 @@ And here it is written using spans:
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    KEY: wa
+    KEY: ma
     +++
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb 
     +++
-    # Aov |4.| @allegretto
+    # Hov |4.| @allegretto
 
     A
       0
