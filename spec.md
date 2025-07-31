@@ -1,6 +1,13 @@
 ***
 
-# Counternote Specification version 0.8.2
+# Counternote Specification version 0.9.0
+
+%%%
+
+TODO: Introduce chord starts, use them in stops. Change weaves to braids and ax weaves. Restore tones and spans to their original variation. Demote tones, use spans for all trascription and tones only for dealing with specific pitches. Update gloss.
+
+%%%
+
 
 This is a terse description of Counternote with definitions and examples.
 
@@ -40,7 +47,7 @@ Structural elements
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
-* [__pit__][pit]: a place suitable for code
+* [__code__][code]: a place suitable for code
 
 ### [SOUNDS][sounds]
 
@@ -157,7 +164,7 @@ Toward a deeper understanding
   [rep]: #rep
   [jump]: #jump
   [lap]: #lap
-[pit]: #pit
+[code]: #code
 
 [sounds]: #sounds
 
@@ -356,61 +363,63 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
 
     ————————————————————————————————
       RHYME    IPA   PRONUNCIATION
-       -s     ɚs,r̩s      'ers'
-       -m       um       'oom'
-       -n       on       'ohn'
+       -z     ɚs,r̩s      'erz'
+       -n       un       'oon'
+       -p       op       'ohm'
        -l     ɛl,el      'ehl'
        -v       iv       'eev'
-       -t    ɑ˞t,art     'art'
+       -p    ɑ˞p,arp     'arp'
     ————————————————————————————————
 
 ***
 
 # Forms
 
-[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach using [tones][tone]:
+[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
+%%%
 
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
+    KEY: ma
     +++
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb 
     +++
-    # Wov |4.| @allegretto
+    # M'ov |4.| @allegretto
 
     A
       0
-        f| -           .     we.ke  |
-        t| -           .     yo.ko  |
+        f| -           .     la.lu  |
+        t| -           .     to.tu  |
       1
-        f| ye.   ke.we pe.   we.ke  |
-        t| wo.   jo.   za.   jo.    |
+        f| lo.   lu.la ls.   la.lu  |
+        t| ta.   ti.   hv.   ti.    |
       2
-        f| ze.   fe.pe we.   be.de  |
-        t| yo.   ko.   wo.   ko.    |
+        f| lv.   ln.ls la.   lm.ll  |
+        t| to.   tu.   ta.   tu.    |
       3
-        f| ze.   ja.ya ka.   ya.ja  |
-        t| yo.   jo.   za.   jo.    |
+        f| lv.   hi.ho hu.   ho.hi  |
+        t| to.   ti.   hv.   ti.    |
       4
-        f| ze.ja ya.ka wa.   we.ke  |
-        t| yo.   za.   wo.ko yo.ko  |
+        f| lv.hi ho.hu ha.   la.lu  |
+        t| to.   hv.   ta.tu to.tu  |
       5
-        f| ye.   ke.we pe.   we.ke  |
-        t| wo.   jo.   za.   jo.    |
+        f| lo.   lu.la ls.   la.lu  |
+        t| ta.   ti.   hv.   ti.    |
       6
-        f| ze.   fe.pe we.   be.de  |
-        t| yo.   ko.   wo.   ko.    |
+        f| lv.   ln.ls la.   lm.ll  |
+        t| to.   tu.   ta.   tu.    |
       7
-        f| ze.   je.ye ke^^y.  ,ye, |
-        t| yo.   da.   ba.   ba.    |
+        f| lv.   li.lo lu^^o.  ,lo, |
+        t| to.   hl.   hm.   hm.    |
       8
-        f| hYeva-      .      %     |
-        t| yo-         .      %A %B |
+        f| hOeva-      .     %      |
+        t| to-         .     %A %B  |
 
     *++
 
@@ -498,6 +507,8 @@ Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices]
 
 A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. The individual [voices][voice] can be labeled like in the Bourrée:
 
+%%%
+
     ———————————————————————————————————
       1
         f| ye.   ke.we pe.   we.ke  |
@@ -516,9 +527,9 @@ A [jump][jump] is a directive on what part to play next. [Jumps][jump] are denot
 
 A [rep][rep] is a directive to repeat some number of [holds][hold] previous. It is denoted by `%%` to repeat the previous bar or `%%..` to repeat the previous `..`.
 
-## Pit
+## Code
 
-A [pit][pit] holds the programmery bits. 
+A [code][code] holds the programmery bits. 
 
 ***
 
@@ -532,7 +543,7 @@ A [pitch][pitch] is the number of vibrations per second, the frequency.
 
 ## Rank
 
-A [rank][rank] is like all traditional *notes* regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `ja` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [key][key] of `ja`.
+A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `la` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [key][key] of `la`.
 
 ## File
 
@@ -549,6 +560,8 @@ A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *sem
 ## Break
 
 A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
+
+%%%
 
     ———————————————
       KEY  BREAK
@@ -720,6 +733,8 @@ Those rules add up to:
 
 [Short cuts][short cut] can greatly cut down on visual noise. Consider what the Bourrée above looks like using [holds][hold] on every [note][notes]:
 
+%%%
+
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
@@ -844,47 +859,47 @@ A matrix of all the [tones][tone] moving left to right, bottom to top:
       RANK (pitch class) →
     ——————————————————————————————————————————————————————
           E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
-      +3 wil gil kil yil xil jil cil zil dil fil bil pil 
-      +3 wal gal kal yal xal jal cal zal dal fal bal pal 
-      +3  wl  gl  kl  yl  xl  jl  cl  zl  dl  fl  bl  pl 
-      +2  wi  gi  ki  yi  xi  ji  ci  zi  di  fi  bi  pi 
-      +1  we  ge  ke  ye  xe  je  ce  ze  de  fe  be  pe 
-       0  wa  ga  ka  ya  xa  ja  ca  za  da  fa  ba  pa 
-      -1  wo  go  ko  yo  xo  jo  co  zo  do  fo  bo  po 
-      -2  wu  gu  ku  yu  xu  ju  cu  zu  du  fu  bu  pu 
-      -3  wr  gr  kr  yr  xr  jr  cr  zr  dr  fr  br  pr
-      -3 war gar kar yar xar jar car zar dar far bar par
-      -3 wor gor kor yor xor jor cor zor dor for bor por
+      +5 mil bil fil zil sil lil til nil dil cil ril kil 
+      +4 mal bal fal zal sal lal tal nal dal cal ral kal 
+      +3  ml  bl  fl  zl  sl  ll  tl  nl  dl  cl  rl  kl 
+      +2  mi  bi  fi  zi  si  li  ti  ni  di  ci  ri  ki 
+      +1  me  be  fe  ze  se  le  te  ne  de  ce  re  ke 
+       0  ma  ba  fa  za  sa  la  ta  na  da  ca  ra  ka 
+      -1  mo  bo  fo  zo  so  lo  to  no  do  co  ro  ko 
+      -2  mu  bu  fu  zu  su  lu  tu  nu  du  cu  ru  ku 
+      -3  mr  br  fr  zr  sr  lr  tr  nr  dr  cr  rr  kr
+      -4 mar bar far zar sar lar tar nar dar car rar kar
+      -5 mor bor for zor sor lor tor nor dor cor ror kor
     ——————————————————————————————————————————————————————
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
 
-In this order, it naturally falls into the key `ja` with the [break][break] between `wa` and `pe`.
+In this order, it naturally falls into the key `la` with the [break][break] between `ka` and `me`.
 
 ### Tone Start
 
-The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank]. The traditional “naturals” are voiced consonants and the “accidentals” voiceless. The points of articulation move from the back of the mouth up through to the lips (labiovelar —> velar —> palatal —> postalveolar —> alveolar —> labiodental —> bilabial).
+The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Each is identified with a single [rank][rank]. The traditional “naturals” are voiced consonants and the “accidentals” voiceless. The points of articulation move from the lips to the back of the mouth (bilabial —> labiodental —> alveolar —> palatal —> velar).
 
     ——————————————————————————————
       START  VALUE  IPA  ENGLISH
     ——————————————————————————————
-        p-   D♯/E♭   p     'p'
-        b-     D     b     'b'
-        f-   C♯/D♭   f     'f'
+        k-   D♯/E♭   k     'k'
+        r-     D     r     'r'
+        c-   C♯/D♭   tʃ   'ch'
         d-     C     d     'd'
-        z-     B     z     'z'
-        c-   A♯/B♭   tʃ   'ch'
-        j-     A     dʒ    'j'
-        x-   G♯/A♭   ʃ    'sh'
-        y-     G     j     'y'
-        k-   F♯/G♭   k     'k'
-        g-     F     g     'g'
-        w-     E     w     'w'
+        n-     B     n     'n'
+        t-   A♯/B♭   t     't'
+        l-     A     l     'l'
+        s-   G♯/A♭   s     's'
+        z-     G     z     'z'
+        f-   F♯/G♭   f     'f'
+        b-     F     b     'b'
+        m-     E     m     'm'
     ——————————————————————————————
 
 ### Tone Rhyme
 
-The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `ja` is A220 in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
+The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `la` is A220 in all [keys][key]. `-a` can also refer to all [files][file] of a [rank][rank].
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -913,6 +928,8 @@ A [root][root] is the [tone][tone] or [span][span] that serves as the centerpoin
 A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root] or [key][key]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
 
 In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
+
+%%%
 
     ++*
     SCORE: Lute Suite in E Minor
@@ -966,17 +983,17 @@ A matrix of all the [spans][span] moving left to right, bottom to top:
       RANK (pitch class) →
     ——————————————————————————————————————————————————————
           -4  -3 -♭3  -2 -♭2   1  ♭2   2  ♭3   3   4  ♭5 
-      +5 myv myl myn mym mys mya myr myu myo mye myi myt 
-      +4 mwv mwl mwn mwm mws mwa mwr mwu mwo mwe mwi mwt 
-      +3  mv  ml  mn  mm  ms  ma  mr  mu  mo  me  mi  mt 
-      +2  vv  vl  vn  vm  vs  va  vr  vu  vo  ve  vi  vt
-      +1  lv  ll  ln  lm  ls  la  lr  lu  lo  le  li  lt
-       0  hv  hl  hn  hm  hs  ha  hr  hu  ho  he  hi  ht
-      -1  tv  tl  tn  tm  ts  ta  tr  tu  to  te  ti  tt
-      -2  sv  sl  sn  sm  ss  sa  sr  su  so  se  si  st
-      -3  nv  nl  nn  nm  ns  na  nr  nu  no  ne  ni  nt
-      -4 nyv nyl nyn nym nys nya nyr nyu nyo nye nyi nyt
-      -5 nwv nwl nwn nwm nws nwa nwr nwu nwo nwe nwi nwt
+      +5 nyv nyl nym nyn nyz nya nyr nyu nyo nye nyi nyp 
+      +4 nwv nwl nwm nwn nwz nwa nwr nwu nwo nwe nwi nwp 
+      +3  nv  nl  nm  nn  nz  na  nr  nu  no  ne  ni  np 
+      +2  tv  tl  tm  tn  tz  ta  tr  tu  to  te  ti  tp
+      +1  lv  ll  lm  ln  lz  la  lr  lu  lo  le  li  lp
+       0  hv  hl  hm  hn  hz  ha  hr  hu  ho  he  hi  hp
+      -1  vv  vl  vm  vn  vz  va  vr  vu  vo  ve  vi  vp
+      -2  pv  pl  pm  pn  pz  pa  pr  pu  po  pe  pi  pp
+      -3  mv  ml  mm  mn  mz  ma  mr  mu  mo  me  mi  mp
+      -4 myv myl mym myn myz mya myr myu myo mye myi myp
+      -5 mwv mwl mwm mwn mwz mwa mwr mwu mwo mwe mwi mwp
     ——————————————————————————————————————————————————————
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
@@ -988,19 +1005,19 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
     —————————————————————————————
       START  FILE  IPA  ENGLISH
     —————————————————————————————
-       my-    +5    mʲ    'my'
-       mw-    +4    mʷ    'mw'
-       m-     +3    n      'm'
-       v-     +2    v      'v'
+       ny-    +5    nʲ    'ny'
+       nw-    +4    nʷ    'nw'
+       n-     +3    n      'n'
+       t-     +2    t      't'
        l-     +1    l      'l'
     —————————————————————————————
        h-     ±0    h      'h'
     —————————————————————————————
-       t-     -1    t      't'
-       s-     -2    s      's'
-       n-     -3    n      'n'
-       ny-    -4    nʲ    'ny'
-       nw-    -5    nʷ    'nw'
+       v-     -1    v      'v'
+       p-     -2    p      'p'
+       m-     -3    m      'm'
+       my-    -4    mʲ    'my'
+       mw-    -5    mʷ    'mw'
     —————————————————————————————
 
 
@@ -1012,12 +1029,12 @@ The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [
     ——————————————————————————————————
       RHYME  INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
-        -s      7     ɚs,r̩s   'ers'
-        -m     ♭7       um    'oom'
-        -n      6       on    'ohn'
+        -z      7     ɚz,r̩z   'erz'
+        -n     ♭7       un    'oon'
+        -m      6       om    'ohm'
         -l     ♭6     ɛl,el   'ehl'
         -v      5       iv    'eev'
-        -t    ♯4/♭5  ɑ˞t,art  'art'
+        -p    ♯4/♭5  ɑ˞p,arp  'arp'
         -i      4       i      'ee'
         -e      3      ɛ,e     'eh'
         -o     ♭3       o      'oh'
@@ -1084,7 +1101,7 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `ck` crickets
       `cp` chirp, cheep
       `jz` the licc
-      `lk` laugh track
+      `lh` laugh track
     ————————————————————————
 
 ## Tie
@@ -1095,35 +1112,7 @@ A [tie][tie] is a [rap][rap] used to show a [sound][sounds] from a previous [bar
 
 A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is notated with the [word][word] `hh` and not explicitly pronounced.
 
-## Stop
 
-A [stop][stop] is two [voices][voice] sounding simultaneously. They can be written by concatenating a [span] onto a [tone][tone] or [span][span] [root][root].
-
-    ————————————————————————————————
-      WORD      VALUE        IPA
-    ————————————————————————————————
-      dahr    minor 2nd      dɑhɚ
-      dahu    major 2nd      dɑhu
-      daho    minor 3rd      dɑho
-      dahe    major 3rd      dɑhe
-      dahi   perfect 4th     dɑhi
-      daht  diminished 5th  dɑhɑ˞t
-      datv   perfect 5th    dɑtiv
-      datl    minor 6th     dɑtel
-      datn    major 6th     dɑton
-      datm    minor 7th     dɑtum
-      dats    major 7th     dɑtɚs
-    ————————————————————————————————
-
-[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
-
-    —————————————————————————————————————
-      WORD             VALUE
-    —————————————————————————————————————
-      bm'xd   bass drum + closed hi-hat
-      ck'kl       shook + clap
-      rk'we        rake + high E
-    —————————————————————————————————————
 
 ***
 
@@ -1144,12 +1133,12 @@ A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are t
     ——————————————————————————————
       GLYPH  BEFORE  ADDS   IPA
     ——————————————————————————————
-        a      V      j     a-jV
-        r      V      w     ɚ-wV
-        u      V      j     u-jV
+        a      V      y     a-jV
+        r      V      r     ɚ-rV
+        u      V      y     u-jV
         o      V      w     o-wV
         e      V      w     e-wV
-        i      V      j     i-jV
+        i      V      y     i-jV
     ——————————————————————————————
         VC     CV     -    VC-CV
         VC     CC     ə    VC-CəC
@@ -1157,6 +1146,38 @@ A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are t
     ——————————————————————————————
 
 The [blends][blend] that are vowels always get the patalal glide [j] starting the next syllable whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone] except when capitalized in [braids][braid] and [weaves][weave].
+
+## Stop
+
+A [stop][stop] is two [voices][voice] sounding simultaneously. They can be written by concatenating [span][span] onto another [span][span] [root][root].
+
+%%%
+
+    ————————————————————————————————
+      WORD      VALUE        IPA
+    ————————————————————————————————
+      dahr    minor 2nd      dɑhɚ
+      dahu    major 2nd      dɑhu
+      daho    minor 3rd      dɑho
+      dahe    major 3rd      dɑhe
+      dahi   perfect 4th     dɑhi
+      dahp  diminished 5th  dɑhɑ˞p
+      datv   perfect 5th    dɑtiv
+      datl    minor 6th     dɑtel
+      datm    major 6th     dɑtom
+      datn    minor 7th     dɑtun
+      datz    major 7th     dɑtɚz
+    ————————————————————————————————
+
+[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
+
+    —————————————————————————————————————
+      WORD             VALUE
+    —————————————————————————————————————
+      bm'xd   bass drum + closed hi-hat
+      ck'kl       shook + clap
+      rk'we        rake + high E
+    —————————————————————————————————————
 
 ## Chord
 
@@ -1288,11 +1309,11 @@ A [trill][trill] is the quick alternating between two [sounds][sounds] used as o
 
 ### Bang
 
-A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by `!`. It is written directly before the [note][notes] it modifies `!ja.` for accents, directly after the the note for staccato `ja!.`, or even directly after a [hold][hold] for that abrupt ending `ja.!`.
+A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by `!`. It is written directly before the [note][notes] it modifies `!la.` for accents, directly after the the note for staccato `la!.`, or even directly after a [hold][hold] for that abrupt ending `la.!`.
 
 ### Trem
 
-A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `ja!!.`.
+A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `la!!.`.
 
 ### Stay
 
@@ -1300,28 +1321,28 @@ A [stay][stay] is an indefinite sustaining of a [sound][sounds]. It is denoted b
 
 ### Node
 
-A [node][node] is the place where a resonating medium remains static such as at the twelfth fret with the second harmonic or an overtone accentuated in throat singing. It is denoted by `*` followed by the number for the nth harmonic: `jo*3` is the [node][node] for the third harmonic at the seventh or nineteenth fret that sounds like the first string on a guitar `we`. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
+A [node][node] is the place where a resonating medium remains static such as at the twelfth fret with the second harmonic or an overtone accentuated in throat singing. It is denoted by `*` followed by the number for the nth harmonic: `lo*3` is the [node][node] for the third harmonic at the seventh or nineteenth fret that sounds like the first string on a guitar `me`. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
 
 ## Drift
 
 A [drift][drift] is a microtonal adjustment. These can be adjusted globally or inline. They are just like the [span rhymes][span rhyme] added to whole [spans][span] or [tones][tone].
 
     ————————————
-      -t  +50
+      -p  +50
       -i  +42
       -e  +33
       -o  +25
       -u  +17
       -r  +8
       -a  ±0
-      -s  -8
-      -m  -17
-      -n  -25
+      -z  -8
+      -n  -17
+      -m  -25
       -l  -33
       -v  -42
     ————————————
 
-`da/hut` ˌdɑ.huˈjɑ˞t is a whole step and a quarter bend to D half-sharp. `dat` dɑˈjɑ˞t is a C half-sharp.
+`da/hup` ˌdɑ.huˈjɑ˞t is a whole step and a quarter bend to D half-sharp. `dat` dɑˈjɑ˞t is a C half-sharp.
 
 Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 

@@ -50,7 +50,7 @@ Sounds in Counternote come in three varieties — those where pitch is the defin
 
 First up to introduce are the twelve *tones*. These refer to absolute pitch, each named uniquely. They’re kind of like the letter names, but more precise. Starting from a traditional E and ending on D♯/E♭, we have:
 
-   ——————————————————————————————————————————————————
+    ——————————————————————————————————————————————————
       E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
       ma  ba  fa  za  sa  la  ta  na  da  ca  ra  ka
     ——————————————————————————————————————————————————
@@ -427,24 +427,7 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
 
 ## Score
 
-There are obviously other details to go over, but it’s time to see some real music. This is the A-section of the track Bourrée from Bach’s Lute Suite in E Minor written using tones:
-
-    ++*
-    SCORE: Lute Suite in E Minor
-    WORK: BWV 996
-    SCRIBE: Bach
-    +++
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb 
-    +++
-    # Mov |4.| @allegretto
-
-
-    *++
-
-And here it is written using spans:
+There are obviously other details to go over, but it’s time to see some real music. This is the A-section of the track Bourrée from Bach’s Lute Suite in E Minor:
 
     ++*
     SCORE: Lute Suite in E Minor
@@ -457,7 +440,7 @@ And here it is written using spans:
       f: fingers
       t: thumb 
     +++
-    # Hov |4.| @allegretto
+    # M'ov |4.| @allegretto
 
     A
       0
