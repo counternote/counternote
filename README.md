@@ -63,9 +63,9 @@ The *tones* in Counternote are an adaptation of solfege ordered loosely by point
 
 ### Spans
 
-While *tones* let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is just the Counternote term for interval.
+While *tones* let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is the Counternote term for interval, among other things.
 
-For *spans*, we have to introduce the notion of *starts* and *rhymes* — the onset and coda for the linguists our there. The *start* is the first letter and the *rhyme* is the second letter — the part that rhymes. Where *tones* change in their *start* for each note, *spans* change in their *rhyme* while the *start* changes the octave.
+For *spans*, we have to introduce the notion of *starts* and *rhymes* — the onset and coda for the linguists out there. The *start* is the first letter and the *rhyme* is the second letter — the part that rhymes. Where *tones* change in their *start* for each note, *spans* change in their *rhyme* while the *start* changes the octave.
 
 ### Hue Clock
 
@@ -92,6 +92,8 @@ A great way of seeing these relationships is on the *hue clock* with intervals l
     ————————————————————————————————————————————————————————
 
 Instead of the academic names of minor third and major sixth, *spans* give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
+
+The quality of the vowel in the span tells us the interval, and a terminal consonant tells us it’s on the left side of the *hue clock*.
 
 We can see the main *span starts* here:
 
@@ -185,9 +187,9 @@ This distinction is so important that there are no less than four ways of convey
 
 Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do Solfège used in half the world.
 
-By representing pitch in these two different ways up front, Counternote can unambiguously handle stops and chords and *transposing instruments* without muddying the absolute pitch meaning of the tones.
+%%%
 
-If you play one of these transposing instruments, you’ll want to spend some extra time learning these spans. Tones should never be transposed with transposing instruments the way they are with standard notation — B♭ written as C for instance — it’s as close to wrong as Counternote allows. Instead, B♭ instruments should use spans centered on B♭, A instruments should use spans centered on A, and so on. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well. But no matter your instrument, learning the tones and the spans will strengthen your ear in complementary ways.
+For transposing instruments, the key center should be set to the instrument, so B♭ instruments should use the key center B♭ and alter the key signature using chords. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well.
 
 ### Lux Clock
 
