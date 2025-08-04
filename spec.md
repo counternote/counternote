@@ -58,7 +58,6 @@ Any acoustic vibration
 * [__file__][file]: the octave range that contains a [pitch][pitch]
 * [__band__][band]: any range of [pitches][pitch]
 * [__notch__][notch]: the range of a single *semitone* or *half-step*
-* [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
 
 ### [BEATS][beats]
 
@@ -87,7 +86,7 @@ Acoustic vibrations held in time
 * [__rap__][rap]: a [word][word] indicating a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
 * [__tie__][tie]: a [sound][sounds] from a previous [bar][bar] is still being held
 * [__breath__][breath]: a breath of fresh quiet
-* [__stop__][stop]: two [sounds][sounds] occuring at the same time
+* [__stop__][strand]: two [sounds][sounds] occuring at the same time
 
 ### [KNITS][knits]
 
@@ -173,7 +172,6 @@ Toward a deeper understanding
 [file]: #file
 [band]: #band
 [notch]: #notch
-[break]: #break
 
 [beats]: #beats
 
@@ -198,7 +196,7 @@ Toward a deeper understanding
 [rap]: #rap
 [tie]: #tie
 [breath]: #breath
-[stop]: #stop
+[strand]: #stop
 
 [knits]: #knits
 
@@ -501,7 +499,7 @@ A [voice][voice] can be extended to another line using `+` at the end of the nex
         + da; da; da; da; da; da; da; da; |
     —————————————————————————————————————————
 
-Inline harmonies such as [stops][stop] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
+Inline harmonies such as [strands][strand] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
 
 ### Stack
 
@@ -556,30 +554,6 @@ A [band][band] is a defined range of frequencies with the lower bound inclusive 
 ## Notch
 
 A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
-
-## Break
-
-A [break][break] is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below. A [break][break] changes only when the [key][key] explicitly changes.
-
-%%%
-
-    ———————————————
-      KEY  BREAK
-      ba  xa - je
-      fa  ya - xe
-      da  ka - ye
-      za  ga - ke
-      ca  wa - ge
-      ja  pa - we
-      xa  ba - pe
-      ya  fa - be
-      ka  da - fe
-      ga  za - de
-      wa  ca - ze
-      pa  ja - ce
-    ———————————————
-
-***
 
 # Beats
 
@@ -874,7 +848,7 @@ A matrix of all the [tones][tone] moving left to right, bottom to top:
       ↑ FILE (octave)
     ——————————————————————————————————————————————————————
 
-In this order, it naturally falls into the key `la` with the [break][break] between `ka` and `me`.
+Middle C is `do`. The lowest note on a guitar tuned to E standard guitar is `mu` and the lowest note on the bass in E standard is `mr`.
 
 ### Tone Start
 
@@ -921,57 +895,56 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 
 ## Root
 
-A [root][root] is the [tone][tone] or [span][span] that serves as the centerpoint for harmony within [spans][span] and [chords][chord].
+%%%
 
 ## Span
 
-A [span][span] is an interval *and* a distinct [tone][tone] relative to some [root][root] or [key][key]. For instance, `la` is both an octave interval *and* whatever [tone][tone] is one octave above the [root][root] or [key][key]. The [span start][span start] stretches for one octave with the [break][break] in the same place as the [tone rhyme][tone rhyme].
+A [span][span] is a scale degree relative to some [root][root]. For instance, in `da`, `lv` "leave" is the fifth scale degree, the note a perfect fifth above `da`, `za`.
 
-In the Bourrée above, the [tones][tone] are used to express [pitch][pitch] in the [notes][notes]. However, there is another way to write it using [spans][span]:
-
-%%%
+Here is Bach’s Bourrée written using [spans][span]:
 
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    KEY: wa
+    ROOT: ma
+    KEY: Xov
     +++
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb 
     +++
-    # Aov |4.| @allegretto
+    # M'ov |4.| @allegretto
 
     A
       0
         f| -           .     la.lu  |
-        t| -           .     to.tu  |
+        t| -           .     vo.vu  |
       1
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| lo.   lu.la lz.   la.lu  |
+        t| va.   vi.   hv.   vi.    |
       2
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| lv.   ln.lz la.   lm.ll  |
+        t| vo.   vu.   va.   vu.    |
       3
         f| lv.   hi.ho hu.   ho.hi  |
-        t| to.   ti.   hv.   ti.    |
+        t| vo.   vi.   hv.   vi.    |
       4
         f| lv.hi ho.hu ha.   la.lu  |
-        t| to.   hv.   ta.tu to.tu  |
+        t| vo.   hv.   va.vu vo.vu  |
       5
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| lo.   lu.la lz.   la.lu  |
+        t| va.   vi.   hv.   vi.    |
       6
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| lv.   ln.lz la.   lm.ll  |
+        t| vo.   vu.   va.   vu.    |
       7
         f| lv.   li.lo lu^^o.  ,lo, |
-        t| to.   hl.   hm.   hm.    |
+        t| vo.   hl.   hm.   hm.    |
       8
-        f| hOeva-      .     %      |
-        t| to-         .     %A %B  |
+        f| hh-         .     %      |
+        t| voBeva^-    .     %A %B  |
 
     *++
 
@@ -1104,6 +1077,18 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `lh` laugh track
     ————————————————————————
 
+## Sync
+
+[Raps][rap] can be performed at the same time by just concatenating them together with a `'` in between so it’s easy to read. These can be combined with [spans][span] and [knits][knit] for percussive playing.
+
+    ———————————————————————————————————————
+      WORD            VALUE
+    ———————————————————————————————————————
+      bm'xd   bass drum + closed hi-hat
+      ck'kl       shook + clap
+      rk'le        rake + high E (root C)
+    ———————————————————————————————————————
+
 ## Tie
 
 A [tie][tie] is a [rap][rap] used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sounds] being held.
@@ -1116,9 +1101,13 @@ A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is 
 
 ***
 
-# Knits
+# Knit
 
-[Knits][knits] are collections of notes occuring simultaneously. While such can be achieved with [stops][stop], it quickly gets unruly and hard to read. [Knits][knits] come in three varieties: [chords][chord], [braids][braid], and [weaves][weave].
+[Knits][knit] are collections of notes occuring simultaneously. [Knits][knit] come in three varieties: [strands][strand], [chords][chord], and [braids][braid].
+
+## Knit Start
+
+All [knits][knit] begin with a capitalized consonant corresponding with a [span rhyme][span rhyme].
 
 ## Thread
 
@@ -1126,7 +1115,7 @@ A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are t
 
     ——————————————————————————————
       V:  a,r,u,o,e,i
-      C:  t,v,l,m,n,s
+      C:  p,v,l,m,n,z
       G:  any glyph
       X:  end of string
       -:  syllable break
@@ -1145,39 +1134,41 @@ A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are t
         VC     CX     ə    V-CəC
     ——————————————————————————————
 
-The [blends][blend] that are vowels always get the patalal glide [j] starting the next syllable whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone] except when capitalized in [braids][braid] and [weaves][weave].
+The [blends][blend] that are vowels always get the patalal glide [j] starting the next syllable whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone].
 
-## Stop
+## Strand
 
-A [stop][stop] is two [voices][voice] sounding simultaneously. They can be written by concatenating [span][span] onto another [span][span] [root][root].
-
-%%%
+A [strand][strand] is two [voices][voice] sounding simultaneously. 
 
     ————————————————————————————————
-      WORD      VALUE        IPA
+      WORD   VALUE (ABOVE)   IPA
     ————————————————————————————————
-      dahr    minor 2nd      dɑhɚ
-      dahu    major 2nd      dɑhu
-      daho    minor 3rd      dɑho
-      dahe    major 3rd      dɑhe
-      dahi   perfect 4th     dɑhi
-      dahp  diminished 5th  dɑhɑ˞p
-      datv   perfect 5th    dɑtiv
-      datl    minor 6th     dɑtel
-      datm    major 6th     dɑtom
-      datn    minor 7th     dɑtun
-      datz    major 7th     dɑtɚz
+      Xta    two octaves    ʃɑtɑ
+      Xtz     major 14th    ʃɑtɚz
+      Xtn     minor 14th    ʃɑtun
+      Xtm     major 13th    ʃɑtom
+      Xtl     minor 13th    ʃɑtel
+      Xtv    perfect 12th   ʃɑtiv
+      Xlp   augmented 11th  ʃɑlɑ˞p
+      Xli    perfect 11th   ʃɑli
+      Xle     major 10th    ʃɑle
+      Xlo     minor 10th    ʃɑlo
+      Xlu     major 9th     ʃɑlu
+      Xlr     minor 9th     ʃɑlɚ
+      Xla      octave       ʃɑlɑ
+      Xlz     major 7th     ʃɑlɚz
+      Xln     minor 7th     ʃɑlun
+      Xlm     major 6th     ʃɑlom
+      Xll     minor 6th     ʃɑlel
+      Xlv    perfect 5th    ʃɑliv
+      Xhp   diminished 5th  ʃɑhɑ˞p
+      Xhi    perfect 4th    ʃɑhi
+      Xhe     major 3rd     ʃɑhe
+      Xho     minor 3rd     ʃɑho
+      Xhu     major 2nd     ʃɑhu
+      Xhr     minor 2nd     ʃɑhɚ
+      Xha      unison       ʃɑhɑ
     ————————————————————————————————
-
-[Raps][rap] can also be performed at the same time, but concatenating them together without some sort of separator gets really hard to read, so a `'` is placed in between them. These can be combined with [tones][tone] and [spans][span] for percussive playing.
-
-    —————————————————————————————————————
-      WORD             VALUE
-    —————————————————————————————————————
-      bm'xd   bass drum + closed hi-hat
-      ck'kl       shook + clap
-      rk'we        rake + high E
-    —————————————————————————————————————
 
 ## Chord
 

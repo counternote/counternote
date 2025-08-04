@@ -42,6 +42,8 @@ For shareability, everything is just a string of plaintext, easily shared via te
 
 Don’t let the idea that Counternote is a musical language trouble you. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things.
 
+Because every field tends toward jargon with big and important words the deeper you get into it, and occasionally those words conflict with common usage, all terms in Counternote are simple and precise, each limited to one syllable and an easy definition.
+
 ## Sounds
 
 Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
@@ -59,13 +61,15 @@ You’ll notice `ka` and `ca` seem like they might sound the same, but they don�
 
 The *tones* in Counternote are an adaptation of solfege ordered loosely by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
 
-*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key of a piece and very little else.
+*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key of a piece and very little else. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
+
+In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. For *tones*, the *starts* and *rhymes* go *rank* and *file*.
 
 ### Spans
 
 While *tones* let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is the Counternote term for interval, among other things.
 
-For *spans*, we have to introduce the notion of *starts* and *rhymes* — the onset and coda for the linguists out there. The *start* is the first letter and the *rhyme* is the second letter — the part that rhymes. Where *tones* change in their *start* for each note, *spans* change in their *rhyme* while the *start* changes the octave.
+Where *tones* change in their *start* for each *rank*, *spans* change in their *rhyme* for while the *start* changes the *file*.
 
 ### Hue Clock
 
@@ -91,7 +95,7 @@ A great way of seeing these relationships is on the *hue clock* with intervals l
                     BREAK ↑  ♯4/♭5
     ————————————————————————————————————————————————————————
 
-Instead of the academic names of minor third and major sixth, *spans* give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'w' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
+Instead of the academic names of minor third and major sixth, *spans* give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'u' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
 
 The quality of the vowel in the span tells us the interval, and a terminal consonant tells us it’s on the left side of the *hue clock*.
 
@@ -435,7 +439,8 @@ There are obviously other details to go over, but it’s time to see some real m
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    KEY: ma
+    ROOT: ma
+    KEY: Xov
     +++
     TRACK: Bourrée
     VOICES:
@@ -447,31 +452,31 @@ There are obviously other details to go over, but it’s time to see some real m
     A
       0
         f| -           .     la.lu  |
-        t| -           .     to.tu  |
+        t| -           .     vo.vu  |
       1
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| lo.   lu.la lz.   la.lu  |
+        t| va.   vi.   hv.   vi.    |
       2
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| lv.   ln.lz la.   lm.ll  |
+        t| vo.   vu.   va.   vu.    |
       3
         f| lv.   hi.ho hu.   ho.hi  |
-        t| to.   ti.   hv.   ti.    |
+        t| vo.   vi.   hv.   vi.    |
       4
         f| lv.hi ho.hu ha.   la.lu  |
-        t| to.   hv.   ta.tu to.tu  |
+        t| vo.   hv.   va.vu vo.vu  |
       5
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| lo.   lu.la lz.   la.lu  |
+        t| va.   vi.   hv.   vi.    |
       6
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| lv.   ln.lz la.   lm.ll  |
+        t| vo.   vu.   va.   vu.    |
       7
         f| lv.   li.lo lu^^o.  ,lo, |
-        t| to.   hl.   hm.   hm.    |
+        t| vo.   hl.   hm.   hm.    |
       8
-        f| hOeva-      .     %      |
-        t| to-         .     %A %B  |
+        f| hh-         .     %      |
+        t| voBeva^-    .     %A %B  |
 
     *++
 
