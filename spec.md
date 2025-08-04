@@ -2,13 +2,6 @@
 
 # Counternote Specification version 0.9.0
 
-%%%
-
-TODO: Introduce chord starts, use them in stops. Change weaves to braids and ax weaves. Restore tones and spans to their original variation. Demote tones, use spans for all trascription and tones only for dealing with specific pitches. Update gloss.
-
-%%%
-
-
 This is a terse description of Counternote with definitions and examples.
 
 ***
@@ -39,7 +32,7 @@ Structural elements
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
-  * [__base__][base]: the tonic of a [track][track]
+  * [__core__][seed]: the tonic of a [track][track]
 * [__round__][round]: a block of music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
@@ -67,7 +60,8 @@ Rhythmic elements
 * [__groove__][groove]: the arrangement of [beats][beats] in a [bar][bar]
   * [__shift__][shift]: a section of polymeter
   * [__rift__][rift]: a section of polyrhythm
-* [__click__][click]: the tempo
+* [__pulse__][pulse]: the tempo
+* [__click__][click]: the beat that feels the pulse
 * [__cut__][cut]: a tuplet
   * [__short cut__][short cut]: a quick [cut][cut] notation
   * [__long cut__][long cut]: a robust [cut][cut] notation
@@ -79,7 +73,7 @@ Acoustic vibrations held in time
 * [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sounds]
   * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
-* [__root__][root]: the home base for [spans][span] and [knits][knits]
+* [__root__][root]: the tonic for [spans][span] and [knits][knits]
 * [__span__][span]: a [word][word] indicating the relative [rank][rank] and [file][file] of a [sound][sounds]
   * [__span start__][span start]: the [start][start] that denotes [file][file]
   * [__span rhyme__][span rhyme]: the [rhyme][rhyme] that denotes relative [rank][rank]
@@ -155,7 +149,7 @@ Toward a deeper understanding
   [work]: #work
   [act]: #act
 [track]: #track
-  [base]: #base
+  [seed]: #core
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -179,6 +173,7 @@ Toward a deeper understanding
 [groove]: #groove
   [shift]: #shift
   [rift]: #rift
+[pulse]: #pulse
 [click]: #click
 [cut]: #cut
   [short cut]: #short-cut
@@ -251,7 +246,7 @@ A [term][term] is the name for a precise concept in music and Counternote. They 
 
 ## Glyph
 
-A [glyph][glyph] is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespace `␣` and newline `↵`:
+A [glyph][glyph] is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespulse `␣` and newline `↵`:
 
     ———————————————————————————————————
       ␣ ! " # $ % & ' ( ) * + , - . /
@@ -262,7 +257,7 @@ A [glyph][glyph] is any typed character in Counternote. They have been intention
       p q r s t u v w x y z ( | ) ~ ↵
     ———————————————————————————————————
 
-All [glyphs][glyph] are presented here in `monospace`.
+All [glyphs][glyph] are presented here in `monospulse`.
 
 ## Word
 
@@ -464,7 +459,7 @@ A [round][round] is a block of music, often repeated, marked with an unindented 
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-spulse indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
 
 ### Voice
 
@@ -536,7 +531,7 @@ A [pitch][pitch] is the number of vibrations per second, the frequency.
 
 ## Rank
 
-A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `la` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [base][base] of `la`.
+A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `la` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [seed][seed] `la`.
 
 ## File
 
@@ -597,7 +592,7 @@ A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It i
 
 ### Shift
 
-A [shift][shift] is a section of polymeter with one [groove][groove] superimposed over another at the same [click][click] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+A [shift][shift] is a section of polymeter with one [groove][groove] superimposed over another at the same [pulse][pulse] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
 
     ———————————————————————————
       # |3./2.|
@@ -617,7 +612,7 @@ Like with [grooves][groove], the [shift][shift] can be notated within the [voice
 
 ### Rift
 
-A [rift][rift] is a section of polyrhythm with one [groove][groove] mashed against another at different [clicks][click] so the first beat and total [bar][bar] length stays the same but the [grooves][groove] drift in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second [groove][groove]:
+A [rift][rift] is a section of polyrhythm with one [groove][groove] mashed against another at different [pulses][pulse] so the first beat and total [bar][bar] length stays the same but the [grooves][groove] drift in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second [groove][groove]:
 
     ———————————————————————————
       # |3.\2.|
@@ -635,19 +630,23 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
         |3.\2. da.   da.   da.   |
     ————————————————————————————————
 
-## Click
+## Pace
 
-A [click][click] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. It also refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [click][click].
+A [pulse][pulse] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
+
+## Tick
+
+A [tick][tick] refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [tick][tick].
 
 ## Cut
 
-A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [holds][hold] that do duple meter, many more can be achieved without redefining holds or changing the [click][click].
+A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [holds][hold] that do duple meter, many more can be achieved without redefining holds or changing the [pulse][pulse].
 
 ### Short Cut
 
 A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
 
-* no whitespace exists between the [sounds][sounds]
+* no whitespulse exists between the [sounds][sounds]
 * [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
 * the last [sound][sounds] does *not* receive a [hold][hold]
 * the total duration of all the [holds][hold] is the duration the [cut][cut] fills
@@ -701,8 +700,6 @@ Those rules add up to:
     —————————————————————————————————————————
 
 [Short cuts][short cut] can greatly cut down on visual noise. Consider what the Bourrée above looks like using [holds][hold] on every [note][notes]:
-
-%%%
 
     ++*
     SCORE: Lute Suite in E Minor
@@ -868,7 +865,7 @@ The [start][start] of a [tone][tone] will always be a consonant represented by a
 
 ### Tone Rhyme
 
-The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] lines up with is flexible, but by default, `la` is A220 in all [bases][base]. `-a` can also refer to all [files][file] of a [rank][rank].
+The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] depends on tuning, but `la` will always be about the [band][band] around A440.
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -890,7 +887,7 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
 
 ## Root
 
-%%%
+The tonic of a [span][span] or [knit][knits].
 
 ## Span
 
@@ -902,7 +899,7 @@ Here is Bach’s Bourrée written using [spans][span]:
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    BASE: ma
+    CORE: ma
     MODE: Xov
     +++
     TRACK: Bourrée
@@ -966,7 +963,7 @@ A matrix of all the [spans][span] moving left to right, bottom to top:
 
 ### Span Start
 
-The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [base][base]. Middle C would typically be in the `h-` [file][file].
+The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [seed][seed]. Middle C would typically be in the `h-` [file][file].
 
     —————————————————————————————
       START  FILE  IPA  ENGLISH
@@ -989,7 +986,7 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
 
 ### Span Rhyme
 
-The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [base][base]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
+The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [seed][seed]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
 
 
     ——————————————————————————————————
@@ -1018,42 +1015,44 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
     ————————————————————————
       `aa` tie
       `hh` breath (rest)
-      `sp` speech, spoken
+      `sw` spoken word
     ————————————————————————
       USER-DEFINABLE
     ————————————————————————
       NOISE
       `hx` hush, silence
       `nh` inhale
-      `eh` exhale
-      `xs` blue noise
-      `xx` white noise
-      `xh` pink noise
+      `xh` exhale
+      `ss` blue noise
+      `xs` white noise
+      `xx` pink noise
     ————————————————————————
       DRUM
       `pf` pf snare
       `ks` k snare
-      `bm` bass drum
       `kk` kick drum
+      `bm` bass drum
       `dn` high tom
       `dm` mid tom
       `gn` low tom
       `gm` floor tom
-      `px` opening hi-hat
-      `tx` open hi-hat
-      `xp` closing hi-hat
-      `xt` closed hi-hat
+      `tx` opening hi-hat
+      `ts` open hi-hat
+      `xt` closing hi-hat
+      `st` closed hi-hat
       `kt` rim shot
       `cx` crash
+      `xp` crash mute
       `cs` ride
+      `sp` ride mute
       `kl` clap
-      `dt` bright clave
+      `tt` bright clave
       `dd` dark clave
     ————————————————————————
       GUITAR
       `rk` rake
-      `dp` deep tap
-      `tp` light tap
+      `dt` deep tap
+      `lt` light tap
       `dk` dark tick
       `tk` bright tick
       `hd` handmute
@@ -1063,7 +1062,6 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `rf` ref whistle
       `ws` Wilhelm scream
       `rn` siren
-      `xk` shook
       `ck` crickets
       `cp` chirp, cheep
       `jz` the licc
@@ -1089,8 +1087,6 @@ A [tie][tie] is a [rap][rap] used to show a [sound][sounds] from a previous [bar
 ## Breath
 
 A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is notated with the [word][word] `hh` and not explicitly pronounced.
-
-
 
 ***
 
@@ -1228,7 +1224,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [base][base] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [click][click].
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [seed][seed] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
 
 ## Comp
 

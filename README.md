@@ -61,13 +61,28 @@ You’ll notice `ka` and `ca` seem like they might sound the same, but they don�
 
 The *tones* in Counternote are an adaptation of solfege ordered loosely by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
 
-*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key center of a piece, known as the *base*, and very little else insofar as music is concerned. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
+*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key center of a piece, known as the *seed*, and very little else insofar as music is concerned. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. For *tones*, the *starts* and *rhymes* go *rank* and *file*.
 
+### Absolutely Relative
+
+There is an inherent tension between absolute frequency like A440 and relative frequency like the 3:2 ratio of a perfect fifth. The first is more about physics and less about music. The second, though, is what music is based on, particularly the 3:2 ratio of most western music. In a very real sense, relative pitch is closer to the musical metal.
+
+This distinction is so important that there are no less than four ways of conveying relative pitch in standard western notation, none of which are standard:
+
+* as intervals like __m3__ and __M6__
+* as scale degrees like __♭3__ and __6__
+* as movable-do solfège like __me__ or __ma__ and __la__
+* as integer notation __3__ and __9__
+
+Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do solfège used in half the world.
+
+By explicitly talking about absolute and relative pitch as completely separate ideas, we can avoid the kind of confusion that transposing instruments have, or fixed-do and movable-do solfège has. For transposing instruments, the *seed* is set to key of the instrument, so B♭ instruments should use the *seed* `ta` and alter the *mode* using chords. `ta` remains `ta`, its pitch always well-defined.
+
 ### Spans
 
-While *tones* let us talk about pitch in an absolute way, *spans* let us talk about pitch in a relative way. Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is the Counternote term for interval, among other things.
+Musicians train their relative pitch sensibilities more than anything else — the basis of which is interval training. A *span* is the Counternote term for interval or scale degree.
 
 Where *tones* change in their *start* for each *rank*, *spans* change in their *rhyme* for while the *start* changes the *file*.
 
@@ -132,7 +147,7 @@ And the rhymes contain more than meets the eye — you can think of them as abbr
         -a      1       ɑ       'ah'
     —————————————————————————————————————
 
-Now it’s time to practice. Using the same instrument you used before, play the *base* and then sing the interval up to an octave above as shown on this clock:
+Now it’s time to practice. Using the same instrument you used before, play the *seed* and then sing the interval up to an octave above as shown on this clock:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: ASCENDING CLOCKWISE
@@ -154,7 +169,7 @@ Now it’s time to practice. Using the same instrument you used before, play the
                              ♯4/♭5
     ————————————————————————————————————————————————————————
 
-Do this for no more than ten minutes, maybe changing the *base* to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
+Do this for no more than ten minutes, maybe changing the *seed* to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: DESCENDING COUNTERCLOCKWISE
@@ -176,28 +191,9 @@ Do this for no more than ten minutes, maybe changing the *base* to get a feel fo
                             -♯4/♭5
     ————————————————————————————————————————————————————————
 
-### Absolutely Relative
-
-Now is a good time to address the elephant in the room: Why there are two ways of talking about musical pitch?
-
-There is an inherent tension between absolute frequency like A440 and relative frequency like the 3:2 ratio of a perfect fifth. The first is more about physics and less about music. The second, though, is what music is based on, particularly the 3:2 ratio of most western music. In a very real sense, relative pitch is closer to the musical metal.
-
-This distinction is so important that there are no less than four ways of conveying relative pitch in standard western notation, none of which are standard:
-
-* as intervals like __m3__ and __M6__
-* as scale degrees like __♭3__ and __6__
-* as movable-do Solfège like __me__ or __ma__ and __la__
-* as integer notation __3__ and __9__
-
-Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do Solfège used in half the world.
-
-%%%
-
-For transposing instruments, the *base* should be set to the instrument, so B♭ instruments should use the *base* B♭ and alter the *mode* signature using chords. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well.
-
 ### Lux Clock
 
-There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the *base* `da` again:
+There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the *seed* `da`:
 
     ——————————————————————————————————————————
       LUX CLOCK: TONES/SPANS
@@ -219,9 +215,9 @@ There is one additional way of arranging *tones* and *spans* around a clock — 
                           6
     ——————————————————————————————————————————
 
-If you were to say the *tones* aloud without pausing between them with your hand on your throat, you might notice that your larynx vibrates continuously from the *tones* from 8–12–2 and stops vibrating at the start of the *tones* from 3–7. This mirrors the “natural” notes (the white keys on a typical piano) with *voiced* consonants and the “accidental” notes (the black keys on a typical piano) with *voiceless* consonants. Note that while the accidentals start out voiceless, they still end with a voice and are indispensable for harmony in our modern culture.
+If you were to say the *tones* aloud without pausing between them with your hand on your throat, you might notice that your larynx vibrates continuously from the *tones* from 11–12–5 and stops vibrating at the start of the *tones* from 6–10. This mirrors the “natural” notes (the white keys on a typical piano) with *voiced* consonants and the “accidental” notes (the black keys on a typical piano) with *voiceless* consonants. Note that while the accidentals start out voiceless, they still end with a voice and are indispensable for harmony in our modern culture.
 
-This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios that date back at least as far as the Babylonians, known today as the diatonic scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
+This clumping of the white keys is an artifact of the origin of western harmony — the seven stacked 3:2 ratios that date back at least as far as the Babylonians, known today as the diatonic scale. But just about every culture has something very close to the five stacked 3:2 ratios of the black keys known as the major/minor pentatonic scale. In order to put the naturals and accidentals on equal footing around the clock to avoid so-called wolf intervals, we have fudged the 3:2 interval flat by 1/50th of a semitone, barely perceptible even to the trained ear.
 
 The more seasoned musicians will have already recognized the arrangement of *tones* and *spans* on the *lux clock* — it’s the circle of fifths, which places notes in perfect fifths clockwise and perfect fourths counterclockwise.
 
@@ -276,7 +272,7 @@ But there is an additional bit beyond the lux — the *feel* of a span. Countern
 * the *moods*: mid close vowels, some with alveolar consonants, which are mostly smooth but impart a lot of tonality
 * the *rubs*: rhoticized vowels, some with alveolar consonants, which can be rather rough, imparting mostly dissonance and some tonality.
 
-Associating these articulations with the emotional tenor of a span will help solidify the feeling of these intervals. Practice the *blends* for five minutes or so, then the *moods*, and then the *rubs*. Separating them into these groups helps narrow the scope of what needs to be practiced in a systematic way. If you use an ear training app or are trying to transcribe a song, you can use these feels to winnow down the possibilities.
+Associating these articulations with the emotional tenor of a span will help solidify the feeling of these intervals. Practice the *blends* for five minutes or so, then the *moods*, and then the *rubs*. Separating them into these groups helps narrow the scope of what needs to be practiced in a systematic way. If you use an ear training app or are trying to transcribe a song, you can use these *feels* to winnow down the possibilities.
 
 ### Raps
 
@@ -371,7 +367,7 @@ The six *holds* ordered by powers of two are as follows:
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
-### Grooves and Clicks
+### Grooves and Pulses and Clicks
 
 *Grooves* tell the duration of a bar. They are written between `|` characters with the number of *holds* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
@@ -391,7 +387,9 @@ Here are four rather boring bars of Counternote:
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
 
-*Clicks* tell the tempo of a piece. They also refer to the *hold* in the *groove* that gets the beat, like a metronome *click*.
+*Pulses* tell the tempo of a piece. They are written after a `@`, like `@80` being 80bpm.
+
+*Clicks* refer to the *hold* in the *groove* that feels the *pulse*, like a metronome *click*.
 
 ### Cuts
 
