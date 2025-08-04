@@ -61,7 +61,7 @@ You’ll notice `ka` and `ca` seem like they might sound the same, but they don�
 
 The *tones* in Counternote are an adaptation of solfege ordered loosely by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
 
-*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key of a piece and very little else. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
+*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key center of a piece, known as the *base*, and very little else insofar as music is concerned. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. For *tones*, the *starts* and *rhymes* go *rank* and *file*.
 
@@ -92,7 +92,7 @@ A great way of seeing these relationships is on the *hue clock* with intervals l
                 -3             ||              3
       'heave'           hv  ===||===  hi             'hee'
                      -4        hp        4          'harp'
-                    BREAK ↑  ♯4/♭5
+                             ♯4/♭5
     ————————————————————————————————————————————————————————
 
 Instead of the academic names of minor third and major sixth, *spans* give a sense of interval by vowel quality. `ho` 'hoe' (but without an ending 'u' sound) and `hm` 'home' are a minor third (♭3, m3) and a major sixth (6, M6) with no apparent relationship bewteen them. But notice that they share the same vowel 'oh' in Counternote. That’s because a major sixth is the mirror version of a minor third and vice versa. A major sixth up is the same as a minor third down. A minor third up is the same as a major sixth down.
@@ -132,12 +132,12 @@ And the rhymes contain more than meets the eye — you can think of them as abbr
         -a      1       ɑ       'ah'
     —————————————————————————————————————
 
-Now it’s time to practice. Using the same instrument you used before, play the key center and then sing the interval up to an octave above as shown on this clock:
+Now it’s time to practice. Using the same instrument you used before, play the *base* and then sing the interval up to an octave above as shown on this clock:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: ASCENDING CLOCKWISE
     ————————————————————————————————————————————————————————
-                                8   ↓ BREAK                  
+                                8                 
       'hah'           7        la        ♭2
       'lerz?'           lz  ===||===  hr             'her'
                 ♭7             ||              2
@@ -154,12 +154,12 @@ Now it’s time to practice. Using the same instrument you used before, play the
                              ♯4/♭5
     ————————————————————————————————————————————————————————
 
-Do this for no more than ten minutes, maybe changing the key center to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
+Do this for no more than ten minutes, maybe changing the *base* to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: DESCENDING COUNTERCLOCKWISE
     ————————————————————————————————————————————————————————
-                     BREAK ↓   -8                    
+                               -8                    
       'hah'         -♭2        va        -7
       'hers'            hs  ===||===  vr            'ver?'
                 -2             ||             -♭7
@@ -193,11 +193,11 @@ Each of those has problems, chief among them is that the only one that doesn’t
 
 %%%
 
-For transposing instruments, the key center should be set to the instrument, so B♭ instruments should use the key center B♭ and alter the key signature using chords. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well.
+For transposing instruments, the *base* should be set to the instrument, so B♭ instruments should use the *base* B♭ and alter the *mode* signature using chords. The guitar can also act as a transposing instrument when tuned to a different standard such as E♭ or D, or when capoed up so it’s a good idea to practice them as well.
 
 ### Lux Clock
 
-There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the key `da` again:
+There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the *base* `da` again:
 
     ——————————————————————————————————————————
       LUX CLOCK: TONES/SPANS
@@ -439,15 +439,15 @@ There are obviously other details to go over, but it’s time to see some real m
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    ROOT: ma
-    KEY: Xov
+    BASE: ma
+    MODE: Xov
     +++
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb 
     +++
-    # M'ov |4.| @allegretto
+    # ma Xov |4.| @allegretto
 
     A
       0
@@ -476,7 +476,7 @@ There are obviously other details to go over, but it’s time to see some real m
         t| vo.   hl.   hm.   hm.    |
       8
         f| hh-         .     %      |
-        t| voBeva^-    .     %A %B  |
+        t| Bveva^-     .     %A %B  |
 
     *++
 
