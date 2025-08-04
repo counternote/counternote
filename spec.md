@@ -16,11 +16,11 @@ Foundational elements
 
 * [__term__][term]: a precise concept in music and Counternote, linked here in the [gloss][gloss]
 * [__glyph__][glyph]: any typed character
-* [__word__][word]: a connected sequence of [phones][phone]
-* [__sign__][sign]: a connected sequence of [glyphs][glyph] that do not make a [word][word]
 * [__phone__][phone]: the pronunciation of a speakable [glyph][glyph] or cluster of [glyphs][glyph]
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
   * [__rhyme__][rhyme]: the rhyming part or *linguistic coda* of a [word][word]
+* [__word__][word]: a connected sequence of [phones][phone]
+* [__sign__][sign]: a connected sequence of [glyphs][glyph] that do not make a [word][word]
 
 ### [FORMS][forms]
 
@@ -32,7 +32,7 @@ Structural elements
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
-  * [__core__][seed]: the tonic of a [track][track]
+  * [__seed__][seed]: the tonic of a [track][track]
 * [__round__][round]: a block of music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
@@ -135,11 +135,11 @@ Toward a deeper understanding
 
 [term]: #term
 [glyph]: #glyph
-[word]: #word
-[sign]: #sign
 [phone]: #phone
   [start]: #start
   [rhyme]: #rhyme
+[word]: #word
+[sign]: #sign
 
 [forms]: #forms
 
@@ -149,7 +149,7 @@ Toward a deeper understanding
   [work]: #work
   [act]: #act
 [track]: #track
-  [seed]: #core
+  [seed]: #seed
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -259,14 +259,6 @@ A [glyph][glyph] is any typed character in Counternote. They have been intention
 
 All [glyphs][glyph] are presented here in `monospulse`.
 
-## Word
-
-A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da` or the [hold][hold] `qa` (`.`).
-
-## Sign
-
-A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
-
 ## Phone
 
 A [phone][phone] is an indivisible articulation of spoken Counternote represented by one or two [glyphs][glyph] and up to three phonemes.
@@ -363,6 +355,14 @@ As well as some clustered [phones][phone] as [rhymes][rhyme]:
        -v       iv       'eev'
        -p    ɑ˞p,arp     'arp'
     ————————————————————————————————
+
+## Word
+
+A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `da` or the [hold][hold] `qa` (`.`).
+
+## Sign
+
+A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
 
 ***
 
@@ -630,13 +630,13 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
         |3.\2. da.   da.   da.   |
     ————————————————————————————————
 
-## Pace
+## Seed
 
 A [pulse][pulse] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
 
-## Tick
+## Click
 
-A [tick][tick] refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [tick][tick].
+A [click][click] refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [click][click].
 
 ## Cut
 
@@ -663,20 +663,22 @@ Those rules add up to:
         # one beat for =
         | da=                             |
         # is equivalent to
-        | da-aa                           |
+        | da=aa                           |
       2
         # two beats over =
-        | da=da                           |
+        | da-             da-             |
         # is equivalent to
-        | da-         da-                 |
+        | da=da                           |
       3
         # three beats over --
         | da-da-da                        |
       4
         # four beats over --
+        | da-da           da-da           |
+        # is equivalent to
         | da-da'da-da                     |
         # is equivalent to
-        | da.   da.   da.   da.           |
+        | da.     da.     da.     da.     |
       5
         # five beats over ....
         | da.da.da.da.da                  |
@@ -684,17 +686,17 @@ Those rules add up to:
         # six beats over ....
         | da.da.da'da.da.da               |
         # is equivalent to
-        | da.da.da    da.da.da            |
+        | da.da.da        da.da.da        |
       7
         # seven beats over ....
-        | da.da.da'da'da.da.da            |
+        | da.da.da'da.da'da.da            |
       8
         # eight beats over ....
         | da.da   da.da   da.da   da.da   |
         # is equivalent to
         | da.da'da.da     da.da'da.da     |
         # is equivalent to
-        | da.da.da'da'da'da.da.da         |
+        | da.da'da.da'da.da'da.da         |
         # is equivalent to
         | da, da, da, da, da, da, da, da, |
     —————————————————————————————————————————
@@ -753,25 +755,27 @@ A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] an
       1
         # one beat for =
         | da=                     |
+        # is equivalent to
+        |[da'aa]=                 |
       2
         # two beats over =
-        |[da'da]=                 |
+        | da-da                   |
         # is equivalent to
-        | da=da                   |
+        |[da'da]=                 |
       3
         # three beats over =
-        |[da'da'da]=              |
-        # is equivalent to
         | da-da-da                |
+        # is equivalent to
+        |[da'da'da]=              |
       4
         # four beats over =
-        |[da'da'da'da]=           |
+        | da-da       da-da       |
         # is equivalent to
-        |[da'da]-    [da'da]-     |
-        # and equivalent to
         | da-da'da-da             |
         # and equivalent to
-        | da-da       da-da       |
+        |[da'da]-    [da'da]-     |
+        # and equivalent to
+        |[da'da'da'da]=           |
     —————————————————————————————————
 
 [Long cuts][long cut] work in two places where [short cuts][short cut] cannot: nested tuplets and across multiple bars.
@@ -781,7 +785,7 @@ To nest a [cut][cut], just place a [long cut][long cut] where a single sound wou
     —————————————————————————————————
       # |4.|
       1
-        # triplet in triplet over 1
+        # triplet in triplet
         |[da'da'[da'da'da]]=      |
         | da-da-[da'da'da]        |
     —————————————————————————————————
@@ -791,8 +795,9 @@ If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [
     —————————————————————————————————
       # |4.|
       1
-        # triplet in triplet over 2
-        |[da'[da'da'da]+aa]=      |
+        # triplet in triplet
+        |[da'[da'da'da]+aa]=       |
+        | da-[da'da'da]-+aa        |
     —————————————————————————————————
 
 Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `aa` are used in this case as well:
@@ -899,7 +904,7 @@ Here is Bach’s Bourrée written using [spans][span]:
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    CORE: ma
+    SEED: ma
     MODE: Xov
     +++
     TRACK: Bourrée
