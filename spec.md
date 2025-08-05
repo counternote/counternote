@@ -822,7 +822,7 @@ The `+` with the extra [hold][hold] `=` helps the performer see what how long th
 
 ## Tone
 
-A [tone][tone] is closest to a *note* in a traditional sense, like the [rank][rank] of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `da`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `ja` including *A440*, *A444*, and *A432*, which does not include the baroque tuning *A415*, falling into the [rank][rank] just below called `xa`.
+A [tone][tone] is closest to a *note* in a traditional sense, like the [rank][rank] of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `da`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `la` including *A440*, *A444*, and *A432*, but not including the baroque tuning *A415*, which falls into the [rank][rank] `sa` just below.
 
 A matrix of all the [tones][tone] moving left to right, bottom to top:
 
@@ -870,7 +870,7 @@ The [start][start] of a [tone][tone] will always be a consonant represented by a
 
 ### Tone Rhyme
 
-The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone]. The exact [pitch][pitch] a [file][file] depends on tuning, but `la` will always be about the [band][band] around A440.
+The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone].
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -897,53 +897,6 @@ The tonic of a [span][span] or [knit][knits].
 ## Span
 
 A [span][span] is a scale degree relative to some [root][root]. For instance, in `da`, `lv` "leave" is the fifth scale degree, the note a perfect fifth above `da`, `za`.
-
-Here is Bach’s Bourrée written using [spans][span]:
-
-    ++*
-    SCORE: Lute Suite in E Minor
-    WORK: BWV 996
-    SCRIBE: Bach
-    SEED: ma
-    MODE: Xov
-    +++
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb 
-    +++
-    # M'ov |4.| @allegretto
-
-    A
-      0
-        f| -           .     la.lu  |
-        t| -           .     vo.vu  |
-      1
-        f| lo.   lu.la lz.   la.lu  |
-        t| va.   vi.   hv.   vi.    |
-      2
-        f| lv.   ln.lz la.   lm.ll  |
-        t| vo.   vu.   va.   vu.    |
-      3
-        f| lv.   hi.ho hu.   ho.hi  |
-        t| vo.   vi.   hv.   vi.    |
-      4
-        f| lv.hi ho.hu ha.   la.lu  |
-        t| vo.   hv.   va.vu vo.vu  |
-      5
-        f| lo.   lu.la lz.   la.lu  |
-        t| va.   vi.   hv.   vi.    |
-      6
-        f| lv.   ln.lz la.   lm.ll  |
-        t| vo.   vu.   va.   vu.    |
-      7
-        f| lv.   li.lo lu^^o.  ,lo, |
-        t| vo.   hl.   hm.   hm.    |
-      8
-        f| hh-         .     %      |
-        t| Bveva^-     .     %A %B  |
-
-    *++
 
 A matrix of all the [spans][span] moving left to right, bottom to top:
 
@@ -1137,31 +1090,31 @@ A [strand][strand] is two [voices][voice] sounding simultaneously.
     ————————————————————————————————
       WORD   VALUE (ABOVE)   IPA
     ————————————————————————————————
-      Xta    two octaves    ʃɑtɑ
-      Xtz     major 14th    ʃɑtɚz
-      Xtn     minor 14th    ʃɑtun
-      Xtm     major 13th    ʃɑtom
-      Xtl     minor 13th    ʃɑtel
-      Xtv    perfect 12th   ʃɑtiv
-      Xlp   augmented 11th  ʃɑlɑ˞p
-      Xli    perfect 11th   ʃɑli
-      Xle     major 10th    ʃɑle
-      Xlo     minor 10th    ʃɑlo
-      Xlu     major 9th     ʃɑlu
-      Xlr     minor 9th     ʃɑlɚ
-      Xla      octave       ʃɑlɑ
-      Xlz     major 7th     ʃɑlɚz
-      Xln     minor 7th     ʃɑlun
-      Xlm     major 6th     ʃɑlom
-      Xll     minor 6th     ʃɑlel
-      Xlv    perfect 5th    ʃɑliv
-      Xhp   diminished 5th  ʃɑhɑ˞p
-      Xhi    perfect 4th    ʃɑhi
-      Xhe     major 3rd     ʃɑhe
-      Xho     minor 3rd     ʃɑho
-      Xhu     major 2nd     ʃɑhu
-      Xhr     minor 2nd     ʃɑhɚ
-      Xha      unison       ʃɑhɑ
+      Ata    two octaves    ɑtɑ
+      Atz     major 14th    ɑtɚz
+      Atn     minor 14th    ɑtun
+      Atm     major 13th    ɑtom
+      Atl     minor 13th    ɑtel
+      Atv    perfect 12th   ɑtiv
+      Alp   augmented 11th  ɑlɑ˞p
+      Ali    perfect 11th   ɑli
+      Ale     major 10th    ɑle
+      Alo     minor 10th    ɑlo
+      Alu     major 9th     ɑlu
+      Alr     minor 9th     ɑlɚ
+      Ala      octave       ɑlɑ
+      Alz     major 7th     ɑlɚz
+      Aln     minor 7th     ɑlun
+      Alm     major 6th     ɑlom
+      All     minor 6th     ɑlel
+      Alv    perfect 5th    ɑliv
+      Ahp   diminished 5th  ɑhɑ˞p
+      Ahi    perfect 4th    ɑhi
+      Ahe     major 3rd     ɑhe
+      Aho     minor 3rd     ɑho
+      Ahu     major 2nd     ɑhu
+      Ahr     minor 2nd     ɑhɚ
+      Aha      unison       ɑhɑ
     ————————————————————————————————
 
 ## Chord

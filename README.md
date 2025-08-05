@@ -376,13 +376,13 @@ Here are four rather boring bars of Counternote:
     —————————————————————————————————————————
       # |4.|
       1
-        | da=                             |
+        | la=                             |
       2
-        | da-             da-             |
+        | la-             la-             |
       3
-        | da.     da.     da.     da.     |
+        | la.     la.     la.     la.     |
       4
-        | da, da, da, da, da, da, da, da, |
+        | la, la, la, la, la, la, la, la, |
     —————————————————————————————————————————
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
@@ -393,22 +393,22 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 ### Cuts
 
-In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| da.da.da |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| la.la.la |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
       1
-        | da=                                 |
+        | la=                                 |
       2 # duplets
-        | da-da             da-da             |
+        | la-la             la-la             |
       3 # triplets
-        | da.da.da          da.da.da          |
+        | la.la.la          la.la.la          |
       4 # quadruplets
-        | da.da'da.da       da.da'da.da       |
+        | la.la'la.la       la.la'la.la       |
       5 # quintuplets
-        | da,da,da,da,da    da,da,da,da,da    |
+        | la,la,la,la,la    la,la,la,la,la    |
       6 # sextuplets
-        | da,da,da'da,da,da da,da,da'da,da,da |
+        | la,la,la'la,la,la la,la,la'la,la,la |
     —————————————————————————————————————————————
 
 Notice how duplets can be used to simplify the bar:
@@ -416,18 +416,45 @@ Notice how duplets can be used to simplify the bar:
     —————————————————————————————————————————
       # |4.|
       1 # like eight notes
-        | da, da, da, da, da, da, da, da, |
+        | la, la, la, la, la, la, la, la, |
       2 # like quarter note duplets
-        | da.da   da.da   da.da   da.da   |
+        | la.la   la.la   la.la   la.la   |
     —————————————————————————————————————————
 
 That is easier for the eye to parse and, as mentioned before, can save on horizontal space:
 
-    ——————————————————————————————————
+    —————————————————————————————————
       # |4.|
       1 # space saving
-        | da.da da.da da.da da.da  |
+        | la.la la.la la.la la.la |
+    —————————————————————————————————
+
+## Stacks and Knits
+
+That’s nice and all for monophonic instruments, but what about things like the piano and guitar? There are a few ways of dealing with many voices. One is by using *stacks* — multiple lines of notes in the same *bar*.
+
+A four-part harmony might be written:
+
     ——————————————————————————————————
+      VOICES:
+        s: soprano
+        a: alto
+        t: tenor
+        b: bass
+
+      # |4.|
+      1
+        s| la.la la.la la.la la.la |
+        a| la.la la.la la.la la.la |
+        t| la.la la.la la.la la.la |
+        b| la.la la.la la.la la.la |
+      
+    ——————————————————————————————————
+
+But what about double stops and chords and voicings where you might not need to dedicate vertical space?
+
+This is where we introduce *knits*. Instead of each voice taking up an entire line, each voice in a *knit* is its own letter.
+
 
 ## Score
 
