@@ -453,7 +453,9 @@ A four-part harmony might be written:
 
 But what about double stops and chords and voicings where you might not need to dedicate vertical space?
 
-This is where we introduce *knits*. Instead of each voice taking up an entire line, each voice in a *knit* is its own letter.
+This is where we introduce *knits*. Instead of each voice taking up an entire line, each voice in a *knit* is just a single letter called a *thread*.
+
+
 
 
 ## Score

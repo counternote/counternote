@@ -103,7 +103,7 @@ Composer directives
   * [__ring__][ring]: a sustained line
   * [__glide__][glide]: a smooth change in [pitch][pitch] of a [sound][sounds]
   * [__slide__][slide]: a stepped change in [pitch][pitch] of a [sound][sounds]
-  * [__vibe__][vibe]: a repeated fluctuation in [pitch][pitch] of a [sound][sounds]
+  * [__flux__][flux]: a repeated fluctuation in [pitch][pitch] of a [sound][sounds]
   * [__flam__][flam]: a quick [sound][sounds] before another
   * [__lick__][lick]: a quick run of [sounds][sounds]
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
@@ -123,10 +123,10 @@ Toward a deeper understanding
   * [__lux__][lux]: a measure of the relative brightness or darkness of an interval
   * [__bright lux__][bright lux]: a harmonic relationship evoking a sense of opening up
   * [__dark lux__][dark lux]: a harmonic relationship evoking a sense of settling down
-  * [__feel__][feel]: a measure of emotional quality of an interval
-  * [__blend__][blend]: a consonant [feel][feel]
-  * [__mood__][mood]: a major/minor [feel][feel]
-  * [__rub__][rub]: a dissonant [feel][feel]
+  * [__vibe__][vibe]: a measure of emotional quality of an interval
+  * [__blend__][blend]: a consonant [vibe][vibe]
+  * [__mood__][mood]: a major/minor [vibe][vibe]
+  * [__rub__][rub]: a dissonant [vibe][vibe]
 * [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
 [gloss]: #gloss
@@ -210,7 +210,7 @@ Toward a deeper understanding
   [ring]: #ring
   [glide]: #glide
   [slide]: #slide
-  [vibe]: #vibe
+  [flux]: #flux
   [flam]: #flam
   [lick]: #lick
   [trill]: #trill
@@ -228,7 +228,7 @@ Toward a deeper understanding
   [lux]: #lux
   [bright lux]: #bright-lux
   [dark lux]: #dark-lux
-  [feel]: #feel
+  [vibe]: #vibe
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
@@ -1228,7 +1228,7 @@ A [slide][slide] is the stepped changing of [sound][sounds] to a different [pitc
 
 ### Vibe
 
-A [vibe][vibe] is a repeated fluctuation in the [pitch][pitch] of a [sound][sounds]. It is an [art][art] denoted by the [glyph][glyph] `~`.
+A [flux][flux] is a repeated fluctuation in the [pitch][pitch] of a [sound][sounds]. It is an [art][art] denoted by the [glyph][glyph] `~`.
 
 ### Flam
 
@@ -1355,19 +1355,19 @@ A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling
 
 ### Feel
 
-A [feel][feel] is the emotional quality of an interval that runs orthogonal to [lux][lux].
+A [vibe][vibe] is the emotional quality of an interval that runs orthogonal to [lux][lux].
 
 ### Blend
 
-A [blend][blend] is a more harmonious [feel][feel]: `-a`, `-u`, `-i`, `-v`, `-m`. They are the high vowels, some paired with labial consonants, plus the [root][root] which is an open vowel.
+A [blend][blend] is a more harmonious [vibe][vibe]: `-a`, `-u`, `-i`, `-v`, `-m`. They are the high vowels, some paired with labial consonants, plus the [root][root] which is an open vowel.
 
 ### Mood
 
-A [mood][mood] is a [feel][feel] that gives a major or minor quality: `-o`, `-e`, `-l`, `-n`. All are  mid vowels, some paired with alveolar consonants.
+A [mood][mood] is a [vibe][vibe] that gives a major or minor quality: `-o`, `-e`, `-l`, `-n`. All are  mid vowels, some paired with alveolar consonants.
 
 ### Rub
 
-A [rub][rub] is a dissonant [feel][feel] that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants.
+A [rub][rub] is a dissonant [vibe][vibe] that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants.
 
 ## Tap
 
