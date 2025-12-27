@@ -1226,7 +1226,7 @@ A [glide][glide] is the smooth changing of a [sound][sounds] to a different [pit
 
 A [slide][slide] is the stepped changing of [sound][sounds] to a different [pitch][pitch] like a fret slide. `//` is for changing a [sound][sounds] up, `\\` for changing a [sound][sounds] down.
 
-### Vibe
+### Flux
 
 A [flux][flux] is a repeated fluctuation in the [pitch][pitch] of a [sound][sounds]. It is an [art][art] denoted by the [glyph][glyph] `~`.
 
@@ -1353,7 +1353,7 @@ A [bright lux][bright lux] is a harmonic relationship that evokes a sense of ope
 
 A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
-### Feel
+### Vibe
 
 A [vibe][vibe] is the emotional quality of an interval that runs orthogonal to [lux][lux].
 
