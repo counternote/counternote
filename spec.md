@@ -32,7 +32,7 @@ Structural elements
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
-  * [__seed__][seed]: the tonic of a [track][track]
+  * [__key__][key]: the tonic of a [track][track]
 * [__round__][round]: a block of music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
@@ -149,7 +149,7 @@ Toward a deeper understanding
   [work]: #work
   [act]: #act
 [track]: #track
-  [seed]: #seed
+  [key]: #key
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -246,7 +246,7 @@ A [term][term] is the name for a precise concept in music and Counternote. They 
 
 ## Glyph
 
-A [glyph][glyph] is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespulse `␣` and newline `↵`:
+A [glyph][glyph] is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespace `␣` and newline `↵`:
 
     ———————————————————————————————————
       ␣ ! " # $ % & ' ( ) * + , - . /
@@ -257,7 +257,7 @@ A [glyph][glyph] is any typed character in Counternote. They have been intention
       p q r s t u v w x y z ( | ) ~ ↵
     ———————————————————————————————————
 
-All [glyphs][glyph] are presented here in `monospulse`.
+All [glyphs][glyph] are presented here in `monospace`.
 
 ## Phone
 
@@ -531,7 +531,7 @@ A [pitch][pitch] is the number of vibrations per second, the frequency.
 
 ## Rank
 
-A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `la` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [seed][seed] `la`.
+A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] with the `-a` [rhyme][rhyme] such as `la` for *A* or [spans][span] with the `h-` [start][start] such as `ha` for *A* in the [key][key] `la`.
 
 ## File
 
@@ -646,7 +646,7 @@ A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While 
 
 A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
 
-* no whitespulse exists between the [sounds][sounds]
+* no whitespace exists between the [sounds][sounds]
 * [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
 * the last [sound][sounds] does *not* receive a [hold][hold]
 * the total duration of all the [holds][hold] is the duration the [cut][cut] fills
@@ -921,7 +921,7 @@ A matrix of all the [spans][span] moving left to right, bottom to top:
 
 ### Span Start
 
-The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [seed][seed]. Middle C would typically be in the `h-` [file][file].
+The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [key][key]. Middle C would typically be in the `h-` [file][file].
 
     —————————————————————————————
       START  FILE  IPA  ENGLISH
@@ -944,7 +944,7 @@ The [start][start] of a [span][span] indicates the [file][file] above or below t
 
 ### Span Rhyme
 
-The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [seed][seed]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
+The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [key][key]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
 
 
     ——————————————————————————————————
@@ -1182,7 +1182,7 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [seed][seed] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
+[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [key][key] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
 
 ## Comp
 
@@ -1277,7 +1277,7 @@ A [drift][drift] is a microtonal adjustment. These can be adjusted globally or i
       -v  -42
     ————————————
 
-`da/hup` ˌdɑ.huˈjɑ˞t is a whole step and a quarter bend to D half-sharp. `dat` dɑˈjɑ˞t is a C half-sharp.
+`da/hup` ˌdɑ.huˈjɑ˞p is a whole step and a quarter bend to D half-sharp. `dap` dɑˈjɑ˞p is a C half-sharp.
 
 Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
@@ -1303,18 +1303,18 @@ The [hue clock][hue clock] places [spans][span] in chromatic sequence around a c
                                              NOTCH
                          1                    DIFF
                7        ha        ♭2            0
-                 hs  ===||===  hr              ±1
+                 hz  ===||===  hr              ±1
          ♭7             ||              2
-            hm  ========||========  hu         ±2
+            hn  ========||========  hu         ±2
                         ||
                         ||
-       6  hn  ==========||==========  ho  ♭3   ±3
+       6  hm  ==========||==========  ho  ♭3   ±3
                         ||
                         ||
             hl  ========||========  he         ±4
          ♭6             ||              3
                  hv  ===||===  hi              ±5
-               5        ht        4            +6
+               5        hp        4            +6
              BREAK ↑  ♯4/♭5
     ————————————————————————————————————————————————
 
@@ -1328,16 +1328,16 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
                 4       -a        5         BLENDS
                   -i  ==||==  -v               |
           ♭7            ||             2       |
-             -m  =======||=======  -u        —————
+             -n  =======||=======  -u        —————
                         ||
                         ||
-       ♭3  -o  =========||=========  -n   6  MOODS
+       ♭3  -o  =========||=========  -m   6  MOODS
                         ||                     |
                         ||                     |
              -l  =======||=======  -e        —————
           ♭6            ||             3
-                  -r  ==||==  -s              RUBS
-               ♭2       -t        7            |
+                  -r  ==||==  -z              RUBS
+               ♭2       -p        7            |
                       ♭5/♯4                  —————
     —————————————————————————————————————————————————
 
@@ -1367,7 +1367,7 @@ A [mood][mood] is a [vibe][vibe] that gives a major or minor quality: `-o`, `-e`
 
 ### Rub
 
-A [rub][rub] is a dissonant [vibe][vibe] that clashes with the root: `-r`, `-s`, `-t`. They are all the rhoticized vowels, some paired with alveolar consonants.
+A [rub][rub] is a dissonant [vibe][vibe] that clashes with the root: `-r`, `-z`, `-p`. They are all the rhoticized vowels, some paired with consonants.
 
 ## Tap
 

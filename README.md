@@ -59,26 +59,26 @@ First up to introduce are the twelve *tones*. These refer to absolute pitch, eac
 
 You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. 
 
-The *tones* in Counternote are an adaptation of solfege ordered loosely by points of articulation — which is just a fancy way of saying where the sound of a consonant is coming from. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
+The *tones* in Counternote are an adaptation of solfège (and tonic solfa) ordered loosely by where the sound of a consonant is coming from, that is, the point of articulation. When you pronounce the syllables, notice how we move from the lips to the teeth to the front of the tongue on the hard palate and finally the back of the tongue on the soft palate.
 
-*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfege. They are used for setting the key center of a piece, known as the *seed*, and very little else insofar as music is concerned. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
+*Tones* are used for absolute pitch exclusively, just like traditional letter note names and fixed-do solfège. But music is a relative pitch phenomenon, so unlike traditional notation, these *tones* are used almost exclusively for setting the key center of a piece, known as the *key*. They consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. For *tones*, the *starts* and *rhymes* go *rank* and *file*.
 
 ### Absolutely Relative
 
-There is an inherent tension between absolute frequency like A440 and relative frequency like the 3:2 ratio of a perfect fifth. The first is more about physics and less about music. The second, though, is what music is based on, particularly the 3:2 ratio of most western music. In a very real sense, relative pitch is closer to the musical metal.
+There is an inherent tension between an absolute frequency like A440 and an relative frequency like the 3:2 ratio of a perfect fifth. The first is more about physics and less about music. The second, though, is what music is based on. In a very real sense, relative pitch is closer to the musical metal.
 
-This distinction is so important that there are no less than four ways of conveying relative pitch in standard western notation, none of which are standard:
+Relative pitch is so important that there are no less than four ways to express it in traditional notation:
 
 * as intervals like __m3__ and __M6__
 * as scale degrees like __♭3__ and __6__
-* as movable-do solfège like __me__ or __ma__ and __la__
+* as movable-do solfège (tonic solfa) like __me__ or __ma__ and __la__
 * as integer notation __3__ and __9__
 
 Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do solfège used in half the world.
 
-By explicitly talking about absolute and relative pitch as completely separate ideas, we can avoid the kind of confusion that transposing instruments have, or fixed-do and movable-do solfège has. For transposing instruments, the *seed* is set to key of the instrument, so B♭ instruments should use the *seed* `ta` and alter the *mode* using chords. `ta` remains `ta`, its pitch always well-defined.
+By explicitly talking about absolute and relative pitch as completely separate ideas, we can avoid the kind of confusion that transposing instruments have, or fixed-do and movable-do solfège has. For transposing instruments, the *key* is set to key of the instrument, so B♭ instruments should use the *key* `ta` and alter the *mode* using chords. `ta` remains `ta`, its pitch always well-defined.
 
 ### Spans
 
@@ -147,7 +147,7 @@ And the rhymes contain more than meets the eye — you can think of them as abbr
         -a      1       ɑ       'ah'
     —————————————————————————————————————
 
-Now it’s time to practice. Using the same instrument you used before, play the *seed* and then sing the interval up to an octave above as shown on this clock:
+Now it’s time to practice. Using the same instrument you used before, play the *key* and then sing the interval up to an octave above as shown on this clock:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: ASCENDING CLOCKWISE
@@ -165,11 +165,11 @@ Now it’s time to practice. Using the same instrument you used before, play the
       'lell?'      ll  ========||========  he        'heh'
                 ♭6             ||              3
       'leave'           lv  ===||===  hi             'hee'
-                      5        ht        4         'heart'
+                      5        hp        4          'harp'
                              ♯4/♭5
     ————————————————————————————————————————————————————————
 
-Do this for no more than ten minutes, maybe changing the *seed* to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
+Do this for no more than ten minutes, maybe changing the *key* to get a feel for the relative nature of spans. Then repeat for the interval up to an octave below:
 
     ————————————————————————————————————————————————————————
       HUE CLOCK: DESCENDING COUNTERCLOCKWISE
@@ -187,31 +187,31 @@ Do this for no more than ten minutes, maybe changing the *seed* to get a feel fo
       'hell'       hl  ========||========  ve        'vey'
                 -3             ||             -♭6
       'heave'           hv  ===||===  vi             'vee'
-                     -4        vt        -5        'vart?'
+                     -4        vp        -5        'varp?'
                             -♯4/♭5
     ————————————————————————————————————————————————————————
 
 ### Lux Clock
 
-There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11). This is in the *seed* `da`:
+There is one additional way of arranging *tones* and *spans* around a clock — instead of chromatic order like the hue clock, we can try the harmonic order of the *lux clock*. There is a simple way of turning the hue clock into the *lux clock*: Just replace every odd numeral on the clock with its opposite (1 <—> 7, 3 <—> 9, 5 <—> 11):
 
     ——————————————————————————————————————————
-      LUX CLOCK: TONES/SPANS
+      LUX CLOCK: SPANS
     ——————————————————————————————————————————
                          12
-              11        da/ha        1
-                 ba/hi ==||== za/hv
-         10              ||               2
-            ta/hn =======||======= ra/hu
+                11       ha       1
+                   hi ===||=== hv
+           10            ||             2
+              hn ========||======== hu
                          ||
                          ||
-      9   ka/ho =========||========= la/hm   3
+        9  ho ===========||=========== hm  3
                          ||
                          ||
-            sa/hl =======||======= ma/he
-         8               ||               4
-                 ca/hr ==||== na/hz
-              7         fa/hp        5
+              hl ========||======== he
+           8             ||             4
+                   hr ===||=== hz
+                 7       hp       5
                           6
     ——————————————————————————————————————————
 
