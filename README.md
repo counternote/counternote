@@ -233,7 +233,7 @@ Let’s take a look at the clock with just the *span rhymes* and scale degrees w
              -n  ========||======== -u
                          ||
                          ||
-       ♭3  -o  ==========||==========  -m   6
+       ♭3  -o  ==========||==========  -m  6
                          ||
                          ||
              -l  ========||======== -e
@@ -256,7 +256,7 @@ Notice how the flattened degrees line up on the left side along with the smaller
              -n  ========||========  -u         —————
                          ||
                          ||
-       ♭3  -o  ==========||==========  -m   6   MOODS
+       ♭3  -o  ==========||==========  -m  6    MOODS
                          ||                       |
                          ||                       |
              -l  ========||========  -e         —————

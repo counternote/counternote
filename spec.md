@@ -459,7 +459,7 @@ A [round][round] is a block of music, often repeated, marked with an unindented 
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-spulse indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
+A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
 
 ### Voice
 
@@ -630,7 +630,7 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
         |3.\2. da.   da.   da.   |
     ————————————————————————————————
 
-## Seed
+## Pulse
 
 A [pulse][pulse] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
 
@@ -1056,6 +1056,23 @@ A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is 
 
 All [knits][knits] begin with a capitalized consonant corresponding with a [span rhyme][span rhyme].
 
+    —————————————————————————
+      KNIT   RHYME   DEGREE  
+    —————————————————————————
+        Z      -z      7
+        N      -n     ♭7
+        M      -m      6
+        L      -l     ♭6
+        V      -v      5
+        P      -p    ♯4/♭5
+        Y      -i      4 
+        J      -e      3     
+        B      -o     ♭3
+        W      -u      2
+        R      -r     ♭2
+        X      -a      1
+    —————————————————————————
+
 ## Thread
 
 A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation:
@@ -1087,35 +1104,35 @@ The [blends][blend] that are vowels always get the patalal glide [j] starting th
 
 A [strand][strand] is two [voices][voice] sounding simultaneously. 
 
-    ————————————————————————————————
-      WORD   VALUE (ABOVE)   IPA
-    ————————————————————————————————
-      Ata    two octaves    ɑtɑ
-      Atz     major 14th    ɑtɚz
-      Atn     minor 14th    ɑtun
-      Atm     major 13th    ɑtom
-      Atl     minor 13th    ɑtel
-      Atv    perfect 12th   ɑtiv
-      Alp   augmented 11th  ɑlɑ˞p
-      Ali    perfect 11th   ɑli
-      Ale     major 10th    ɑle
-      Alo     minor 10th    ɑlo
-      Alu     major 9th     ɑlu
-      Alr     minor 9th     ɑlɚ
-      Ala      octave       ɑlɑ
-      Alz     major 7th     ɑlɚz
-      Aln     minor 7th     ɑlun
-      Alm     major 6th     ɑlom
-      All     minor 6th     ɑlel
-      Alv    perfect 5th    ɑliv
-      Ahp   diminished 5th  ɑhɑ˞p
-      Ahi    perfect 4th    ɑhi
-      Ahe     major 3rd     ɑhe
-      Aho     minor 3rd     ɑho
-      Ahu     major 2nd     ɑhu
-      Ahr     minor 2nd     ɑhɚ
-      Aha      unison       ɑhɑ
-    ————————————————————————————————
+    ———————————————————————————————————
+        WORD   VALUE (ABOVE)    IPA
+    ———————————————————————————————————
+        Xxa     two octave     ʃɑʃɑ
+        Xxz     major 14th     ʃɑʃɚz
+        Xxn     minor 14th     ʃɑʃun
+        Xxm     major 13th     ʃɑʃom
+        Xxl     minor 13th     ʃɑʃel
+        Xxv    perfect 12th    ʃɑʃiv
+        Xxp   augmented 11th   ʃɑʃɑ˞p
+        Xxi    perfect 11th    ʃɑʃi
+        Xxe     major 10th     ʃɑʃe
+        Xxo     minor 10th     ʃɑʃo
+        Xxu     major 9th      ʃɑʃu
+        Xxr     minor 9th      ʃɑʃɚ
+        Xx       octave         ʃɑʃ
+        Xz      major 7th       ʃɚz
+        Xn      minor 7th       ʃun
+        Xm      major 6th       ʃom
+        Xl      minor 6th       ʃel
+        Xv     perfect 5th      ʃiv
+        Xp    diminished 5th    ʃɑ˞p
+        Xi     perfect 4th      ʃi
+        Xe      major 3rd       ʃe
+        Xo      minor 3rd       ʃo
+        Xu      major 2nd       ʃu
+        Xr      minor 2nd       ʃɚ
+        Xa       unison         ʃɑ
+    ———————————————————————————————————
 
 ## Chord
 
@@ -1124,7 +1141,7 @@ A [chord][chord] is a [knit][knits] constructed using the capitalized [tone star
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
     ————————————————————————————————————————————————————————
-         A       
+         A          
          B5      
          Cm      
          C♯7     
@@ -1324,7 +1341,7 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
     —————————————————————————————————————————————————
        |-----DARK-----| LUX |----BRIGHT----|  
-                         1                 |-FEEL-|
+                         1                 |-VIBE-|
                 4       -a        5         BLENDS
                   -i  ==||==  -v               |
           ♭7            ||             2       |
