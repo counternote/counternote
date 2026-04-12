@@ -33,6 +33,7 @@ Structural elements
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
   * [__key__][key]: the tonic of a [track][track]
+  * [__mode__][mode]: the mode of a [track][track]
 * [__round__][round]: a block of music
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
@@ -150,6 +151,7 @@ Toward a deeper understanding
   [act]: #act
 [track]: #track
   [key]: #key
+  [mode]: #mode
 [round]: #round
 [bar]: #bar
   [voice]: #voice
@@ -428,7 +430,7 @@ A [track][track] is an individual piece that may or may not occur simultaneously
 
 ### Mode
 
-A [mode][mode] is the home scale for a [track][track] denoted by a its representative[chord][chord]: __WIP__
+A [mode][mode] is the home scale for a [track][track] denoted by its representative[chord][chord]: __WIP__
 
 <!--
     ————————————————————————
@@ -516,7 +518,7 @@ A [code][code] holds the programmery bits.
 
 # Sound
 
-A [sound][sounds] is any acoustic vibration fit to be notated. They come in three varieties: [tones][tone], [spans][span], and [raps][rap]. The first two deal with those of definite [pitch][pitch], [tones][tone] in an absolute way and [spans][span] in a relative way, whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
+A [sound][sounds] is any acoustic vibration fit to be notated. They come in two monophonic varieties: [tones][tone] and [raps][rap]. The first deals with those of definite [pitch][pitch], whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
 
 ## Pitch
 
