@@ -521,9 +521,9 @@ A __hold__ is punctuation character that represents a duration. They come in six
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
     ———————————————————————————
-      `:`    1/32   qi    kʷi
-      `,`    1/16   qe    kʷe
-      `;`    1/8    qh    kʷə
+      `;`    1/32   qh    kʷə
+      `:`    1/16   qi    kʷi
+      `,`    1/8    qe    kʷe
       `.`    1/4    qa    kʷɑ
       `-`    1/2    qo    kʷo
       `=`    1/1    qu    kʷu
