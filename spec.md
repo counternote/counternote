@@ -41,7 +41,7 @@ Structural elements
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
   * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
-* [__code__][code]: a place suitable for code
+* [__snip__][snip]: a place suitable for code
 
 ### [SOUNDS][sounds]
 
@@ -74,7 +74,6 @@ Acoustic vibrations held in time
 * [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sounds]
   * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
-* [__root__][root]: the tonic for [spans][span] and [knits][knits]
 * [__rap__][rap]: a [word][word] indicating a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
 * [__tie__][tie]: a [sound][sounds] from a previous [bar][bar] is still being held
 * [__breath__][breath]: a breath of fresh quiet
@@ -83,6 +82,7 @@ Acoustic vibrations held in time
 
 Manifold acoustic vibrations
 
+* [__root__][root]: the tonic for [spans][span] and [knits][knits]
 * [__span__][span]: a [word][word] indicating the interval
   * [__span start__][span start]: the [start][start] that denotes [file][file]
   * [__span rhyme__][span rhyme]: the [rhyme][rhyme] that denotes relative [rank][rank]
@@ -101,20 +101,19 @@ Composer directives
 * [__tweak__][tweak]: an instruction on effects
 * [__art__][art]: an inline cue
   * [__smooth__][smooth]: a legato line
-  * [__ring__][ring]: a sustained line
+  * [__ring__][ring]: a freely ringing line
+  * [__sust__][sust]: a sustained line
   * [__glide__][glide]: a smooth change in [pitch][pitch] of a [sound][sounds]
   * [__slide__][slide]: a stepped change in [pitch][pitch] of a [sound][sounds]
   * [__flux__][flux]: a repeated fluctuation in [pitch][pitch] of a [sound][sounds]
   * [__flam__][flam]: a quick [sound][sounds] before another
-  * [__lick__][lick]: a quick run of [sounds][sounds]
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
-  * [__bang__][bang]: an accent or sudden ending of a [sound][sounds]
+  * [__star__][star]: an accent or sudden ending of a [sound][sounds]
   * [__trem__][trem]: a rapid articulation of a [sound][sounds]
-  * [__stay__][stay]: an indefinite sustaining of [sound][sounds]
 * [__drift__][drift]: microtonal adjustments
 * [__chant__][chant]: lyrics beneath the [voices][voice]
 
-### [SCHEMES][schemes]
+<!-- ### [SCHEMES][schemes]
 
 Toward a deeper understanding
 
@@ -128,7 +127,7 @@ Toward a deeper understanding
   * [__blend__][blend]: a consonant [vibe][vibe]
   * [__mood__][mood]: a major/minor [vibe][vibe]
   * [__rub__][rub]: a dissonant [vibe][vibe]
-* [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
+* [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word] -->
 
 [gloss]: #gloss
 
@@ -159,7 +158,7 @@ Toward a deeper understanding
   [rep]: #rep
   [jump]: #jump
   [lap]: #lap
-[code]: #code
+[snip]: #snip
 
 [sounds]: #sounds
 
@@ -186,13 +185,13 @@ Toward a deeper understanding
 [tone]: #tone
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
-[root]: #root
 [rap]: #rap
 [tie]: #tie
 [breath]: #breath
 [strand]: #stop
 
 [knits]: #knits
+[root]: #root
 [span]: #span
   [span start]: #span-start
   [span rhyme]: #span-rhyme
@@ -210,19 +209,18 @@ Toward a deeper understanding
 [art]: #art
   [smooth]: #smooth
   [ring]: #ring
+  [sust]: #sust
   [glide]: #glide
   [slide]: #slide
   [flux]: #flux
   [flam]: #flam
-  [lick]: #lick
   [trill]: #trill
-  [bang]: #bang
+  [star]: #star
   [trem]: #trem
-  [stay]: #stay
 [drift]: #drift
 [chant]: #chant
 
-[schemes]: #schemes
+<!-- [schemes]: #schemes
 
 [clock]: #clock
   [hue clock]: #hue-clock
@@ -234,21 +232,21 @@ Toward a deeper understanding
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
-[tap]: #tap
+[tap]: #tap -->
 
 ***
 
 # Bases
 
-[Bases][bases] are foundational elements for learning and understanding Counternote.
+__Bases__ are foundational elements for learning and understanding Counternote.
 
 ## Term
 
-A [term][term] is the name for a precise concept in music and Counternote. They are monosyllablic to be easy to remember and speak about. Each [term][term] has an entry in this [gloss][gloss].
+A __term__ is the name for a precise concept in music and Counternote. They are monosyllablic to be easy to remember and speak about. Each __term__ has an entry in this [gloss][gloss].
 
 ## Glyph
 
-A [glyph][glyph] is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespace `␣` and newline `↵`:
+A __glyph__ is any typed character in Counternote. They have been intentionally limited to the visible characters of 7-bit ASCII plus whitespace `␣` and newline `↵`:
 
     ———————————————————————————————————
       ␣ ! " # $ % & ' ( ) * + , - . /
@@ -259,15 +257,15 @@ A [glyph][glyph] is any typed character in Counternote. They have been intention
       p q r s t u v w x y z ( | ) ~ ↵
     ———————————————————————————————————
 
-All [glyphs][glyph] are presented here in `monospace`.
+All __glyphs__ are presented here in `monospace`.
 
 ## Phone
 
-A [phone][phone] is an indivisible articulation of spoken Counternote represented by one or two [glyphs][glyph] and up to three phonemes.
+A __phone__ is an indivisible articulation of spoken Counternote represented by one or two [glyphs][glyph] and up to three phonemes.
 
 ### Start
 
-A [start][start] is the first [phone][phone] or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `q`, and `x` have been reassigned to tʃ 'ch', kʷ 'qu', and ʃ 'sh'. Because the American English 'r' is exceptionally weird, a trilled 'r' is also correct. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A ʒ 'zh' consonant can be substituted.
+A __start__ is the first __phone__ or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `q`, and `x` have been reassigned to tʃ 'ch', kʷ 'qu', and ʃ 'sh'. Because the American English 'r' is exceptionally weird, a trilled 'r' is also correct. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A ʒ 'zh' consonant can be substituted.
 
 The standard starting consonants with their points of articulation going from “high” to “low” (to the “neutral” glottal consonants) are as follows:
 
@@ -307,21 +305,11 @@ The standard starting consonants with their points of articulation going from �
 
 Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. An unwritten [j] and an unwritten [w] are sometimes used to break up consecutive vowels.
 
-Some [glyphs][glyph] can cluster:
-
-    ————————————————————————————————
-      GLYPHS   IPA   PRONUNCIATION
-        my-     mʲ       'my'
-        mw-     mʷ       'mw'
-        ny-     nʲ       'ny'
-        nw-     nʷ       'nw'
-    ————————————————————————————————
-
 ### Rhyme
 
-A [rhyme][rhyme] is the rhyming part or *linguistic coda* of a [word][word].
+A __rhyme__ is the rhyming part or *linguistic coda* of a [word][word].
 
-All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are pure spanish vowels plus the schwa [ə] and a rhoticized mid vowel [ɚ]:
+All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanish vowels plus the schwa `ə` and a rhoticized mid vowel `ɚ`:
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
@@ -334,32 +322,20 @@ All [rhymes][rhyme] include vowels as part of their [phone][phone]. Vowels are p
         r      ɚ,r̩       'er'
     ————————————————————————————————
 
-As well as some clustered [phones][phone] as [rhymes][rhyme]:
-
-    ————————————————————————————————
-      RHYME    IPA   PRONUNCIATION
-       -m       əm       'uhm'
-       -p       up       'oop'
-       -n       on       'ohn'
-       -f       ɛf       'ehf'
-       -v       iv       'eev'
-    ————————————————————————————————
-
 ## Word
 
-A [word][word] is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `la` or the [hold][hold] `qa` (`.`).
+A __word__ is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `la` or the [hold][hold] `qa` (`.`).
 
 ## Sign
 
-A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
+A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
 
 ***
 
 # Forms
 
-[Forms][forms] are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach: __WIP__
+__Forms__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
-<!-- TO BE REWRITTEN
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
@@ -370,93 +346,89 @@ A [sign][sign] is connected sequence of [glyphs][glyph] do not make a [word][wor
       f: fingers
       t: thumb 
     +++
-    # ma Xov |4.| @allegretto
+    #DOV |4.| @allegretto
 
     A
       0
-        f| -           .     la.lu  |
-        t| -           .     to.tu  |
+        f| -           .     le,ze  |
+        t| -           .     co,zo  |
       1
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| ce.   ze,le me.   le,ze  |
+        t| lo.   to.   da.   to.    |
       2
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| de.   se,me le.   ge,je  |
+        t| co.   zo.   lo.   zo.    |
       3
-        f| lv.   hi.ho hu.   ho.hi  |
-        t| to.   ti.   hv.   ti.    |
+        f| de.   ta,ca za.   ca,ta  |
+        t| co.   to.   da.   to.    |
       4
-        f| lv.hi ho.hu ha.   la.lu  |
-        t| to.   hv.   ta.tu to.tu  |
+        f| de,ta ca,za ha.   le,ze  |
+        t| co.   da.   lo,zo co,zo  |
       5
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| ce.   ze,le me.   le,ze  |
+        t| lo.   to.   da.   to.    |
       6
-        f| lv.   ln.ls la.   lm.ll  |
-        t| to.   tu.   ta.   tu.    |
+        f| de.   se,me le.   ge,je  |
+        t| co.   zo.   lo.   zo.    |
       7
-        f| lv.   li.lo lu^^o.  ,lo, |
-        t| to.   hl.   hm.   hm.    |
+        f| de.   li,ce ze^^c.  ,ce, |
+        t| co.   ja.   ga.   ga.    |
       8
-        f| hh-         .     %      |
-        t| Bveva^-     .     %A %B  |
-
+        f| hh-           .   %      |
+        t| coCeva^-      .   %A %B  |
     *++
--->
 
 ## Score
 
-A [score][score] is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a work.
+A __score__ is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a work.
 
 ## Stage
 
-A [stage][stage] holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] [stage][stage] is between the `++*` and `+++` [signs][sign]. The [track][track] [stage][stage] is between `+++` [signs][sign].
+A __stage__ holds compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] __stage__ is between the `++*` and `+++` [signs][sign]. The [track][track] __stage__ is between `+++` [signs][sign].
 
 ### Scribe
 
-A [scribe][scribe] is a composer of a [score][score] or [track][track].
+A __scribe__ is a composer of a [score][score] or [track][track].
 
 ### Work
 
-A [work][work] is collection of music a [score][score] or [track][track] belongs to.
+A __work__ is the collection of music a [score][score] or [track][track] belongs to.
 
 ### Act
 
-An [act][act] is the performer of a [score][score] or [track][track].
+An __act__ is the performer of a [score][score] or [track][track].
 
 ## Track
 
-A [track][track] is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
+A __track__ is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
 
 ### Mode
 
-A [mode][mode] is the home scale for a [track][track] denoted by its representative[chord][chord]: __WIP__
+A __mode__ is the home scale for a [track][track] denoted by its representative [chord][chord]:
 
-<!--
-    ————————————————————————
+    —————————————————————————
       WORD    TONALITY
-    ————————————————————————
-      Dtv     Lydian
-      Dev     Major/Ionian
-      Devn    Mixolydian
-      Dovm    Dorian
-      Dov     Minor/Aeolian
-      Drv     Phrygian
-      Dot     Locrian
-    ————————————————————————
--->
+    —————————————————————————
+      Lrv     Lydian
+      Lev     Major/Ionian
+      Levf    Mixolydian
+      Lovm    Dorian
+      Lov     Minor/Aeolian
+      Lhv     Phrygian
+      Lor     Locrian
+    —————————————————————————
 
 ## Round
 
-A [round][round] is a block of music, often repeated, marked with an unindented letter or string on its own line for legibility, denoted above with `A`.
+A __round__ is a block of music, often repeated, marked with an unindented letter or string on its own line for legibility, denoted above with `A`.
 
 ## Bar
 
-A [bar][bar] contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a [bar][bar] is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific [bar][bar] can be accessed outside a [round][round] by referencing the [round][round] followed by the [bar][bar] with a `'` in between, for example `A'1`.
+A __bar__ contains all of the details of what to play when and how to play it marked with a two-space indented numeral on its own line, again for legibility, denoted above with `0`, `1`, `2`, and the like. The main component of a __bar__ is a [voice][voice], but it may also include composer directions and accompaniments and lyrics. `0` indicates a *pick-up bar*, an incomplete bar that leads into the first [beat][beats]. A specific __bar__ can be accessed outside a [round][round] by referencing the [round][round] followed by the __bar__ with a `'` in between, for example `A'1`.
 
 ### Voice
 
-A [voice][voice] is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`:
+A __voice__ is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`:
 
     —————————————————————————————————————————
       # |4.|
@@ -470,7 +442,7 @@ A [voice][voice] is akin to a sequence of music performed by a monophonic instru
         | la, la, la, la, la, la, la, la, |
     —————————————————————————————————————————
 
-A [voice][voice] can be extended to another line using `+` at the end of the next to last lines and at the start of the next lines:
+A __voice__ can be extended to another line using `+` at the end of the next to last lines and at the start of the next lines:
 
     —————————————————————————————————————————
       # |4.|
@@ -484,69 +456,67 @@ A [voice][voice] can be extended to another line using `+` at the end of the nex
         + la; la; la; la; la; la; la; la; |
     —————————————————————————————————————————
 
-Inline harmonies such as [strands][strand] and [chords][chord] are multiple [voices][voice] even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
+Inline harmonies such as [strands][strand] and [chords][chord] are multiple __voices__ even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
 
 ### Stack
 
-A [stack][stack] is separate voices in the same [bar][bar]. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. The individual [voices][voice] can be labeled like in the Bourrée: __WIP__
+A __stack__ is separate [voices][voice] in the same __bar__. These can be separate instruments for an ensemble, or the same instrument like the right and left hands of a piano player or even the six strings of a guitar for a more musically informative tablature. The individual [voices][voice] can be labeled like in the Bourrée:
 
-<!-- 
     ———————————————————————————————————
       1
-        f| lo.   lu.la ls.   la.lu  |
-        t| ta.   ti.   hv.   ti.    |
+        f| ce.   ze,le me.   le,ze  |
+        t| lo.   to.   da.   to.    |
     ———————————————————————————————————
--->
 
 ### Lap
 
-A [lap][lap] is a variation on a [bar][bar] to be played in different iterations of a [round][round]. It is denoted by the [bar][bar] followed by the [lap][lap] with a `'` in between, much like a [bar][bar] is specified from outside a [round][round] `8'1`.
+A __lap__ is a variation on a __bar__ to be played in different iterations of a __round__. It is denoted by the __bar__ followed by the __lap__ with a `'` in between, much like a __bar__ is specified from outside a __round__ `8'1`.
 
 ### Jump
 
-A [jump][jump] is a directive on what part to play next. [Jumps][jump] are denoted by `%` followed by the [bar][bar] or [round][round] to continue from.
+A __jump__ is a directive on what part to play next. __Jumps__ are denoted by `%` followed by the __bar__ or __round__ to continue from.
 
 ### Rep
 
-A [rep][rep] is a directive to repeat some number of [holds][hold] previous. It is denoted by `%%` to repeat the previous bar or `%%..` to repeat the previous `..`.
+A __rep__ is a directive to repeat some number of [holds][hold] previous. It is denoted by `%%` to repeat the previous __bar__ or `%%..` to repeat the previous `..`.
 
-## Code
+## Snip
 
-A [code][code] holds the programmery bits. 
+A __snip__ holds the programmery bits. 
 
 ***
 
-# Sound
+# Sounds
 
-A [sound][sounds] is any acoustic vibration fit to be notated. They come in two monophonic varieties: [tones][tone] and [raps][rap]. The first deals with those of definite [pitch][pitch], whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
+A __sound__ is any acoustic vibration fit to be notated. They come in two monophonic varieties: [tones][tone] and [raps][rap]. The first deals with those of definite [pitch][pitch], whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
 
 ## Pitch
 
-A [pitch][pitch] is the number of vibrations per second, the frequency.
+A __pitch__ is the number of vibrations per second, the frequency.
 
 ## Rank
 
-A [rank][rank] is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] in all caps with the [rhyme][rhyme] for the [file][file] such as `LA` for *A* in the octave below *middle C*, usually *A3* or precisely *A220*. 
+A __rank__ is like all traditional notes regardless of octave, also known as the pitch-class, the set of pitches separated by powers of two. These are written as [tones][tone] in all caps with the __rhyme__[rhyme][rhyme] for the [file][file] such as `LA` for *A* in the octave below *middle C*, usually *A3* or precisely *A220*. 
 
 ## File
 
-A [file][file] is analogous to the octave number, for instance the [band][band] from 220Hz to 440Hz.
+A __file__ is analogous to the octave number, for instance the [band][band] from 220Hz to 440Hz.
 
 ## Band
 
-A [band][band] is a defined range of frequencies with the lower bound inclusive and the upper bound exclusive.
+A __band__ is a defined range of frequencies with the lower bound inclusive and the upper bound exclusive.
 
 ## Notch
 
-A [notch][notch] is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
+A __notch__ is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
 
 # Beats
 
-[Beats][beats] are basic rhythmic elements
+__Beats__ are basic rhythmic elements
 
 ## Hold
 
-A [hold][hold] is punctuation character that represents a duration. They come in six varieties ordered by powers of two:
+A __hold__ is punctuation character that represents a duration. They come in six varieties ordered by powers of two:
 
     ———————————————————————————
       HOLD  VALUE  WORD   IPA
@@ -570,7 +540,7 @@ Plus two others, immediate and indeterminant:
 
 ## Groove
 
-A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It is notated `|4.|` with the number of [holds][hold] summing to the total length of a [bar][bar].
+A __groove__ tells the arrangement of [beats][beats] in a [bar][bar]. It is notated `|4.|` with the number of [holds][hold] summing to the total length of a [bar][bar].
 
     —————————————————————————————————————————
       # |4.|
@@ -592,11 +562,11 @@ A [groove][groove] tells the arrangement of [beats][beats] in a [bar][bar]. It i
         + la; la; la; la; la; la; la; la; |
     —————————————————————————————————————————
 
- But [grooves][groove] can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [holds][hold] in the [groove][groove].
+ But __grooves__ can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [holds][hold] in the __groove__.
 
 ### Shift
 
-A [shift][shift] is a section of polymeter with one [groove][groove] superimposed over another at the same [pulse][pulse] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [holds][hold] in the [bar][bar] measured by the first [groove][groove]:
+A __shift__ is a section of polymeter with one __groove__ superimposed over another at the same [pulse][pulse] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [holds][hold] in the [bar][bar] measured by the first __groove__:
 
     ———————————————————————————
       # |3./2.|
@@ -605,7 +575,7 @@ A [shift][shift] is a section of polymeter with one [groove][groove] superimpose
         | la.   la.   la.   |
     ———————————————————————————
 
-Like with [grooves][groove], the [shift][shift] can be notated within the [voice][voice]:
+Like with __grooves__, the [shift][shift] can be notated within the [voice][voice]:
 
     ————————————————————————————————
       # |2.|
@@ -616,7 +586,7 @@ Like with [grooves][groove], the [shift][shift] can be notated within the [voice
 
 ### Rift
 
-A [rift][rift] is a section of polyrhythm with one [groove][groove] mashed against another at different [pulses][pulse] so the first beat and total [bar][bar] length stays the same but the [grooves][groove] drift in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second [groove][groove]:
+A __rift__ is a section of polyrhythm with one __groove__ mashed against another at different [pulses][pulse] so the first beat and total [bar][bar] length stays the same but the __grooves__ go in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second __groove__:
 
     ———————————————————————————
       # |3.\2.|
@@ -625,7 +595,7 @@ A [rift][rift] is a section of polyrhythm with one [groove][groove] mashed again
         | la.   la.   la.   |
     ———————————————————————————
 
-Like with [grooves][groove], the [right][right] can be notated within the [voice][voice]:
+Like with __grooves__, the [right][right] can be notated within the [voice][voice]:
 
     ————————————————————————————————
       # |2.|
@@ -636,24 +606,24 @@ Like with [grooves][groove], the [right][right] can be notated within the [voice
 
 ## Pulse
 
-A [pulse][pulse] gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
+A __pulse__ gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
 
 ## Click
 
-A [click][click] refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one [click][click].
+A __click__ refers to the [hold][hold] that gets counted: In `|4.|`, `.` is one __click__.
 
 ## Cut
 
-A [cut][cut] is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [holds][hold] that do duple meter, many more can be achieved without redefining holds or changing the [pulse][pulse].
+A __cut__ is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [holds][hold] that do duple meter, many more can be achieved without redefining holds or changing the [pulse][pulse].
 
 ### Short Cut
 
-A [short cut][short cut] is a quick and dirty way of defining a [cut][cut], pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
+A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
 
 * no whitespace exists between the [sounds][sounds]
-* [holds][hold] act as separators of the [sounds][sounds] in the [cut][cut]
+* [holds][hold] act as separators of the [sounds][sounds] in the __cut__
 * the last [sound][sounds] does *not* receive a [hold][hold]
-* the total duration of all the [holds][hold] is the duration the [cut][cut] fills
+* the total duration of all the [holds][hold] is the duration the __cut__ fills
 * a `'` can be used as a separator that does not add duration
 * quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
 * septuplets and longer just add [sounds][sounds] and `'`
@@ -705,9 +675,8 @@ Those rules add up to:
         | la, la, la, la, la, la, la, la, |
     —————————————————————————————————————————
 
-[Short cuts][short cut] can greatly cut down on visual noise. Consider what the Bourrée above looks like using [holds][hold] on every [note][notes]: __WIP__
+__Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks like using [holds][hold] on every [note][notes]:
 
-<!-- 
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
@@ -718,43 +687,42 @@ Those rules add up to:
       f: fingers
       t: thumb 
     +++
-    # ma Xov |4.| @allegretto
+    #DOV |4.| @allegretto
 
     A
       0
-        f| -               .       la, lu,  |
-        t| -               .       to, tu,  |
+        f| -               .       le, ze,  |
+        t| -               .       co, zo,  |
       1
-        f| lo.     lu, la, ls.     la, lu,  |
-        t| ta.     ti.     hv.     ti.      |
+        f| ce.     ze, le, me.     le, ze,  |
+        t| lo.     to.     da.     to.      |
       2
-        f| lv.     ln, ls, la.     lm, ll,  |
-        t| to.     tu.     ta.     tu.      |
+        f| de.     se, me, le.     ge, je,  |
+        t| co.     zo.     lo.     zo.      |
       3
-        f| lv.     hi, ho, hu.     ho, hi,  |
-        t| to.     ti.     hv.     ti.      |
+        f| de.     ta, ca, za.     ca, ta,  |
+        t| co.     to.     da.     to.      |
       4
-        f| lv, hi, ho, hu, ha.     la, lu,  |
-        t| to.     hv.     ta, tu, to, tu,  |
+        f| de, ta, ca, za, ha.     le, ze,  |
+        t| co.     da.     lo, zo, co, zo,  |
       5
-        f| lo.     lu, la, ls.     la, lu,  |
-        t| ta.     ti.     hv.     ti.      |
+        f| ce.     ze, le, me.     le, ze,  |
+        t| lo.     to.     da.     to.      |
       6
-        f| lv.     ln, ls, la.     lm, ll,  |
-        t| to.     tu.     ta.     tu.      |
+        f| de.     se, me, le.     ge, je,  |
+        t| co.     zo.     lo.     zo.      |
       7
-        f| lv.     li, lo, lu^^o.  ,   lo,  |
-        t| to.     hl.     hm.     hm.      |
+        f| de.     li, ce, ze^^c.  ,   ce,  |
+        t| co.     ja.     ga.     ga.      |
       8
         f| hh-             .       %        |
-        t| Bveva^-         .       %A %B    |
+        t| coCeva^-        .       %A %B    |
 
     *++
--->
 
 ### Long Cut
 
-A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
+A __long cut__ uses square brackets with `'` between [sounds][sounds] and [holds][hold] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
       # |4.|
@@ -784,9 +752,9 @@ A [long cut][long cut] uses square brackets with `'` between [sounds][sounds] an
         |[la'la'la'la]=           |
     —————————————————————————————————
 
-[Long cuts][long cut] work in two places where [short cuts][short cut] cannot: nested tuplets and across multiple bars.
+__Long cuts__ work in two places where __short cuts__ cannot: nested tuplets and across multiple bars.
 
-To nest a [cut][cut], just place a [long cut][long cut] where a single sound would go:
+To nest a __cut__, just place a __Long cuts__ where a single sound would go:
 
     —————————————————————————————————
       # |4.|
@@ -796,7 +764,7 @@ To nest a [cut][cut], just place a [long cut][long cut] where a single sound wou
         | la-la-[la'la'la]        |
     —————————————————————————————————
 
-If a nested [cut][cut] takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
+If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
 
     —————————————————————————————————
       # |4.|
@@ -818,46 +786,23 @@ Because tuplets are treated as a block of one duration split evenly, the total d
         | aa=                     |
     —————————————————————————————————
 
-The `+` with the extra [hold][hold] `=` helps the performer see what how long the [cut][cut] is.
+The `+` with the extra [hold][hold] `=` helps the performer see what how long the __cut__ is.
 
 ***
 
 # Notes
 
-[Notes][notes] are [sounds][sounds] for a [hold][hold].
+__Notes__ are [sounds][sounds] for a [hold][hold].
 
 ## Tone
 
-A [tone][tone] capitalized as a [rank][rank] is the closest to a *note* in a traditional sense, like the pitch-class of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `LA`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `LA` including *A440*, *A444*, and *A432*, but not including the baroque tuning *A415*, which falls into the [rank][rank] `GA` just below.
+A __tone__ capitalized as a [rank][rank] is the closest to a *note* in a traditional sense, like the pitch-class of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `LA`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `LA` including *A440*, *A444*, and *A432*, but not including the baroque tuning *A415*, which falls into the [rank][rank] `GA` just below.
 
-A lowercase [tone][tone] is akin to a *scale degree* or *movable-do*, a note relative to the specified [key][key]. If no [key][key] is specified, the default is `LA`. Since music is predominantly a relative pitch phenomenon, only the setting of the [key][key] is done using the absolute pitch of the capitalized [tone][tone].
-
-A matrix of all the [tones][tone] moving left to right, bottom to top: __WIP__
-
-<!-- 
-    ——————————————————————————————————————————————————————
-      RANK (pitch class) →
-    ——————————————————————————————————————————————————————
-          E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
-      +5 mil bil fil zil sil lil til nil dil cil ril kil 
-      +4 mal bal fal zal sal lal tal nal dal cal ral kal 
-      +3  ml  bl  fl  zl  sl  ll  tl  nl  dl  cl  rl  kl 
-      +2  mi  bi  fi  zi  si  li  ti  ni  di  ci  ri  ki 
-      +1  me  be  fe  ze  se  le  te  ne  de  ce  re  ke 
-       0  ma  ba  fa  za  sa  la  ta  na  da  ca  ra  ka 
-      -1  mo  bo  fo  zo  so  lo  to  no  do  co  ro  ko 
-      -2  mu  bu  fu  zu  su  lu  tu  nu  du  cu  ru  ku 
-      -3  mr  br  fr  zr  sr  lr  tr  nr  dr  cr  rr  kr
-      -4 mar bar far zar sar lar tar nar dar car rar kar
-      -5 mor bor for zor sor lor tor nor dor cor ror kor
-    ——————————————————————————————————————————————————————
-      ↑ FILE (octave)
-    ——————————————————————————————————————————————————————
--->
+A lowercase __tone__ is akin to a *scale degree* or *movable-do*, a note relative to the specified [key][key]. If no [key][key] is specified, the default is `LA`. Since music is predominantly a relative pitch phenomenon, only the setting of the [key][key] is done using the absolute pitch of the capitalized __tone__.
 
 ### Tone Start
 
-The [start][start] of a [tone][tone] will always be a consonant represented by a single [glyph][glyph]. Their pitch will always be relative to the current [key][key] written here as a semitone or [notch][notch] offset
+The __tone start__ will always be a consonant represented by a single [glyph][glyph]. Their pitch will always be relative to the current [key][key] written here as a semitone or [notch][notch] offset
 
     ———————————————————————————————
       START  OFFSET  IPA  ENGLISH
@@ -880,7 +825,7 @@ The [start][start] of a [tone][tone] will always be a consonant represented by a
 
 ### Tone Rhyme
 
-The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the [tone][tone].
+The __tone rhyme__ is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the __tone__.
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -888,9 +833,9 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
        -il    +6    il   'eel'
        -al    +5    al   'ahl'
        -l     +4    ɛl   'ehl'
-       -i     +3    i     'ee'
-       -e     +2    e     'eh'
-       -h     +1    ə     'uh'
+       -h     +3    ə     'uh'
+       -i     +2    i     'ee'
+       -e     +1    e     'eh'
     —————————————————————————————
        -a     ±0    ɑ     'ah'
     —————————————————————————————
@@ -901,16 +846,10 @@ The [rhyme][rhyme] of a [tone][tone] is all but the [start][start], also known a
        -or    -5    ɔ˞    'or'
     —————————————————————————————
 
-## Root
-
-The tonic of a [span][span] or [knit][knits].
-
-
 ## Rap
 
-A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, [raps][rap] are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved [raps][rap]. These are some of the proposed [raps][rap]: __WIP__
+A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
 
-<!-- 
     ————————————————————————
       RESERVED
     ————————————————————————
@@ -970,180 +909,93 @@ A [rap][rap] is any sound where [pitch][pitch] is indeterminate or incidental. R
       `jz` the licc
       `lk` laugh track
     ————————————————————————
--->
 
 ## Sync
 
-[Raps][rap] can be performed at the same time by just concatenating them together with a `!` in between so it’s easy to read. These can be combined with [tones][tone] and [knits][knits] for percussive playing. __WIP__
+[Tones][tone] and [raps][rap] and even [knits][knit] can be performed at the same time by just concatenating them together with a `!` in between so it’s easy to read.
 
-<!-- 
     ———————————————————————————————————————
       WORD            VALUE
     ———————————————————————————————————————
       bm!xd   bass drum + closed hi-hat
       xk!kl       shook + clap
+      rk!le        rake + high A
     ———————————————————————————————————————
--->
 
 ## Tie
 
-A [tie][tie] is a [rap][rap] used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sounds] being held.
+A __tie__ is a [rap][rap] used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sounds] being held.
 
 ## Breath
 
-A [breath][breath] is a [rap][rap] that gives the player room to breathe. It is notated with the [word][word] `hh` and not explicitly pronounced.
+A __breath__ is a [rap][rap] that gives the player room to breathe. It is notated with the [word][word] `hh` and not explicitly pronounced.
 
 ***
 
 # Knits
 
-[Knits][knits] are collections of notes occuring simultaneously. [Knits][knits] come in three varieties: [strands][strand], [chords][chord], and [braids][braid].
+__Knits__ are collections of notes occuring simultaneously. They come in three varieties: [spans][span], [chords][chord], and [braids][braid].
+
+## Root
+
+The tonic of a [knit][knits].
 
 ## Span
 
-A [span][span] is an interval. __WIP__
-
-### Span Start
-
-<!-- 
-The [start][start] of a [span][span] indicates the [file][file] above or below the mid-range [root][root] or [key][key]. Middle C would typically be in the `h-` [file][file].
-
-    —————————————————————————————
-      START  FILE  IPA  ENGLISH
-    —————————————————————————————
-       ny-    +5    nʲ    'ny'
-       nw-    +4    nʷ    'nw'
-       n-     +3    n      'n'
-       t-     +2    t      't'
-       l-     +1    l      'l'
-    —————————————————————————————
-       h-     ±0    h      'h'
-    —————————————————————————————
-       v-     -1    v      'v'
-       p-     -2    p      'p'
-       m-     -3    m      'm'
-       my-    -4    mʲ    'my'
-       mw-    -5    mʷ    'mw'
-    —————————————————————————————
-
--->
-
-### Span Rhyme
-
-<!--
-The [rhyme][rhyme] of a [span][span] tells the interval from a [root][root] or [key][key]. The quality of the vowel tells the distance from the its starting point while a terminating consonant (excluding `-r` which is treated as a vowel in this case) means it’s an interval closest to the [root][root] from below. For brevity and symmetry, only the final [glyph][glyph] of the [rhyme][rhyme] is written.
-
+A __span__ is an interval. It consists of a single letter capitalized when speaking of an interval such a V, a perfect fifth, but is lowercase when attached to a note. Even though they are written with a single letter, the consonants on their own have a particular vowel quality attached.
 
     ——————————————————————————————————
       RHYME  INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
-        -z      7     ɚz,r̩z   'erz'
-        -n     ♭7       un    'oon'
-        -m      6       om    'ohm'
-        -l     ♭6     ɛl,el   'ehl'
-        -v      5       iv    'eev'
-        -p    ♯4/♭5  ɑ˞p,arp  'arp'
-        -i      4       i      'ee'
-        -e      3      ɛ,e     'eh'
-        -o     ♭3       o      'oh'
-        -u      2       u      'oo'
-        -r     ♭2      ɚ,r̩     'er'
-        -a      1       ɑ      'ah'
+        N       7       mə    'nuh'
+        F      ♭7       fu    'foo'
+        M       6       no    'moh'
+        P      ♭6       pɛ    'peh'
+        V       5       vi    'vee'
+        R     ♯4/♭5     ɚ      'er'
+        I       4       i      'ee'
+        E       3       ɛ      'eh'
+        O      ♭3       o      'oh'
+        U       2       u      'oo'
+        H      ♭2       ə      'uh'
+        A       1       ɑ      'ah'
     ——————————————————————————————————
--->
 
+This quality is dropped when used as [threads][thread] in [knits][knit].
 
 ## Knit Start
 
-All [knits][knits] begin with a capitalized consonant corresponding with a [tone rhyme][tone rhyme]. __WIP__
+All __knits__ begin with a capitalized consonant corresponding with a [tone start][tone start]. The capitalization tells the performer and the compiler that this is a polyphonic [note][note].
 
-<!-- 
-    —————————————————————————
-      KNIT   RHYME   DEGREE  
-    —————————————————————————
-        Z      -z      7
-        N      -n     ♭7
-        M      -m      6
-        L      -l     ♭6
-        V      -v      5
-        P      -p    ♯4/♭5
-        Y      -i      4 
-        J      -e      3     
-        B      -o     ♭3
-        W      -u      2
-        R      -r     ♭2
-        X      -a      1
-    —————————————————————————
--->
+    —————————————————
+      START  OFFSET  
+    —————————————————
+        W      +6
+        T      +5
+        Y      +4
+        C      +3
+        Z      +2
+        K      +1
+    —————————————————
+        L      ±0
+    —————————————————
+        G      -1
+        S      -2
+        J      -3
+        X      -4
+        D      -5
+    —————————————————
+
 
 ## Thread
 
-A [thread][thread] is a single [voice][voice] within a [knit][knits]. They are the [glyphs][glyph] for the [span rhymes][span rhyme] without the extra vowel content attached to the consonants. Because vowels can cluster with vowels (`VV`) and consonants with consonants (`CC`), there are some additional rules for pronunciation: __WIP__
+A __thread__ is a single [voice][voice] within a __knit__. They are the [glyphs][glyph] for the [spans][span].
 
-<!-- 
-    ——————————————————————————————
-      V:  a,r,u,o,e,i
-      C:  p,v,l,m,n,z
-      G:  any glyph
-      X:  end of string
-      -:  syllable break
-    ——————————————————————————————
-      GLYPH  BEFORE  ADDS   IPA
-    ——————————————————————————————
-        a      V      y     a-jV
-        r      V      r     ɚ-rV
-        u      V      y     u-jV
-        o      V      w     o-wV
-        e      V      w     e-wV
-        i      V      y     i-jV
-    ——————————————————————————————
-        VC     CV     -    VC-CV
-        VC     CC     ə    VC-CəC
-        VC     CX     ə    V-CəC
-    ——————————————————————————————
--->
-
-The [blends][blend] that are vowels always get the patalal glide [j] starting the next syllable whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone].
-
-## Twine
-
-A [twine][twine] is two [voices][voice] sounding simultaneously. __WIP__
-
-<!-- 
-    ———————————————————————————————————
-        WORD   VALUE (ABOVE)    IPA
-    ———————————————————————————————————
-        hLa     two octave     
-        hLz     major 14th     
-        hLn     minor 14th     
-        hLm     major 13th     
-        hLl     minor 13th     
-        hLv    perfect 12th    
-        hLp   augmented 11th   
-        hLi    perfect 11th    
-        hLe     major 10th     
-        hLo     minor 10th     
-        hLu     major 9th      
-        hLh     minor 9th      
-        hLa       octave         
-        aLm      major 7th       
-        aLp      minor 7th       
-        aLn      major 6th       
-        aLf      minor 6th       
-        aLv     perfect 5th      
-        aLr    diminished 5th    
-        aLi     perfect 4th      
-        aLe      major 3rd       
-        aLo      minor 3rd       
-        aLu      major 2nd       
-        aLh      minor 2nd       
-        aLa       unison         
-    ———————————————————————————————————
--->
+For any three consonants in a row, a schwa `ə` is inserted between the second and third. Because that is the `h` [span’s][span] usual pronounced, `h` becomes a glottal stop `ʔ` when a __thread__. The [blends][blend] that are vowels always get the patalal glide [j] preceding them if they follow a vowel whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone].
 
 ## Chord
 
-A [chord][chord] is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices.
+A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices.
 
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
@@ -1156,15 +1008,9 @@ A [chord][chord] is a [knit][knits] constructed using the capitalized [tone star
       E♭13(♭5♯9) 
     ————————————————————————————————————————————————————————
 
-
 ## Braid
 
-__WIP__
-
-<!-- 
-## Weave
-
-A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the [span start][span start] of the lowest sounding voice is prefixed to the [chord][chord] or [braid][braid]. Second, no root is implied so every voice gets a thread. Third, if an entire octave is skipped, the [glyph][glyph] `x` is inserted.
+A __braid__ is a specific voicing of a [chord][chord]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the lowest sounding [tone][tone] is prefixed to the [chord][chord]. Second, no [root][root] is implied so every [voice][voice] gets a [thread][thread]. Third, if an entire octave is skipped, the [glyph][glyph] `b` is inserted.
 
     ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
@@ -1197,31 +1043,31 @@ A [weave][weave] is a specific voicing of a [chord][chord] or [braid][braid]. Th
 
 # Cues
 
-[Cues][cues] are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [key][key] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
+__Cues__ are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [key][key] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
 
 ## Comp
 
-A [comp][comp] is a minimally specified accompaniment and harmonic background written within the [bar][bar].
+A __comp__ is a minimally specified accompaniment and harmonic background written within the [bar][bar].
 
 ### Vamp
 
-A [vamp][vamp] is a [comp][comp] that specifies rhythm and/or voicings.
+A __vamp__ is a [comp][comp] that specifies rhythm and/or voicings.
 
 ## Tweak
  
-A [tweak][tweak] is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#[` and `]#`.
+A __tweak__ is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#[` and `]#`.
 
 ## Art
 
-An [art][art] is an inline [cue][cues] each of which are denoted by special [glyphs][glyph] and rules.
+An __art__ is an inline [cue][cues] each of which are denoted by special [glyphs][glyph] and rules.
 
 ### Smooth
 
-A [smooth][smooth] lick is legato, which is to be determined by each instrument. Such licks are bracketed by parentheses `(` `)`.
+__Smooth__ is a directive to perform legato, which is to be determined by each instrument. Such __arts__ are bracketed by parentheses `(` `)`.
 
 ### Ring
 
-A [ring][ring] lick shows [sounds][sounds] sustaining over other [sounds][sounds]. These begin with the [sound][sounds] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sounds] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 above can be notated both of the following ways:
+__Ring__ is a directive to let ring, that is not to stop a [sounds][sounds] when others start. These begin with the [sound][sounds] (without any [hold][hold] if simultaneous, with if there is a delay) followed by curly brackets `{` `}` with the concurrent [sounds][sounds] notated bewteen them. The [hold][hold] for the outside [note][notes] is at least as long as the combined [holds][hold] within the curly brackets. [Bar][bar] 7 from the Bach Bourrée in E Minor can be notated both of the following ways:
 
     ————————————————————————————————————————————————
       7
@@ -1231,77 +1077,74 @@ A [ring][ring] lick shows [sounds][sounds] sustaining over other [sounds][sounds
         | vo{lv.} hl{li.lo} hm{lu^^o.} hm{aa.lo} |
     ————————————————————————————————————————————————
 
-For [sounds][sounds] meant to sustain freely as they are played like when lifting the dampers on a piano, double curly brackets `{{` `}}` are used.
+
+### Sust
+
+__Sust__ is a directive to sustain [sounds][sounds] freely as they are played like when lifting the dampers on a piano. It is denoted by double curly brackets `{{` `}}`.
 
 ### Glide
 
-A [glide][glide] is the smooth changing of a [sound][sounds] to a different [pitch][pitch], like a bend. `/` is for changing a [sound][sounds] up, `\` for changing a [sound][sounds] down.
+__Glide__ is a directive to smoothly change the [pitch][pitch], like a bend. `/` is for changing a [pitch][pitch] up, `\` for changing a [pitch][pitch] down.
 
 ### Slide
 
-A [slide][slide] is the stepped changing of [sound][sounds] to a different [pitch][pitch] like a fret slide. `//` is for changing a [sound][sounds] up, `\\` for changing a [sound][sounds] down.
+__Slide__ is a directive to change the [pitch][pitch] in a stepwise manner, like a fret slide. `//` is for changing a [pitch][pitch] up, `\\` for changing a [pitch][pitch] down.
 
 ### Flux
 
-A [flux][flux] is a repeated fluctuation in the [pitch][pitch] of a [sound][sounds]. It is an [art][art] denoted by the [glyph][glyph] `~`.
+__Flux__ is a directive to fluctuate the [pitch][pitch] around a [tone][tone], known as vibrato. It is denoted by the [glyph][glyph] `~`.
 
 ### Flam
 
-A [flam][flam] is the quick articulation of one [sound][sounds] before another. It is an [art][art] denoted with a [span start][span start] followed by the [glyph][glyph] `^` and the [span][span] to land on.
-
-### Lick
-
-A [lick][lick] is quick run of [sounds][sounds], often repeated. It is an [art][art] denoted with a starting [span][span] followed by a sequence of [span rhymes][span rhyme] separated by a [flam][flam], [glide][glide], or [slide][slide] in the order they are articulated, finishing on [span][span] or returning to the starting [span][span] if nothing else is specified.
+__Flam__ is a directive to quickly articulate one [sound][sounds] before another. It is denoted by a [tone start][tone start] followed by the [glyph][glyph] `^` and the [tone][tone] to land on.
 
 ### Trill
 
-A [trill][trill] is the quick alternating between two [sounds][sounds] used as ornamentation. It is an [art][art] denoted with the starting [span][span] a double [flam][flam] [glyph][glyph] `^^` followed by the [rhyme][rhyme] of the [span][span] to be alternated with.
+__Trill__ is a directive to quickly alternate between two [sounds][sounds], often used as ornamentation. It is denoted by the starting [tone][tone] followed by `^^` and then the [tone start][tone start] of the [tone][tone] to be alternated with.
 
-### Bang
+### Star
 
-A [bang][bang] is an accent and/or sudden ending of a [sound][sounds] denoted by `!`. It is written directly before the [note][notes] it modifies `!la.` for accents, directly after the the note for staccato `la!.`, or even directly after a [hold][hold] for that abrupt ending `la.!`.
+__Star__ is a directive to accent and/or suddenly end a [sound][sounds] denoted by `*`. It is written directly before the [note][notes] it modifies `*la.` for accents, directly after the the note for staccato `la*.`, or even directly after a [hold][hold] for that abrupt ending `la.*`.
 
 ### Trem
 
-A [trem][trem] is the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` after the [sound][sounds] `la!!.`.
+__Trem__ is a directive for the rapid articulation of a sustained [sound][sounds]. It is denoted by `**` just before the [sound][sounds] `**la.` it applies to.
 
-### Stay
+### Harm
 
-A [stay][stay] is an indefinite sustaining of a [sound][sounds]. It is denoted by `?` and roughly equivalent to a fermata. By default, it will add at least one extra [click][click] without changing the [groove][groove]. A [stay][stay] affects an entire [bar][bar], but only the [sounds][sounds] notated with the [stay][stay] will be held. The duration of the sustain can be altered by adding [holds][hold] immediately after the [stay][stay]: `?..` will add at least two [clicks][click] to a [bar][bar] of `|4.|` for a total of six [clicks][click].
-
-### Node
-
-A [node][node] is the place where a resonating medium remains static such as at the twelfth fret with the second harmonic or an overtone accentuated in throat singing. It is denoted by `*` followed by the number for the nth harmonic: `lo*3` is the [node][node] for the third harmonic at the seventh or nineteenth fret that sounds like the first string on a guitar `me`. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
+__Harm__ is a directive to play the nth harmonic. It is denoted by `*` followed by the number for said nth harmonic: `lo*3` is for performing the third harmonic. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
 
 ## Drift
 
-A [drift][drift] is a microtonal adjustment. These can be adjusted globally or inline. They are just like the [span rhymes][span rhyme] added to whole [spans][span].
+__Drift__ is a directive for microtonal adjustment. These can be adjusted globally for the likes of just intonation or inline. They are [spans][span] appended to [tones][tone] with a `*`. The default values are as given:
 
     ————————————
-      -p  +50
-      -i  +42
-      -e  +33
-      -o  +25
-      -u  +17
-      -r  +8
-      -a  ±0
-      -z  -8
-      -n  -17
-      -m  -25
-      -l  -33
-      -v  -42
+      *r  +50¢
+      *i  +42¢
+      *e  +33¢
+      *o  +25¢
+      *u  +17¢
+      *h  +8¢
+      *a  ±0¢
+      *n  -8¢
+      *f  -17¢
+      *m  -25¢
+      *p  -33¢
+      *v  -42¢
     ————————————
 
-`la/hup` ˌdɑ.huˈjɑ˞p is a whole step and a quarter bend to D half-sharp. `lap` dɑˈjɑ˞p is a C half-sharp.
+`la/da*r` is a whole step and a quarter bend to B half-sharp. `la*p` is an A half-sharp.
+
+The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `la` was set to `la*h`, `la*a` would be the 12tet value unless `*a` itself were redefined to be different.
 
 Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
 ## Chant
 
-A [chant][chant] is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sp` in the [voice][voice].
+A __Chant__ is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sw` in the [voice][voice].
 
 ***
-
+<!-- 
 # Schemes
 
 [Schemes][schemes] are informational diagrams to help learn and understand Counternote and the underlying music theory.
@@ -1438,4 +1281,4 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
       |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
     ————————————————————————————————————————————————————————————————————
 
-***
+*** -->
