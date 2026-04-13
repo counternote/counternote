@@ -46,7 +46,7 @@ Because every field tends toward jargon with big and important words the deeper 
 
 # Sounds
 
-Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
+Sounds in Counternote come in two varieties — those where pitch is the defining characteristic, *tones*, and those where pitch is indeterminate or incidental, *raps*.
 
 ## Tones
 
