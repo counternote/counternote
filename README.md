@@ -54,12 +54,33 @@ First up to introduce are the twelve *tones*. These refer to absolute pitch when
 
     ——————————————————————————————————————————————————
       E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
-      da  xa  ja  sa  ga  la  ka  za  ca  ya  ta  wa
+      DA  XA  JA  SA  GA  LA  KA  ZA  CA  YA  TA  WA
     ——————————————————————————————————————————————————
 
 You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. 
 
-*Tones* that are capitalized are used almost exclusively for setting the tonal center of a piece, known as the *key*. Uppercase or lowercase, they consist of a *start*, in this case, the first letter, and a *rhyme*, the second letter.
+*Tones* that are capitalized are used almost exclusively for setting the tonal center of a piece, known as the *key*. Uppercase or lowercase, they consist of a *start*, the first letter:
+
+    ———————————————————————————————
+      START  OFFSET  IPA  ENGLISH
+    ———————————————————————————————
+        w-     +6      w     'w'
+        t-     +5      t     't'
+        y-     +4      j     'y'
+        c-     +3     tʃ    'ch'
+        z-     +2      z     'z'
+        k-     +1      k     'k'
+    ———————————————————————————————
+        l-     ±0      l     'l'
+    ———————————————————————————————
+        g-     -1      g     'g'
+        s-     -2      s     's'
+        j-     -3     dʒ     'j'
+        x-     -4      ʃ    'sh'
+        d-     -5      d     'd'
+    ———————————————————————————————
+
+And a *rhyme*, the second letter:
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -341,3 +362,5 @@ There are obviously other details to go over, but it’s time to see some real m
     *++
 
 ***
+
+Version 0.10.0
