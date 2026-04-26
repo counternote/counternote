@@ -1,6 +1,6 @@
 ***
 
-# Counternote Specification version 0.10.0
+# Counternote Specification version 0.10.1
 
 This is a terse description of Counternote with definitions and examples.
 
@@ -347,8 +347,33 @@ __Forms__ are structural elements of a composition and how such elements connect
     @YOV |4.| @allegretto
 
     A
-
-WIP
+      0
+        f|                   me.de |
+        t|                   so.do |
+      1
+        f| se.   de.me ge.   me.de |
+        t| mo.   lo.   na.   lo.   |
+      2
+        f| ne.   ze.ge me.   te.ce |
+        t| so.   do.   mo.   do.   |
+      3
+        f| ne.   la.sa da.   sa.la |
+        t| so.   lo.   na.   lo.   |
+      4
+        f| ne.la sa.da ma.   me.de |
+        t| so.   na.   mo.do so.do |
+      5
+        f| se.   de.me ge.   me.de |
+        t| mo.   lo.   na.   lo.   |
+      6
+        f| ne.   ze.ge me.   te.ce |
+        t| so.   do.   mo.   do.   |
+      7
+        f| ne.   le.se de^^3.  ,se,|
+        t| so.   ca.   ta.   ta.   |
+      8
+        f| hh-         .     %A %B |
+        t| &soSeva-    .     %A %B |
 
     *++
 
@@ -690,32 +715,32 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
 
     A
       0
-        f|                         be, ze, |
-        t|                         co, zo, |
+        f| -               .       me, de,|
+        t| -               .       so, do,|
       1
-        f| ce.     ze, be, me.     be, ze, |
-        t| ba.     do.     la.     do.     |
+        f| se.     de, me, ge.     me. de |
+        t| mo.     lo.     na.     lo.    |
       2
-        f| le.     se, me, be.     ge, je, |
-        t| co.     zo.     ba.     zo.     |
+        f| ne.     ze, ge, me.     te, ce,|
+        t| so.     do.     mo.     do.    |
       3
-        f| le.     da, ca, za.     ca, da, |
-        t| co.     do.     la.     do.     |
+        f| ne.     la, sa, da.     sa, la,|
+        t| so.     lo.     na.     lo.    |
       4
-        f| le, da, ca, za, ha.     be, ze, |
-        t| co.     la.     ba, zo, co, zo, |
+        f| ne. la  sa, da, ma.     me, de,|
+        t| so.     na.     mo, do, so, do,|
       5
-        f| ce.     ze, be, me.     be, ze, |
-        t| ba.     do.     la.     do.     |
+        f| se.     de, me, ge.     me, de,|
+        t| mo.     lo.     na.     lo.    |
       6
-        f| le.     se, me, be.     ge, je, |
-        t| co.     zo.     ba.     zo.     |
+        f| ne.     ze, ge, me.     te, ce,|
+        t| so.     do.     mo.     do.    |
       7
-        f| le.     de, ce, ze^^c.  ,   ce, |
-        t| co.     ja.     ga.     ga.     |
+        f| ne.     le, se, de^^3.  ,   se,|
+        t| so.     ca.     ta.     ta.    |
       8
-        f| hh-             .       %       |
-        t| coCeva^-        .       %A %B   |
+        f| hh-             .       %A %B  |
+        t| &soSeva-        .       %A %B  |
 
     *++
 
@@ -1285,8 +1310,6 @@ For complex meter, we break things up into two- and three-syllable [taps][tap]:
     ————————————————————————————————————————————————————————————————————
       |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
     ————————————————————————————————————————————————————————————————————
-
-*** -->
 
 
 <!--

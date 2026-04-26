@@ -333,34 +333,35 @@ There are obviously other details to go over, but it’s time to see some real m
 
     A
       0
-        f|                   le.ze |
-        t|                   co.zo |
+        f|                   me.de |
+        t|                   so.do |
       1
-        f| ce.   ze.le me.   le.ze |
-        t| la.   to.   da.   to.   |
+        f| se.   de.me ge.   me.de |
+        t| mo.   lo.   na.   lo.   |
       2
-        f| de.   se.me le.   ge.je |
-        t| co.   zo.   la.   zo.   |
+        f| ne.   ze.ge me.   te.ce |
+        t| so.   do.   mo.   do.   |
       3
-        f| de.   ta.ca za.   ca.ta |
-        t| co.   to.   da.   to.   |
+        f| ne.   la.sa da.   sa.la |
+        t| so.   lo.   na.   lo.   |
       4
-        f| de.ta ca.za ha.   le.ze |
-        t| co.   da.   la.zo co.zo |
+        f| ne.la sa.da ma.   me.de |
+        t| so.   na.   mo.do so.do |
       5
-        f| ce.   ze.le me.   le.ze |
-        t| la.   to.   da.   to.   |
+        f| se.   de.me ge.   me.de |
+        t| mo.   lo.   na.   lo.   |
       6
-        f| de.   se.me le.   ge.je |
-        t| co.   zo.   la.   zo.   |
+        f| ne.   ze.ge me.   te.ce |
+        t| so.   do.   mo.   do.   |
       7
-        f| de.   te.ce ze^^c.  ,ce,|
-        t| co.   ja.   ga.   ga.   |
+        f| ne.   le.se de^^3.  ,se,|
+        t| so.   ca.   ta.   ta.   |
       8
         f| hh-         .     %A %B |
-        t| coCeva^-    .     %A %B |
+        t| &soSeva-    .     %A %B |
+
     *++
 
 ***
 
-Version 0.10.0
+Version 0.10.1
