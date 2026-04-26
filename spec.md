@@ -322,7 +322,7 @@ All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanis
 
 ## Word
 
-A __word__ is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `ba` or the [spin][spin] `pa` (`.`).
+A __word__ is connected sequence of [phones][phone] that can be spoken like the [tone][tone] `ma` or the [spin][spin] `pa` (`.`).
 
 ## Sign
 
@@ -432,13 +432,13 @@ A __voice__ is akin to a sequence of music performed by a monophonic instrument 
     —————————————————————————————————————————
       # |4.|
       1
-        | ba=                             |
+        | ma=                             |
       2
-        | ba-             ba-             |
+        | ma-             ma-             |
       3
-        | ba.     ba.     ba.     ba.     |
+        | ma.     ma.     ma.     ma.     |
       4
-        | ba, ba, ba, ba, ba, ba, ba, ba, |
+        | ma, ma, ma, ma, ma, ma, ma, ma, |
     —————————————————————————————————————————
 
 A __voice__ can be extended to another line using `+` at the end of the next to last lines and at the start of the next lines:
@@ -446,13 +446,13 @@ A __voice__ can be extended to another line using `+` at the end of the next to 
     —————————————————————————————————————————
       # |4.|
       5
-        | ba: ba: ba: ba: ba: ba: ba: ba: +
-        + ba: ba: ba: ba: ba: ba: ba: ba: |
+        | ma: ma: ma: ma: ma: ma: ma: ma: +
+        + ma: ma: ma: ma: ma: ma: ma: ma: |
       6
-        | ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; |
+        | ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; |
     —————————————————————————————————————————
 
 Inline harmonies such as [strands][strand] and [chords][chord] are multiple __voices__ even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
@@ -464,7 +464,7 @@ A __stack__ is separate [voices][voice] in the same __bar__. These can be separa
     ——————————————————————————————————
       1
         f| ce.   ze.be me.   be.ze |
-        t| ba.   do.   la.   do.   |
+        t| ma.   do.   la.   do.   |
     ——————————————————————————————————
 
 ### Lap
@@ -516,7 +516,7 @@ A __break__ is the point where the [file][file] changes based on the [key][key] 
     ————————————————————————
       START  OFFSET  BREAK
     ————————————————————————
-        H      +6    ba-ke
+        H      +6    ma-ke
         T      +5    ga-le
         Y      +4    sa-ge
         C      +3    ja-se
@@ -569,21 +569,21 @@ A __groove__ tells the arrangement of [beats][beats] in a [bar][bar]. It is nota
     —————————————————————————————————————————
       # |4.|
       1
-        | ba=                             |
+        | ma=                             |
       2
-        | ba-             ba-             |
+        | ma-             ma-             |
       3
-        | ba.     ba.     ba.     ba.     |
+        | ma.     ma.     ma.     ma.     |
       4
-        | ba, ba, ba, ba, ba, ba, ba, ba, |
+        | ma, ma, ma, ma, ma, ma, ma, ma, |
       5
-        | ba: ba: ba: ba: ba: ba: ba: ba: +
-        + ba: ba: ba: ba: ba: ba: ba: ba: |
+        | ma: ma: ma: ma: ma: ma: ma: ma: +
+        + ma: ma: ma: ma: ma: ma: ma: ma: |
       6
-        | ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; +
-        + ba; ba; ba; ba; ba; ba; ba; ba; |
+        | ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; +
+        + ma; ma; ma; ma; ma; ma; ma; ma; |
     —————————————————————————————————————————
 
  But __grooves__ can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [spins][spin] in the __groove__.
@@ -596,7 +596,7 @@ A __shift__ is a section of polymeter with one __groove__ superimposed over anot
       # |3./2.|
       1
         # three over two
-        | ba.   ba.   ba.   |
+        | ma.   ma.   ma.   |
     ———————————————————————————
 
 Like with __grooves__, the [shift][shift] can be notated within the [voice][voice]:
@@ -605,7 +605,7 @@ Like with __grooves__, the [shift][shift] can be notated within the [voice][voic
       # |2.|
       1
         # three over two
-        |3./2. ba.   ba.   ba.   |
+        |3./2. ma.   ma.   ma.   |
     ————————————————————————————————
 
 ### Rift
@@ -616,7 +616,7 @@ A __rift__ is a section of polyrhythm with one __groove__ mashed against another
       # |3.\2.|
       1
         # three against two
-        | ba.   ba.   ba.   |
+        | ma.   ma.   ma.   |
     ———————————————————————————
 
 Like with __grooves__, the [right][right] can be notated within the [voice][voice]:
@@ -625,7 +625,7 @@ Like with __grooves__, the [right][right] can be notated within the [voice][voic
       # |2.|
       1
         # three against two
-        |3.\2. ba.   ba.   ba.   |
+        |3.\2. ma.   ma.   ma.   |
     ————————————————————————————————
 
 ## Pulse
@@ -659,44 +659,44 @@ Those rules add up to:
       # |4.|
       1
         # one beat for =
-        | ba=                             |
+        | ma=                             |
         # is equivalent to
-        | ba=aa                           |
+        | ma=aa                           |
       2
         # two beats over =
-        | ba-             ba-             |
+        | ma-             ma-             |
         # is equivalent to
-        | ba=ba                           |
+        | ma=ma                           |
       3
         # three beats over --
-        | ba-ba-ba                        |
+        | ma-ma-ma                        |
       4
         # four beats over --
-        | ba-ba           ba-ba           |
+        | ma-ma           ma-ma           |
         # is equivalent to
-        | ba-ba'ba-ba                     |
+        | ma-ma'ma-ma                     |
         # is equivalent to
-        | ba.     ba.     ba.     ba.     |
+        | ma.     ma.     ma.     ma.     |
       5
         # five beats over ....
-        | ba.ba.ba.ba.ba                  |
+        | ma.ma.ma.ma.ma                  |
       6
         # six beats over ....
-        | ba.ba.ba'ba.ba.ba               |
+        | ma.ma.ma'ma.ma.ma               |
         # is equivalent to
-        | ba.ba.ba        ba.ba.ba        |
+        | ma.ma.ma        ma.ma.ma        |
       7
         # seven beats over ....
-        | ba.ba.ba'ba.ba'ba.ba            |
+        | ma.ma.ma'ma.ma'ma.ma            |
       8
         # eight beats over ....
-        | ba.ba   ba.ba   ba.ba   ba.ba   |
+        | ma.ma   ma.ma   ma.ma   ma.ma   |
         # is equivalent to
-        | ba.ba'ba.ba     ba.ba'ba.ba     |
+        | ma.ma'ma.ma     ma.ma'ma.ma     |
         # is equivalent to
-        | ba.ba'ba.ba'ba.ba'ba.ba         |
+        | ma.ma'ma.ma'ma.ma'ma.ma         |
         # is equivalent to
-        | ba, ba, ba, ba, ba, ba, ba, ba, |
+        | ma, ma, ma, ma, ma, ma, ma, ma, |
     —————————————————————————————————————————
 
 __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks like using [spins][spin] on every [note][notes]:
@@ -752,28 +752,28 @@ A __long cut__ uses square brackets with `'` between [sounds][sounds] and [spins
       # |4.|
       1
         # one beat for =
-        | ba=                     |
+        | ma=                     |
         # is equivalent to
-        |[ba'aa]=                 |
+        |[ma'aa]=                 |
       2
         # two beats over =
-        | ba-ba                   |
+        | ma-ma                   |
         # is equivalent to
-        |[ba'ba]=                 |
+        |[ma'ma]=                 |
       3
         # three beats over =
-        | ba-ba-ba                |
+        | ma-ma-ma                |
         # is equivalent to
-        |[ba'ba'ba]=              |
+        |[ma'ma'ma]=              |
       4
         # four beats over =
-        | ba-ba       ba-ba       |
+        | ma-ma       ma-ma       |
         # is equivalent to
-        | ba-ba'ba-ba             |
+        | ma-ma'ma-ma             |
         # and equivalent to
-        |[ba'ba]-    [ba'ba]-     |
+        |[ma'ma]-    [ma'ma]-     |
         # and equivalent to
-        |[ba'ba'ba'ba]=           |
+        |[ma'ma'ma'ma]=           |
     —————————————————————————————————
 
 __Long cuts__ work in two places where __short cuts__ cannot: nested tuplets and across multiple bars.
@@ -784,8 +784,8 @@ To nest a __cut__, just place a __Long cuts__ where a single sound would go:
       # |4.|
       1
         # triplet in triplet
-        |[ba'ba'[ba'ba'ba]]=      |
-        | ba-ba-[ba'ba'ba]        |
+        |[ma'ma'[ma'ma'ma]]=      |
+        | ma-ma-[ma'ma'ma]        |
     —————————————————————————————————
 
 If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
@@ -794,8 +794,8 @@ If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie
       # |4.|
       1
         # triplet in triplet
-        |[ba'[ba'ba'ba]+aa]=       |
-        | ba-[ba'ba'ba]-+aa        |
+        |[ma'[ma'ma'ma]+aa]=       |
+        | ma-[ma'ma'ma]-+aa        |
     —————————————————————————————————
 
 Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `aa` are used in this case as well:
@@ -804,7 +804,7 @@ Because tuplets are treated as a block of one duration split evenly, the total d
       # |4.|
       1
         # triplet over...
-        |[ba'ba'ba]=+=            |
+        |[ma'ma'ma]=+=            |
       2
         # ...2 bars
         | aa=                     |
@@ -1130,7 +1130,7 @@ __Trill__ is a directive to quickly alternate between two [sounds][sounds], ofte
 
 ### Trem
 
-__Trem__ is a directive for the rapid articulation of a sustained [sound][sounds]. It is denoted by `^^` just before the [sound][sounds] `^^ba.` it applies to.
+__Trem__ is a directive for the rapid articulation of a sustained [sound][sounds]. It is denoted by `^^` just before the [sound][sounds] `^^ma.` it applies to.
 
 ### Roll
 
@@ -1138,7 +1138,7 @@ __Roll__ is a directive to arpeggiate a [knit][knits]. It is denoted by `&` prec
 
 ### Star
 
-__Star__ is a directive to accent and/or suddenly end a [sound][sounds] denoted by `*`. It is written directly before the [note][notes] it modifies `*ba.` for accents, directly after the the note for staccato `ba*.`, or even directly after a [spin][spin] for that abrupt ending `ba.*`.
+__Star__ is a directive to accent and/or suddenly end a [sound][sounds] denoted by `*`. It is written directly before the [note][notes] it modifies `*ma.` for accents, directly after the the note for staccato `ma*.`, or even directly after a [spin][spin] for that abrupt ending `ma.*`.
 
 ### Harm
 
@@ -1163,9 +1163,9 @@ __Drift__ is a directive for microtonal adjustment. These can be adjusted inline
       *v  -42¢
     ————————————
 
-`ba/da*r` is a whole step and a quarter bend to D half-sharp. `ba*r` is an C half-sharp.
+`ma/da*r` is a whole step and a quarter bend to D half-sharp. `ma*r` is an C half-sharp.
 
-The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `ba` was set to `ba*h`, `ba*a` would be the 12tet value unless `*a` itself were redefined to be different.
+The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
 
 Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
