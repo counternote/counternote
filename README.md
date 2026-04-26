@@ -53,8 +53,8 @@ Sounds in Counternote come in two varieties — those where pitch is the definin
 First up to introduce are the twelve *tones*. These refer to absolute pitch when capitalized, but are otherwise movable within a piece like scale degrees. You may think of them as fixed-do solfège when capitalized and movable-do tonic solfa when lowercase:
 
     ——————————————————————————————————————————————————
-      E   F   F♯  G   G♯  A   A♯  B   C   C♯  D   D♯
-      DA  XA  JA  SA  GA  LA  KA  ZA  CA  YA  TA  WA
+      C   C♯  D   D♯  E   F   F♯  G   G♯  A   A♯  B
+      MA  KA  DA  SA  JA  LA  HA  NA  CA  ZA  TA  GA  
     ——————————————————————————————————————————————————
 
 You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. 
@@ -64,31 +64,30 @@ You’ll notice `ka` and `ca` seem like they might sound the same, but they don�
     ———————————————————————————————
       START  OFFSET  IPA  ENGLISH
     ———————————————————————————————
-        w-     +6      w     'w'
-        t-     +5      t     't'
-        y-     +4      j     'y'
-        c-     +3     tʃ    'ch'
-        z-     +2      z     'z'
+        h-     +6      h     'h'
+        l-     +5      t     't'
+        j-     +4     dʒ     'j'
+        s-     +3      s     's'
+        d-     +2      d     'd'
         k-     +1      k     'k'
     ———————————————————————————————
-        l-     ±0      l     'l'
+        m-     ±0      m     'm'
     ———————————————————————————————
         g-     -1      g     'g'
-        s-     -2      s     's'
-        j-     -3     dʒ     'j'
-        x-     -4      ʃ    'sh'
-        d-     -5      d     'd'
+        t-     -2      t     't'
+        z-     -3      z     'z'
+        c-     -4     tʃ    'ch' 
+        n-     -5      n     'n'
     ———————————————————————————————
 
-And a *rhyme*, the second letter:
+And a *rhyme*, the second (and third) letter:
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
     —————————————————————————————
-       -il    +6    il   'eel'
-       -al    +5    al   'ahl'
-       -l     +4    ɛl   'ehl'
-       -h     +3    ə     'uh'
+       -il    +5    il   'eel'
+       -al    +4    al   'ahl'
+       -l     +3    ɛl   'ehl'
        -i     +2    i     'ee'
        -e     +1    e     'eh'
     —————————————————————————————
@@ -97,13 +96,13 @@ And a *rhyme*, the second letter:
        -o     -1    o     'oh'
        -u     -2    u     'oo'
        -r     -3    ɚ     'er'
-       -ar    -4    ɑ˞    'ar'
+       -q     -4    ɑ˞    'ar'
        -or    -5    ɔ˞    'or'
     —————————————————————————————
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. The *starts* and *rhymes* go *rank* and *file*.
 
-By default, `le` is *A440*, so `la` sounds an octave below it.
+By default, `ze` is *A440*, so `za` sounds an octave below it.
 
 ### Absolutely Relative
 
@@ -118,7 +117,7 @@ In fact, relative pitch is so important that there are no less than four ways to
 
 Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do solfège used in half the world.
 
-By relegating the absolute pitch terms to simply setting the tonal center, we can avoid the kind of confusion that transposing instruments have, or the confusion that fixed-do and movable-do has. For transposing instruments, the *key* is set to key of the instrument, so B♭ instruments should use the *key* `KA` and alter the *mode* using chords. `KA` remains `KA`, its pitch always well-defined, while `la` becomes B♭ and every lowercase *tone* is relative to it.
+By relegating the absolute pitch terms to simply setting the tonal center, we can avoid the kind of confusion that transposing instruments have, or the confusion that fixed-do and movable-do has. For transposing instruments, the *key* is set to key of the instrument, so B♭ instruments should use the *key* `TA` and alter the *mode* using chords. `TA` remains `TA`, its pitch always well-defined, while `ma` becomes B♭ and every lowercase *tone* is relative to it.
 
 ## Raps
 
@@ -195,78 +194,78 @@ Practice beatboxing with these if you like.
 
 # Notes
 
-Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *spin*.
+Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *click*.
 
-## Spins
+## Clicks
 
-Spins are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they sustain. These can be extended by trailing *spins* in the same bar or by adding the rap `aa` with a new spin at the beginning of the next bar.
+Clicks are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they sustain. These can be extended by trailing *clicks* in the same bar or by adding the rap `aa` with a new click at the beginning of the next bar.
 
-The six *spins* ordered by powers of two are as follows:
+The six *clicks* ordered by powers of two are as follows:
 
-    ———————————————————————————
-      SPIN  VALUE  WORD   IPA
-    ———————————————————————————
-      `;`    1/32   pi    pi
-      `:`    1/16   pe    pe
-      `,`    1/8    pa    pa
-      `.`    1/4    po    po
-      `-`    1/2    pu    pu
-      `=`    1/1    pq    pə
-    ———————————————————————————
+    ————————————————————————————
+      CLICK  VALUE  WORD   IPA
+    ————————————————————————————
+       `;`    1/32   pi    pi
+       `:`    1/16   pe    pe
+       `,`    1/8    pa    pa
+       `.`    1/4    po    po
+       `-`    1/2    pu    pu
+       `=`    1/1    pq    pɑ˞
+    ————————————————————————————
 
 Plus two others, immediate and indeterminant:
 
     ——————————————————————————————————
-      SPIN     VALUE     WORD   IPA
+      CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
-      `!`    immediate    pl    pɛl
-      `?`  indeterminant  pr    pɚ
+       `!`    immediate    pl    pɛl
+       `?`  indeterminant  pr    pɚ
     ——————————————————————————————————
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
-## Grooves and Pulses and Clicks
+## Grooves and Pulses and Snaps
 
-*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *spins* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
+*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *clicks* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
 Here are four rather boring bars of Counternote:
 
     —————————————————————————————————————————
       # |4.|
       1
-        | la=                             |
+        | ma=                             |
       2
-        | la-             la-             |
+        | ma-             ma-             |
       3
-        | la.     la.     la.     la.     |
+        | ma.     ma.     ma.     ma.     |
       4
-        | la, la, la, la, la, la, la, la, |
+        | ma, ma, ma, ma, ma, ma, ma, ma, |
     —————————————————————————————————————————
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
 
 *Pulses* tell the tempo of a piece. They are written after a `@`, like `@80` being 80bpm.
 
-*Clicks* refer to the *spin* in the *groove* that feels the *pulse*, like a metronome *click*.
+*Snaps* refer to the *click* in the *groove* that feels the *pulse*, like what you might snap your fingers to.
 
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| la.la.la |` with no spaces between the notes and the spins being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
       1
-        | la=                                 |
+        | ma=                                 |
       2 # duplets
-        | la-la             la-la             |
+        | ma-ma             ma-ma             |
       3 # triplets
-        | la.la.la          la.la.la          |
+        | ma.ma.ma          ma.ma.ma          |
       4 # quadruplets
-        | la.la'la.la       la.la'la.la       |
+        | ma.ma'ma.ma       ma.ma'ma.ma       |
       5 # quintuplets
-        | la,la,la,la,la    la,la,la,la,la    |
+        | ma,ma,ma,ma,ma    ma,ma,ma,ma,ma    |
       6 # sextuplets
-        | la,la,la'la,la,la la,la,la'la,la,la |
+        | ma,ma,ma'ma,ma,ma ma,ma,ma'ma,ma,ma |
     —————————————————————————————————————————————
 
 Notice how duplets can be used to simplify the bar:
@@ -274,9 +273,9 @@ Notice how duplets can be used to simplify the bar:
     —————————————————————————————————————————
       # |4.|
       1 # like eight notes
-        | la, la, la, la, la, la, la, la, |
+        | ma, ma, ma, ma, ma, ma, ma, ma, |
       2 # like quarter note duplets
-        | la.la   la.la   la.la   la.la   |
+        | ma.ma   ma.ma   ma.ma   ma.ma   |
     —————————————————————————————————————————
 
 That is easier for the eye to parse and, as mentioned before, can save on horizontal space:
@@ -284,7 +283,7 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
     —————————————————————————————————
       # |4.|
       1 # space saving
-        | la.la la.la la.la la.la |
+        | ma.ma ma.ma ma.ma ma.ma |
     —————————————————————————————————
 
 # Stacks and Knits
@@ -302,10 +301,10 @@ A four-part harmony might be written:
 
       # |4.|
       1
-        s| li.li li.li li.li li.li |
-        a| le.le le.le le.le le.le |
-        t| la.la la.la la.la la.la |
-        b| lo.lo lo.lo lo.lo lo.lo |
+        s| mi.mi mi.mi mi.mi mi.mi |
+        a| me.me me.me me.me me.me |
+        t| ma.ma ma.ma ma.ma ma.ma |
+        b| mo.mo mo.mo mo.mo mo.mo |
       
     ——————————————————————————————————
 
