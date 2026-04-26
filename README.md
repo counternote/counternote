@@ -195,39 +195,39 @@ Practice beatboxing with these if you like.
 
 # Notes
 
-Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *hold*.
+Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *spin*.
 
-## Holds
+## Spins
 
-Holds are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they hold out. These can be extended by trailing *holds* in the same bar or by adding the rap `aa` with a new hold at the beginning of the next bar.
+Spins are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they sustain. These can be extended by trailing *spins* in the same bar or by adding the rap `aa` with a new spin at the beginning of the next bar.
 
-The six *holds* ordered by powers of two are as follows:
+The six *spins* ordered by powers of two are as follows:
 
     ———————————————————————————
-      HOLD  VALUE  WORD   IPA
+      SPIN  VALUE  WORD   IPA
     ———————————————————————————
-      `;`    1/32   qh    kʷə
-      `:`    1/16   qi    kʷi
-      `,`    1/8    qe    kʷe
-      `.`    1/4    qa    kʷɑ
-      `-`    1/2    qo    kʷo
-      `=`    1/1    qu    kʷu
+      `;`    1/32   pi    pi
+      `:`    1/16   pe    pe
+      `,`    1/8    pa    pa
+      `.`    1/4    po    po
+      `-`    1/2    pu    pu
+      `=`    1/1    pq    pə
     ———————————————————————————
 
 Plus two others, immediate and indeterminant:
 
     ——————————————————————————————————
-      HOLD     VALUE     WORD   IPA
+      SPIN     VALUE     WORD   IPA
     ——————————————————————————————————
-      `!`    immediate    ql    kʷɛl
-      `?`  indeterminant  qr    kʷɚ
+      `!`    immediate    pl    pɛl
+      `?`  indeterminant  pr    pɚ
     ——————————————————————————————————
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
 ## Grooves and Pulses and Clicks
 
-*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *holds* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
+*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *spins* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
 Here are four rather boring bars of Counternote:
 
@@ -247,11 +247,11 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 *Pulses* tell the tempo of a piece. They are written after a `@`, like `@80` being 80bpm.
 
-*Clicks* refer to the *hold* in the *groove* that feels the *pulse*, like a metronome *click*.
+*Clicks* refer to the *spin* in the *groove* that feels the *pulse*, like a metronome *click*.
 
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| la.la.la |` with no spaces between the notes and the holds being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| la.la.la |` with no spaces between the notes and the spins being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
@@ -302,10 +302,10 @@ A four-part harmony might be written:
 
       # |4.|
       1
-        s| la.la la.la la.la la.la |
-        a| la.la la.la la.la la.la |
+        s| li.li li.li li.li li.li |
+        a| le.le le.le le.le le.le |
         t| la.la la.la la.la la.la |
-        b| la.la la.la la.la la.la |
+        b| lo.lo lo.lo lo.lo lo.lo |
       
     ——————————————————————————————————
 
@@ -329,36 +329,36 @@ There are obviously other details to go over, but it’s time to see some real m
       f: fingers
       t: thumb 
     +++
-    #DOV |4.| @allegretto
+    @YOV |4.| @allegretto
 
     A
       0
-        f| -           .     le,ze  |
-        t| -           .     co,zo  |
+        f|                   le.ze |
+        t|                   co.zo |
       1
-        f| ce.   ze,le me.   le,ze  |
-        t| lo.   to.   da.   to.    |
+        f| ce.   ze.le me.   le.ze |
+        t| la.   to.   da.   to.   |
       2
-        f| de.   se,me le.   ge,je  |
-        t| co.   zo.   lo.   zo.    |
+        f| de.   se.me le.   ge.je |
+        t| co.   zo.   la.   zo.   |
       3
-        f| de.   ta,ca za.   ca,ta  |
-        t| co.   to.   da.   to.    |
+        f| de.   ta.ca za.   ca.ta |
+        t| co.   to.   da.   to.   |
       4
-        f| de,ta ca,za ha.   le,ze  |
-        t| co.   da.   lo,zo co,zo  |
+        f| de.ta ca.za ha.   le.ze |
+        t| co.   da.   la.zo co.zo |
       5
-        f| ce.   ze,le me.   le,ze  |
-        t| lo.   to.   da.   to.    |
+        f| ce.   ze.le me.   le.ze |
+        t| la.   to.   da.   to.   |
       6
-        f| de.   se,me le.   ge,je  |
-        t| co.   zo.   lo.   zo.    |
+        f| de.   se.me le.   ge.je |
+        t| co.   zo.   la.   zo.   |
       7
-        f| de.   li,ce ze^^c.  ,ce, |
-        t| co.   ja.   ga.   ga.    |
+        f| de.   te.ce ze^^c.  ,ce,|
+        t| co.   ja.   ga.   ga.   |
       8
-        f| hh-           .   %      |
-        t| coCeva^-      .   %A %B  |
+        f| hh-         .     %A %B |
+        t| coCeva^-    .     %A %B |
     *++
 
 ***
