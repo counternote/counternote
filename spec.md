@@ -266,7 +266,7 @@ A __phone__ is an indivisible articulation of spoken Counternote represented by 
 
 ### Start
 
-A __start__ is the first __phone__ or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `x`, and `q` have been reassigned to tʃ 'ch', ʃ 'sh', and the . Because the American English 'r' is exceptionally weird, a trilled 'r' is also correct. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A ʒ 'zh' consonant can be substituted.
+A __start__ is the first __phone__ or *linguistic onset* of a [word][word]. All of these sounds are found in American English, but the letters `c`, `x`, and `q` have been reassigned to `tʃ` 'ch', `ʃ` 'sh', and the `ɑ˞` 'ar'. Because the American English 'r' is exceptionally weird, a trilled 'r' is also correct. Curiously, most languages have a 'ch' kind of sound, but way fewer have its voiced counterpart 'j', so if you have trouble, just say the 'ch' sound while keeping your vocal cords vibrating. A `ʒ` 'zh' consonant can be substituted.
 
 The standard starting consonants with their points of articulation going from “high” to “low” (to the “neutral” glottal consonants) are as follows:
 
@@ -289,7 +289,6 @@ The standard starting consonants with their points of articulation going from �
       ~~~~ POSTALVEOLAR ~~~~~~~~~~~
        C,c      tʃ   'ch' in 'chip'
        J,j      dʒ    'j' in 'jam'
-       R,r     ɹ,r    'r' in 'run'
       ~~~~~~ PALATAL ~~~~~~~~~~~~~~
        X,x      ʃ    'sh' in 'ship'
        Y,y      j     'y' in 'yes'
@@ -300,16 +299,15 @@ The standard starting consonants with their points of articulation going from �
        W,w      w     'w' in 'wit'
       ~~~~~~ GLOTTAL ~~~~~~~~~~~~~~
        H,h      h     'h' in 'hit'
-       Q,q      ʔ     '-' in 'uh-oh'
     —————————————————————————————————
 
-Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten [ʔ]. An unwritten [j] and an unwritten [w] are sometimes used to break up consecutive vowels.
+Capital vowels and vowels at the beginning of a [word][word] are preceeded by an unwritten `ʔ`. An unwritten `j` and an unwritten `w` are sometimes used to break up consecutive vowels.
 
 ### Rhyme
 
 A __rhyme__ is the rhyming part or *linguistic coda* of a [word][word].
 
-All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanish vowels plus the schwa `ə` as `q` and a rhoticized mid vowel `ɚ` as `r`:
+All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanish vowels plus the rhoticized open vowel `ɑ˞` as `q` and a rhoticized mid vowel `ɚ` as `r`:
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
@@ -319,7 +317,7 @@ All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanis
         a       ɑ        'ah'
         o       o        'oh'
         u       u        'oo'
-        q       ə        'uh'
+        q       ɑ˞       'ar'
     ————————————————————————————————
 
 ## Word
@@ -349,33 +347,9 @@ __Forms__ are structural elements of a composition and how such elements connect
     @YOV |4.| @allegretto
 
     A
-      0
-        f|                   be.ze |
-        t|                   co.zo |
-      1
-        f| ce.   ze.be me.   be.ze |
-        t| ba.   do.   la.   do.   |
-      2
-        f| le.   se.me be.   ge.je |
-        t| co.   zo.   ba.   zo.   |
-      3
-        f| le.   da.ca za.   ca.da |
-        t| co.   do.   la.   do.   |
-      4
-        f| le.da ca.za ha.   be.ze |
-        t| co.   la.   ba.zo co.zo |
-      5
-        f| ce.   ze.be me.   be.ze |
-        t| ba.   do.   la.   do.   |
-      6
-        f| le.   se.me be.   ge.je |
-        t| co.   zo.   ba.   zo.   |
-      7
-        f| le.   de.ce ze^^c.  ,ce,|
-        t| co.   ja.   ga.   ga.   |
-      8
-        f| hh-         .     %A %B |
-        t| coCeva^-    .     %A %B |
+
+WIP
+
     *++
 
 ## Score
