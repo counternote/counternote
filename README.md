@@ -135,7 +135,7 @@ These are some proposed raps, only the first three of which cannot be defined on
     ————————————————————————
       `aa` tie
       `hh` breath (rest)
-      `sw` spoken word
+      `sp` speech
     ————————————————————————
       USER-DEFINABLE
     ————————————————————————
@@ -210,7 +210,7 @@ The six *clicks* ordered by powers of two are as follows:
        `,`    1/8    pa    pa
        `.`    1/4    po    po
        `-`    1/2    pu    pu
-       `=`    1/1    pq    pɑ˞
+       `=`    1/1    pr    pɚ
     ————————————————————————————
 
 Plus two others, immediate and indeterminant:
@@ -219,7 +219,7 @@ Plus two others, immediate and indeterminant:
       CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
        `!`    immediate    pl    pɛl
-       `?`  indeterminant  pr    pɚ
+       `?`  indeterminant  pq    pɑ˞
     ——————————————————————————————————
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
