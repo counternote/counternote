@@ -974,8 +974,6 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
         A       1       ʔɑ    'ʔah'
     ——————————————————————————————————
 
-
-
 ## Knit Root
 
 All __knits__ have a capitalized [tone start][tone start] to signify the [root][root].
@@ -1001,7 +999,6 @@ All __knits__ have a capitalized [tone start][tone start] to signify the [root][
 
 `X` can be used as a [start][start] for speaking about chord qualities without a specified [root][root].
 
-
 ## Thread
 
 A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [spans][span] that follow these rules:
@@ -1015,62 +1012,63 @@ A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [s
 
 ## Chord
 
-A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing. Prefixing a [tone start][tone start] yields a slash chord.
+A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing. Prefixing a [thread][thread] with [span][span] pronunciation yields a slash chord.
 
-    ————————————————————————————————————————————————————————
-        CHORD      WORD         IPA        TRANSLITERATION
-    ————————————————————————————————————————————————————————
-         A          Zev        ˈzev             ZEHV
-         B5         Gav        ˈgav             GAHV
-         Cm         Mov        ˈmov             MOHV
-         C♯7       Kevn       ˈke.vən         KEH-vuhn
-         D13      Devnuim   ˈdev.nuˌjim     DEHV-noo-YEEM
-      E♭13(♭5♯9)  Seqnoim   ˈseʔ.nuˌjim     SEHʔ-noo-YEEM
-    ————————————————————————————————————————————————————————
+    ————————————————————————————————————————————————————————————
+            NAME   CHORD                 IPA   TRANSLITERATION
+    ————————————————————————————————————————————————————————————
+               A   Zev                  ˈzev   ZEHV
+              B5   Gav                  ˈgav   GAHV
+            Cm/G   vMov               viˈmov   vee-MOHV
+             F♯7   Hevn              ˈhe.vən   HEH-vuhn
+             D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.nuˌjim   SEHʔ-noo-YEEM
+    ————————————————————————————————————————————————————————————
 
 ## Braid
 
 A __braid__ is a specific voicing of a [chord][chord]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the lowest sounding [tone][tone] is prefixed to the [chord][chord]. Second, every [voice][voice] above the prefix gets a [thread][thread]. Third, if more than an entire octave is skipped, the [glyph][glyph] `x` is inserted for each octave+ skipped.
 
+    ——————————————————————————————————————————————————————————————
+            NAME   BRAID                 IPA   TRANSILITERATION
+    ——————————————————————————————————————————————————————————————
+               A   zaZvaev      zaˈzə.vaˌjev   zah-ZUH-vah-YEHV
+              B5   gaGv               gaˈgəv   gah-GUHV
+            Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
+             F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
+             D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.nuˌjim   sah-SEHʔ-noo-YEEM
+    ——————————————————————————————————————————————————————————————
+
+
+
     ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
     ——————————————————————————————————————————————————————————————————————————————————
-      CHORD   TAB    THREADS      WORD            IPA             TRANSILITERATION
+      NAME   TAB    THREADS   BRAID                   IPA   TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————
-        E    022100   vaeva     joJvaeva    dʒoˈdʒə.vaˌje.va     joh-JUH-vah-YEH-vah
+         E   022100   vaeva   joJvaeva   dʒoˈdʒə.vaˌje.va   joh-JUH-vah-YEH-vah
+        Em   022000   vaova   joJvaova   dʒoˈdʒə.vaˌjo.va   joh-JUH-vah-YOH-vah
 
-        Em   022000   vaova     joJvaova    dʒoˈdʒə.vaˌjo.va     joh-JUH-vah-YOH-vah
+         A   x02220    vaev   zaZvaev        zaˈzə.vaˌjev   zah-ZUH-vah-YEHV
+       A/E   002220   avaev   joZavaev      dʒoˈzə.vaˌjev   joh-ZAH-vah-YEHV
+        Am   x02210    vaov   zaZvaov        zaˈzə.vaˌjov   zah-ZUH-vah-YOHV
+      Am/E   002210   avaov   joZavaov      dʒoˈzə.vaˌjov   joh-ZAH-vah-YOHV
 
-        A    x02220    vaev     zaZvaev       zaˈzə.vaˌjev        zah-ZUH-vah-YEHV
+         D   xx0232     vae   daDvae          daˈdə.vaˌje   dah-DUH-vah-YEH
+       D/A   x00232    avae   zaDavae         zaˈza.vaˌje   zah-DAH-vah-YEH
+      D/F♯   200232   vavae   hoDvavae     hoˈdə.vaˌva.je   hoh-DUH-vah-VAH-yeh
+        Dm   xx0231     vao   daDvao          daˈdə.vaˌjo   dah-DUH-vah-YOH
+      Dm/A   x00231    avao   zaDavao         zaˈza.vaˌjo   zah-DAH-vah-YOH
+      Dm/F   100231   vavao   loDvavao     hoˈdə.vaˌva.jo   hoh-DUH-vah-VAH-yoh
 
-        Am   x02210    vaov     zaZvaov       zaˈzə.vaˌjov        zah-ZUH-vah-YOHV
+         G   320033   evava   naNevava        naˈne.vaˌva   nah-NEH-vah-VAH
+         G   320003   evaea   naNevaea     naˈnə.vaˌje.ja   nah-NEH-vah-YEH-yah
 
-       A/E   002220   avaev     joZavaev     dʒoˈzə.vaˌjev        joh-ZAH-vah-YEHV
+         C   x32010    evae   maMevae        maˈmə.vaˌjev   mah-MEH-vah-YEH
+       C/G   332010   aevae   naMaevae     naˈma.jəˌva.je   nah-MAH-yeh-VAH-yeh
 
-       Am/E  002210   avaov     joZavaov     dʒoˈzə.vaˌjov        joh-ZAH-vah-YOHV
-
-        D    xx0232     vae     daDvae        daˈdə.vaˌje          dah-DUH-vah-YEH
-
-        Dm   xx0231     vao     daDvao        daˈdə.vaˌjo          dah-DUH-vah-YOH
-
-       D/A   x00232    avae     zaDavae       zaˈza.vaˌje          zah-DAH-vah-YEH
-
-       Dm/A  x00231    avao     zaDavao       zaˈza.vaˌjo          zah-DAH-vah-YOH
-
-       D/F♯  200232   vavae     hoDvavae     hoˈdə.vaˌva.je      hoh-DUH-vah-VAH-yeh
-
-       Dm/F  100231   vavao     loDvavao     hoˈdə.vaˌva.jo      hoh-DUH-vah-VAH-yoh
-
-        G    320033   evava     naNevava      naˈne.vaˌva          nah-NEH-vah-VAH
-
-        G    320003   evaea     naNevaea     naˈnə.vaˌje.ja      nah-NEH-vah-YEH-yah
-
-        C    x32010    evae     maMevae       maˈmə.vaˌjev         mah-MEH-vah-YEH
-
-       C/G   332010   aevae     naMaevae     naˈma.jəˌva.je      nah-MAH-yeh-VAH-yeh
-
-        F    1x3211    aeva     loLaeva       loˈla.jeˌva          loh-LAH-yeh-VAH
-
+         F   1x3211    aeva   loLaeva         loˈla.jeˌva   loh-LAH-yeh-VAH
     ——————————————————————————————————————————————————————————————————————————————————
 *** 
 
