@@ -370,7 +370,7 @@ __Forms__ are structural elements of a composition and how such elements connect
         f| ne.   ze.ge me.   te.ce |
         t| so.   do.   mo.   do.   |
       7
-        f| ne.   le.se de^^3.  ,se,|
+        f| ne.   le.se de^^s.  ,se,|
         t| so.   ca.   ta.   ta.   |
       8
         f| hh-         .     %A %B |
@@ -727,7 +727,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
         f| ne.     ze, ge, me.     te, ce,|
         t| so.     do.     mo.     do.    |
       7
-        f| ne.     le, se, de^^3.  ,   se,|
+        f| ne.     le, se, de^^s.  ,   se,|
         t| so.     ca.     ta.     ta.    |
       8
         f| hh-             .       %A %B  |
@@ -1170,7 +1170,7 @@ __Drift__ is a directive for microtonal adjustment. These can be adjusted inline
       *v  -42¢
     ————————————
 
-`ma/da*r` is a whole step and a quarter bend to D half-sharp. `ma*r` is an C half-sharp.
+`ma/da*q` is a whole step and a quarter bend to D half-sharp. `ma*q` is an C half-sharp.
 
 The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
 
@@ -1218,15 +1218,15 @@ The [hue clock][hue clock] places [tones][tone] in chromatic order around a cloc
 Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 with 11) makes the [lux clock][lux clock] with all of the [tones][tone] written in harmonic order around the clockface. All of the [bright luxes][bright lux] are on the right and all of the [dark luxes][dark lux] are on the left. The [blends][blend], [moods][mood], and [rubs][rub] slice the [lux clock][lux clock] horizontally into three sections. 
 
     ——————————————————————————————————————————————————————————————
-                   |———— DARK —————| LUX |——— BRIGHT ———|
+                   |——— DARK ———|    LUX   |—— BRIGHT ——|
       |ARTICULATION|                  1                 | VIBE |
           LABIAL            4        ma         5        BLENDS
           DENTAL              la  ===||===  na              |
                       ♭7             ||              2      |
          ALVEOLAR        ta  ========||========  da       —————
                                      ||
-          ALVEOLO-                   ||
-          PALATAL  ♭3  sa  ==========||==========  za  6  MOODS
+                                     ||
+         ALVEOLAR  ♭3  sa  ==========||==========  za  6  MOODS
                                      ||                     |
                                      ||                     |
           PALATAL        ca  ========||========  ja       —————
