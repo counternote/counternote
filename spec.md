@@ -119,7 +119,7 @@ Composer directives
 
 Toward a deeper understanding
 
-* [__clock__][clock]: a [scheme][schemes] for visualization the relationships between [tones][tone]/[spans][span]
+* [__clock__][clock]: a [scheme][schemes] for visualizing the relationships between [tones][tone]/[spans][span]
   * [__hue clock__][hue clock]: [tones][tone]/[spans][span] arranged in chromatic order
   * [__lux clock__][lux clock]: [tones][tone]/[spans][span] arranged in harmonic order
   * [__lux__][lux]: a measure of the relative brightness or darkness of an interval
@@ -245,7 +245,7 @@ __Bits__ are foundational elements for learning and understanding Counternote.
 
 ## Term
 
-A __term__ is the name for a precise concept in music and Counternote. They are monosyllablic to be easy to remember and speak about. Each __term__ has an entry in this [gloss][gloss].
+A __term__ is the name for a precise concept in music and Counternote. They are monosyllabic to be easy to remember and speak about. Each __term__ has an entry in this [gloss][gloss].
 
 ## Glyph
 
@@ -543,13 +543,13 @@ A __click__ is punctuation character that represents a duration. They come in si
        `=`    1/1    pr    pɚ
     ————————————————————————————
 
-Plus two others, immediate and indeterminant:
+Plus two others, immediate and indeterminate:
 
     ——————————————————————————————————
       CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
        `!`    immediate    pl    pɛl
-       `?`  indeterminant  pq    pɑ˞
+       `?`  indeterminate  pq    pɑ˞
     ——————————————————————————————————
 
 ## Groove
@@ -609,7 +609,7 @@ A __rift__ is a section of polyrhythm with one __groove__ mashed against another
         | ma.   ma.   ma.   |
     ———————————————————————————
 
-Like with __grooves__, the [right][right] can be notated within the [voice][voice]:
+Like with __grooves__, the [rift][rift] can be notated within the [voice][voice]:
 
     ————————————————————————————————
       # |2.|
@@ -1170,9 +1170,9 @@ __Drift__ is a directive for microtonal adjustment. These can be adjusted inline
 
 `ma/da*q` is a whole step and a quarter bend to D half-sharp. `ma*q` is an C half-sharp.
 
-The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
+The __drifts__ are not sticky, but [tones][tone] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
 
-Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
+Like with [braids][braid], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
 ## Chant
 
@@ -1236,7 +1236,7 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
 ### Lux
 
-A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth which are dark and bright, respectively.
+A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) intervals but also includes the perfect fourth and fifth which are dark and bright, respectively.
 
 ### Bright Lux
 
@@ -1244,7 +1244,7 @@ A [bright lux][bright lux] is a harmonic relationship that evokes a sense of ope
 
 ### Dark Lux
 
-A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
+A [dark lux][dark lux] is a harmonic relationship that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
 ### Vibe
 

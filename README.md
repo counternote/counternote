@@ -30,11 +30,11 @@ For readability, the notes are simple and unambiguous — a note never has more 
 
 For typeability, everything is written in the printable characters of 7-bit ASCII which are easily typed by humans. The notes require as few keystrokes as possible, both to make typing faster and to take up less space on the line. In the process of compressing the written length of the notes, some characters have had their pronunciation reassigned and common digraphs have been eliminated, limiting them to just one consonant, vowel, or vowel-consonant pair per character.
 
-For singability, each note is one syllable, as are each interval distinct from the notes. The simple idea here is that music is not an abstract notion, it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronounciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
+For singability, each note is one syllable, as are each interval distinct from the notes. The simple idea here is that music is not an abstract notion, it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronunciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
 
-For codeability, everything is written in ASCII which is easily interpretted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
+For codeability, everything is written in ASCII which is easily interpreted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
 
-For shareability, everything is just a string of plaintext, easily shared via text message and read in monospace. There is no need to translate it into a human consummable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
+For shareability, everything is just a string of plaintext, easily shared via text message and read in monospace. There is no need to translate it into a human consumable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
 
 ***
 
@@ -221,13 +221,13 @@ The six *clicks* ordered by powers of two are as follows:
        `=`    1/1    pr    pɚ
     ————————————————————————————
 
-Plus two others, immediate and indeterminant:
+Plus two others, immediate and indeterminate:
 
     ——————————————————————————————————
       CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
        `!`    immediate    pl    pɛl
-       `?`  indeterminant  pq    pɑ˞
+       `?`  indeterminate  pq    pɑ˞
     ——————————————————————————————————
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
