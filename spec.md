@@ -84,9 +84,8 @@ Acoustic vibrations held in time
 
 Manifold acoustic vibrations
 
-* [__root__][root]: the tonic for [spans][span] and [knits][knits]
+* [__root__][root]: the [tone start][tone start] that denotes the tonic for a [knit][knits]
 * [__span__][span]: a [word][word] indicating the interval
-* [__knit start__][knit start]: the [start][start] that denotes a [knit][knits]
 * [__thread__][thread]: a single [voice][voice] within a [knit][knits]
 * [__strand__][strand]: a [knit][knits] of two voices, a double stop
 * [__chord__][chord]: a [knit][knits] of three voices or more
