@@ -10,7 +10,7 @@ This is a terse description of Counternote with definitions and examples.
 
 This [gloss][gloss] serves as a glossary and table of contents for all things Counternote.
 
-### [BASES][bases]
+### [BITS][bits]
 
 Foundational elements
 
@@ -133,7 +133,7 @@ Toward a deeper understanding
 
 [gloss]: #gloss
 
-[bases]: #bases
+[bits]: #bits
 
 [term]: #term
 [glyph]: #glyph
@@ -239,9 +239,9 @@ Toward a deeper understanding
 
 ***
 
-# Bases
+# Bits
 
-__Bases__ are foundational elements for learning and understanding Counternote.
+__Bits__ are foundational elements for learning and understanding Counternote.
 
 ## Term
 
@@ -520,26 +520,7 @@ A __notch__ is a [band][band] a twelth root of two wide, a traditional *semitone
 
 ## Break
 
-A __break__ is the point where the [file][file] changes based on the [key][key] of a composition. It is always at seven [notches][notch] above and six [notches][notch] below the [key][key]. A __break__ changes only when the [key][key] explicitly changes.
-
-    ————————————————————————
-      START  OFFSET  BREAK
-    ————————————————————————
-        H      +6    ma-ke
-        T      +5    ga-le
-        Y      +4    sa-ge
-        C      +3    ja-se
-        Z      +2    xa-je
-        K      +1    da-xe
-    ————————————————————————
-        L      ±0    ha-de
-    ————————————————————————
-        G      -1    ta-he
-        S      -2    ya-te
-        J      -3    ca-ye
-        X      -4    za-ce
-        D      -5    ka-ze
-    ————————————————————————
+A __break__ is the point where the [file][file] changes. It always happens between `ha` and `ne` relative to whatever [key][key] is chosen.
 
 ***
 
@@ -559,7 +540,7 @@ A __click__ is punctuation character that represents a duration. They come in si
        `,`    1/8    pa    pa
        `.`    1/4    po    po
        `-`    1/2    pu    pu
-       `=`    1/1    pq    pɑ˞
+       `=`    1/1    pr    pɚ
     ————————————————————————————
 
 Plus two others, immediate and indeterminant:
@@ -568,7 +549,7 @@ Plus two others, immediate and indeterminant:
       CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
        `!`    immediate    pl    pɛl
-       `?`  indeterminant  pr    pɚ
+       `?`  indeterminant  pq    pɑ˞
     ——————————————————————————————————
 
 ## Groove
@@ -974,23 +955,23 @@ The tonic of a [knit][knits].
 
 ## Span
 
-A __span__ is an interval. It consists of a single letter capitalized when speaking of an interval such a V, a perfect fifth, but is lowercase when attached to a note. Even though they are written with a single letter, the consonants on their own have a particular vowel quality attached.
+A __span__ is an interval. It consists of a single letter capitalized when speaking of an interval such a V, a perfect fifth. Even though they are written with a single letter, the consonants on their own have a particular vowel quality attached.
 
     ——————————————————————————————————
       SPAN   INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
-        Z       7       ɚz    'erz'
-        N      ♭7       un    'oon'
-        M       6       om    'ohm'
-        L      ♭6       ɛl    'ehl'
-        V       5       iv    'eev'
-        Q     ♯4/♭5     ɑ˞ʔ   'ar'
-        I       4       iʔ    'ee'
-        E       3       ɛʔ    'eh'
-        O      ♭3       oʔ    'oh'
-        U       2       uʔ    'oo'
-        R      ♭2       ɚʔ    'er'
-        A       1       ɑʔ    'ah'
+        Z       7       zɚ    'zer'
+        N      ♭7       nu    'noo'
+        M       6       mo    'moh'
+        L      ♭6       lɛ    'leh'
+        V       5       vi    'vee'
+        Q     ♯4/♭5     ʔɑ˞   'ʔar'
+        I       4       ʔi    'ʔee'
+        E       3       ʔɛ    'ʔeh'
+        O      ♭3       ʔo    'ʔoh'
+        U       2       ʔu    'ʔoo'
+        R      ♭2       ʔɚ    'ʔer'
+        A       1       ʔɑ    'ʔah'
     ——————————————————————————————————
 
 
@@ -1018,14 +999,19 @@ All __knits__ have a capitalized [tone start][tone start] to signify the [root][
         N      -5
     —————————————————
 
-`W` can be used as a [start][start] for speaking about chord qualities without a specified [root][root].
+`X` can be used as a [start][start] for speaking about chord qualities without a specified [root][root].
 
 
 ## Thread
 
-A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [spans][span].
+A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [spans][span] that follow these rules:
 
-For any three consonants in a row, a schwa `ə` is inserted between the second and third. The [blends][blend] that are vowels always get the patalal glide [j] preceding them if they follow a vowel whereas the [moods][mood] and [rubs][rub] always get labiovelar [w]. The [glyph][glyph] `r` as a thread is always its vowel [phone][phone].
++ For any three consonants in a row, a schwa `ə` is inserted between the second and third.
++ For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
++ For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
++ If more than an octave is skipped, `x` is inserted for each missing octave.
++ The [glyph][glyph] `r` is always a rhoticized mid vowel.
++ The [glyph][glyph] `q` is always a glottal stop.
 
 ## Chord
 
@@ -1034,15 +1020,13 @@ A __chord__ is a [knit][knits] constructed using the capitalized [tone start][to
     ————————————————————————————————————————————————————————
         CHORD      WORD         IPA        TRANSLITERATION
     ————————————————————————————————————————————————————————
-         A           
-         B5      
-         Cm      
-         C♯7     
-         D13     
-      E♭13(♭5♯9)
+         A          Zev        ˈzev             ZEHV
+         B5         Gav        ˈgav             GAHV
+         Cm         Mov        ˈmov             MOHV
+         C♯7       Kevn       ˈke.vən         KEH-vuhn
+         D13      Devnuim   ˈdev.nuˌjim     DEHV-noo-YEEM
+      E♭13(♭5♯9)  Seqnoim   ˈseʔ.nuˌjim     SEHʔ-noo-YEEM
     ————————————————————————————————————————————————————————
-
-
 
 ## Braid
 
@@ -1051,31 +1035,44 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
     ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
     ——————————————————————————————————————————————————————————————————————————————————
-      CHORD   TAB    THREADS     WORD            IPA             TRANSILITERATION
+      CHORD   TAB    THREADS      WORD            IPA             TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————
-        E    022100   vaeva    
-                    
-        A    x02220    vaev    
-                    
-       A/E   002220   avaev    
-                    
-        D    xx0232     vae    
-                    
-       D/F♯  200232   vavae
-                    
-        G    320033   evava     
-                    
-        G    320003   evaea
-                     
-        C    x32010    evae
-                    
-       C/G   332010   aevae
-                    
-        F    1x3211    aeva
-                    
+        E    022100   vaeva     joJvaeva    dʒoˈdʒə.vaˌje.va     joh-JUH-vah-YEH-vah
+
+        Em   022000   vaova     joJvaova    dʒoˈdʒə.vaˌjo.va     joh-JUH-vah-YOH-vah
+
+        A    x02220    vaev     zaZvaev       zaˈzə.vaˌjev        zah-ZUH-vah-YEHV
+
+        Am   x02210    vaov     zaZvaov       zaˈzə.vaˌjov        zah-ZUH-vah-YOHV
+
+       A/E   002220   avaev     joZavaev     dʒoˈzə.vaˌjev        joh-ZAH-vah-YEHV
+
+       Am/E  002210   avaov     joZavaov     dʒoˈzə.vaˌjov        joh-ZAH-vah-YOHV
+
+        D    xx0232     vae     daDvae        daˈdə.vaˌje          dah-DUH-vah-YEH
+
+        Dm   xx0231     vao     daDvao        daˈdə.vaˌjo          dah-DUH-vah-YOH
+
+       D/A   x00232    avae     zaDavae       zaˈza.vaˌje          zah-DAH-vah-YEH
+
+       Dm/A  x00231    avao     zaDavao       zaˈza.vaˌjo          zah-DAH-vah-YOH
+
+       D/F♯  200232   vavae     hoDvavae     hoˈdə.vaˌva.je      hoh-DUH-vah-VAH-yeh
+
+       Dm/F  100231   vavao     loDvavao     hoˈdə.vaˌva.jo      hoh-DUH-vah-VAH-yoh
+
+        G    320033   evava     naNevava      naˈne.vaˌva          nah-NEH-vah-VAH
+
+        G    320003   evaea     naNevaea     naˈnə.vaˌje.ja      nah-NEH-vah-YEH-yah
+
+        C    x32010    evae     maMevae       maˈmə.vaˌjev         mah-MEH-vah-YEH
+
+       C/G   332010   aevae     naMaevae     naˈma.jəˌva.je      nah-MAH-yeh-VAH-yeh
+
+        F    1x3211    aeva     loLaeva       loˈla.jeˌva          loh-LAH-yeh-VAH
+
     ——————————————————————————————————————————————————————————————————————————————————
 *** 
--->
 
 # Cues
 
