@@ -950,7 +950,7 @@ __Knits__ are collections of notes occuring simultaneously. They come in three v
 
 ## Root
 
-The tonic of a [knit][knits].
+A __root__ is the tonic of a [knit][knits].
 
 ## Span
 
