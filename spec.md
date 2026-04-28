@@ -73,20 +73,19 @@ Rhythmic elements
 
 Acoustic vibrations held in time
 
-* [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sounds]
-  * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
-  * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
-* [__rap__][rap]: a [word][word] indicating a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
-* [__tie__][tie]: a [sound][sounds] from a previous [bar][bar] is still being held
+* [__tone__][tone]: a [sound][sounds] where [pitch][pitch] is the defining factor
+  * [__tone start__][tone start]: the [start][start] that denotes the [rank][rank]
+  * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes the [file][file]
+* [__rap__][rap]: a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
+* [__tie__][tie]: a [sound][sounds] held out from a previous [bar][bar]
 * [__breath__][breath]: a breath of fresh quiet
 
 ### [KNITS][knits]
 
 Manifold acoustic vibrations
 
-* [__root__][root]: the tonic for [spans][span] and [knits][knits]
+* [__root__][root]: the [tone start][tone start] that denotes the tonic for a [knit][knits]
 * [__span__][span]: a [word][word] indicating the interval
-* [__knit start__][knit start]: the [start][start] that denotes a [knit][knits]
 * [__thread__][thread]: a single [voice][voice] within a [knit][knits]
 * [__strand__][strand]: a [knit][knits] of two voices, a double stop
 * [__chord__][chord]: a [knit][knits] of three voices or more
@@ -119,7 +118,7 @@ Composer directives
 
 Toward a deeper understanding
 
-* [__clock__][clock]: a [scheme][schemes] for visualization the relationships between [tones][tone]/[spans][span]
+* [__clock__][clock]: a [scheme][schemes] for visualizing the relationships between [tones][tone]/[spans][span]
   * [__hue clock__][hue clock]: [tones][tone]/[spans][span] arranged in chromatic order
   * [__lux clock__][lux clock]: [tones][tone]/[spans][span] arranged in harmonic order
   * [__lux__][lux]: a measure of the relative brightness or darkness of an interval
@@ -245,7 +244,7 @@ __Bits__ are foundational elements for learning and understanding Counternote.
 
 ## Term
 
-A __term__ is the name for a precise concept in music and Counternote. They are monosyllablic to be easy to remember and speak about. Each __term__ has an entry in this [gloss][gloss].
+A __term__ is the name for a precise concept in music and Counternote. They are monosyllabic to be easy to remember and speak about. Each __term__ has an entry in this [gloss][gloss].
 
 ## Glyph
 
@@ -543,13 +542,13 @@ A __click__ is punctuation character that represents a duration. They come in si
        `=`    1/1    pr    pɚ
     ————————————————————————————
 
-Plus two others, immediate and indeterminant:
+Plus two others, immediate and indeterminate:
 
     ——————————————————————————————————
       CLICK     VALUE     WORD   IPA
     ——————————————————————————————————
        `!`    immediate    pl    pɛl
-       `?`  indeterminant  pq    pɑ˞
+       `?`  indeterminate  pq    pɑ˞
     ——————————————————————————————————
 
 ## Groove
@@ -609,7 +608,7 @@ A __rift__ is a section of polyrhythm with one __groove__ mashed against another
         | ma.   ma.   ma.   |
     ———————————————————————————
 
-Like with __grooves__, the [right][right] can be notated within the [voice][voice]:
+Like with __grooves__, the [rift][rift] can be notated within the [voice][voice]:
 
     ————————————————————————————————
       # |2.|
@@ -951,7 +950,7 @@ __Knits__ are collections of notes occuring simultaneously. They come in three v
 
 ## Root
 
-The tonic of a [knit][knits].
+A __root__ is the tonic of a [knit][knits].
 
 ## Span
 
@@ -973,8 +972,6 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
         R      ♭2       ʔɚ    'ʔer'
         A       1       ʔɑ    'ʔah'
     ——————————————————————————————————
-
-
 
 ## Knit Root
 
@@ -1001,7 +998,6 @@ All __knits__ have a capitalized [tone start][tone start] to signify the [root][
 
 `X` can be used as a [start][start] for speaking about chord qualities without a specified [root][root].
 
-
 ## Thread
 
 A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [spans][span] that follow these rules:
@@ -1015,62 +1011,63 @@ A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [s
 
 ## Chord
 
-A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing. Prefixing a [tone start][tone start] yields a slash chord.
+A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing. Prefixing a [thread][thread] with [span][span] pronunciation yields a slash chord.
 
-    ————————————————————————————————————————————————————————
-        CHORD      WORD         IPA        TRANSLITERATION
-    ————————————————————————————————————————————————————————
-         A          Zev        ˈzev             ZEHV
-         B5         Gav        ˈgav             GAHV
-         Cm         Mov        ˈmov             MOHV
-         C♯7       Kevn       ˈke.vən         KEH-vuhn
-         D13      Devnuim   ˈdev.nuˌjim     DEHV-noo-YEEM
-      E♭13(♭5♯9)  Seqnoim   ˈseʔ.nuˌjim     SEHʔ-noo-YEEM
-    ————————————————————————————————————————————————————————
+    ————————————————————————————————————————————————————————————
+            NAME   CHORD                 IPA   TRANSLITERATION
+    ————————————————————————————————————————————————————————————
+               A   Zev                  ˈzev   ZEHV
+              B5   Gav                  ˈgav   GAHV
+            Cm/G   vMov               viˈmov   vee-MOHV
+             F♯7   Hevn              ˈhe.vən   HEH-vuhn
+             D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.nuˌjim   SEHʔ-noo-YEEM
+    ————————————————————————————————————————————————————————————
 
 ## Braid
 
 A __braid__ is a specific voicing of a [chord][chord]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the lowest sounding [tone][tone] is prefixed to the [chord][chord]. Second, every [voice][voice] above the prefix gets a [thread][thread]. Third, if more than an entire octave is skipped, the [glyph][glyph] `x` is inserted for each octave+ skipped.
 
+    ——————————————————————————————————————————————————————————————
+            NAME   BRAID                 IPA   TRANSILITERATION
+    ——————————————————————————————————————————————————————————————
+               A   zaZvaev      zaˈzə.vaˌjev   zah-ZUH-vah-YEHV
+              B5   gaGv               gaˈgəv   gah-GUHV
+            Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
+             F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
+             D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.nuˌjim   sah-SEHʔ-noo-YEEM
+    ——————————————————————————————————————————————————————————————
+
+
+
     ——————————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
     ——————————————————————————————————————————————————————————————————————————————————
-      CHORD   TAB    THREADS      WORD            IPA             TRANSILITERATION
+      NAME   TAB    THREADS   BRAID                   IPA   TRANSILITERATION
     ——————————————————————————————————————————————————————————————————————————————————
-        E    022100   vaeva     joJvaeva    dʒoˈdʒə.vaˌje.va     joh-JUH-vah-YEH-vah
+         E   022100   vaeva   joJvaeva   dʒoˈdʒə.vaˌje.va   joh-JUH-vah-YEH-vah
+        Em   022000   vaova   joJvaova   dʒoˈdʒə.vaˌjo.va   joh-JUH-vah-YOH-vah
 
-        Em   022000   vaova     joJvaova    dʒoˈdʒə.vaˌjo.va     joh-JUH-vah-YOH-vah
+         A   x02220    vaev   zaZvaev        zaˈzə.vaˌjev   zah-ZUH-vah-YEHV
+       A/E   002220   avaev   joZavaev      dʒoˈzə.vaˌjev   joh-ZAH-vah-YEHV
+        Am   x02210    vaov   zaZvaov        zaˈzə.vaˌjov   zah-ZUH-vah-YOHV
+      Am/E   002210   avaov   joZavaov      dʒoˈzə.vaˌjov   joh-ZAH-vah-YOHV
 
-        A    x02220    vaev     zaZvaev       zaˈzə.vaˌjev        zah-ZUH-vah-YEHV
+         D   xx0232     vae   daDvae          daˈdə.vaˌje   dah-DUH-vah-YEH
+       D/A   x00232    avae   zaDavae         zaˈza.vaˌje   zah-DAH-vah-YEH
+      D/F♯   200232   vavae   hoDvavae     hoˈdə.vaˌva.je   hoh-DUH-vah-VAH-yeh
+        Dm   xx0231     vao   daDvao          daˈdə.vaˌjo   dah-DUH-vah-YOH
+      Dm/A   x00231    avao   zaDavao         zaˈza.vaˌjo   zah-DAH-vah-YOH
+      Dm/F   100231   vavao   loDvavao     hoˈdə.vaˌva.jo   hoh-DUH-vah-VAH-yoh
 
-        Am   x02210    vaov     zaZvaov       zaˈzə.vaˌjov        zah-ZUH-vah-YOHV
+         G   320033   evava   naNevava        naˈne.vaˌva   nah-NEH-vah-VAH
+         G   320003   evaea   naNevaea     naˈnə.vaˌje.ja   nah-NEH-vah-YEH-yah
 
-       A/E   002220   avaev     joZavaev     dʒoˈzə.vaˌjev        joh-ZAH-vah-YEHV
+         C   x32010    evae   maMevae        maˈmə.vaˌjev   mah-MEH-vah-YEH
+       C/G   332010   aevae   naMaevae     naˈma.jəˌva.je   nah-MAH-yeh-VAH-yeh
 
-       Am/E  002210   avaov     joZavaov     dʒoˈzə.vaˌjov        joh-ZAH-vah-YOHV
-
-        D    xx0232     vae     daDvae        daˈdə.vaˌje          dah-DUH-vah-YEH
-
-        Dm   xx0231     vao     daDvao        daˈdə.vaˌjo          dah-DUH-vah-YOH
-
-       D/A   x00232    avae     zaDavae       zaˈza.vaˌje          zah-DAH-vah-YEH
-
-       Dm/A  x00231    avao     zaDavao       zaˈza.vaˌjo          zah-DAH-vah-YOH
-
-       D/F♯  200232   vavae     hoDvavae     hoˈdə.vaˌva.je      hoh-DUH-vah-VAH-yeh
-
-       Dm/F  100231   vavao     loDvavao     hoˈdə.vaˌva.jo      hoh-DUH-vah-VAH-yoh
-
-        G    320033   evava     naNevava      naˈne.vaˌva          nah-NEH-vah-VAH
-
-        G    320003   evaea     naNevaea     naˈnə.vaˌje.ja      nah-NEH-vah-YEH-yah
-
-        C    x32010    evae     maMevae       maˈmə.vaˌjev         mah-MEH-vah-YEH
-
-       C/G   332010   aevae     naMaevae     naˈma.jəˌva.je      nah-MAH-yeh-VAH-yeh
-
-        F    1x3211    aeva     loLaeva       loˈla.jeˌva          loh-LAH-yeh-VAH
-
+         F   1x3211    aeva   loLaeva         loˈla.jeˌva   loh-LAH-yeh-VAH
     ——————————————————————————————————————————————————————————————————————————————————
 *** 
 
@@ -1172,9 +1169,9 @@ __Drift__ is a directive for microtonal adjustment. These can be adjusted inline
 
 `ma/da*q` is a whole step and a quarter bend to D half-sharp. `ma*q` is an C half-sharp.
 
-The __drifts__ are not sticky, but [tones][tones] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
+The __drifts__ are not sticky, but [tones][tone] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
 
-Like with [weaves][weave], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
+Like with [braids][braid], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
 ## Chant
 
@@ -1238,7 +1235,7 @@ Swapping every odd-numbered value with its counterpart (1 with 7, 3 with 9, 5 wi
 
 ### Lux
 
-A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) itervals but also includes the perfect fourth and fifth which are dark and bright, respectively.
+A [lux][lux] is a measure of how [bright][bright lux] or [dark][dark lux] an interval is. This lines up mostly with major (large) and minor (small) intervals but also includes the perfect fourth and fifth which are dark and bright, respectively.
 
 ### Bright Lux
 
@@ -1246,7 +1243,7 @@ A [bright lux][bright lux] is a harmonic relationship that evokes a sense of ope
 
 ### Dark Lux
 
-A [dark lux][dark lux] is a harmonic relationhip that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
+A [dark lux][dark lux] is a harmonic relationship that evokes a sense of settling down, turning inward. It includes all minor (small) intervals plus the (smaller) perfect fourth.
 
 ### Vibe
 
