@@ -73,11 +73,11 @@ Rhythmic elements
 
 Acoustic vibrations held in time
 
-* [__tone__][tone]: a [word][word] indicating the absolute [rank][rank] and [file][file] of a [sound][sounds]
-  * [__tone start__][tone start]: the [start][start] that denotes absolute [rank][rank]
-  * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes [file][file]
-* [__rap__][rap]: a [word][word] indicating a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
-* [__tie__][tie]: a [sound][sounds] from a previous [bar][bar] is still being held
+* [__tone__][tone]: a [sound][sounds] where [pitch][pitch] is the defining factor
+  * [__tone start__][tone start]: the [start][start] that denotes the [rank][rank]
+  * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes the [file][file]
+* [__rap__][rap]: a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
+* [__tie__][tie]: a [sound][sounds] held out from a previous [bar][bar]
 * [__breath__][breath]: a breath of fresh quiet
 
 ### [KNITS][knits]
