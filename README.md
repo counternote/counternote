@@ -8,17 +8,16 @@ Counternote is a chromatic musical language meant to be typed and sung. It is a 
 
 # Drive
 
-Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, by which they mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
+Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, which I take to mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
 
 However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music —> staff —> ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music —> Counternote).
 
 Counternote has been created as a complementary foil to the venerable staff notation, not a replacement. Even the most seasoned of musicians is likely to gain another perspective on music by learning it.
 
-But this is not a one way street. Counternote is not yet set in stone and is still being tweaked, so any relevant feedback or constructive criticism will be considered and appreciated. You can join the [Discord][dc] and suggest away.
+But this is not a one way street. Counternote is not yet set in stone and is still being tweaked, so any relevant feedback or constructive criticism will be considered and appreciated.
 
 [md]:https://daringfireball.net/projects/markdown/ "John Gruber’s Markdown Spectacular"
 [abc]:https://abcnotation.com/ "ABC notation"
-[dc]:https://discord.gg/SvWfPwpxEv "Counternote server invite"
 
 ***
 
@@ -26,15 +25,15 @@ But this is not a one way street. Counternote is not yet set in stone and is sti
 
 There are five design principles that guide Counternote’s take on a musical notation: It must be readable, typeable, singable, codeable, and shareable. Unfortunately, satisfying all five of these constraints perfectly is impossible. Design is compromise just as life is pain — *anyone who tells you differently is selling something*.
 
-For readability, the notes are simple and unambiguous — a note never has more than one name and is descriptive enough to make some intuitive and logical sense. The same goes for intervals and chords. They are organized in a way that can be sightread rather easily while still allowing for durations and articulations to appear in the same line like punctuation and dynamics, accompaniments, and other details appear in parallel above or below the line to avoid clutter. 
+For readability, the notes are simple and unambiguous — a note never has more than one name and is descriptive enough to make some intuitive and logical sense. The same goes for intervals and chords. They are organized in a way that can be sightread rather easily while still allowing for durations and articulations to appear in the same line like punctuation whereas dynamics, accompaniments, and other details appear in parallel above or below the line to avoid clutter. 
 
 For typeability, everything is written in the printable characters of 7-bit ASCII which are easily typed by humans. The notes require as few keystrokes as possible, both to make typing faster and to take up less space on the line. In the process of compressing the written length of the notes, some characters have had their pronunciation reassigned and common digraphs have been eliminated, limiting them to just one consonant, vowel, or vowel-consonant pair per character.
 
-For singability, each note is one syllable, as are each interval distinct from the notes. The simple idea here is that music is not an abstract notion, it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronunciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
+For singability, each note is one syllable, as are each interval distinct from the notes. Music is not an abstract notion; it’s something that we can mimic concretely. So these elements are onomatopoeic and autological — that is, imitative and self-descriptive. The closer a symbol is to its actual pronunciation and meaning, the easier it is to remember. But notes are more than just hitting a correct pitch — they’re about any kind of vocalization, so the percussive sounds like those from beatboxing to click languages find representation here.
 
-For codeability, everything is written in ASCII which is easily interpreted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal numerals to mark the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
+For codeability, everything is written in ASCII which is easily interpreted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal ones to label the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
 
-For shareability, everything is just a string of plaintext, easily shared via text message and read in monospace. There is no need to translate it into a human consumable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
+For shareability, everything is just a string of plaintext, easily shared via text message. There is no need to translate it into a human consumable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
 
 ***
 
@@ -51,7 +50,6 @@ Sounds in Counternote come in two varieties — those where pitch is the definin
 ## Tones
 
 First up to introduce are the twelve *tones*. These refer to absolute pitch when capitalized, used almost exclusively for setting the *key*, but are otherwise movable within a piece like scale degrees. You may think of them as fixed-do (solfège) when capitalized and movable-do (tonic solfa) when lowercase:
-
 
     ——————————————————————————————————————————————————
       UPPERCASE for setting the KEY
@@ -88,7 +86,7 @@ Uppercase or lowercase, they consist of a *start*, the first letter:
         n-     -5      n     'n'
     ———————————————————————————————
 
-And a *rhyme*, the second (and third) letter(s):
+And a *rhyme*, the rest of the letters:
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -110,7 +108,7 @@ And a *rhyme*, the second (and third) letter(s):
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. The *starts* and *rhymes* go *rank* and *file*.
 
-By default, `ze` is *A440*, so `za` sounds an octave below it.
+`ZE` is *A440*, so by default `ze` sounds the same and `za` sounds an octave below it.
 
 ### Absolutely Relative
 
@@ -120,7 +118,7 @@ In fact, relative pitch is so important that there are no less than four ways to
 
 * as intervals like __m3__ and __M6__
 * as scale degrees like __♭3__ and __6__
-* as movable-do solfège (tonic solfa) like __me__ or __ma__ and __la__
+* as movable-do (tonic solfa) like __me__ or __ma__ and __la__
 * as integer notation __3__ and __9__
 
 Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do solfège used in half the world.
@@ -131,7 +129,7 @@ By relegating the absolute pitch terms to simply setting the tonal center, we ca
 
 The last kind of sound in Counternote is whatever doesn’t fit in the tones. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
 
-Compared to tones, raps are easier to demonstrate because they’re just a list of mostly user-defined sounds. They are also harder to learn because they’re just a list of mostly user-defined sounds. There are two basic rules for creating raps, only the first of which must be followed:
+Raps are just a list of mostly user-defined sounds. There are two basic rules for creating them, only the first of which must be followed:
 
 * they cannot overlap with tones or reserved raps
 * they should sound like what they stand for
@@ -206,7 +204,7 @@ Notes in Counternote refer specifically to *sounds* held for some duration. That
 
 ## Clicks
 
-Clicks are basic punctuation characters that are roughly equal to a whole note to a thirty-second note that must come immediately after the sound they sustain. These can be extended by trailing *clicks* in the same bar or by adding the rap `aa` with a new click at the beginning of the next bar.
+Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the rap `aa` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
 
 The six *clicks* ordered by powers of two are as follows:
 
@@ -258,7 +256,7 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that *cut* up some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       # |4.|
@@ -294,6 +292,8 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
         | ma.ma ma.ma ma.ma ma.ma |
     —————————————————————————————————
 
+Though should it have saved that space?
+
 # Stacks, Spans, and Knits
 
 That’s nice and all for monophonic instruments, but what about things like the piano and guitar? There are a few ways of dealing with many voices. One is by using *stacks* — multiple lines of notes in the same *bar*.
@@ -307,7 +307,7 @@ A four-part harmony might be written:
         t: tenor
         b: bass
 
-      # |4.|
+      |4.|
       1
         s| mi.mi mi.mi mi.mi mi.mi |
         a| me.me me.me me.me me.me |
@@ -318,11 +318,12 @@ A four-part harmony might be written:
 
 But what about double stops and chords and voicings where you might not need or want to dedicate vertical space?
 
-For that, we’ll learn about *knits*, but first we have intervals called *spans*:
+For that, we’ll learn about *knits*, but to do so we have to introduce intervals called *spans*:
 
     ——————————————————————————————————
       SPAN   INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
+        X       8       ʃa   'shah'
         Z       7       zɚ    'zer'
         N      ♭7       nu    'noo'
         M       6       mo    'moh'
@@ -334,24 +335,25 @@ For that, we’ll learn about *knits*, but first we have intervals called *spans
         O      ♭3       ʔo    'ʔoh'
         U       2       ʔu    'ʔoo'
         R      ♭2       ʔɚ    'ʔer'
-        A       1       ʔɑ    'ʔah'
+        A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
 Notice that the pronunciation of each isn’t the name of the letter. They are uppercase when speaking about the interval, but when lowercase, they become *threads*, individual voices within a *knit*.
 
-    ———————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————
       LOWERCASE for THREADS
-    ———————————————————————————————————————————————————
-       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7
-      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z-  
-    ———————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8
+      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- 
+    ———————————————————————————————————————————————————————
 
 Here are the rules for pronouncing the *threads*:
 
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ If more than an octave is skipped, `x` is inserted for each missing octave.
++ An `x` immediately after the [knit start][knit start] is an octave, otherwise it is silent.
++ If more than an octave is skipped, a silent `x` is inserted for each missing octave.
 + The [glyph][glyph] `r` is always a rhoticized mid vowel.
 + The [glyph][glyph] `q` is always a glottal stop.
 
@@ -394,7 +396,7 @@ There are obviously other details to go over, but it’s time to see some real m
       f: fingers
       t: thumb 
     +++
-    @YOV |4.| @allegretto
+    @JOV |4.| @allegretto
 
     A
       0
