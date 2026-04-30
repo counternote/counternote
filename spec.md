@@ -329,9 +329,9 @@ A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word] l
 
 ***
 
-# Forms
+# Frames
 
-__Forms__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
+__Frames__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
     ++*
     SCORE: Lute Suite in E Minor
@@ -344,7 +344,7 @@ __Forms__ are structural elements of a composition and how such elements connect
       t: thumb
     FORM: AABB
     +++
-    @YOV |4.| @allegretto
+    @JOV |4.| @allegretto
 
     A
       0
@@ -407,18 +407,32 @@ A __key__ is the tonic of a track. It is denoted by a capitalized [tone][tone] a
 
 ### Mode
 
-A __mode__ is the home scale for a [track][track] denoted by its representative [chord][chord]:
+A __mode__ is the home scale for a [track][track] denoted by the abstract [root][root] `X` followed by its representative [chord][chord] quality in all caps:
 
     —————————————————————————
       WORD    TONALITY
     —————————————————————————
-      Mrv     Lydian
-      Mev     Major/Ionian
-      Mevf    Mixolydian
-      Movm    Dorian
-      Mov     Minor/Aeolian
-      Mhv     Phrygian
-      Mor     Locrian
+      XQV     Lydian
+      XEV     Major/Ionian
+      XEVN    Mixolydian
+      XOVM    Dorian
+      XOV     Minor/Aeolian
+      XRV     Phrygian
+      XOQ     Locrian
+    —————————————————————————
+
+The __key__ and __mode__ can be set simultaneously using a capitalized [tone start][tone start] instead of `X`:
+
+    —————————————————————————
+      WORD    TONALITY
+    —————————————————————————
+      MQV     Lydian
+      MEV     Major/Ionian
+      MEVN    Mixolydian
+      MOVM    Dorian
+      MOV     Minor/Aeolian
+      MRV     Phrygian
+      MOQ     Locrian
     —————————————————————————
 
 ### Form
@@ -701,7 +715,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
       t: thumb
     FORM: AABB
     +++
-    #YOV |4.| @allegretto
+    #JOV |4.| @allegretto
 
     A
       0
@@ -812,7 +826,21 @@ __Notes__ are [sounds][sounds] for a [click][click].
 
 A __tone__ capitalized as a [rank][rank] is the closest to a *note* in a traditional sense, like the pitch-class of *C* or a specific C note. Any [pitch][pitch] that when multiplied or divided by powers of two falls in the [notch][notch] starting from 256Hz is described by the [rank][rank] `MA`. That means any [pitch][pitch] that falls in the [notch][notch] from about 430.5Hz to just over 456Hz is `ZA` including *A440*, *A444*, and *A432*, but not including the baroque tuning *A415*, which falls into the [rank][rank] `CA` just below.
 
+    ——————————————————————————————————————————————————
+      UPPERCASE for setting the KEY
+    ——————————————————————————————————————————————————
+      C   C♯  D   D♯  E   F   F♯  G   G♯  A   A♯  B
+      MA  KA  DA  SA  JA  LA  HA  NA  CA  ZA  TA  GA  
+    ——————————————————————————————————————————————————
+
 A lowercase __tone__ is akin to a *scale degree* or *movable-do*, a note relative to the specified [key][key]. If no [key][key] is specified, the default is `MA`. Since music is predominantly a relative pitch phenomenon, only the setting of the [key][key] is done using the absolute pitch of the capitalized __tone__.
+
+    ——————————————————————————————————————————————————
+      LOWERCASE for playing notes
+    ——————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7
+      ma  ka  da  sa  ja  la  ha  na  ca  za  ta  ga  
+    ——————————————————————————————————————————————————
 
 ### Tone Start
 
@@ -959,6 +987,7 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
     ——————————————————————————————————
       SPAN   INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
+        X       8       ʃa   'shah'
         Z       7       zɚ    'zer'
         N      ♭7       nu    'noo'
         M       6       mo    'moh'
@@ -970,8 +999,64 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
         O      ♭3       ʔo    'ʔoh'
         U       2       ʔu    'ʔoo'
         R      ♭2       ʔɚ    'ʔer'
-        A       1       ʔɑ    'ʔah'
+        A       1       ʔa    'ʔah'
     ——————————————————————————————————
+
+Sometimes we need to talk about the movement by some interval, and that is done with the following:
+
+    ————————————————————————————————————
+      SPAN   INTERVAL   IPA    ENGLISH
+    ————————————————————————————————————
+       FX       15↑      fa     'fah'
+       FZ       14↑      fɚz    'ferz'
+       FN      ♭14↑      fun    'foo'
+       FM       13↑      fom    'foh'
+       FL      ♭13↑      fɛl    'feh'
+       FV       12↑      fiv    'fee'
+       FQ    ♯11/♭12↑    fɑ˞    'far'
+       FI       11↑      fi     'fee'
+       FE       10↑      fɛ     'feh'
+       FO      ♭10↑      fo     'foh'
+       FU        9↑      fu     'foo'
+       FR       ♭9↑      fɚ     'fer'
+       YX        8↑      ja     'yah'
+       YZ        7↑      jɚz    'yerz'
+       YN       ♭7↑      jun    'yoo'
+       YM        6↑      jom    'yoh'
+       YL       ♭6↑      jɛl    'yeh'
+       YV        5↑      jiv    'yee'
+       YQ      ♯4/♭5↑    jɑ˞    'yar'
+       YI        4↑      ji     'yee'
+       YE        3↑      jɛ     'yeh'
+       YO       ♭3↑      jo     'yoh'
+       YU        2↑      ju     'yoo'
+       YR       ♭2↑      jɚ     'yer'
+       AA        1       ʔa     'ʔah'
+       WR       ♭2↓      wɚ     'wer'
+       WU        2↓      wu     'woo'
+       WO       ♭3↓      wo     'woh'
+       WE        3↓      wɛ     'weh'
+       WI        4↓      wi     'wee'
+       WQ      ♯4/♭5↓    wɑ˞    'war'
+       WV        5↓      wiv    'wee'
+       WL       ♭6↓      wɛl    'weh'
+       WM        6↓      wom    'woh'
+       WN       ♭7↓      wun    'woo'
+       WZ        7↓      wɚz    'wer'
+       WX        8↓      wa     'wah'
+       BR       ♭9↓      bɚ     'ber'
+       BU        9↓      bu     'boo'
+       BO      ♭10↓      bo     'boh'
+       BE       10↓      bɛ     'beh'
+       BI       11↓      bi     'bee'
+       BQ    ♯11/♭12↓    bɑ˞    'bar'
+       BV       12↓      biv    'bee'
+       BL      ♭13↓      bɛl    'beh'
+       BM       13↓      bom    'boh'
+       BN      ♭14↓      bun    'boo'
+       BZ       14↓      bɚz    'ber'
+       BX       15↓      ba     'bah'
+    ———————————————————————————————————
 
 ## Knit Root
 
@@ -1000,12 +1085,22 @@ All __knits__ have a capitalized [tone start][tone start] to signify the [root][
 
 ## Thread
 
-A __thread__ is a single [voice][voice] within a __knit__. They are lowercase [spans][span] that follow these rules:
+A __thread__ is a single [voice][voice] within a __knit__, using the lowercase [spans][span].
+
+    ———————————————————————————————————————————————————————
+      LOWERCASE for THREADS
+    ———————————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8
+      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- 
+    ———————————————————————————————————————————————————————
+
+Here are the rules for pronouncing the __threads__:
 
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ If more than an octave is skipped, `x` is inserted for each missing octave.
++ An `x` immediately after the [knit start][knit start] is an octave, otherwise it is silent.
++ If more than an octave is skipped, a silent `x` is inserted for each missing octave.
 + The [glyph][glyph] `r` is always a rhoticized mid vowel.
 + The [glyph][glyph] `q` is always a glottal stop.
 
@@ -1085,7 +1180,7 @@ A __vamp__ is a [comp][comp] that specifies rhythm and/or voicings.
 
 ## Tweak
  
-A __tweak__ is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#[` and `]#`.
+A __tweak__ is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#{` and `}`.
 
 ## Art
 
