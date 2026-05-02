@@ -77,7 +77,6 @@ Acoustic vibrations held in time
   * [__tone start__][tone start]: the [start][start] that denotes the [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes the [file][file]
 * [__rap__][rap]: a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
-* [__tie__][tie]: a [sound][sounds] held out from a previous [bar][bar]
 * [__breath__][breath]: a breath of fresh quiet
 
 ### [KNITS][knits]
@@ -95,6 +94,7 @@ Manifold acoustic vibrations
 
 Composer directives
 
+* [__tie__][tie]: a [sound][sounds] held out from a previous [bar][bar]
 * [__comp__][comp]: an accompaniment
   * [__vamp__][vamp]: a [comp][comp] with rhythm and/or voicings
 * [__tweak__][tweak]: an instruction on effects
@@ -189,9 +189,7 @@ Toward a deeper understanding
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
 [rap]: #rap
-[tie]: #tie
 [breath]: #breath
-[strand]: #stop
 
 [knits]: #knits
 [root]: #root
@@ -203,6 +201,7 @@ Toward a deeper understanding
 
 [cues]: #cues
 
+[tie]: #tie
 [comp]: #comp
   [vamp]: #vamp
 [tweak]: #tweak
@@ -654,7 +653,7 @@ A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It
 * a `'` can be used as a separator that does not add duration
 * quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
 * septuplets and longer just add [sounds][sounds] and `'`
-* a [tie][tie] `aa` may be used to signal that one [sound][sounds] is held
+* a [tie][tie] `__` may be used to signal that one [sound][sounds] is held
 
 Those rules add up to:
 
@@ -664,7 +663,7 @@ Those rules add up to:
         # one beat for =
         | ma=                             |
         # is equivalent to
-        | ma=aa                           |
+        | ma=__                           |
       2
         # two beats over =
         | ma-             ma-             |
@@ -758,7 +757,7 @@ A __long cut__ uses square brackets with `'` between [sounds][sounds] and [click
         # one beat for =
         | ma=                     |
         # is equivalent to
-        |[ma'aa]=                 |
+        |[ma'__]=                 |
       2
         # two beats over =
         | ma-ma                   |
@@ -792,17 +791,17 @@ To nest a __cut__, just place a __Long cuts__ where a single sound would go:
         | ma-ma-[ma'ma'ma]        |
     —————————————————————————————————
 
-If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `aa` are used: 
+If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `__` are used: 
 
     —————————————————————————————————
       # |4.|
       1
         # triplet in triplet
-        |[ma'[ma'ma'ma]+aa]=       |
-        | ma-[ma'ma'ma]-+aa        |
+        |[ma'[ma'ma'ma]+__]=       |
+        | ma-[ma'ma'ma]-+__        |
     —————————————————————————————————
 
-Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `aa` are used in this case as well:
+Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `__` are used in this case as well:
 
     —————————————————————————————————
       # |4.|
@@ -811,7 +810,7 @@ Because tuplets are treated as a block of one duration split evenly, the total d
         |[ma'ma'ma]=+=            |
       2
         # ...2 bars
-        | aa=                     |
+        | __=                     |
     —————————————————————————————————
 
 The `+` with the extra [click][click] `=` helps the performer see what how long the __cut__ is.
@@ -894,7 +893,6 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
     ————————————————————————
       RESERVED
     ————————————————————————
-      `aa` tie
       `hh` breath (rest)
       `sw` spoken word
     ————————————————————————
@@ -912,12 +910,12 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `pf` pf snare
       `ks` k snare
       `kk` kick drum
-      `bn` small bass drum
       `bm` large bass drum
-      `dn` high tom
-      `dm` mid tom
-      `gn` low tom
-      `gm` floor tom
+      `bn` small bass drum
+      `dm` floor tom
+      `dn` low tom
+      `km` mid tom
+      `kn` high tom
       `tx` opening hi-hat
       `ts` open hi-hat
       `xt` closing hi-hat
@@ -928,7 +926,7 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `cs` ride
       `sp` ride mute
       `xk` shook
-      `kl` clap
+      `kp` clap
       `td` bright clave
       `dd` dark clave
     ————————————————————————
@@ -943,11 +941,13 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
     ————————————————————————
       OTHER
       `rf` ref whistle
+      `ah` scream
+      `ws` Wilhelm scream
       `rn` siren
       `ck` crickets
       `cp` chirp, cheep
-      `jz` the licc
-      `lk` laugh track
+      `lc` the licc
+      `lh` laugh track
     ————————————————————————
 
 ## Sync
@@ -961,10 +961,6 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       xk!kl       shook + clap
       rk!le        rake + high G
     ———————————————————————————————————————
-
-## Tie
-
-A __tie__ is a [rap][rap] used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with the [word][word] `aa` and not pronounced separately from the [sound][sounds] being held.
 
 ## Breath
 
@@ -1170,6 +1166,10 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
 
 __Cues__ are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée above, a [track][track]-level [cue][cues] is followed by the [key][key] `ma` to specify the key center, the 1-[chord][chord] `Xov` to specify the [mode][mode], the [groove][groove] for four [beats][beats] `|4.|`, and all at an allegretto [pulse][pulse].
 
+## Tie
+
+A __tie__ is used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with `__` and not pronounced separately from the [sound][sounds] being held.
+
 ## Comp
 
 A __comp__ is a minimally specified accompaniment and harmonic background written within the [bar][bar].
@@ -1199,7 +1199,7 @@ __Ring__ is a directive to let ring, that is not to stop a [sound][sounds] when 
         f| le.   de.ce ze^^c.  ,ce,|
         t| co.   ja.   ga.   ga.   |
       7
-        | co{le.} ja{de.ce} ga{ze^^c.+,} ga{aa.ce} | 
+        | co{le.} ja{de.ce} ga{ze^^c.+,} ga{__.ce} | 
     ——————————————————————————————————————————————————
 
 

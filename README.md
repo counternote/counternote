@@ -139,9 +139,8 @@ These are some proposed raps, only the first three of which cannot be defined on
     ————————————————————————
       RESERVED
     ————————————————————————
-      `aa` tie
       `hh` breath (rest)
-      `sp` speech
+      `sw` spoken word
     ————————————————————————
       USER-DEFINABLE
     ————————————————————————
@@ -157,12 +156,12 @@ These are some proposed raps, only the first three of which cannot be defined on
       `pf` pf snare
       `ks` k snare
       `kk` kick drum
-      `bn` small bass drum
       `bm` large bass drum
-      `dn` high tom
-      `dm` mid tom
-      `gn` low tom
-      `gm` floor tom
+      `bn` small bass drum
+      `dm` floor tom
+      `dn` low tom
+      `km` mid tom
+      `kn` high tom
       `tx` opening hi-hat
       `ts` open hi-hat
       `xt` closing hi-hat
@@ -173,7 +172,7 @@ These are some proposed raps, only the first three of which cannot be defined on
       `cs` ride
       `sp` ride mute
       `xk` shook
-      `kl` clap
+      `kp` clap
       `td` bright clave
       `dd` dark clave
     ————————————————————————
@@ -188,12 +187,13 @@ These are some proposed raps, only the first three of which cannot be defined on
     ————————————————————————
       OTHER
       `rf` ref whistle
+      `ah` scream
       `ws` Wilhelm scream
       `rn` siren
       `ck` crickets
       `cp` chirp, cheep
-      `jz` the licc
-      `lk` laugh track
+      `lc` the licc
+      `lh` laugh track
     ————————————————————————
 
 Practice beatboxing with these if you like.
@@ -204,7 +204,7 @@ Notes in Counternote refer specifically to *sounds* held for some duration. That
 
 ## Clicks
 
-Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the rap `aa` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
+Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the tie `__` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
 
 The six *clicks* ordered by powers of two are as follows:
 
