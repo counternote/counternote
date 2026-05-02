@@ -352,8 +352,8 @@ Here are the rules for pronouncing the *threads*:
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the [knit start][knit start] is an octave, otherwise it is silent.
-+ If more than an octave is skipped, a silent `x` is inserted for each missing octave.
++ An `x` immediately after the [knit start][knit start] is an octave.
++ If more than an octave is skipped between two [threads][thread], an `h` is inserted for each missing octave.
 + The [glyph][glyph] `r` is always a rhoticized mid vowel.
 + The [glyph][glyph] `q` is always a glottal stop.
 

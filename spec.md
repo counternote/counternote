@@ -1003,7 +1003,7 @@ Sometimes we need to talk about the movement by some interval, and that is done 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH
     ————————————————————————————————————
-       FX       15↑      fa     'fah'
+       FA       15↑      fa     'fah'
        FZ       14↑      fɚz    'ferz'
        FN      ♭14↑      fun    'foo'
        FM       13↑      fom    'foh'
@@ -1015,7 +1015,7 @@ Sometimes we need to talk about the movement by some interval, and that is done 
        FO      ♭10↑      fo     'foh'
        FU        9↑      fu     'foo'
        FR       ♭9↑      fɚ     'fer'
-       YX        8↑      ja     'yah'
+       YA        8↑      ja     'yah'
        YZ        7↑      jɚz    'yerz'
        YN       ♭7↑      jun    'yoo'
        YM        6↑      jom    'yoh'
@@ -1039,7 +1039,7 @@ Sometimes we need to talk about the movement by some interval, and that is done 
        WM        6↓      wom    'woh'
        WN       ♭7↓      wun    'woo'
        WZ        7↓      wɚz    'wer'
-       WX        8↓      wa     'wah'
+       WA        8↓      wa     'wah'
        BR       ♭9↓      bɚ     'ber'
        BU        9↓      bu     'boo'
        BO      ♭10↓      bo     'boh'
@@ -1051,7 +1051,7 @@ Sometimes we need to talk about the movement by some interval, and that is done 
        BM       13↓      bom    'boh'
        BN      ♭14↓      bun    'boo'
        BZ       14↓      bɚz    'ber'
-       BX       15↓      ba     'bah'
+       BA       15↓      ba     'bah'
     ———————————————————————————————————
 
 ## Knit Root
@@ -1095,8 +1095,8 @@ Here are the rules for pronouncing the __threads__:
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the [knit start][knit start] is an octave, otherwise it is silent.
-+ If more than an octave is skipped, a silent `x` is inserted for each missing octave.
++ An `x` immediately after the [knit start][knit start] is an octave.
++ If more than an octave is skipped between two [threads][thread], an `h` is inserted for each missing octave.
 + The [glyph][glyph] `r` is always a rhoticized mid vowel.
 + The [glyph][glyph] `q` is always a glottal stop.
 
