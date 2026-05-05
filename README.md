@@ -369,7 +369,7 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
             Cm/G   vMov               viˈmov   vee-MOHV
              F♯7   Hevn              ˈhe.vən   HEH-vuhn
              D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
-      E♭13(♭5♯9)   Seqnoim       ˈseʔ.nuˌjim   SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌjim   SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
             NAME   BRAID                 IPA   TRANSILITERATION
     ——————————————————————————————————————————————————————————————
@@ -378,7 +378,7 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
             Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
              F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
              D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
-      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.nuˌjim   sah-SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
 
 

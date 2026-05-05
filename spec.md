@@ -1,6 +1,6 @@
 ***
 
-# Counternote Specification version 0.10.1
+#### Counternote Specification version 0.10.1
 
 This is a terse description of Counternote with definitions and examples.
 
@@ -8,13 +8,13 @@ This is a terse description of Counternote with definitions and examples.
 
 # Gloss
 
-This [gloss][gloss] serves as a glossary and table of contents for all things Counternote.
+This __gloss__ serves as a glossary and table of contents for all things Counternote.
 
-### [BITS][bits]
+### BITS [⤵︎][bits]
 
 Foundational elements
 
-* [__term__][term]: a precise concept in music and Counternote, linked here in the [gloss][gloss]
+* [__term__][term]: a precise concept in music and Counternote, linked here in the __gloss__
 * [__glyph__][glyph]: any typed character
 * [__phone__][phone]: the pronunciation of a speakable [glyph][glyph] or cluster of [glyphs][glyph]
   * [__start__][start]: the first [phone][phone] or *linguistic onset* of a [word][word]
@@ -22,7 +22,7 @@ Foundational elements
 * [__word__][word]: a connected sequence of [phones][phone]
 * [__sign__][sign]: a connected sequence of [glyphs][glyph] that do not make a [word][word]
 
-### [FRAMES][frames]
+### FRAMES [⤵︎][frames]
 
 Structural elements
 
@@ -39,12 +39,14 @@ Structural elements
 * [__bar__][bar]: details on how and what to play
   * [__voice__][voice]: a monophonic instrument and the sequence of [sounds][sounds] to be played
   * [__stack__][stack]: multiple [voices][voice] in the same [bar][bar]
-  * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
-  * [__jump__][jump]: a directive on what to play next
   * [__lap__][lap]: a variation on a [bar][bar]
-* [__snip__][snip]: a place suitable for code
+  * [__jump__][jump]: a directive on what to play next
+  * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
+* [__def__][def]: definitions
+* [__block__][block]: a block or snippet of code
+* [__tweak__][tweak]: instruction on effects
 
-### [SOUNDS][sounds]
+### SOUNDS [⤵︎][sounds]
 
 Any acoustic vibration
 
@@ -55,7 +57,7 @@ Any acoustic vibration
 * [__notch__][notch]: the range of a single *semitone* or *half-step*
 * [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
 
-### [BEATS][beats]
+### BEATS [⤵︎][beats]
 
 Rhythmic elements
 
@@ -69,17 +71,18 @@ Rhythmic elements
   * [__short cut__][short cut]: a quick [cut][cut] notation
   * [__long cut__][long cut]: a robust [cut][cut] notation
 
-### [NOTES][notes]
+### NOTES [⤵︎][notes]
 
 Acoustic vibrations held in time
 
 * [__tone__][tone]: a [sound][sounds] where [pitch][pitch] is the defining factor
   * [__tone start__][tone start]: the [start][start] that denotes the [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes the [file][file]
+  * [__drift__][drift]: a microtonal adjustment
 * [__rap__][rap]: a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
 * [__breath__][breath]: a breath of fresh quiet
 
-### [KNITS][knits]
+### KNITS [⤵︎][knits]
 
 Manifold acoustic vibrations
 
@@ -90,7 +93,7 @@ Manifold acoustic vibrations
 * [__chord__][chord]: a [knit][knits] of three voices or more
 * [__braid__][braid]: a [chord][chord] of a particular voicing
 
-### [CUES][cues]
+### CUES [⤵︎][cues]
 
 Composer directives
 
@@ -109,12 +112,12 @@ Composer directives
   * [__trill__][trill]: a quick alternating between [sounds][sounds]
   * [__trem__][trem]: a rapid articulation of a [sound][sounds]
   * [__roll__][roll]: an arpeggiation of a [knit][knits]
-  * [__star__][star]: an accent or sudden ending of a [sound][sounds]
+  * [__strum__][strum]: a strum of a [knit][knits]
+  * [__strong__][strong]: an accent or sudden ending of a [sound][sounds]
   * [__harm__][harm]: the nth harmonic
-* [__drift__][drift]: microtonal adjustments
 * [__chant__][chant]: lyrics beneath the [voices][voice]
 
-### [SCHEMES][schemes]
+### SCHEMES [⤵︎][schemes]
 
 Toward a deeper understanding
 
@@ -157,10 +160,12 @@ Toward a deeper understanding
 [bar]: #bar
   [voice]: #voice
   [stack]: #stack
-  [rep]: #rep
-  [jump]: #jump
   [lap]: #lap
-[snip]: #snip
+  [jump]: #jump
+  [rep]: #rep
+[def]: #def
+[block]: #block
+[tweak]: #tweak
 
 [sounds]: #sounds
 
@@ -188,6 +193,7 @@ Toward a deeper understanding
 [tone]: #tone
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
+  [drift]: #drift
 [rap]: #rap
 [breath]: #breath
 
@@ -204,7 +210,6 @@ Toward a deeper understanding
 [tie]: #tie
 [comp]: #comp
   [vamp]: #vamp
-[tweak]: #tweak
 [art]: #art
   [smooth]: #smooth
   [ring]: #ring
@@ -216,9 +221,9 @@ Toward a deeper understanding
   [trill]: #trill
   [trem]: #trem
   [roll]: #roll
-  [star]: #star
+  [strum]: #strum
+  [strong]: #strong
   [harm]: #harm
-[drift]: #drift
 [chant]: #chant
 
 [schemes]: #schemes
@@ -324,7 +329,18 @@ A __word__ is connected sequence of [phones][phone] that can be spoken like the 
 
 ## Sign
 
-A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word] like the starting sequence `++*`.
+A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word].
+
+    —————————————————————————
+      SIGN    MEANING
+       ++*    start score
+       *++    end score
+       ++#    start track
+       #++    end track
+       +++    end stage
+       ++$    start code
+       $++    end code
+    —————————————————————————
 
 ***
 
@@ -336,7 +352,7 @@ __Frames__ are structural elements of a composition and how such elements connec
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    +++
+    ++#
     TRACK: Bourrée
     VOICES:
       f: fingers
@@ -382,7 +398,7 @@ A __score__ is an entire composition in Counternote. It is enclosed in `++*` and
 
 ## Stage
 
-A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The [score][score] __stage__ is between the `++*` and `+++` [signs][sign]. The [track][track] __stage__ is between `+++` [signs][sign].
+A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `++#` and `+++` [signs][sign].
 
 ### Scribe
 
@@ -498,11 +514,19 @@ A __jump__ is a directive on what part to play next. __Jumps__ are denoted by `%
 
 ### Rep
 
-A __rep__ is a directive to repeat some number of [clicks][click] previous. It is denoted by `%%` to repeat the previous __bar__ or `%%..` to repeat the previous `..`.
+A __rep__ is a directive to repeat some number of [clicks][click] or [bars][bar]. It is denoted by `%%` to repeat the previous __bar__, `%%2` to repeat the previous two [bars][bar], or `%%...` to repeat the previous duration of three `po` [clicks][click].
 
-## Snip
+## Def
+ 
+A __def__ is instruction on definitions for parts of a track. It is denoted with `#` at the beginning of a line, `#{` and `}` inline, and `++#` to `#++` for multiline instructions.
 
-A __snip__ contains the programmery bits. 
+## Block
+
+A __block__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and `++$` to `$++` for multiline code.
+
+## Tweak
+ 
+A __tweak__ is an instruction on effects that occur. It is denoted with `&` at the beginning of a line, `&{` and `}` inline, and `++&` to `&++` for multiline instructions.
 
 ***
 
@@ -886,6 +910,31 @@ The __tone rhyme__ is all but the [start][start], also known as the rhyming part
        -or    -5    ɔ˞    'or'
     —————————————————————————————
 
+### Drift
+
+A __drift__ is a microtonal adjustment. These can be adjusted inline or globally for the likes of just intonation. They are lowercase [spans][span] appended to [tones][tone]. The default values are as given:
+
+    ————————————
+      -q  +50¢
+      -i  +42¢
+      -e  +33¢
+      -o  +25¢
+      -u  +17¢
+      -r  +8¢
+      -a  ±0¢
+      -z  -8¢
+      -n  -17¢
+      -m  -25¢
+      -l  -33¢
+      -v  -42¢
+    ————————————
+
+`ma/daq` is a whole step and a quarter bend to D half-sharp. `maq` is an C half-sharp.
+
+The __drifts__ are not sticky, but [tones][tone] can be redefined to make them so. In such a case where `ma` was set to `mah`, `maa` would be the 12tet value unless `-a` itself were redefined to be different. To redefine a __drift__, simply set `-a` to the number of cents to offset, positive or negative: `$ -a = +2`
+
+Pronunciation follows that of the [knits][knits].
+
 ## Rap
 
 A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
@@ -998,7 +1047,7 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
         A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
-Sometimes we need to talk about the movement by some interval, and that is done with the following:
+Sometimes we need to talk about movement by some interval, in which case 
 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH
@@ -1028,29 +1077,29 @@ Sometimes we need to talk about the movement by some interval, and that is done 
        YU        2↑      ju     'yoo'
        YR       ♭2↑      jɚ     'yer'
        AA        1       ʔa     'ʔah'
-       WR       ♭2↓      wɚ     'wer'
-       WU        2↓      wu     'woo'
-       WO       ♭3↓      wo     'woh'
-       WE        3↓      wɛ     'weh'
-       WI        4↓      wi     'wee'
+       WZ       ♭2↓      wɚz    'werz'
+       WN        2↓      wun    'woo'
+       WM       ♭3↓      wom    'woh'
+       WL        3↓      wɛl    'weh'
+       WV        4↓      wiv    'wee'
        WQ      ♯4/♭5↓    wɑ˞    'war'
-       WV        5↓      wiv    'wee'
-       WL       ♭6↓      wɛl    'weh'
-       WM        6↓      wom    'woh'
-       WN       ♭7↓      wun    'woo'
-       WZ        7↓      wɚz    'wer'
+       WI        5↓      wi     'wee'
+       WE       ♭6↓      wɛ     'weh'
+       WO        6↓      wo     'woh'
+       WU       ♭7↓      wu     'woo'
+       WR        7↓      wɚ     'wer'
        WA        8↓      wa     'wah'
-       BR       ♭9↓      bɚ     'ber'
-       BU        9↓      bu     'boo'
-       BO      ♭10↓      bo     'boh'
-       BE       10↓      bɛ     'beh'
-       BI       11↓      bi     'bee'
+       BZ       ♭9↓      bɚz    'berz'
+       BN        9↓      bun    'boo'
+       BM      ♭10↓      bom    'boh'
+       BL       10↓      bɛl    'beh'
+       BV       11↓      biv    'bee'
        BQ    ♯11/♭12↓    bɑ˞    'bar'
-       BV       12↓      biv    'bee'
-       BL      ♭13↓      bɛl    'beh'
-       BM       13↓      bom    'boh'
-       BN      ♭14↓      bun    'boo'
-       BZ       14↓      bɚz    'ber'
+       BI       12↓      bi     'bee'
+       BE      ♭13↓      bɛ     'beh'
+       BO       13↓      bo     'boh'
+       BU      ♭14↓      bu     'boo'
+       BR       14↓      bɚ     'ber'
        BA       15↓      ba     'bah'
     ———————————————————————————————————
 
@@ -1102,7 +1151,7 @@ Here are the rules for pronouncing the __threads__:
 
 ## Chord
 
-A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing. Prefixing a [thread][thread] with [span][span] pronunciation yields a slash chord.
+A __chord__ is a [knit][knits] constructed using the capitalized [tone start][tone start] as the [root][root] and [threads][thread] for all other voices to convey a quality but not a specific voicing — how most people think of *chords*. Prefixing a [thread][thread] with [span][span] pronunciation yields a *slash chord*.
 
     ————————————————————————————————————————————————————————————
             NAME   CHORD                 IPA   TRANSLITERATION
@@ -1112,7 +1161,7 @@ A __chord__ is a [knit][knits] constructed using the capitalized [tone start][to
             Cm/G   vMov               viˈmov   vee-MOHV
              F♯7   Hevn              ˈhe.vən   HEH-vuhn
              D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
-      E♭13(♭5♯9)   Seqnoim       ˈseʔ.nuˌjim   SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌjim   SEHʔ-noh-YEEM
     ————————————————————————————————————————————————————————————
 
 ## Braid
@@ -1127,16 +1176,14 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
             Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
              F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
              D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
-      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.nuˌjim   sah-SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
 
-
-
-    ——————————————————————————————————————————————————————————————————————————————————
+    —————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
-    ——————————————————————————————————————————————————————————————————————————————————
+    —————————————————————————————————————————————————————————————————————————————
       NAME   TAB    THREADS   BRAID                   IPA   TRANSILITERATION
-    ——————————————————————————————————————————————————————————————————————————————————
+    —————————————————————————————————————————————————————————————————————————————
          E   022100   vaeva   joJvaeva   dʒoˈdʒə.vaˌje.va   joh-JUH-vah-YEH-vah
         Em   022000   vaova   joJvaova   dʒoˈdʒə.vaˌjo.va   joh-JUH-vah-YOH-vah
 
@@ -1159,8 +1206,9 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
        C/G   332010   aevae   naMaevae     naˈma.jəˌva.je   nah-MAH-yeh-VAH-yeh
 
          F   1x3211    aeva   loLaeva         loˈla.jeˌva   loh-LAH-yeh-VAH
-    ——————————————————————————————————————————————————————————————————————————————————
-*** 
+    —————————————————————————————————————————————————————————————————————————————
+
+***
 
 # Cues
 
@@ -1177,10 +1225,6 @@ A __comp__ is a minimally specified accompaniment and harmonic background writte
 ### Vamp
 
 A __vamp__ is a [comp][comp] that specifies rhythm and/or voicings.
-
-## Tweak
- 
-A __tweak__ is an instruction on effects that occur above the [voices][voice] they modify. They can be placed inline by being enclosed in `#{` and `}`.
 
 ## Art
 
@@ -1235,38 +1279,17 @@ __Trem__ is a directive for the rapid articulation of a sustained [sound][sounds
 
 __Roll__ is a directive to arpeggiate a [knit][knits]. It is denoted by `&` preceding the [knit][knits] for ascending arpeggiations and after for descending ones.
 
-### Star
+### Strum
 
-__Star__ is a directive to accent and/or suddenly end a [sound][sounds] denoted by `*`. It is written directly before the [note][notes] it modifies `*ma.` for accents, directly after the the note for staccato `ma*.`, or even directly after a [click][click] for that abrupt ending `ma.*`.
+__Strum__ is a directive to strum a [knit][knits]. It is denoted by `$` preceding the [knit][knits] for up-strums and after for down-strums.
+
+### Strong
+
+__Strong__ is a directive to accent and/or suddenly end a [sound][sounds] denoted by `*`. It is written directly before the [note][notes] it modifies for accents, `*ma.`, directly after the the note for staccato, `ma*.`, or even directly after a [click][click] for that abrupt ending `ma.*`.
 
 ### Harm
 
 __Harm__ is a directive to play the nth harmonic. It is denoted by `*` followed by the number for said nth harmonic: `lo*3` is for performing the third harmonic. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
-
-## Drift
-
-__Drift__ is a directive for microtonal adjustment. These can be adjusted inline or globally for the likes of just intonation. They are [spans][span] appended to [tones][tone] with a `*`. The default values are as given:
-
-    ————————————
-      *q  +50¢
-      *i  +42¢
-      *e  +33¢
-      *o  +25¢
-      *u  +17¢
-      *r  +8¢
-      *a  ±0¢
-      *z  -8¢
-      *n  -17¢
-      *m  -25¢
-      *l  -33¢
-      *v  -42¢
-    ————————————
-
-`ma/da*q` is a whole step and a quarter bend to D half-sharp. `ma*q` is an C half-sharp.
-
-The __drifts__ are not sticky, but [tones][tone] can be redefined to make them so. In such a case where `ma` was set to `ma*h`, `ma*a` would be the 12tet value unless `*a` itself were redefined to be different.
-
-Like with [braids][braid], there are rules for consecutive vowels, so [blends][blend] get a [j] to break up the vowels while [moods][mood] and [rubs][rub] get a [w].
 
 ## Chant
 
