@@ -28,7 +28,7 @@ Structural elements
 
 * [__score__][score]: an entire composition
 * [__stage__][stage]: a place for compositional and instrumental details
-  * [__scribe__][scribe]: a composer of the [score][score] or [track][track]
+  * [__writer__][writer]: a composer of the [score][score] or [track][track]
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
@@ -149,7 +149,7 @@ Toward a deeper understanding
 
 [score]: #score
 [stage]: #stage
-  [scribe]: #scribe
+  [writer]: #writer
   [work]: #work
   [act]: #act
 [track]: #track
@@ -351,7 +351,7 @@ __Frames__ are structural elements of a composition and how such elements connec
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
-    SCRIBE: Bach
+    WRITER: Bach
     ++#
     TRACK: Bourrée
     VOICES:
@@ -359,7 +359,7 @@ __Frames__ are structural elements of a composition and how such elements connec
       t: thumb
     FORM: AABB
     +++
-    @JOV |4.| @allegretto
+    @JA @XOV |4.| @allegretto
 
     A
       0
@@ -400,9 +400,9 @@ A __score__ is an entire composition in Counternote. It is enclosed in `++*` and
 
 A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `++#` and `+++` [signs][sign].
 
-### Scribe
+### Writer
 
-A __scribe__ is a composer of a [score][score] or [track][track].
+A __writer__ is a composer of a [score][score] or [track][track].
 
 ### Work
 
@@ -418,11 +418,11 @@ A __track__ is an individual piece that may or may not occur simultaneously with
 
 ### Key
 
-A __key__ is the tonic of a track. It is denoted by a capitalized [tone][tone] and defaults to `MA`.
+A __key__ is the tonic of a track. It is denoted by `@` followed by the capitalized [tone][tone] which defaults to `MA`.
 
 ### Mode
 
-A __mode__ is the home scale for a [track][track] denoted by the abstract [root][root] `X` followed by its representative [chord][chord] quality in all caps:
+A __mode__ is the home scale for a [track][track] denoted by `@` followed by the abstract [root][root] `X` and by its representative [chord][chord] quality in all caps:
 
     —————————————————————————
       WORD    TONALITY
@@ -436,18 +436,18 @@ A __mode__ is the home scale for a [track][track] denoted by the abstract [root]
       XOQ     Locrian
     —————————————————————————
 
-The __key__ and __mode__ can be set simultaneously using a capitalized [tone start][tone start] instead of `X`:
+For transposing instruments like saxophones or a baritone guitar, the __mode__ is set using a capitalized [tone start][tone start] relative to the instrument’s key instead of `X`:
 
     —————————————————————————
       WORD    TONALITY
     —————————————————————————
-      MQV     Lydian
-      MEV     Major/Ionian
-      MEVN    Mixolydian
-      MOVM    Dorian
-      MOV     Minor/Aeolian
-      MRV     Phrygian
-      MOQ     Locrian
+      LQV     Lydian
+      LEV     Major/Ionian
+      LEVN    Mixolydian
+      LOVM    Dorian
+      LOV     Minor/Aeolian
+      LRV     Phrygian
+      LOQ     Locrian
     —————————————————————————
 
 ### Form
@@ -730,7 +730,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
-    SCRIBE: Bach
+    WRITER: Bach
     +++
     TRACK: Bourrée
     VOICES:
@@ -738,7 +738,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
       t: thumb
     FORM: AABB
     +++
-    #JOV |4.| @allegretto
+    @JA @XOV |4.| @allegretto
 
     A
       0
@@ -1384,18 +1384,18 @@ A [rub][rub] is a dissonant [vibe][vibe] that clashes with the root: `-r`, `-q`,
 A [tap][tap] is a way of vocalizing the [groove][groove] as [words][word] designed to be understandable by lipreading alone. The classic Greek rhythms are as follows:
 
     ——————————————————————————————————————————
-      |!.|  (trochee)     PO-ge       poge
-      |.!|  (iamb)        be-KO       beko
-      |!..| (dactyl)      PO-ge-de    pogede
-      |.!.| (amphibrach)  be-KO-de    bekode
-      |..!| (anapest)     be-ge-TO    begeto
-      |!!|  (spondee)     PO-KO       poko
-      |..|  (pyrrhic)     be-ge       bege
+      |!.|  (trochee)     PO-de       pode
+      |.!|  (iamb)        be-TO       beto
+      |!..| (dactyl)      PO-de-ge    podege
+      |.!.| (amphibrach)  be-TO-ge    betoge
+      |..!| (anapest)     be-de-KO    bedeko
+      |!!|  (spondee)     PO-TO       poto
+      |..|  (pyrrhic)     be-de       bede
     ————————————————————————————————————————
 
 The rules for generating these [taps][tap] are rather simple:
 * The first [beat][beats] is a bilabial consonant `p` `b`
-* The even [beats][beats] (off [beats][beats]) are velar consonants `k` `g`
+* The rest of the odd [beats][beats] are velar consonants `k` `g`
 * The rest of the [beats][beats] are alveolar consonants `t` `d`
 * The accent is a voiceless consonant `p` `t` `k` paired with mid rounded `o`
 * The lax syllables are voiced consonants `b` `d` `g` paired mid unrounded `e`
@@ -1405,26 +1405,26 @@ The lips will be rounded on the accent and will close at the beginning of the se
 For typical four-on-the-floor rhythms, we split them into two-syllable [words][word]:
 
     ————————————————————————————————
-      |4.|  PO-ge de-ge  poge dege
-      |4.|  be-KO de-ge  beko dege
-      |4.|  be-ge TO-ge  bege toge
-      |4.|  be-ge de-KO  bege deko
+      |4.|  PO-de ge-de  pode gede
+      |4.|  be-TO ge-de  beto gede
+      |4.|  be-de KO-de  bede kode
+      |4.|  be-de ge-TO  bede geto
     ————————————————————————————————
 
 Now we can break these up into eigth notes using the `i` for unaccented even eights and `u` for the accented ones:
 
     ——————————————————————————————————————————————————————
-      |8,|  PO-ni ge-ni de-ni ge-ni  poni geni deni geni
-      |8,|  be-NU ge-ni de-ni ge-ni  benu geni deni geni
+      |8,|  PO-ni de-ni ge-ni de-ni  poni deni geni deni
+      |8,|  be-NU de-ni ge-ni de-ni  benu deni geni deni
     ——————————————————————————————————————————————————————
 
 And even further into sixteenth notes using the `a` for the unaccented even sixteenths and `o` for the accented ones:
 
     ———————————————————————————————————————————————————————————————————————————————
-      |16:|  PO-a-ni-a ge-a-ni-a de-a-ni-a ge-a-ni-a  poania geania deania geania
-      |16:|  be-O-ni-a ge-a-ni-a de-a-ni-a ge-a-ni-a  beonia geania deania geania
-      |16:|  be-a-NU-a ge-a-ni-a de-a-ni-a ge-a-ni-a  beanua geania deania geania
-      |16:|  be-a-ni-O ge-a-ni-a de-a-ni-a ge-a-ni-a  beanio geania deania geania
+      |16:|  PO-a-ni-a de-a-ni-a ge-a-ni-a de-a-ni-a  poania deania geania deania
+      |16:|  be-O-ni-a de-a-ni-a ge-a-ni-a de-a-ni-a  beonia deania geania deania
+      |16:|  be-a-NU-a de-a-ni-a ge-a-ni-a de-a-ni-a  beanua deania geania deania
+      |16:|  be-a-ni-O de-a-ni-a ge-a-ni-a de-a-ni-a  beanio deania geania deania
     ———————————————————————————————————————————————————————————————————————————————
 
 For complex meter, we break things up into two- and three-syllable [taps][tap]:
