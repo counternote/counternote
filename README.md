@@ -352,8 +352,8 @@ Here are the rules for pronouncing the *threads*:
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the [knit start][knit start] is an octave, otherwise it is silent.
-+ If more than an octave is skipped, a silent `x` is inserted for each missing octave.
++ An `x` immediately after the [knit start][knit start] is an octave.
++ If more than an octave is skipped between two [threads][thread], an `h` is inserted for each missing octave.
 + The [glyph][glyph] `r` is always a rhoticized mid vowel.
 + The [glyph][glyph] `q` is always a glottal stop.
 
@@ -369,7 +369,7 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
             Cm/G   vMov               viˈmov   vee-MOHV
              F♯7   Hevn              ˈhe.vən   HEH-vuhn
              D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
-      E♭13(♭5♯9)   Seqnoim       ˈseʔ.nuˌjim   SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌjim   SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
             NAME   BRAID                 IPA   TRANSILITERATION
     ——————————————————————————————————————————————————————————————
@@ -378,7 +378,7 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
             Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
              F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
              D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
-      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.nuˌjim   sah-SEHʔ-noo-YEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
 
 
