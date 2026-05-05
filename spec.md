@@ -1047,7 +1047,7 @@ A __span__ is an interval. It consists of a single letter capitalized when speak
         A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
-Sometimes we need to talk about movement by some interval, in which case 
+Sometimes we need to talk about movement by some interval, in which case `Y` or `F` are prefixed to the uppercase __span__ for ascending movement, and `W` or `B` are prefixed for descending movement.
 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH
@@ -1105,7 +1105,7 @@ Sometimes we need to talk about movement by some interval, in which case
 
 ## Strand
 
-A __strand__ is a two-voice harmony created by combining a [tone][tone] with a lowercase [span][span]. The [span][span] then in the interval from the [tone][tone]. A perfect fifth ascending from `ma` is `mayv` 'mah-YEEV' whereas a perfect fifth descending is `mawi` 'MAH-wee'. A __strand__ is only every two voices.
+A __strand__ is a two-voice harmony created by combining a [tone][tone] with a lowercase, two-character [span][span] representing the interval from the [tone][tone]. A perfect fifth ascending from `ma` is `mayv` 'mah-YEEV' whereas a perfect fifth descending is `mawi` 'MAH-wee'. A __strand__ is only every two voices.
 
 ## Knit Root
 
@@ -1170,10 +1170,10 @@ A __chord__ is a [knit][knits] constructed using the capitalized [tone start][to
 
 ## Braid
 
-A __braid__ is a specific voicing of a [chord][chord]. These get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the lowest sounding [tone][tone] is prefixed to the [chord][chord]. Second, every [voice][voice] above the prefix gets a [thread][thread]. Third, if more than an entire octave is skipped, the [glyph][glyph] `x` is inserted for each octave+ skipped.
+A __braid__ is a specific voicing of a [chord][chord]. These can get much more complicated looking, but they follow the same rules with three added details. First, no octave is specified, so the lowest sounding [tone][tone] is prefixed to the [chord][chord]. Second, every [voice][voice] above the prefix gets a [thread][thread]. Third, if more than an entire octave is skipped, the [glyph][glyph] `x` is inserted for each octave+ skipped.
 
     ——————————————————————————————————————————————————————————————
-            NAME   BRAID                 IPA   TRANSILITERATION
+            NAME   BRAID                 IPA   TRANSLITERATION
     ——————————————————————————————————————————————————————————————
                A   zaZvaev      zaˈzə.vaˌjev   zah-ZUH-vah-YEHV
               B5   gaGv               gaˈgəv   gah-GUHV
@@ -1183,12 +1183,12 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
       E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
 
-Note that `gaGv` is identical to `gayv`, but they do convey different things — `gayv` means the interval as a stop, `gaGv` is the powerchord. The root-fifth-octave voicing of a powerchord can never be achieved using [strands][strand].
+Note that the __braid__ `gaGv` is identical to the [strand][strand] `gayv`, but they do convey different things — `gaGv` is the powerchord; `gayv` means the interval as a stop. The root-fifth-octave voicing of a powerchord can never be achieved using [strands][strand].
 
     —————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
     —————————————————————————————————————————————————————————————————————————————
-      NAME   TAB    THREADS   BRAID                   IPA   TRANSILITERATION
+      NAME   TAB    THREADS   BRAID                   IPA   TRANSLITERATION
     —————————————————————————————————————————————————————————————————————————————
          E   022100   vaeva   joJvaeva   dʒoˈdʒə.vaˌje.va   joh-JUH-vah-YEH-vah
         Em   022000   vaova   joJvaova   dʒoˈdʒə.vaˌjo.va   joh-JUH-vah-YOH-vah
