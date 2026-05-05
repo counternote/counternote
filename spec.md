@@ -452,7 +452,7 @@ For transposing instruments like saxophones or a baritone guitar, the __mode__ i
 
 ### Form
 
-A __form__ is arrangement of [rounds][round] that make up a [track][track] like AABA.
+A __form__ is an arrangement of [rounds][round] that make up a [track][track] like AABA.
 
 ## Round
 
@@ -492,7 +492,7 @@ A __voice__ can be extended to another line using `+` at the end of the next to 
         + ma; ma; ma; ma; ma; ma; ma; ma; |
     —————————————————————————————————————————
 
-Inline harmonies such as [strands][strand] and [chords][chord] are multiple __voices__ even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
+Inline harmonies, [strands][strand] and [braids][braid], are multiple __voices__ even if performed by the same instrument and notated on the same line. Harmonies can alternatively be notated by a [stack][stack]. 
 
 ### Stack
 
@@ -1103,9 +1103,13 @@ Sometimes we need to talk about movement by some interval, in which case
        BA       15↓      ba     'bah'
     ———————————————————————————————————
 
+## Strand
+
+A __strand__ is a two-voice harmony created by combining a [tone][tone] with a lowercase [span][span]. The [span][span] then in the interval from the [tone][tone]. A perfect fifth ascending from `ma` is `mayv` 'mah-YEEV' whereas a perfect fifth descending is `mawi` 'MAH-wee'. A __strand__ is only every two voices.
+
 ## Knit Root
 
-All __knits__ have a capitalized [tone start][tone start] to signify the [root][root].
+All __knits__ other than [strands][strand] have a capitalized [tone start][tone start] to signify the [root][root].
 
     —————————————————
       START  OFFSET  
@@ -1178,6 +1182,8 @@ A __braid__ is a specific voicing of a [chord][chord]. These get much more compl
              D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
       E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
     ——————————————————————————————————————————————————————————————
+
+Note that `gaGv` is identical to `gayv`, but they do convey different things — `gayv` means the interval as a stop, `gaGv` is the powerchord. The root-fifth-octave voicing of a powerchord can never be achieved using [strands][strand].
 
     —————————————————————————————————————————————————————————————————————————————
       COMMON GUITAR VOICINGS
