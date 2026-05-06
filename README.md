@@ -230,14 +230,14 @@ Plus two others, immediate and indeterminate:
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
-## Grooves and Pulses and Snaps
+## Grooves and Pulses and Taps
 
 *Grooves* tell the duration of a bar. They are written between `|` characters with the number of *clicks* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
 Here are four rather boring bars of Counternote:
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         | ma=                             |
       2
@@ -252,14 +252,14 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 *Pulses* tell the tempo of a piece. They are written after a `@`, like `@80` being 80bpm.
 
-*Snaps* refer to the *click* in the *groove* that feels the *pulse*, like what you might snap your fingers to.
+*Taps* refer to the *click* in the *groove* that feels the *pulse*, like what you might tap your foot to.
 
 ## Cuts
 
 In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         | ma=                                 |
       2 # duplets
@@ -277,7 +277,7 @@ In Counternote, *cuts* are groups of notes that slice some duration into equal p
 Notice how duplets can be used to simplify the bar:
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1 # like eight notes
         | ma, ma, ma, ma, ma, ma, ma, ma, |
       2 # like quarter note duplets
@@ -287,14 +287,14 @@ Notice how duplets can be used to simplify the bar:
 That is easier for the eye to parse and, as mentioned before, can save on horizontal space:
 
     —————————————————————————————————
-      # |4.|
+      @ |4.|
       1 # space saving
         | ma.ma ma.ma ma.ma ma.ma |
     —————————————————————————————————
 
 Though should it have saved that space?
 
-# Stacks, Spans, and Knits
+# Stacks, Spans, Strands, and Knits
 
 That’s nice and all for monophonic instruments, but what about things like the piano and guitar? There are a few ways of dealing with many voices. One is by using *stacks* — multiple lines of notes in the same *bar*.
 
@@ -318,17 +318,17 @@ A four-part harmony might be written:
 
 But what about double stops and chords and voicings where you might not need or want to dedicate vertical space?
 
-For that, we’ll learn about *knits*, but to do so we have to introduce intervals called *spans*:
+For that, we’ll learn about *knits* and *strands*, but to do so we have to introduce intervals called *spans*:
 
     ——————————————————————————————————
       SPAN   INTERVAL  IPA   ENGLISH
     ——————————————————————————————————
-        X       8       ʃa   'shah'
-        Z       7       zɚ    'zer'
-        N      ♭7       nu    'noo'
-        M       6       mo    'moh'
-        L      ♭6       lɛ    'leh'
-        V       5       vi    'vee'
+        X       8       aʃ   'ahsh'
+        Z       7       ɚz    'erz'
+        N      ♭7       un    'oon'
+        M       6       om    'ohm'
+        L      ♭6       ɛl    'ehl'
+        V       5       iv    'eev'
         Q     ♯4/♭5     ʔɑ˞   'ʔar'
         I       4       ʔi    'ʔee'
         E       3       ʔɛ    'ʔeh'
@@ -338,7 +338,28 @@ For that, we’ll learn about *knits*, but to do so we have to introduce interva
         A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
-Notice that the pronunciation of each isn’t the name of the letter. They are uppercase when speaking about the interval, but when lowercase, they become *threads*, individual voices within a *knit*.
+Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the span. These single uppercase letters represent the interval in abstract terms, but sometimes you want to talk about a fifth above or a fifth below. For that, we prefix it with `Y-` for up to an octave above, `F-` for more than an octave above to two, `W-` for down to an octave below, `B-` for more than an octave below to two, and unison gets doubled `AA`. These create *strand spans*.
+
+They are uppercase when speaking of the interval in abstract terms, but when lowercase, we can attach them to a tone for a double stop called a *strand*. Here is the suffix for unison to an octave above:
+
+    ————————————————————————————————————
+      SPAN   INTERVAL   IPA    ENGLISH
+    ————————————————————————————————————
+      -ya       8↑      ja     'yah'
+      -yz       7↑      jɚz    'yerz'
+      -yn      ♭7↑      jun    'yoon'
+      -ym       6↑      jom    'yohm'
+      -yl      ♭6↑      jɛl    'yelh'
+      -yv       5↑      jiv    'yeev'
+      -yq     ♯4/♭5↑    jɑ˞    'yar'
+      -yi       4↑      ji     'yee'
+      -ye       3↑      jɛ     'yeh'
+      -yo      ♭3↑      jo     'yoh'
+      -yu       2↑      ju     'yoo'
+      -yr      ♭2↑      jɚ     'yer'
+      -aa       1       ʔa     'ʔah'
+
+Just like *strand spans* became lowercase, the single-letter *spans* become lowercase to make *threads*, individual voices within a *knit*.
 
     ———————————————————————————————————————————————————————
       LOWERCASE for THREADS
@@ -396,7 +417,7 @@ There are obviously other details to go over, but it’s time to see some real m
       f: fingers
       t: thumb 
     +++
-    @JOV |4.| @allegretto
+    @ JA XOV |4.| allegretto
 
     A
       0
