@@ -22,7 +22,7 @@ Foundational elements
 * [__word__][word]: a connected sequence of [phones][phone]
 * [__sign__][sign]: a connected sequence of [glyphs][glyph] that do not make a [word][word]
 
-### FRAMES [⤵︎][frames]
+### BLOCKS [⤵︎][blocks]
 
 Structural elements
 
@@ -43,7 +43,7 @@ Structural elements
   * [__jump__][jump]: a directive on what to play next
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
 * [__def__][def]: definitions
-* [__block__][block]: a block or snippet of code
+* [__script__][script]: a block or snippet of code
 * [__tweak__][tweak]: instruction on effects
 
 ### SOUNDS [⤵︎][sounds]
@@ -66,7 +66,7 @@ Rhythmic elements
   * [__shift__][shift]: a section of polymeter
   * [__rift__][rift]: a section of polyrhythm
 * [__pulse__][pulse]: the tempo
-* [__snap__][snap]: the beat that feels the pulse
+* [__tap__][tap]: the beat that feels the pulse
 * [__cut__][cut]: a tuplet
   * [__short cut__][short cut]: a quick [cut][cut] notation
   * [__long cut__][long cut]: a robust [cut][cut] notation
@@ -131,7 +131,7 @@ Toward a deeper understanding
   * [__blend__][blend]: a consonant [vibe][vibe]
   * [__mood__][mood]: a major/minor [vibe][vibe]
   * [__rub__][rub]: a dissonant [vibe][vibe]
-* [__tap__][tap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
+* [__yap__][yap]: a system for vocalizing rhythms and [grooves][groove] as [words][word]
 
 [gloss]: #gloss
 
@@ -145,7 +145,7 @@ Toward a deeper understanding
 [word]: #word
 [sign]: #sign
 
-[frames]: #frames
+[blocks]: #blocks
 
 [score]: #score
 [stage]: #stage
@@ -164,7 +164,7 @@ Toward a deeper understanding
   [jump]: #jump
   [rep]: #rep
 [def]: #def
-[block]: #block
+[script]: #script
 [tweak]: #tweak
 
 [sounds]: #sounds
@@ -183,7 +183,7 @@ Toward a deeper understanding
   [shift]: #shift
   [rift]: #rift
 [pulse]: #pulse
-[snap]: #snap
+[tap]: #tap
 [cut]: #cut
   [short cut]: #short-cut
   [long cut]: #long-cut
@@ -238,7 +238,7 @@ Toward a deeper understanding
   [blend]: #blend
   [mood]: #mood
   [rub]: #rub
-[tap]: #tap
+[yap]: #yap
 
 ***
 
@@ -344,9 +344,9 @@ A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word].
 
 ***
 
-# Frames
+# Blocks
 
-__Frames__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
+__Blocks__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
     ++*
     SCORE: Lute Suite in E Minor
@@ -359,7 +359,7 @@ __Frames__ are structural elements of a composition and how such elements connec
       t: thumb
     FORM: AABB
     +++
-    @JA @XOV |4.| @allegretto
+    @ JA XOV |4.| allegretto
 
     A
       0
@@ -467,7 +467,7 @@ A __bar__ contains all of the details of what to play when and how to play it ma
 A __voice__ is akin to a sequence of music performed by a monophonic instrument such as a human *voice* enclosed in `|`:
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         | ma=                             |
       2
@@ -481,7 +481,7 @@ A __voice__ is akin to a sequence of music performed by a monophonic instrument 
 A __voice__ can be extended to another line using `+` at the end of the next to last lines and at the start of the next lines:
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       5
         | ma: ma: ma: ma: ma: ma: ma: ma: +
         + ma: ma: ma: ma: ma: ma: ma: ma: |
@@ -520,9 +520,9 @@ A __rep__ is a directive to repeat some number of [clicks][click] or [bars][bar]
  
 A __def__ is instruction on definitions for parts of a track. It is denoted with `#` at the beginning of a line, `#{` and `}` inline, and `++#` to `#++` for multiline instructions.
 
-## Block
+## Script
 
-A __block__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and `++$` to `$++` for multiline code.
+A __script__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and `++$` to `$++` for multiline code.
 
 ## Tweak
  
@@ -593,7 +593,7 @@ Plus two others, immediate and indeterminate:
 A __groove__ tells the arrangement of [beats][beats] in a [bar][bar]. It is notated `|4.|` with the number of [clicks][click] summing to the total length of a [bar][bar].
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         | ma=                             |
       2
@@ -619,7 +619,7 @@ A __groove__ tells the arrangement of [beats][beats] in a [bar][bar]. It is nota
 A __shift__ is a section of polymeter with one __groove__ superimposed over another at the same [pulse][pulse] so the first beat shifts around because the lengths of the bars are different. It is notated `|3./2.|` *three over two* with the number of [clicks][click] in the [bar][bar] measured by the first __groove__:
 
     ———————————————————————————
-      # |3./2.|
+      @ |3./2.|
       1
         # three over two
         | ma.   ma.   ma.   |
@@ -628,7 +628,7 @@ A __shift__ is a section of polymeter with one __groove__ superimposed over anot
 Like with __grooves__, the [shift][shift] can be notated within the [voice][voice]:
 
     ————————————————————————————————
-      # |2.|
+      @ |2.|
       1
         # three over two
         |3./2. ma.   ma.   ma.   |
@@ -639,7 +639,7 @@ Like with __grooves__, the [shift][shift] can be notated within the [voice][voic
 A __rift__ is a section of polyrhythm with one __groove__ mashed against another at different [pulses][pulse] so the first beat and total [bar][bar] length stays the same but the __grooves__ go in and out of phase. It is notated `|3.\2.|` *three against two* with the total length of the [bar][bar] measured by the second __groove__:
 
     ———————————————————————————
-      # |3.\2.|
+      @ |3.\2.|
       1
         # three against two
         | ma.   ma.   ma.   |
@@ -648,7 +648,7 @@ A __rift__ is a section of polyrhythm with one __groove__ mashed against another
 Like with __grooves__, the [rift][rift] can be notated within the [voice][voice]:
 
     ————————————————————————————————
-      # |2.|
+      @ |2.|
       1
         # three against two
         |3.\2. ma.   ma.   ma.   |
@@ -658,9 +658,9 @@ Like with __grooves__, the [rift][rift] can be notated within the [voice][voice]
 
 A __pulse__ gives the tempo. It is denoted by an `@` symbol followed by an exact bpm, a range of bpms, or a tempo descriptor. 
 
-## Snap
+## Tap
 
-A __snap__ refers to the [click][click] that gets counted: In `|4.|`, `.` is one __snap__.
+A __tap__ refers to the [click][click] that gets counted: In `|4.|`, `.` is one __tap__.
 
 ## Cut
 
@@ -682,7 +682,7 @@ A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It
 Those rules add up to:
 
     —————————————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         # one beat for =
         | ma=                             |
@@ -738,7 +738,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
       t: thumb
     FORM: AABB
     +++
-    @JA @XOV |4.| @allegretto
+    @ JA XOV |4.| allegretto
 
     A
       0
@@ -776,7 +776,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
 A __long cut__ uses square brackets with `'` between [sounds][sounds] and [clicks][click] at the end to slice up the [bar][bar].
 
     —————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         # one beat for =
         | ma=                     |
@@ -808,7 +808,7 @@ __Long cuts__ work in two places where __short cuts__ cannot: nested tuplets and
 To nest a __cut__, just place a __Long cuts__ where a single sound would go:
 
     —————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         # triplet in triplet
         |[ma'ma'[ma'ma'ma]]=      |
@@ -818,7 +818,7 @@ To nest a __cut__, just place a __Long cuts__ where a single sound would go:
 If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `__` are used: 
 
     —————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         # triplet in triplet
         |[ma'[ma'ma'ma]+__]=       |
@@ -828,7 +828,7 @@ If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie
 Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `__` are used in this case as well:
 
     —————————————————————————————————
-      # |4.|
+      @ |4.|
       1
         # triplet over...
         |[ma'ma'ma]=+=            |
@@ -867,7 +867,7 @@ A lowercase __tone__ is akin to a *scale degree* or *movable-do*, a note relativ
 
 ### Tone Start
 
-The __tone start__ will always be a consonant represented by a single [glyph][glyph]. Their pitch will always be relative to the current [key][key] written here as a semitone or [notch][notch] offset
+The __tone start__ will always be a consonant represented by a single [glyph][glyph]. Their pitch will always be relative to the current [key][key] written here with a [notch][notch] offset.
 
     ———————————————————————————————
       START  OFFSET  IPA  ENGLISH
@@ -890,7 +890,7 @@ The __tone start__ will always be a consonant represented by a single [glyph][gl
 
 ### Tone Rhyme
 
-The __tone rhyme__ is all but the [start][start], also known as the rhyming part (linguistic coda). It represents the [file][file] of the __tone__.
+The __tone rhyme__ is all but the [start][start], also known as the linguistic code or rhyming part. It represents the [file][file] of the __tone__.
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -1385,9 +1385,9 @@ A [mood][mood] is a [vibe][vibe] that gives a major or minor quality: `-o`, `-e`
 
 A [rub][rub] is a dissonant [vibe][vibe] that clashes with the root: `-r`, `-q`, `-z`. They are all the rhoticized vowels, some paired with consonants.
 
-## Tap
+## Yap
 
-A [tap][tap] is a way of vocalizing the [groove][groove] as [words][word] designed to be understandable by lipreading alone. The classic Greek rhythms are as follows:
+A [yap][yap] is a way of vocalizing the [groove][groove] as [words][word] designed to be understandable by lipreading alone. The classic Greek rhythms are as follows:
 
     ——————————————————————————————————————————
       |!.|  (trochee)     PO-de       pode
@@ -1399,7 +1399,7 @@ A [tap][tap] is a way of vocalizing the [groove][groove] as [words][word] design
       |..|  (pyrrhic)     be-de       bede
     ————————————————————————————————————————
 
-The rules for generating these [taps][tap] are rather simple:
+The rules for generating these __yaps__ are rather simple:
 * The first [beat][beats] is a bilabial consonant `p` `b`
 * The rest of the odd [beats][beats] are velar consonants `k` `g`
 * The rest of the [beats][beats] are alveolar consonants `t` `d`
@@ -1433,75 +1433,8 @@ And even further into sixteenth notes using the `a` for the unaccented even sixt
       |16:|  be-a-ni-O de-a-ni-a ge-a-ni-a de-a-ni-a  beanio deania geania deania
     ———————————————————————————————————————————————————————————————————————————————
 
-For complex meter, we break things up into two- and three-syllable [taps][tap]:
+For complex meter, we break things up into two- and three-syllable __yaps__:
 
     ————————————————————————————————————————————————————————————————————
       |3,3,2,2| PO-de-ge TO-ge-de KO-de KO-de  podege togede kode kode
     ————————————————————————————————————————————————————————————————————
-
-
-<!--
-
-    A
-      0
-        f|                   0e.2e |
-        t|                   3o.2o |
-      1
-        f| 3e.   2e.0e Le.   0e.2e |
-        t| 0o.   5o.   7a.   5o.   |
-      2
-        f| 7e.   9e.Le 0e.   Xe.8e |
-        t| 3o.   2o.   0o.   2o.   |
-      3
-        f| 7e.   5a.3a 2a.   3a.5a |
-        t| 3o.   5o.   7a.   5o.   |
-      4
-        f| 7e.5a 3a.2a 0a.   0e.2e |
-        t| 3o.   7a.   0o.2o 3o.2o |
-      5
-        f| 3e.   2e.0e Le.   0e.2e |
-        t| 0o.   5o.   7a.   5o.   |
-      6
-        f| 7e.   9e.Le 0e.   Xe.8e |
-        t| 3o.   2o.   0o.   2o.   |
-      7
-        f| 7e.   5e.3e 2e^^3.  ,3e,|
-        t| 3o.   8a.   Xa.   Xa.   |
-      8
-        f| hh-         .     %A %B |
-        t| &3o3eva-    .     %A %B |
-
-    *++
-
-    A
-      0
-        f| -               .       0e, 2e,|
-        t| -               .       3o, 2o,|
-      1
-        f| 3e.     2e, 0e, Le.     0e. 2e |
-        t| 0o.     5o.     7a.     5o.    |
-      2
-        f| 7e.     9e, Le, 0e.     Xe, 8e,|
-        t| 3o.     2o.     0o.     2o.    |
-      3
-        f| 7e.     5a, 3a, 2a.     3a, 5a,|
-        t| 3o.     5o.     7a.     5o.    |
-      4
-        f| 7e. 5a  3a, 2a, 0a.     0e, 2e,|
-        t| 3o.     7a.     0o, 2o, 3o, 2o,|
-      5
-        f| 3e.     2e, 0e, Le.     0e, 2e,|
-        t| 0o.     5o.     7a.     5o.    |
-      6
-        f| 7e.     9e, Le, 0e.     Xe, 8e,|
-        t| 3o.     2o.     0o.     2o.    |
-      7
-        f| 7e.     5e, 3e, 2e^^3.  ,   3e,|
-        t| 3o.     8a.     Xa.     Xa.    |
-      8
-        f| hh-             .       %A %B  |
-        t| &3o3eva-       =  .       %A %B  |
-
-    *++
-
-  -->
