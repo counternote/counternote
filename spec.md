@@ -973,10 +973,10 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `kk` kick drum
       `bm` large bass drum
       `bn` small bass drum
-      `dm` floor tom
-      `dn` low tom
-      `km` mid tom
-      `kn` high tom
+      `pm` floor tom
+      `pn` low tom
+      `tm` mid tom
+      `tn` high tom
       `tx` opening hi-hat
       `ts` open hi-hat
       `xt` closing hi-hat
@@ -986,15 +986,29 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `xp` crash mute
       `cs` ride
       `sp` ride mute
+      `km` conga bass
+      `kn` conga open tone
+      `kx` conga muff
+      `kd` conga open slap
+      `kg` conga closed slap
+      `kp` conga tip
+      `gn` low bongo tone
+      `gx` low bongo muff
+      `gd` low bongo slap
+      `dn` high bongo tone
+      `dx` high bongo muff
+      `dd` high bongo slap
+      `jm` djembe bass
+      `jn` djembe tone
+      `jd` djembe slap
       `xk` shook
-      `kp` clap
-      `td` bright clave
-      `dd` dark clave
+      `cl` clap
+      `td` clave
     ————————————————————————
       GUITAR
       `rk` rake
       `dt` deep tap
-      `tt` light tap
+      `lt` light tap
       `dk` dark tick
       `tk` bright tick
       `hd` handmute
@@ -1008,7 +1022,7 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `ck` crickets
       `cp` chirp, cheep
       `lc` the licc
-      `lh` laugh track
+      `lf` laugh track
     ————————————————————————
 
 Simultaneous sounding __raps__ are placed together using `'`
