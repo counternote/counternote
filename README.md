@@ -10,7 +10,7 @@ Counternote is a chromatic musical language meant to be typed and sung. It is a 
 
 Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, which I take to mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
 
-However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music —> staff —> ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music —> Counternote).
+However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music → staff → ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music → Counternote).
 
 Counternote has been created as a complementary foil to the venerable staff notation, not a replacement. Even the most seasoned of musicians is likely to gain another perspective on music by learning it.
 
@@ -134,7 +134,7 @@ Raps are just a list of mostly user-defined sounds. There are two basic rules fo
 * they cannot overlap with tones or reserved raps
 * they should sound like what they stand for
 
-These are some proposed raps, only the first three of which cannot be defined on a piece by piece basis:
+These are some proposed raps, only the first two of which cannot be defined on a piece by piece basis:
 
     ————————————————————————
       RESERVED
@@ -206,7 +206,7 @@ Notes in Counternote refer specifically to *sounds* held for some duration. That
 
 Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the tie `__` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
 
-The six *clicks* ordered by powers of two with suggested bpms are as follows:
+The six *clicks* ordered by powers of two with suggested bpms as follows:
 
     ——————————————————————————————————
       CLICK  VALUE  WORD   IPA   BPM
@@ -215,8 +215,8 @@ The six *clicks* ordered by powers of two with suggested bpms are as follows:
        `:`    1/16   pe    pe    200
        `,`    1/8    pa    pa    140 
        `.`    1/4    po    po    100
-       `-`    1/2    pu    pu    72
-       `=`    1/1    pr    pɚ    54
+       `-`    1/2    pu    pu    70
+       `=`    1/1    pr    pɚ    50
     ——————————————————————————————————
 
 Plus two others, immediate and indeterminate:
@@ -338,9 +338,7 @@ For that, we’ll learn about *knits* and *strands*, but to do so we have to int
         A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
-Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the span. These single uppercase letters represent the interval in abstract terms, but sometimes you want to talk about a fifth above or a fifth below. For that, we prefix it with `Y-` for up to an octave above, `F-` for more than an octave above to two, `W-` for down to an octave below, `B-` for more than an octave below to two, and unison gets doubled `AA`. These create *strand spans*.
-
-When those *spans* are lowercase, we can attach them to a tone for a double stop which we’ll call a *strand*. Here is the suffix for unison to an octave above:
+Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the span. These single uppercase letters represent the interval in abstract terms, but sometimes you want to talk about a fifth above or a fifth below. For that, we prefix it with `Y-` for up to an octave above, `W-` for down to an octave below, and unison gets doubled `AA`. These create the *spans* used for *strands* — lowercase versions attached to tones to create double stops:
 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH

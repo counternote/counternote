@@ -577,12 +577,12 @@ A __click__ is punctuation character that represents a duration. They come in si
     ——————————————————————————————————
       CLICK  VALUE  WORD   IPA   BPM
     ——————————————————————————————————
-       `;`    1/32   pi    pi    328
-       `:`    1/16   pe    pe    234
-       `,`    1/8    pa    pa    162 
-       `.`    1/4    po    po    108
-       `-`    1/2    pu    pu    72
-       `=`    1/1    pr    pɚ    54
+       `;`    1/32   pi    pi    280
+       `:`    1/16   pe    pe    200
+       `,`    1/8    pa    pa    140 
+       `.`    1/4    po    po    100
+       `-`    1/2    pu    pu    70
+       `=`    1/1    pr    pɚ    50
     ——————————————————————————————————
 
 Plus two others, immediate and indeterminate:
