@@ -28,7 +28,7 @@ Structural elements
 
 * [__score__][score]: an entire composition
 * [__stage__][stage]: a place for compositional and instrumental details
-  * [__writer__][writer]: a composer of the [score][score] or [track][track]
+  * [__scribe__][scribe]: a composer of the [score][score] or [track][track]
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
@@ -44,6 +44,7 @@ Structural elements
   * [__rep__][rep]: a directive to repeat a [bar][bar] or [round][round]
 * [__def__][def]: definitions
 * [__script__][script]: a block or snippet of code
+* [__doc__][doc]: documentation for human consumption
 * [__tweak__][tweak]: instruction on effects
 
 ### SOUNDS [⤵︎][sounds]
@@ -149,7 +150,7 @@ Toward a deeper understanding
 
 [score]: #score
 [stage]: #stage
-  [writer]: #writer
+  [scribe]: #scribe
   [work]: #work
   [act]: #act
 [track]: #track
@@ -165,6 +166,7 @@ Toward a deeper understanding
   [rep]: #rep
 [def]: #def
 [script]: #script
+[doc]: #doc
 [tweak]: #tweak
 
 [sounds]: #sounds
@@ -351,7 +353,7 @@ __Blocks__ are structural elements of a composition and how such elements connec
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
-    WRITER: Bach
+    SCRIBE: Bach
     ++#
     TRACK: Bourrée
     VOICES:
@@ -400,9 +402,9 @@ A __score__ is an entire composition in Counternote. It is enclosed in `++*` and
 
 A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `++#` and `+++` [signs][sign].
 
-### Writer
+### Scribe
 
-A __writer__ is a composer of a [score][score] or [track][track].
+A __scribe__ is a composer of a [score][score] or [track][track].
 
 ### Work
 
@@ -524,6 +526,10 @@ A __def__ is instruction on definitions for parts of a track. It is denoted with
 
 A __script__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and `++$` to `$++` for multiline code.
 
+## Doc
+
+A __doc__ contains details not meant for the machine.
+
 ## Tweak
  
 A __tweak__ is an instruction on effects that occur. It is denoted with `&` at the beginning of a line, `&{` and `}` inline, and `++&` to `&++` for multiline instructions.
@@ -566,18 +572,18 @@ __Beats__ are basic rhythmic elements
 
 ## Click
 
-A __click__ is punctuation character that represents a duration. They come in six varieties ordered by powers of two:
+A __click__ is punctuation character that represents a duration. They come in six varieties ordered by powers of two with a suggested bpm:
 
-    ————————————————————————————
-      CLICK  VALUE  WORD   IPA
-    ————————————————————————————
-       `;`    1/32   pi    pi
-       `:`    1/16   pe    pe
-       `,`    1/8    pa    pa
-       `.`    1/4    po    po
-       `-`    1/2    pu    pu
-       `=`    1/1    pr    pɚ
-    ————————————————————————————
+    ——————————————————————————————————
+      CLICK  VALUE  WORD   IPA   BPM
+    ——————————————————————————————————
+       `;`    1/32   pi    pi    328
+       `:`    1/16   pe    pe    234
+       `,`    1/8    pa    pa    162 
+       `.`    1/4    po    po    108
+       `-`    1/2    pu    pu    72
+       `=`    1/1    pr    pɚ    54
+    ——————————————————————————————————
 
 Plus two others, immediate and indeterminate:
 
@@ -613,6 +619,13 @@ A __groove__ tells the arrangement of [beats][beats] in a [bar][bar]. It is nota
     —————————————————————————————————————————
 
  But __grooves__ can go beyond that — they can tell the accent pattern within a [bar][bar]. `|!,,!,,!,!,|` is the 5/4 clave. The accents are denoted with `!` and take the length of the rest of the [clicks][click] in the __groove__.
+
+ __Grooves__ can also be set immediately after the `|` of a voice:
+
+    ——————————————————————————
+      1   
+        |4. ma. ma. ma. ma. |
+    ——————————————————————————
 
 ### Shift
 
@@ -730,7 +743,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
-    WRITER: Bach
+    SCRIBE: Bach
     +++
     TRACK: Bourrée
     VOICES:

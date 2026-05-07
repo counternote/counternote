@@ -33,7 +33,7 @@ For singability, each note is one syllable, as are each interval distinct from t
 
 For codeability, everything is written in ASCII which is easily interpreted by computers and backed up with git. However, great care has been taken to make notational aspects not feel like code. Raw numbers for duration and pitch have been eliminated — the few numbers that exist in the notation are ordinal ones to label the bars. No function invocations are necessary to make a sound. And the control flow of the notation is at least as simple as staff notation.
 
-For shareability, everything is just a string of plaintext, easily shared via text message. There is no need to translate it into a human consumable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see it what you get.
+For shareability, everything is just a string of plaintext, easily shared via text message. There is no need to translate it into a human consumable format and back to a computer-readable one, no heavy filetype to send and store, no binary blobs to contend with. What you see is what you get.
 
 ***
 
@@ -206,18 +206,18 @@ Notes in Counternote refer specifically to *sounds* held for some duration. That
 
 Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the tie `__` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
 
-The six *clicks* ordered by powers of two are as follows:
+The six *clicks* ordered by powers of two with suggested bpms are as follows:
 
-    ————————————————————————————
-      CLICK  VALUE  WORD   IPA
-    ————————————————————————————
-       `;`    1/32   pi    pi
-       `:`    1/16   pe    pe
-       `,`    1/8    pa    pa
-       `.`    1/4    po    po
-       `-`    1/2    pu    pu
-       `=`    1/1    pr    pɚ
-    ————————————————————————————
+    ——————————————————————————————————
+      CLICK  VALUE  WORD   IPA   BPM
+    ——————————————————————————————————
+       `;`    1/32   pi    pi    280
+       `:`    1/16   pe    pe    200
+       `,`    1/8    pa    pa    140 
+       `.`    1/4    po    po    100
+       `-`    1/2    pu    pu    72
+       `=`    1/1    pr    pɚ    54
+    ——————————————————————————————————
 
 Plus two others, immediate and indeterminate:
 
@@ -232,7 +232,7 @@ The wider the character, the longer the duration, the narrower and taller the ch
 
 ## Grooves and Pulses and Taps
 
-*Grooves* tell the duration of a bar. They are written between `|` characters with the number of *clicks* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
+*Grooves* tell the duration of a bar. They are written on a line starting with `@` between `|` characters with the number of *clicks* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
 Here are four rather boring bars of Counternote:
 
@@ -250,7 +250,7 @@ Here are four rather boring bars of Counternote:
 
 You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
 
-*Pulses* tell the tempo of a piece. They are written after a `@`, like `@80` being 80bpm.
+*Pulses* tell the tempo of a piece. `@ |4.| 100` is 4 taps at 100bpm.
 
 *Taps* refer to the *click* in the *groove* that feels the *pulse*, like what you might tap your foot to.
 
@@ -340,7 +340,7 @@ For that, we’ll learn about *knits* and *strands*, but to do so we have to int
 
 Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the span. These single uppercase letters represent the interval in abstract terms, but sometimes you want to talk about a fifth above or a fifth below. For that, we prefix it with `Y-` for up to an octave above, `F-` for more than an octave above to two, `W-` for down to an octave below, `B-` for more than an octave below to two, and unison gets doubled `AA`. These create *strand spans*.
 
-They are uppercase when speaking of the interval in abstract terms, but when lowercase, we can attach them to a tone for a double stop called a *strand*. Here is the suffix for unison to an octave above:
+When those *spans* are lowercase, we can attach them to a tone for a double stop which we’ll call a *strand*. Here is the suffix for unison to an octave above:
 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH
@@ -373,10 +373,10 @@ Here are the rules for pronouncing the *threads*:
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
 + For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
 + For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the [knit start][knit start] is an octave.
-+ If more than an octave is skipped between two [threads][thread], an `h` is inserted for each missing octave.
-+ The [glyph][glyph] `r` is always a rhoticized mid vowel.
-+ The [glyph][glyph] `q` is always a glottal stop.
++ An `x` immediately after the *knit start* is an octave.
++ If more than an octave is skipped between two *threads*, an `h` is inserted for each missing octave.
++ The `r` is always a rhoticized mid vowel.
++ The `q` is always a glottal stop.
 
 *Knits* come in two varieties: *chords* which are analogous to the chords we know and love, and *braids* which are specific voicings of *chords*.
 
