@@ -828,17 +828,17 @@ To nest a __cut__, just place a __Long cuts__ where a single sound would go:
         | ma-ma-[ma'ma'ma]        |
     —————————————————————————————————
 
-If a nested __cut__ takes up more than one element of a tuplet, `+` and the [tie][tie] `__` are used: 
+If a nested __cut__ takes up more than one element of a tuplet, the [tie][tie] `__` is used: 
 
     —————————————————————————————————
       @ |4.|
       1
         # triplet in triplet
-        |[ma'[ma'ma'ma]+__]=       |
-        | ma-[ma'ma'ma]-+__        |
+        |[ma'[ma'ma'ma]'__]=      |
+        | ma-[ma'ma'ma]-__        |
     —————————————————————————————————
 
-Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` and [tie][tie] `__` are used in this case as well:
+Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` adds the duration beyond the current [bar][bar] and the[tie][tie] `__` takes the duration on the next one:
 
     —————————————————————————————————
       @ |4.|

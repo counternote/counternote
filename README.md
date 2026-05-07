@@ -256,7 +256,7 @@ You’ll notice that each of those notes takes up at least four spaces. There is
 
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the short *cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the *short cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
 
     —————————————————————————————————————————————
       @ |4.|
@@ -291,8 +291,6 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
       1 # space saving
         | ma.ma ma.ma ma.ma ma.ma |
     —————————————————————————————————
-
-Though should it have saved that space?
 
 # Stacks, Spans, Strands, and Knits
 
