@@ -200,11 +200,11 @@ Practice beatboxing with these if you like.
 
 # Notes
 
-Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *click*.
+Notes in Counternote refer specifically to *sounds* held for some duration. That duration is denoted by a *click* or by the *tie* that carries it to the next *bar*.
 
 ## Clicks
 
-Clicks are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar or by adding the tie `__` with a new click at the beginning of the next bar. They can also be shortened using *cuts*. More on them in a bit.
+*Clicks* are basic punctuation characters that must come immediately after the sound they sustain. They are roughly equivalent to the range of a whole note to a thirty-second note. These can be extended by trailing *clicks* in the same bar. They can also be shortened using *cuts*. More on them in a bit.
 
 The six *clicks* ordered by powers of two with suggested bpms as follows:
 
@@ -248,15 +248,31 @@ Here are four rather boring bars of Counternote:
         | ma, ma, ma, ma, ma, ma, ma, ma, |
     —————————————————————————————————————————
 
-You’ll notice that each of those notes takes up at least four spaces. There is a short cut that makes each note only take up three spaces and cuts down on visual noise. You’ll never guess what it’s called.
-
 *Pulses* tell the tempo of a piece. `@ |4.| 100` is 4 taps at 100bpm.
 
 *Taps* refer to the *click* in the *groove* that feels the *pulse*, like what you might tap your foot to.
 
+## Tie
+
+The *tie* `++` can be used with or even instead of *clicks* to extend the *note* to the next *bar*. That extension is notated with the unison `aa` in the next *bar*:
+
+    —————————————————————————————————————————
+      @ |4.|
+      1
+        | ma-             ma++            |
+      2
+        | aa++                            |
+      3
+        | aa, ma, ma, ma, ma, ma, ma, ma, |
+    —————————————————————————————————————————
+
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the *short cuts* that should be used most of the time. A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'`:
+In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the *short cuts* that should be used most of the time.
+
+You’ll notice in the boring bars above, each of those notes takes up at least four spaces. The *short cut* makes each note only take up three spaces and cuts down on visual noise, so it’s aptly named.
+
+A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'` which acts as a separator:
 
     —————————————————————————————————————————————
       @ |4.|
@@ -357,19 +373,18 @@ Notice that the pronunciation of each isn’t the name of the letter but the sou
 
 Just like *strand spans* became lowercase, the single-letter *spans* become lowercase to make *threads*, individual voices within a *knit*.
 
-    ———————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————————
       LOWERCASE for THREADS
-    ———————————————————————————————————————————————————————
-       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8
-      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- 
-    ———————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8   X
+      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- -h-
+    ———————————————————————————————————————————————————————————
 
-Here are the rules for pronouncing the *threads*:
+An `h` is added for octave spans without a voice. Here are the rules for pronouncing the *threads*:
 
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
-+ For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
-+ For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the *knit start* is an octave.
++ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it.
++ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it.
 + If more than an octave is skipped between two *threads*, an `h` is inserted for each missing octave.
 + The `r` is always a rhoticized mid vowel.
 + The `q` is always a glottal stop.
@@ -385,8 +400,8 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
               B5   Gav                  ˈgav   GAHV
             Cm/G   vMov               viˈmov   vee-MOHV
              F♯7   Hevn              ˈhe.vən   HEH-vuhn
-             D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
-      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌjim   SEHʔ-noh-YEEM
+             D13   Devnuim       ˈdev.nuˌwim   DEHV-noo-WEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌwim   SEHʔ-noh-WEEM
     ——————————————————————————————————————————————————————————————
             NAME   BRAID                 IPA   TRANSILITERATION
     ——————————————————————————————————————————————————————————————
@@ -394,8 +409,8 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
               B5   gaGv               gaˈgəv   gah-GUHV
             Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
              F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
-             D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
-      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
+             D13   daDevnuim   daˈdev.nuˌwim   dah-DEHV-noo-WEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌwim   sah-SEHʔ-noh-WEEM
     ——————————————————————————————————————————————————————————————
 
 

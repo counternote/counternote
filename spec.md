@@ -689,8 +689,7 @@ A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It
 * the total duration of all the [clicks][click] is the duration the __cut__ fills
 * a `'` can be used as a separator that does not add duration
 * quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
-* septuplets and longer just add [sounds][sounds] and `'`
-* a [tie][tie] `__` may be used to signal that one [sound][sounds] is held
+* the unison `aa` may be used to signal that one or more [sounds][sounds] are held
 
 Those rules add up to:
 
@@ -838,19 +837,19 @@ If a nested __cut__ takes up more than one element of a tuplet, the [tie][tie] `
         | ma-[ma'ma'ma]-__        |
     —————————————————————————————————
 
-Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `+` adds the duration beyond the current [bar][bar] and the[tie][tie] `__` takes the duration on the next one:
+Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `++` adds the duration beyond the current [bar][bar] and the unison `aa` takes the duration on the next one:
 
     —————————————————————————————————
       @ |4.|
       1
         # triplet over...
-        |[ma'ma'ma]=+=            |
+        |[ma'ma'ma]++=            |
       2
         # ...2 bars
-        | __=                     |
+        | aa=                     |
     —————————————————————————————————
 
-The `+` with the extra [click][click] `=` helps the performer see what how long the __cut__ is.
+The extra [click][click] `=` helps the performer see what how long the __cut__ is.
 
 ***
 
@@ -1012,6 +1011,8 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `lh` laugh track
     ————————————————————————
 
+Simultaneous sounding __raps__ are placed together using `'`
+
 ## Sync
 
 [Tones][tone] and [raps][rap] and even [knits][knits] can be performed at the same time by just concatenating them together with a `!` in between so it’s easy to read.
@@ -1149,22 +1150,21 @@ All __knits__ other than [strands][strand] have a capitalized [tone start][tone 
 
 A __thread__ is a single [voice][voice] within a __knit__, using the lowercase [spans][span].
 
-    ———————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————————
       LOWERCASE for THREADS
-    ———————————————————————————————————————————————————————
-       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8
-      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- 
-    ———————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8   X
+      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- -h-
+    ———————————————————————————————————————————————————————————
 
-Here are the rules for pronouncing the __threads__:
+An `h` is added for octave spans without a voice. Here are the rules for pronouncing the *threads*:
 
 + For any three consonants in a row, a schwa `ə` is inserted between the second and third.
-+ For any two vowels in a row, if the second is `u`, `o`, or `r`, a `w` is inserted before it.
-+ For any two vowels in a row, if the second is `a`, `e`, or `i`, a `y` is inserted before it.
-+ An `x` immediately after the [knit start][knit start] is an octave.
-+ If more than an octave is skipped between two [threads][thread], an `h` is inserted for each missing octave.
-+ The [glyph][glyph] `r` is always a rhoticized mid vowel.
-+ The [glyph][glyph] `q` is always a glottal stop.
++ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it.
++ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it.
++ If more than an octave is skipped between two *threads*, an `h` is inserted for each missing octave.
++ The `r` is always a rhoticized mid vowel.
++ The `q` is always a glottal stop.
 
 ## Chord
 
@@ -1177,8 +1177,8 @@ A __chord__ is a [knit][knits] constructed using the capitalized [tone start][to
               B5   Gav                  ˈgav   GAHV
             Cm/G   vMov               viˈmov   vee-MOHV
              F♯7   Hevn              ˈhe.vən   HEH-vuhn
-             D13   Devnuim       ˈdev.nuˌjim   DEHV-noo-YEEM
-      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌjim   SEHʔ-noh-YEEM
+             D13   Devnuim       ˈdev.nuˌwim   DEHV-noo-WEEM
+      E♭13(♭5♯9)   Seqnoim       ˈseʔ.noˌwim   SEHʔ-noh-WEEM
     ————————————————————————————————————————————————————————————
 
 ## Braid
@@ -1192,8 +1192,8 @@ A __braid__ is a specific voicing of a [chord][chord]. These can get much more c
               B5   gaGv               gaˈgəv   gah-GUHV
             Cm/G   naMaov          naˈma.wov   nah-MAH-wohv
              F♯7   haHevn          haˈhe.vən   hah-HEH-vuhn
-             D13   daDevnuim   daˈdev.nuˌjim   dah-DEHV-noo-YEEM
-      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌjim   sah-SEHʔ-noh-YEEM
+             D13   daDevnuim   daˈdev.nuˌwim   dah-DEHV-noo-WEEM
+      E♭13(♭5♯9)   saSeqnoim   saˈseʔ.noˌwim   sah-SEHʔ-noh-WEEM
     ——————————————————————————————————————————————————————————————
 
 Note that the __braid__ `gaGv` is identical to the [strand][strand] `gayv`, but they do convey different things — `gaGv` is the powerchord; `gayv` means the interval as a stop. The root-fifth-octave voicing of a powerchord can never be achieved using [strands][strand].
@@ -1235,7 +1235,7 @@ __Cues__ are composer directives, denoted by [glyph][glyph] `#`. In the Bourrée
 
 ## Tie
 
-A __tie__ is used to show a [sound][sounds] from a previous [bar][bar] is still being held. It is notated with `__` and not pronounced separately from the [sound][sounds] being held.
+A __tie__ is used to show a [sound][sounds] being held into the next [bar][bar]. It is notated with `++` after the [sound][sound] and the unison [span][span] `aa` on the next bar followed by its duration.
 
 ## Comp
 
