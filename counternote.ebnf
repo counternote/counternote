@@ -1,0 +1,45 @@
+Score ::= '++*' Stage* ( Track | Round )+ '*++'
+
+Stage ::= ('++*' | '++#') Prop* ('++#' | '+++')
+
+Track ::= '+++' ( Round | Bar )+
+
+Round ::= Name '\n' Cue* Bar+
+
+Bar ::= Name '\n' SPACE Voice+
+
+Voice ::= Name '|' SPACE Phrase '|'
+
+Phrase ::= ( ( Art | Cut | Note )+ ( Art | Click )* )+
+
+Art ::= ( ( '(' | '{' | '{{' ) Note ( ')' | '}' | '}}' ) | '*' | '&' | '^' | '^^' | '/' | '//' | '\' | '\\' | '$' | '~' )
+
+Cut ::= ( Note Click )+ Note | '[' ( Note "'" )+ Note ']' Click
+
+Note ::= Art* ( Tone | Strand | Braid ) Art* Click Art*
+
+Tone ::= [mkdsjlhncztg] ( 'or' | 'ar' | [ruoaei] | 'al' | 'il' )
+
+Click ::= [!;:,.] | '-' | [=?]
+
+Knit ::= SPAN | Span | Strand | CHORD | Chord | Braid
+
+Span ::= ( [fywb] Thread | 'aa' )
+
+Strand ::= Tone Span
+
+Braid ::= Tone TONESTART thread+
+
+Chord ::= thread? TONESTART thread+
+
+Thread ::= [aruoeiqvlmnzx]
+
+TONESTART ::= [MKDSJLHNCATG]
+
+TONE ::= TONESTART ( 'OR' | 'AR' | [RUOAEI] | 'AL' | 'IL' )
+
+SPAN ::= [ARUOEIQVLMNZX]
+
+STRAND ::= ( [FYWB] SPAN | 'AA' )
+
+CHORD ::= ( TONESTART | 'X' ) SPAN

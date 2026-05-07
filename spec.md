@@ -396,7 +396,7 @@ __Blocks__ are structural elements of a composition and how such elements connec
 
 ## Score
 
-A __score__ is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a work.
+A __score__ is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a piece or collection of work.
 
 ## Stage
 
