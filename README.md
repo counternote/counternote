@@ -420,8 +420,9 @@ There are obviously other details to go over, but it’s time to see some real m
     TRACK: Bourrée
     VOICES:
       f: fingers
-      t: thumb 
-    +++
+      t: thumb
+    FORM: AABB
+    ***
     @ JA XOV |4.| allegretto
 
     A

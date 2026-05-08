@@ -400,11 +400,11 @@ __Blocks__ are structural elements of a composition and how such elements connec
 
 ## Score
 
-A __score__ is an entire composition in Counternote. It is enclosed in `++*` and `*++` [signs][sign]. When detailed in the [stage][stage], it is the title of a piece or collection of work.
+A __score__ is an entire composition in Counternote. It is enclosed between `++*` and `*++`.
 
 ## Stage
 
-A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `+++` and `+++` [signs][sign].
+A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ for a [score][score] comes after `++*` and the optional __stage__ for the [track][track] comes after `+++`.
 
 ### Scribe
 
@@ -420,7 +420,7 @@ An __act__ is the performer of a [score][score] or [track][track].
 
 ## Track
 
-A __track__ is an individual piece that may or may not occur simultaneously within a score. The are separated with `+++` [signs][sign].
+A __track__ is an individual piece that may or may not occur simultaneously within a score. It begins after `***`.
 
 ### Key
 
