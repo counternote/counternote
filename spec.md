@@ -956,13 +956,15 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
     ————————————————————————
       `hh` breath (rest)
       `sw` spoken word
+      `rp` rap
     ————————————————————————
       USER-DEFINABLE
     ————————————————————————
       NOISE
-      `hx` hush, silence
+      `hx` hush
       `nh` inhale
       `xh` exhale
+      `hs` hiss
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
@@ -970,37 +972,43 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       DRUM
       `pf` pf snare
       `ks` k snare
+      `kt` rim shot
       `kk` kick drum
-      `bm` large bass drum
-      `bn` small bass drum
-      `pm` floor tom
-      `pn` low tom
-      `tm` mid tom
-      `tn` high tom
+      `bd` bass drum
+      `gm` floor tom
+      `gn` low tom
+      `dm` mid tom
+      `dn` high tom
       `tx` opening hi-hat
       `ts` open hi-hat
       `xt` closing hi-hat
       `st` closed hi-hat
-      `kt` rim shot
       `cx` crash
       `xp` crash mute
       `cs` ride
       `sp` ride mute
-      `km` conga bass
-      `kn` conga open tone
-      `kx` conga muff
-      `kd` conga open slap
-      `kg` conga closed slap
-      `kp` conga tip
-      `gn` low bongo tone
-      `gx` low bongo muff
-      `gd` low bongo slap
-      `dn` high bongo tone
-      `dx` high bongo muff
-      `dd` high bongo slap
+    ————————————————————————
+      PERCUSSION
+      `pm` conga bass
+      `pn` conga open tone
+      `pp` conga mute
+      `ph` conga open slap
+      `pg` conga closed slap
+      `pd` conga tap
+      `kn` low bongo tone
+      `kp` low bongo mute
+      `kh` low bongo open slap
+      `kg` low bongo closed slap
+      `tn` high bongo tone
+      `tp` high bongo mute
+      `th` high bongo open slap
+      `tg` high bongo closed slap
       `jm` djembe bass
       `jn` djembe tone
-      `jd` djembe slap
+      `jp` djembe mute
+      `jh` djembe open slap
+      `jg` djembe closed slap
+      `jd` djembe tap
       `xk` shook
       `cl` clap
       `td` clave
@@ -1011,7 +1019,7 @@ A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rath
       `lt` light tap
       `dk` dark tick
       `tk` bright tick
-      `hd` handmute
+      `hk` handmute
       `sk` strum mute
     ————————————————————————
       OTHER
@@ -1276,7 +1284,7 @@ __Ring__ is a directive to let ring, that is not to stop a [sound][sounds] when 
         f| le.   de.ce ze^^c.  ,ce,|
         t| co.   ja.   ga.   ga.   |
       7
-        | co{le.} ja{de.ce} ga{ze^^c.+,} ga{__.ce} | 
+        | co{le.} ja{de.ce} ga{ze^^c.++} ga{aa.ce} | 
     ——————————————————————————————————————————————————
 
 
@@ -1306,7 +1314,7 @@ __Trill__ is a directive to quickly alternate between two [sounds][sounds], ofte
 
 ### Trem
 
-__Trem__ is a directive for the rapid articulation of a sustained [sound][sounds]. It is denoted by `^^` just before the [sound][sounds] `^^ma.` it applies to.
+__Trem__ is a directive for the rapid articulation of a sustained [sound][sounds]. It is denoted by `!!` just after the [sound][sounds] `ma!!=` it applies to.
 
 ### Roll
 
@@ -1323,6 +1331,14 @@ __Strong__ is a directive to accent and/or suddenly end a [sound][sounds] denote
 ### Harm
 
 __Harm__ is a directive to play the nth harmonic. It is denoted by `*` followed by the number for said nth harmonic: `lo*3` is for performing the third harmonic. Rather than notating the pitch as a listener might hear it, Counternote notates the harmonic as it’s played.
+
+### Rush
+
+__Rush__ is a directive to play ahead of the beat. It is denoted by `<` before the note `<ma.`.
+
+### Drag
+
+__Drag__ is a directive to play behind the beat. It is denoted by `>` before the note `>ma.`.
 
 ## Chant
 

@@ -114,16 +114,7 @@ In Counternote, when we want to talk about the pitch-class of a note, like every
 
 There is an inherent tension between an absolute frequency like *A440* and a relative frequency like the 5 in the key of D. The first is more about physics and less about music. The second, though, is what music is based on. In a very real sense, relative pitch is closer to the musical metal.
 
-In fact, relative pitch is so important that there are no less than four ways to express it beyond the staff:
-
-* as intervals like __m3__ and __M6__
-* as scale degrees like __♭3__ and __6__
-* as movable-do (tonic solfa) like __me__ or __ma__ and __la__
-* as integer notation __3__ and __9__
-
-Each of those has problems, chief among them is that the only one that doesn’t use numbers is readily confused with a fixed-do solfège used in half the world.
-
-By relegating the absolute pitch terms to simply setting the tonal center, we can avoid the kind of confusion that transposing instruments have. For them, the *key* is set to key of the instrument, so B♭ instruments should use the *key* `TA` and alter the *mode* using chords. `TA` remains `TA`, its pitch always well-defined, while `ma` becomes B♭ and every lowercase *tone* is relative to it.
+That is why the absolute pitch terms have been relegated to setting the tonal center, which comes with a huge benefit — transposing instruments can be read by anyone in the correct key. Simply set the *key* to that of the instrument, B♭ instruments should use `TA`, and alter the *mode* using *chords*. `TA` remains `TA`, its pitch always well-defined, while `ma` becomes B♭ and every lowercase *tone* is relative to it.
 
 ## Raps
 
@@ -141,13 +132,15 @@ These are some proposed raps, only the first two of which cannot be defined on a
     ————————————————————————
       `hh` breath (rest)
       `sw` spoken word
+      `rp` rap
     ————————————————————————
       USER-DEFINABLE
     ————————————————————————
       NOISE
-      `hx` hush, silence
+      `hx` hush
       `nh` inhale
       `xh` exhale
+      `hs` hiss
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
@@ -155,37 +148,43 @@ These are some proposed raps, only the first two of which cannot be defined on a
       DRUM
       `pf` pf snare
       `ks` k snare
+      `kt` rim shot
       `kk` kick drum
-      `bm` large bass drum
-      `bn` small bass drum
-      `pm` floor tom
-      `pn` low tom
-      `tm` mid tom
-      `tn` high tom
+      `bd` bass drum
+      `gm` floor tom
+      `gn` low tom
+      `dm` mid tom
+      `dn` high tom
       `tx` opening hi-hat
       `ts` open hi-hat
       `xt` closing hi-hat
       `st` closed hi-hat
-      `kt` rim shot
       `cx` crash
       `xp` crash mute
       `cs` ride
       `sp` ride mute
-      `km` conga bass
-      `kn` conga open tone
-      `kx` conga muff
-      `kd` conga open slap
-      `kg` conga closed slap
-      `kp` conga tip
-      `gn` low bongo tone
-      `gx` low bongo muff
-      `gd` low bongo slap
-      `dn` high bongo tone
-      `dx` high bongo muff
-      `dd` high bongo slap
+    ————————————————————————
+      PERCUSSION
+      `pm` conga bass
+      `pn` conga open tone
+      `pp` conga mute
+      `ph` conga open slap
+      `pg` conga closed slap
+      `pd` conga tap
+      `kn` low bongo tone
+      `kp` low bongo mute
+      `kh` low bongo open slap
+      `kg` low bongo closed slap
+      `tn` high bongo tone
+      `tp` high bongo mute
+      `th` high bongo open slap
+      `tg` high bongo closed slap
       `jm` djembe bass
       `jn` djembe tone
-      `jd` djembe slap
+      `jp` djembe mute
+      `jh` djembe open slap
+      `jg` djembe closed slap
+      `jd` djembe tap
       `xk` shook
       `cl` clap
       `td` clave
@@ -196,7 +195,7 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `lt` light tap
       `dk` dark tick
       `tk` bright tick
-      `hd` handmute
+      `hk` handmute
       `sk` strum mute
     ————————————————————————
       OTHER
