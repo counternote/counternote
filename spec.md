@@ -1031,15 +1031,15 @@ __Spans__ of both varieties are used in [ties][tie], [strands][strand], and [kni
 
 A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
 
-    ————————————————————————
+    ———————————————————————————————
       RESERVED
-    ————————————————————————
+    ———————————————————————————————
       `hh` breath (rest)
       `sw` spoken word
       `rp` rap
-    ————————————————————————
+    ———————————————————————————————
       USER-DEFINABLE
-    ————————————————————————
+    ———————————————————————————————
       NOISE
       `hx` hush
       `nh` inhale
@@ -1048,8 +1048,8 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
-    ————————————————————————
-      DRUM
+    ———————————————————————————————
+      DRUM KIT
       `pf` pf snare
       `ks` k snare
       `kt` rim shot
@@ -1063,18 +1063,23 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `ts` open hi-hat
       `xt` closing hi-hat
       `st` closed hi-hat
-      `cx` crash
+      `px` crash
       `xp` crash mute
-      `cs` ride
+      `ps` ride
       `sp` ride mute
-    ————————————————————————
+    ———————————————————————————————
       PERCUSSION
-      `pm` conga bass
-      `pn` conga open tone
-      `pp` conga mute
-      `ph` conga open slap
-      `pg` conga closed slap
-      `pd` conga tap
+      `pm` timpani 32
+      `pn` timpani 29
+      `pb` timpani 26
+      `pd` timpani 23
+      `pp` timpani 20
+      `qm` conga bass
+      `qn` conga open tone
+      `qp` conga mute
+      `qh` conga open slap
+      `qg` conga closed slap
+      `qd` conga tap
       `kn` low bongo tone
       `kp` low bongo mute
       `kh` low bongo open slap
@@ -1083,6 +1088,12 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `tp` high bongo mute
       `th` high bongo open slap
       `tg` high bongo closed slap
+      `cm` cajon bass
+      `cn` cajon open tone
+      `cp` cajon mute
+      `ch` cajon open slap
+      `cg` cajon closed slap
+      `cd` cajon tap
       `jm` djembe bass
       `jn` djembe tone
       `jp` djembe mute
@@ -1090,9 +1101,10 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `jg` djembe closed slap
       `jd` djembe tap
       `xk` shook
-      `cl` clap
+      `cc` clap
       `td` clave
-    ————————————————————————
+      `sx` rainstick
+    ———————————————————————————————
       GUITAR
       `rk` rake
       `dt` deep tap
@@ -1101,17 +1113,18 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `tk` bright tick
       `hk` handmute
       `sk` strum mute
-    ————————————————————————
+    ———————————————————————————————
       OTHER
       `rf` ref whistle
       `ah` scream
       `ws` Wilhelm scream
       `rn` siren
       `ck` crickets
-      `cp` chirp, cheep
+      `tw` tweet, chirp
       `lc` the licc
       `lf` laugh track
-    ————————————————————————
+      `cx` shattering glass
+    ———————————————————————————————
 
 Simultaneous sounding __raps__ are placed together using `'`
 

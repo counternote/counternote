@@ -140,7 +140,7 @@ When lowercase, *spans* are used for *ties* and *strands* for the directional on
 
 ## Raps
 
-The last kind of *sound* in Counternote is whatever doesn’t fit in the tones. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
+The last kind of *sound* in Counternote is whatever doesn’t fit in the *tones* and *spans*. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
 
 Raps are just a list of mostly user-defined sounds. There are two basic rules for creating them, only the first of which must be followed:
 
@@ -149,15 +149,15 @@ Raps are just a list of mostly user-defined sounds. There are two basic rules fo
 
 These are some proposed raps, only the first two of which cannot be defined on a piece by piece basis:
 
-    ————————————————————————
+    ———————————————————————————————
       RESERVED
-    ————————————————————————
+    ———————————————————————————————
       `hh` breath (rest)
       `sw` spoken word
       `rp` rap
-    ————————————————————————
+    ———————————————————————————————
       USER-DEFINABLE
-    ————————————————————————
+    ———————————————————————————————
       NOISE
       `hx` hush
       `nh` inhale
@@ -166,8 +166,8 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
-    ————————————————————————
-      DRUM
+    ———————————————————————————————
+      DRUM KIT
       `pf` pf snare
       `ks` k snare
       `kt` rim shot
@@ -181,18 +181,23 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `ts` open hi-hat
       `xt` closing hi-hat
       `st` closed hi-hat
-      `cx` crash
+      `px` crash
       `xp` crash mute
-      `cs` ride
+      `ps` ride
       `sp` ride mute
-    ————————————————————————
+    ———————————————————————————————
       PERCUSSION
-      `pm` conga bass
-      `pn` conga open tone
-      `pp` conga mute
-      `ph` conga open slap
-      `pg` conga closed slap
-      `pd` conga tap
+      `pm` timpani 32
+      `pn` timpani 29
+      `pb` timpani 26
+      `pd` timpani 23
+      `pp` timpani 20
+      `qm` conga bass
+      `qn` conga open tone
+      `qp` conga mute
+      `qh` conga open slap
+      `qg` conga closed slap
+      `qd` conga tap
       `kn` low bongo tone
       `kp` low bongo mute
       `kh` low bongo open slap
@@ -201,6 +206,12 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `tp` high bongo mute
       `th` high bongo open slap
       `tg` high bongo closed slap
+      `cm` cajon bass
+      `cn` cajon open tone
+      `cp` cajon mute
+      `ch` cajon open slap
+      `cg` cajon closed slap
+      `cd` cajon tap
       `jm` djembe bass
       `jn` djembe tone
       `jp` djembe mute
@@ -208,9 +219,10 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `jg` djembe closed slap
       `jd` djembe tap
       `xk` shook
-      `cl` clap
+      `cc` clap
       `td` clave
-    ————————————————————————
+      `sx` rainstick
+    ———————————————————————————————
       GUITAR
       `rk` rake
       `dt` deep tap
@@ -219,17 +231,18 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `tk` bright tick
       `hk` handmute
       `sk` strum mute
-    ————————————————————————
+    ———————————————————————————————
       OTHER
       `rf` ref whistle
       `ah` scream
       `ws` Wilhelm scream
       `rn` siren
       `ck` crickets
-      `cp` chirp, cheep
+      `tw` tweet, chirp
       `lc` the licc
       `lf` laugh track
-    ————————————————————————
+      `cx` shattering glass
+    ———————————————————————————————
 
 Practice beatboxing with these if you like.
 
