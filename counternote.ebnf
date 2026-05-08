@@ -1,45 +1,42 @@
+/*
+Counternote Grammar 0.10.2
+
+Work in Progress
+*/
+
 Score ::= '++*' Stage* ( Track | Round )+ '*++'
-
-Stage ::= ('++*' | '++#') Prop* ('++#' | '+++')
-
-Track ::= '+++' ( Round | Bar )+
-
+Stage ::= ('++*' | '+++') Prop*
+Track ::= '***' ( Round | Bar | Voice | Note )+
 Round ::= Name '\n' Cue* Bar+
-
-Bar ::= Name '\n' SPACE Voice+
-
-Voice ::= Name '|' SPACE Phrase '|'
-
+Bar ::= Name '\n' SPACE+ Voice+
+Voice ::= Name '|' SPACE+ Phrase '|'
 Phrase ::= ( ( Art | Cut | Note )+ ( Art | Click )* )+
-
-Art ::= ( ( '(' | '{' | '{{' ) Note ( ')' | '}' | '}}' ) | '*' | '&' | '^' | '^^' | '/' | '//' | '\' | '\\' | '$' | '~' )
-
+Prop ::= [A-Z] ':' ( DENT? .+ )+
+Art ::= Smooth | Ring | Hold | '*' | '&' | '^' | '^^' | '/' | '//' | '\' | '\\' | '$' | '~'
+Smooth ::= '(' Phrase ')'
+Ring ::= '{' Phrase '}'
+Hold ::= '{{' Phrase '}}'
 Cut ::= ( Note Click )+ Note | '[' ( Note "'" )+ Note ']' Click
-
 Note ::= Art* ( Tone | Strand | Braid ) Art* Click Art*
-
-Tone ::= [mkdsjlhncztg] [qruoaeily]
-
-Click ::= [!;:,.] | '-' | [=?]
-
-Knit ::= SPAN | Span | Strand | CHORD | Chord | Braid
-
-Span ::= ( [fywb] Thread | 'aa' )
-
-Strand ::= Tone Span
-
-Braid ::= Tone TONESTART thread+
-
-Chord ::= thread? TONESTART thread+
-
+Tone ::= ToneStart ToneRhyme
+ToneStart ::= [mkdsjlhncztg]
+ToneRhyme ::= [qruoaeily]
+Click ::= [!;:,.] | '-' | [=?] | Tie
+Tie ::= '++'
+Span ::= ( SpanStart Thread | Same )
+Same ::= 'aa'
+SpanStart ::= [fywb]
 Thread ::= [aruoeiqvlmnzx]
-
+Strand ::= Tone Span
+Chord ::= Thread? KNITSTART Thread+
+Braid ::= Tone KNITSTART Thread+
+TONE ::= TONESTART TONERHYME
 TONESTART ::= [MKDSJLHNCATG]
-
-TONE ::= TONESTART ( 'OR' | 'AR' | [RUOAEI] | 'AL' | 'IL' )
-
-SPAN ::= [ARUOEIQVLMNZX]
-
-STRAND ::= ( [FYWB] SPAN | 'AA' )
-
-CHORD ::= ( TONESTART | 'X' ) SPAN
+TONERHYME ::= [QRUOAEILY]
+KNITSTART ::= TONESTART | 'X'
+THREAD ::= [ARUOEIQVLMNZX]
+STRAND ::= ( [FXYWRB] SPAN | SAME )
+SAME ::= 'AA'
+CHORD ::= ( TONESTART | 'X' ) THREAD+
+DENT ::= '\n' SPACE+
+SPACE ::= ' ' | '\t'
