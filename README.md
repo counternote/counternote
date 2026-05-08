@@ -45,7 +45,7 @@ Because every field tends toward jargon with big and important words the deeper 
 
 # Sounds
 
-Sounds in Counternote come in two varieties — those where pitch is the defining characteristic, *tones*, and those where pitch is indeterminate or incidental, *raps*.
+Sounds in Counternote come in three varieties — those where pitch is the defining characteristic, *tones* and *spans*, and those where pitch is indeterminate or incidental, *raps*.
 
 ## Tones
 
@@ -91,8 +91,6 @@ And a *rhyme*, the rest of the letters:
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
     —————————————————————————————
-       -il    +5    il   'eel'
-       -al    +4    al   'ahl'
        -l     +3    ɛl   'ehl'
        -i     +2    i     'ee'
        -e     +1    e     'eh'
@@ -102,13 +100,11 @@ And a *rhyme*, the rest of the letters:
        -o     -1    o     'oh'
        -u     -2    u     'oo'
        -r     -3    ɚ     'er'
-       -q     -4    ɑ˞    'ar'
-       -or    -5    ɔ˞    'or'
     —————————————————————————————
 
 In Counternote, when we want to talk about the pitch-class of a note, like every traditional note labeled C, we are talking about the *rank*. And when we want to talk about a specific octave, we are talking about the *file*. The *starts* and *rhymes* go *rank* and *file*.
 
-`ZE` is *A440*, so by default `ze` sounds the same and `za` sounds an octave below it.
+By default, `MA` is middle C, so `ZE` is *A440*, and `za` sounds an octave below that (*A220*).
 
 ### Absolutely Relative
 
@@ -116,9 +112,35 @@ There is an inherent tension between an absolute frequency like *A440* and a rel
 
 That is why the absolute pitch terms have been relegated to setting the tonal center, which comes with a huge benefit — transposing instruments can be read by anyone in the correct key. Simply set the *key* to that of the instrument, B♭ instruments should use `TA`, and alter the *mode* using *chords*. `TA` remains `TA`, its pitch always well-defined, while `ma` becomes B♭ and every lowercase *tone* is relative to it.
 
+## Spans
+
+Next *sounds* to introduce are the *spans*, intervals like a ♭3 or minor third or a 6 or major sixth:
+
+    ——————————————————————————————————
+      SPAN   INTERVAL  IPA   ENGLISH
+    ——————————————————————————————————
+        X       8       aʃ   'ahsh'
+        Z       7       ɚz    'erz'
+        N      ♭7       un    'oon'
+        M       6       om    'ohm'
+        L      ♭6       ɛl    'ehl'
+        V       5       iv    'eev'
+        Q     ♯4/♭5     ʔɑ˞   'ʔar'
+        I       4       ʔi    'ʔee'
+        E       3       ʔɛ    'ʔeh'
+        O      ♭3       ʔo    'ʔoh'
+        U       2       ʔu    'ʔoo'
+        R      ♭2       ʔɚ    'ʔer'
+        A       1       ʔa    'ʔah'
+    ——————————————————————————————————
+
+Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the *span*. These single uppercase letters represent the interval in abstract terms, but when speaking of direction like a fifth above or below, they are prefixed with `Y-` for up to an octave above, `W-` for down to an octave below, and unison gets doubled `AA`.
+
+When lowercase, *spans* are used for *ties* and *strands* for the directional ones, and *threads* for the abstract ones.
+
 ## Raps
 
-The last kind of sound in Counternote is whatever doesn’t fit in the tones. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
+The last kind of *sound* in Counternote is whatever doesn’t fit in the tones. These include noise, drums, non-standard ways of producing sound on an instrument, and even memes.
 
 Raps are just a list of mostly user-defined sounds. There are two basic rules for creating them, only the first of which must be followed:
 
@@ -321,7 +343,7 @@ That is easier for the eye to parse and, as mentioned before, can save on horizo
         | ma.ma ma.ma ma.ma ma.ma |
     —————————————————————————————————
 
-# Stacks, Spans, Strands, and Knits
+# Stacks, Strands, and Knits
 
 That’s nice and all for monophonic instruments, but what about things like the piano and guitar? There are a few ways of dealing with many voices. One is by using *stacks* — multiple lines of notes in the same *bar*.
 
@@ -345,27 +367,7 @@ A four-part harmony might be written:
 
 But what about double stops and chords and voicings where you might not need or want to dedicate vertical space?
 
-For that, we’ll learn about *knits* and *strands*, but to do so we have to introduce intervals called *spans*:
-
-    ——————————————————————————————————
-      SPAN   INTERVAL  IPA   ENGLISH
-    ——————————————————————————————————
-        X       8       aʃ   'ahsh'
-        Z       7       ɚz    'erz'
-        N      ♭7       un    'oon'
-        M       6       om    'ohm'
-        L      ♭6       ɛl    'ehl'
-        V       5       iv    'eev'
-        Q     ♯4/♭5     ʔɑ˞   'ʔar'
-        I       4       ʔi    'ʔee'
-        E       3       ʔɛ    'ʔeh'
-        O      ♭3       ʔo    'ʔoh'
-        U       2       ʔu    'ʔoo'
-        R      ♭2       ʔɚ    'ʔer'
-        A       1       ʔa    'ʔah'
-    ——————————————————————————————————
-
-Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the span. These single uppercase letters represent the interval in abstract terms, but sometimes you want to talk about a fifth above or a fifth below. For that, we prefix it with `Y-` for up to an octave above, `W-` for down to an octave below, and unison gets doubled `AA`. These create the *spans* used for *strands* — lowercase versions attached to tones to create double stops:
+For the double stops, we have *strands* which consist of the directional *spans* attached to a *tone* in lowercase:
 
     ————————————————————————————————————
       SPAN   INTERVAL   IPA    ENGLISH
@@ -384,23 +386,24 @@ Notice that the pronunciation of each isn’t the name of the letter but the sou
       -yr      ♭2↑      jɚ     'yer'
       -aa       1       ʔa     'ʔah'
 
-Just like *strand spans* became lowercase, the single-letter *spans* become lowercase to make *threads*, individual voices within a *knit*.
+The abstract, single-letter *spans* become lowercase to make *threads*, individual voices within a *knit*.
 
-    ———————————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————
       LOWERCASE for THREADS
-    ———————————————————————————————————————————————————————————
-       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8   X
-      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x- -h-
-    ———————————————————————————————————————————————————————————
+    ———————————————————————————————————————————————————————
+       1  ♭2   2  ♭3   3   4  ♭5   5  ♭6   6  ♭7   7   8
+      -a- -r- -u- -o- -e- -i- -q- -v- -l- -m- -n- -z- -x-
+    ———————————————————————————————————————————————————————
 
-An `h` is added for octave spans without a voice. Here are the rules for pronouncing the *threads*:
+Here are the rules for pronouncing the *threads*:
 
-+ For any three consonants in a row, a schwa `ə` is inserted between the second and third.
-+ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it.
-+ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it.
-+ If more than an octave is skipped between two *threads*, an `h` is inserted for each missing octave.
-+ The `r` is always a rhoticized mid vowel.
-+ The `q` is always a glottal stop.
++ For any three consonants in a row, a schwa `ə` is inserted between the second and third
++ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it
++ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it
++ An `x` immediately after the *root* is an octave
++ An `x` anywhere else is one missing octave
++ The `r` is always a rhoticized mid vowel
++ The `q` is always a glottal stop
 
 *Knits* come in two varieties: *chords* which are analogous to the chords we know and love, and *braids* which are specific voicings of *chords*.
 

@@ -277,45 +277,47 @@ A __start__ is the first __phone__ or *linguistic onset* of a [word][word]. All 
 
 The standard starting consonants with their points of articulation going from “high” to “low” (to the “neutral” glottal consonants) are as follows:
 
-    —————————————————————————————————
-      GLYPH    IPA    PRONUNCIATION
-      ~~~~~~ BILABIAL ~~~~~~~~~~~~~
-       P,p      p     'p' in 'pick'
-       B,b      b     'b' in 'bow'
-       M,m      m     'm' in 'muse'
-      ~~~~~ LABIODENTAL ~~~~~~~~~~~
-       F,f      f     'f' in 'fun'
-       V,v      v     'v' in 'vibe'
-      ~~~~~~ ALVEOLAR ~~~~~~~~~~~~~
-       L,l      l     'l' in 'lick'
-       T,t      t     't' in 'tom'
-       D,d      d     'd' in 'din'
-       N,n      n     'n' in 'neck'
-       S,s      s     's' in 'sine'
-       Z,z      z     'z' in 'zip'
-      ~~~~ POSTALVEOLAR ~~~~~~~~~~~
-       C,c      tʃ   'ch' in 'chip'
-       J,j      dʒ    'j' in 'jam'
-      ~~~~~~ PALATAL ~~~~~~~~~~~~~~
-       X,x      ʃ    'sh' in 'ship'
-       Y,y      j     'y' in 'yes'
-      ~~~~~~~ VELAR ~~~~~~~~~~~~~~~
-       K,k      k     'k' in 'kick'
-       G,g      g     'g' in 'good'
-      ~~~~ LABIOVELAR ~~~~~~~~~~~~~
-       W,w      w     'w' in 'wit'
-      ~~~~~~ GLOTTAL ~~~~~~~~~~~~~~
-       H,h      h     'h' in 'hit'
-    —————————————————————————————————
+    ——————————————————————————————————
+       GLYPH   IPA    PRONUNCIATION
+      ~~~~~~ BILABIAL ~~~~~~~~~~~~~~
+        P,p     p     'p' in 'pick'
+        B,b     b     'b' in 'bow'
+        M,m     m     'm' in 'muse'
+      ~~~~~ LABIODENTAL ~~~~~~~~~~~~
+        F,f     f     'f' in 'fun'
+        V,v     v     'v' in 'vibe'
+      ~~~~~~ ALVEOLAR ~~~~~~~~~~~~~~
+        L,l     l     'l' in 'lick'
+        T,t     t     't' in 'tom'
+        D,d     d     'd' in 'din'
+        N,n     n     'n' in 'neck'
+        S,s     s     's' in 'sine'
+        Z,z     z     'z' in 'zip'
+      ~~~~ POSTALVEOLAR ~~~~~~~~~~~~
+        C,c     tʃ   'ch' in 'chip'
+        J,j     dʒ    'j' in 'jam'
+      ~~~~~~ PALATAL ~~~~~~~~~~~~~~~
+        X,x     ʃ    'sh' in 'ship'
+        Y,y     j     'y' in 'yes'
+      ~~~~~~~ VELAR ~~~~~~~~~~~~~~~~
+        K,k     k     'k' in 'kick'
+        G,g     g     'g' in 'good'
+      ~~~~ LABIOVELAR ~~~~~~~~~~~~~~
+        W,w     w     'w' in 'wit'
+      ~~~~~~ GLOTTAL ~~~~~~~~~~~~~~~
+        H,h     h     'h' in 'hit'
+    ——————————————————————————————————
 
 ### Rhyme
 
 A __rhyme__ is the rhyming part or *linguistic coda* of a [word][word].
 
-All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanish vowels plus the rhoticized open vowel `ɑ˞` as `q` and a rhoticized mid vowel `ɚ` as `r`:
+All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanish vowels plus the rhoticized open vowel `ɑ˞` as `q`, a rhoticized mid vowel `ɚ` as `r`, a lateralized mid front vowel `ɛl` as `l`, and a lateralized high vowel `iʎ` as `y`:
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
+        y      iʎ        'eel'
+        l      ɛl        'ehl'
         i       i        'ee'
         e       e        'eh'
         a       ɑ        'ah'
@@ -538,7 +540,7 @@ A __tweak__ is an instruction on effects that occur. It is denoted with `&` at t
 
 # Sounds
 
-A __sound__ is any acoustic vibration fit to be notated. They come in two monophonic varieties: [tones][tone] and [raps][rap]. The first deals with those of definite [pitch][pitch], whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
+A __sound__ is any acoustic vibration fit to be notated. They come in three varieties: [tones][tone], [spans][span], and [raps][rap]. The first two deal with those of definite [pitch][pitch], whereas [raps][rap] deal with those of indefinite or incidental [pitch][pitch].
 
 ## Pitch
 
@@ -907,19 +909,17 @@ The __tone rhyme__ is all but the [start][start], also known as the linguistic c
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
     —————————————————————————————
-       -il    +5    il   'eel'
-       -al    +4    al   'ahl'
+       -y     +4    iʎ   'eel'
        -l     +3    ɛl   'ehl'
        -i     +2    i     'ee'
        -e     +1    e     'eh'
     —————————————————————————————
-       -a     ±0    a     'ah'
+       -a     ±0    ɑ     'ah'
     —————————————————————————————
        -o     -1    o     'oh'
        -u     -2    u     'oo'
        -r     -3    ɚ     'er'
-       -ar    -4    ɑ˞    'ar'
-       -or    -5    ɔ˞    'or'
+       -q     -4    ɑ˞    'ar'
     —————————————————————————————
 
 ### Drift
@@ -947,9 +947,89 @@ The __drifts__ are not sticky, but [tones][tone] can be redefined to make them s
 
 Pronunciation follows that of the [knits][knits].
 
+## Span
+
+A __span__ is an interval. It consists of a single letter capitalized when speaking of an interval such a V, a perfect fifth. Even though they are written with a single letter, the consonants on their own have a particular vowel quality attached.
+
+    ——————————————————————————————————
+      SPAN   INTERVAL  IPA   ENGLISH
+    ——————————————————————————————————
+        X       8       aʃ   'ʔahsh'
+        Z       7       ɚz   'ʔerz'
+        N      ♭7       un   'ʔoon'
+        M       6       om   'ʔohm'
+        L      ♭6       ɛl   'ʔehl'
+        V       5       iv   'ʔeev'
+        Q     ♯4/♭5     ʔɑ˞   'ʔar'
+        I       4       ʔi    'ʔee'
+        E       3       ʔɛ    'ʔeh'
+        O      ♭3       ʔo    'ʔoh'
+        U       2       ʔu    'ʔoo'
+        R      ♭2       ʔɚ    'ʔer'
+        A       1       ʔa    'ʔah'
+    ——————————————————————————————————
+
+Sometimes the direction of movement by an interval is need to be talked about, in which case `Y` or `F` can be prefixed to the uppercase __span__ for ascending movement, and `W` or `B` for descending movement.
+
+    ———————————————————————————————————
+      SPAN   INTERVAL   IPA   ENGLISH
+    ———————————————————————————————————
+       FA      15↑      fa     'fah'
+       FZ      14↑      fɚz    'ferz'
+       FN     ♭14↑      fun    'foon'
+       FM      13↑      fom    'fohm'
+       FL     ♭13↑      fɛl    'felh'
+       FV      12↑      fiv    'feev'
+       FQ   ♯11/♭12↑    fɑ˞    'far'
+       FI      11↑      fi     'fee'
+       FE      10↑      fɛ     'feh'
+       FO     ♭10↑      fo     'foh'
+       FU       9↑      fu     'foo'
+       FR      ♭9↑      fɚ     'fer'
+       YA       8↑      ja     'yah'
+       YZ       7↑      jɚz    'yerz'
+       YN      ♭7↑      jun    'yoon'
+       YM       6↑      jom    'yohm'
+       YL      ♭6↑      jɛl    'yelh'
+       YV       5↑      jiv    'yeev'
+       YQ     ♯4/♭5↑    jɑ˞    'yar'
+       YI       4↑      ji     'yee'
+       YE       3↑      jɛ     'yeh'
+       YO      ♭3↑      jo     'yoh'
+       YU       2↑      ju     'yoo'
+       YR      ♭2↑      jɚ     'yer'
+       AA       1       ʔa     'ʔah'
+       WZ      ♭2↓      wɚz    'werz'
+       WN       2↓      wun    'woon'
+       WM      ♭3↓      wom    'wohm'
+       WL       3↓      wɛl    'wehl'
+       WV       4↓      wiv    'weev'
+       WQ     ♯4/♭5↓    wɑ˞    'war'
+       WI       5↓      wi     'wee'
+       WE      ♭6↓      wɛ     'weh'
+       WO       6↓      wo     'woh'
+       WU      ♭7↓      wu     'woo'
+       WR       7↓      wɚ     'wer'
+       WA       8↓      wa     'wah'
+       BZ      ♭9↓      bɚz    'berz'
+       BN       9↓      bun    'boon'
+       BM     ♭10↓      bom    'bohm'
+       BL      10↓      bɛl    'behl'
+       BV      11↓      biv    'beev'
+       BQ   ♯11/♭12↓    bɑ˞    'bar'
+       BI      12↓      bi     'bee'
+       BE     ♭13↓      bɛ     'beh'
+       BO      13↓      bo     'boh'
+       BU     ♭14↓      bu     'boo'
+       BR      14↓      bɚ     'ber'
+       BA      15↓      ba     'bah'
+    ——————————————————————————————————
+
+__Spans__ of both varieties are used in [ties][tie], [strands][strand], and [knits][knits] as [threads][thread] when lowercas.e
+
 ## Rap
 
-A __rap__ is any sound where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
+A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
 
     ————————————————————————
       RESERVED
@@ -1061,84 +1141,6 @@ __Knits__ are collections of notes occuring simultaneously. They come in three v
 
 A __root__ is the tonic of a [knit][knits].
 
-## Span
-
-A __span__ is an interval. It consists of a single letter capitalized when speaking of an interval such a V, a perfect fifth. Even though they are written with a single letter, the consonants on their own have a particular vowel quality attached.
-
-    ——————————————————————————————————
-      SPAN   INTERVAL  IPA   ENGLISH
-    ——————————————————————————————————
-        X       8       aʃ   'ʔahsh'
-        Z       7       ɚz   'ʔerz'
-        N      ♭7       un   'ʔoon'
-        M       6       om   'ʔohm'
-        L      ♭6       ɛl   'ʔehl'
-        V       5       iv   'ʔeev'
-        Q     ♯4/♭5     ʔɑ˞   'ʔar'
-        I       4       ʔi    'ʔee'
-        E       3       ʔɛ    'ʔeh'
-        O      ♭3       ʔo    'ʔoh'
-        U       2       ʔu    'ʔoo'
-        R      ♭2       ʔɚ    'ʔer'
-        A       1       ʔa    'ʔah'
-    ——————————————————————————————————
-
-Sometimes we need to talk about movement by some interval, in which case `Y` or `F` are prefixed to the uppercase __span__ for ascending movement, and `W` or `B` are prefixed for descending movement.
-
-    ————————————————————————————————————
-      SPAN   INTERVAL   IPA    ENGLISH
-    ————————————————————————————————————
-       FA      15↑      fa     'fah'
-       FZ      14↑      fɚz    'ferz'
-       FN     ♭14↑      fun    'foon'
-       FM      13↑      fom    'fohm'
-       FL     ♭13↑      fɛl    'felh'
-       FV      12↑      fiv    'feev'
-       FQ   ♯11/♭12↑    fɑ˞    'far'
-       FI      11↑      fi     'fee'
-       FE      10↑      fɛ     'feh'
-       FO     ♭10↑      fo     'foh'
-       FU       9↑      fu     'foo'
-       FR      ♭9↑      fɚ     'fer'
-       YA       8↑      ja     'yah'
-       YZ       7↑      jɚz    'yerz'
-       YN      ♭7↑      jun    'yoon'
-       YM       6↑      jom    'yohm'
-       YL      ♭6↑      jɛl    'yelh'
-       YV       5↑      jiv    'yeev'
-       YQ     ♯4/♭5↑    jɑ˞    'yar'
-       YI       4↑      ji     'yee'
-       YE       3↑      jɛ     'yeh'
-       YO      ♭3↑      jo     'yoh'
-       YU       2↑      ju     'yoo'
-       YR      ♭2↑      jɚ     'yer'
-       AA       1       ʔa     'ʔah'
-       WZ      ♭2↓      wɚz    'werz'
-       WN       2↓      wun    'woon'
-       WM      ♭3↓      wom    'wohm'
-       WL       3↓      wɛl    'wehl'
-       WV       4↓      wiv    'weev'
-       WQ     ♯4/♭5↓    wɑ˞    'war'
-       WI       5↓      wi     'wee'
-       WE      ♭6↓      wɛ     'weh'
-       WO       6↓      wo     'woh'
-       WU      ♭7↓      wu     'woo'
-       WR       7↓      wɚ     'wer'
-       WA       8↓      wa     'wah'
-       BZ      ♭9↓      bɚz    'berz'
-       BN       9↓      bun    'boon'
-       BM     ♭10↓      bom    'bohm'
-       BL      10↓      bɛl    'behl'
-       BV      11↓      biv    'beev'
-       BQ   ♯11/♭12↓    bɑ˞    'bar'
-       BI      12↓      bi     'bee'
-       BE     ♭13↓      bɛ     'beh'
-       BO      13↓      bo     'boh'
-       BU     ♭14↓      bu     'boo'
-       BR      14↓      bɚ     'ber'
-       BA      15↓      ba     'bah'
-    ———————————————————————————————————
-
 ## Strand
 
 A __strand__ is a two-voice harmony created by combining a [tone][tone] with a lowercase, two-character [span][span] representing the interval from the [tone][tone]. A perfect fifth ascending from `ma` is `mayv` 'mah-YEEV' whereas a perfect fifth descending is `mawi` 'MAH-wee'. A __strand__ is only every two voices.
@@ -1181,12 +1183,13 @@ A __thread__ is a single [voice][voice] within a __knit__, using the lowercase [
 
 An `h` is added for octave spans without a voice. Here are the rules for pronouncing the *threads*:
 
-+ For any three consonants in a row, a schwa `ə` is inserted between the second and third.
-+ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it.
-+ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it.
-+ If more than an octave is skipped between two *threads*, an `h` is inserted for each missing octave.
-+ The `r` is always a rhoticized mid vowel.
-+ The `q` is always a glottal stop.
++ For any three consonants in a row, a schwa `ə` is inserted between the second and third
++ For any two vowels in a row, if the first is `u`, `o`, or `r`, a `w` is inserted after it
++ For any two vowels in a row, if the first is `a`, `e`, or `i`, a `y` is inserted after it
++ An `x` immediately after the [root][root] is an octave
++ An `x` anywhere else is one missing octave and gets no voice
++ The `r` is always a rhoticized mid vowel
++ The `q` is always a glottal stop
 
 ## Chord
 
