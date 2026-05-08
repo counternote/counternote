@@ -877,6 +877,12 @@ A lowercase __tone__ is akin to a *scale degree* or *movable-do*, a note relativ
       ma  ka  da  sa  ja  la  ha  na  ca  za  ta  ga  
     ——————————————————————————————————————————————————
 
+There are reasons to the sequence being in that specific order, but it is difficult to quickly memorize twelve abstract words, so to solidify the order in your head, picture a microphone, two pills, the slammer, a chicken, a block of parmesan, and clothing label and say 'mike', 'dose', 'jail', 'hen', 'cheese', 'tag', then:
+
+    ————————————————————————————————————————————
+      ma-ka  da-sa  ja-la  ha-na  ca-za  ta-ga
+    ————————————————————————————————————————————
+
 ### Tone Start
 
 The __tone start__ will always be a consonant represented by a single [glyph][glyph]. Their pitch will always be relative to the current [key][key] written here with a [notch][notch] offset.
@@ -1029,7 +1035,7 @@ __Spans__ of both varieties are used in [ties][tie], [strands][strand], and [kni
 
 ## Rap
 
-A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. These are some of the proposed __raps__:
+A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or incidental. Rather than having some algorithmic way of bulding these, __raps__ are just a simple, user-definable lookup table with the caveat that they cannot conflict with [tones][tone], [spans][span], or the reserved __raps__. This is the current list of proposed __raps__:
 
     ———————————————————————————————
       RESERVED
@@ -1044,7 +1050,6 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `hx` hush
       `nh` inhale
       `xh` exhale
-      `hs` hiss
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
@@ -1124,6 +1129,8 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `lc` the licc
       `lf` laugh track
       `cx` shattering glass
+      `wx` whoosh
+      `hs` hiss
     ———————————————————————————————
 
 Simultaneous sounding __raps__ are placed together using `'`

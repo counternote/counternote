@@ -63,7 +63,15 @@ First up to introduce are the twelve *tones*. These refer to absolute pitch when
       ma  ka  da  sa  ja  la  ha  na  ca  za  ta  ga  
     ——————————————————————————————————————————————————
 
-You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. The *starts*, the first letter of a Counternote word, always have the same pronunciation, so `ji` and `gi` sound like 'gee' and 'ghee' respectively. 
+There are reasons to the sequence being in that specific order, but it is difficult to quickly memorize twelve abstract words, so to solidify the order and pronunciation in your head, picture a microphone, two pills, the slammer, a chicken, a block of parmesan, and a clothing label, then say 'mike', 'dose', 'jail', 'hen', 'cheese', 'tag', then:
+
+    ————————————————————————————————————————————
+      ma-ka  da-sa  ja-la  ha-na  ca-za  ta-ga
+    ————————————————————————————————————————————
+
+Do that a few times and it becomes hard to forget.
+
+You may have noticed `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. The *starts*, the first letter of a Counternote word, always have the same pronunciation, so `ji` and `gi` sound like 'gee' and 'ghee' respectively.
 
 Uppercase or lowercase, the *starts* are:
 
@@ -147,7 +155,7 @@ Raps are just a list of mostly user-defined sounds. There are two basic rules fo
 * they cannot overlap with tones or reserved raps
 * they should sound like what they stand for
 
-These are some proposed raps, only the first two of which cannot be defined on a piece by piece basis:
+Here is a sampling of the current list:
 
     ———————————————————————————————
       RESERVED
@@ -159,20 +167,14 @@ These are some proposed raps, only the first two of which cannot be defined on a
       USER-DEFINABLE
     ———————————————————————————————
       NOISE
-      `hx` hush
-      `nh` inhale
-      `xh` exhale
-      `hs` hiss
       `ss` blue noise
       `xs` white noise
       `xx` pink noise
     ———————————————————————————————
       DRUM KIT
-      `pf` pf snare
       `ks` k snare
       `kt` rim shot
       `kk` kick drum
-      `bd` bass drum
       `gm` floor tom
       `gn` low tom
       `dm` mid tom
@@ -181,17 +183,8 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `ts` open hi-hat
       `xt` closing hi-hat
       `st` closed hi-hat
-      `px` crash
-      `xp` crash mute
-      `ps` ride
-      `sp` ride mute
     ———————————————————————————————
       PERCUSSION
-      `pm` timpani 32
-      `pn` timpani 29
-      `pb` timpani 26
-      `pd` timpani 23
-      `pp` timpani 20
       `qm` conga bass
       `qn` conga open tone
       `qp` conga mute
@@ -206,42 +199,14 @@ These are some proposed raps, only the first two of which cannot be defined on a
       `tp` high bongo mute
       `th` high bongo open slap
       `tg` high bongo closed slap
-      `cm` cajon bass
-      `cn` cajon open tone
-      `cp` cajon mute
-      `ch` cajon open slap
-      `cg` cajon closed slap
-      `cd` cajon tap
-      `jm` djembe bass
-      `jn` djembe tone
-      `jp` djembe mute
-      `jh` djembe open slap
-      `jg` djembe closed slap
-      `jd` djembe tap
-      `xk` shook
-      `cc` clap
-      `td` clave
-      `sx` rainstick
-    ———————————————————————————————
-      GUITAR
-      `rk` rake
-      `dt` deep tap
-      `lt` light tap
-      `dk` dark tick
-      `tk` bright tick
-      `hk` handmute
-      `sk` strum mute
     ———————————————————————————————
       OTHER
       `rf` ref whistle
-      `ah` scream
       `ws` Wilhelm scream
       `rn` siren
       `ck` crickets
-      `tw` tweet, chirp
       `lc` the licc
       `lf` laugh track
-      `cx` shattering glass
     ———————————————————————————————
 
 Practice beatboxing with these if you like.

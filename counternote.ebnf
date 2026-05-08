@@ -18,7 +18,7 @@ Cut ::= ( Note Click )+ Note | '[' ( Note "'" )+ Note ']' Click
 
 Note ::= Art* ( Tone | Strand | Braid ) Art* Click Art*
 
-Tone ::= [mkdsjlhncztg] ( 'or' | 'ar' | [ruoaei] | 'al' | 'il' )
+Tone ::= [mkdsjlhncztg] [qruoaeily]
 
 Click ::= [!;:,.] | '-' | [=?]
 
