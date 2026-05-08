@@ -243,7 +243,7 @@ Plus two others, immediate and indeterminate:
 
 The wider the character, the longer the duration, the narrower and taller the character, the shorter the duration.
 
-## Grooves and Pulses and Taps
+## Grooves, Pulses, and Taps
 
 *Grooves* tell the duration of a bar. They are written on a line starting with `@` between `|` characters with the number of *clicks* like `|4.|` or `|....|`, both of which are identical and equivalent to the 4/4 time signature. However, one could specify 4/4 as `|4,|` or `|,,,,|` for upbeat numbers or `|4-|` or `|----|` for more languid tunes.
 
@@ -267,7 +267,7 @@ Here are four rather boring bars of Counternote:
 
 ## Tie
 
-The *tie* `++` can be used with or even instead of *clicks* to extend the *note* to the next *bar*. That extension is notated with the unison `aa` in the next *bar*:
+The *tie* `++` can be used instead of *clicks* to extend the *note* to the next *bar*. That extension is notated with the unison `aa` in the next *bar*:
 
     —————————————————————————————————————————
       @ |4.|

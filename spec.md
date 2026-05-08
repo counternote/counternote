@@ -337,16 +337,16 @@ A __word__ is connected sequence of [phones][phone] that can be spoken like the 
 
 A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word].
 
-    —————————————————————————
+    ———————————————————————————————
       SIGN    MEANING
+    ———————————————————————————————
        ++*    start score
        *++    end score
-       ++#    start track
-       #++    end track
-       +++    end stage
-       ++$    start code
-       $++    end code
-    —————————————————————————
+       +++    start/end stage
+       ***    start/end track
+       $$$    start/end script
+       ###    start/end doc
+    ———————————————————————————————
 
 ***
 
@@ -358,13 +358,13 @@ __Blocks__ are structural elements of a composition and how such elements connec
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    ++#
+    +++
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb
     FORM: AABB
-    +++
+    ***
     @ JA XOV |4.| allegretto
 
     A
@@ -404,7 +404,7 @@ A __score__ is an entire composition in Counternote. It is enclosed in `++*` and
 
 ## Stage
 
-A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `++#` and `+++` [signs][sign].
+A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ is between the `++*` or `+++` and `+++` [signs][sign].
 
 ### Scribe
 
@@ -524,11 +524,11 @@ A __rep__ is a directive to repeat some number of [clicks][click] or [bars][bar]
 
 ## Def
  
-A __def__ is instruction on definitions for parts of a track. It is denoted with `#` at the beginning of a line, `#{` and `}` inline, and `++#` to `#++` for multiline instructions.
+A __def__ is instruction on definitions for parts of a track. It is denoted with `#` at the beginning of a line.
 
 ## Script
 
-A __script__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and `++$` to `$++` for multiline code.
+A __script__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `${` and `}` inline, and between `$$$` for multiline code.
 
 ## Doc
 
@@ -749,7 +749,7 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
       f: fingers
       t: thumb
     FORM: AABB
-    +++
+    ***
     @ JA XOV |4.| allegretto
 
     A
