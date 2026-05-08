@@ -56,7 +56,6 @@ Any acoustic vibration
 * [__file__][file]: the octave range that contains a [pitch][pitch]
 * [__band__][band]: any range of [pitches][pitch]
 * [__notch__][notch]: the range of a single *semitone* or *half-step*
-* [__break__][break]: the [rank][rank] where the [file][file] changes for a given [key][key]
 
 ### BEATS [⤵︎][beats]
 
@@ -80,6 +79,7 @@ Acoustic vibrations held in time
   * [__tone start__][tone start]: the [start][start] that denotes the [rank][rank]
   * [__tone rhyme__][tone rhyme]: the [rhyme][rhyme] that denotes the [file][file]
   * [__drift__][drift]: a microtonal adjustment
+* [__span__][span]: a [word][word] indicating the interval
 * [__rap__][rap]: a [sound][sounds] where [pitch][pitch] is indeterminate or incidental
 * [__breath__][breath]: a breath of fresh quiet
 
@@ -88,7 +88,6 @@ Acoustic vibrations held in time
 Manifold acoustic vibrations
 
 * [__root__][root]: the [tone start][tone start] that denotes the tonic for a [knit][knits]
-* [__span__][span]: a [word][word] indicating the interval
 * [__thread__][thread]: a single [voice][voice] within a [knit][knits]
 * [__strand__][strand]: a [knit][knits] of two voices, a double stop
 * [__chord__][chord]: a [knit][knits] of three voices or more
@@ -176,7 +175,6 @@ Toward a deeper understanding
 [file]: #file
 [band]: #band
 [notch]: #notch
-[break]: #break
 
 [beats]: #beats
 
@@ -196,12 +194,12 @@ Toward a deeper understanding
   [tone start]: #tone-start
   [tone rhyme]: #tone-rhyme
   [drift]: #drift
+[span]: #span
 [rap]: #rap
 [breath]: #breath
 
 [knits]: #knits
 [root]: #root
-[span]: #span
 [thread]: #thread
 [strand]: #strand
 [chord]: #chord
@@ -316,19 +314,19 @@ All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanis
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
-        z       ɚz       'erz'
-        n       un       'oon'
-        m       om       'ohm'
-        v       iv       'eev'
-        y       iʎ       'eel'
-        l       ɛl       'ehl'
-        i       i        'ee'
-        e       e        'eh'
-        a       ɑ        'ah'
-        o       o        'oh'
-        u       u        'oo'
-        r       ɚ        'er'
-        q       ɑ˞       'ar'
+        z       ɚz      'erz'
+        n       un      'oon'
+        m       om      'ohm'
+        v       iv      'eev'
+        y       iʎ      'eel'
+        l       ɛl      'ehl'
+        i       i       'ee'
+        e       e       'eh'
+        a       ɑ       'ah'
+        o       o       'oh'
+        u       u       'oo'
+        r       ɚ       'er'
+        q       ɑ˞      'ar'
     ————————————————————————————————
 
 ## Word
@@ -565,10 +563,6 @@ A __band__ is a defined range of frequencies with the lower bound inclusive and 
 ## Notch
 
 A __notch__ is a [band][band] a twelth root of two wide, a traditional *semitone* or *half-step*.
-
-## Break
-
-A __break__ is the point where the [file][file] changes. It always happens between `ha` and `ne` relative to whatever [key][key] is chosen.
 
 ***
 
@@ -908,7 +902,7 @@ The __tone start__ will always be a consonant represented by a single [glyph][gl
 
 ### Tone Rhyme
 
-The __tone rhyme__ is all but the [start][start], also known as the linguistic code or rhyming part. It represents the [file][file] of the __tone__.
+The __tone rhyme__ is the second letter, also known as the linguistic coda or rhyming part. It represents the [file][file] of the __tone__.
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -925,6 +919,8 @@ The __tone rhyme__ is all but the [start][start], also known as the linguistic c
        -r     -3    ɚ     'er'
        -q     -4    ɑ˞    'ar'
     —————————————————————————————
+
+The [file][file] and thus __tone rhyme__ always change lower below `n-` and higher above `h-`.
 
 ### Drift
 
@@ -1381,7 +1377,7 @@ The [hue clock][hue clock] places [tones][tone] in chromatic order around a cloc
          ♭6             ||              3
                  na  ===||===  la              ±5
                5        ha        4            +6
-             BREAK ↑  ♯4/♭5
+        FILE CHANGE ↑ ♯4/♭5
     ————————————————————————————————————————————————
 
 ### Lux Clock
