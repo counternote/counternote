@@ -1,6 +1,6 @@
 ***
 
-#### Counternote Specification version 0.10.1
+#### Counternote Specification version 0.10.2
 
 This is a terse description of Counternote with definitions and examples.
 
@@ -316,8 +316,12 @@ All __rhymes__ include vowels as part of their __phone__. Vowels are pure spanis
 
     ————————————————————————————————
       GLYPH    IPA   PRONUNCIATION
-        y      iʎ        'eel'
-        l      ɛl        'ehl'
+        z       ɚz       'erz'
+        n       un       'oon'
+        m       om       'ohm'
+        v       iv       'eev'
+        y       iʎ       'eel'
+        l       ɛl       'ehl'
         i       i        'ee'
         e       e        'eh'
         a       ɑ        'ah'

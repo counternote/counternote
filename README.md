@@ -479,4 +479,4 @@ There are obviously other details to go over, but it’s time to see some real m
 
 ***
 
-Version 0.10.1
+Version 0.10.2
