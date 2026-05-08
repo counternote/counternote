@@ -8,7 +8,7 @@ Counternote is a chromatic musical language meant to be typed and sung. It is a 
 
 # Drive
 
-Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, which I take to mean a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
+Counternote is an answer to a question that a lot of people have asked despite a solid solution already existing — namely, is there a [Markdown][md] for music, as in a human readable plaintext music notation? The answer is yes: it’s called [ABC notation][abc], and it’s great. If that’s all you are looking for, you do not need to read more. Go support it!
 
 However, ABC notation is not a music notation directly. It’s a music notation *notation* with another layer of translation (music → staff → ABC). Counternote is a different kind of abstraction from western music notation, a linguistic one, not a visual one, so it can be written in plaintext directly (music → Counternote).
 
@@ -41,7 +41,7 @@ For shareability, everything is just a string of plaintext, easily shared via te
 
 Don’t let the idea that Counternote is a musical language trouble you. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things.
 
-Because every field tends toward jargon with big and important words the deeper you get into it, and occasionally those words conflict with common usage, all terms in Counternote are simple and precise, each limited to one syllable and an easy definition.
+Because every field tends toward jargon with big and important words the deeper you get into it, and occasionally those words conflict with common usage, all terms in Counternote are concise, each limited to one syllable with an easy, unambiguious definition. The words are *italicized* when speaking specifically about Counternote terms.
 
 # Sounds
 
@@ -63,15 +63,15 @@ First up to introduce are the twelve *tones*. These refer to absolute pitch when
       ma  ka  da  sa  ja  la  ha  na  ca  za  ta  ga  
     ——————————————————————————————————————————————————
 
-You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. 
+You’ll notice `ka` and `ca` seem like they might sound the same, but they don’t — `c` is a 'ch' sound in Counternote, always. The *starts*, the first letter of a Counternote word, always have the same pronunciation, so `ji` and `gi` sound like 'gee' and 'ghee' respectively. 
 
-Uppercase or lowercase, they consist of a *start*, the first letter:
+Uppercase or lowercase, the *starts* are:
 
     ———————————————————————————————
       START  OFFSET  IPA  ENGLISH
     ———————————————————————————————
         h-     +6      h     'h'
-        l-     +5      t     't'
+        l-     +5      l     'l'
         j-     +4     dʒ     'j'
         s-     +3      s     's'
         d-     +2      d     'd'
@@ -86,7 +86,7 @@ Uppercase or lowercase, they consist of a *start*, the first letter:
         n-     -5      n     'n'
     ———————————————————————————————
 
-And a *rhyme*, the rest of the letters:
+The *rhymes*, the second letters of a *tone* in this case, are also consistent though the consonant ones differ from *starts* in having a vowel attached to them:
 
     —————————————————————————————
       RHYME  FILE  IPA  ENGLISH
@@ -134,7 +134,7 @@ Next *sounds* to introduce are the *spans*, intervals like a ♭3 or minor third
         A       1       ʔa    'ʔah'
     ——————————————————————————————————
 
-Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the *span*. These single uppercase letters represent the interval in abstract terms, but when speaking of direction like a fifth above or below, they are prefixed with `Y-` for up to an octave above, `W-` for down to an octave below, and unison gets doubled `AA`.
+Notice that the pronunciation of each isn’t the name of the letter but the sound of it, and the consonants include the vowel quality of the *span*, just like the *tone rhyme* `l`. These single uppercase letters represent the interval in abstract terms, but when speaking of direction like a fifth above or below, they are prefixed with `Y-` for up to an octave above, `W-` for down to an octave below, and unison gets doubled `AA`.
 
 When lowercase, *spans* are used for *ties* and *strands* for the directional ones, and *threads* for the abstract ones.
 
