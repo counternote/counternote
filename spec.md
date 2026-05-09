@@ -27,11 +27,12 @@ Foundational elements
 Structural elements
 
 * [__score__][score]: an entire composition
-* [__stage__][stage]: a place for compositional and instrumental details
+* [__set__][set]: score-level details
   * [__scribe__][scribe]: a composer of the [score][score] or [track][track]
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
+* [__stage__][stage]: track-level details
   * [__key__][key]: the tonic of a [track][track]
   * [__mode__][mode]: the mode of a [track][track]
   * [__form__][form]: the song form of a [track][track]
@@ -148,11 +149,12 @@ Toward a deeper understanding
 [blocks]: #blocks
 
 [score]: #score
-[stage]: #stage
+[set]: #set
   [scribe]: #scribe
   [work]: #work
   [act]: #act
 [track]: #track
+[stage]: #stage
   [key]: #key
   [mode]: #mode
   [form]: #form
@@ -295,6 +297,7 @@ The standard starting consonants with their points of articulation going from �
         C,c     tʃ   'ch' in 'chip'
         J,j     dʒ    'j' in 'jam'
       ~~~~~~ PALATAL ~~~~~~~~~~~~~~~
+        R,r    ɹ,r    'r' in 'red'
         X,x     ʃ    'sh' in 'ship'
         Y,y     j     'y' in 'yes'
       ~~~~~~~ VELAR ~~~~~~~~~~~~~~~~
@@ -403,9 +406,9 @@ __Blocks__ are structural elements of a composition and how such elements connec
 
 A __score__ is an entire composition in Counternote. It is enclosed between `++*` and `*++`.
 
-## Stage
+## Set
 
-A __stage__ contains compositional and instrumental details on entire [scores][score] and individual [tracks][track] such as title, author, instrument voices and tunings, and the like. The __stage__ for a [score][score] comes after `++*` and the optional __stage__ for the [track][track] comes after `+++`.
+A __set__ contains compositional and instrumental details on an entire [score][score].
 
 ### Scribe
 
@@ -422,6 +425,10 @@ An __act__ is the performer of a [score][score] or [track][track].
 ## Track
 
 A __track__ is an individual piece that may or may not occur simultaneously within a score. It begins after `***`.
+
+## Stage
+
+A __stage__ contains compositional and instrumental details on individual [tracks][track] such as title, author, instrument voices and tunings, and the like.
 
 ### Key
 
@@ -680,9 +687,7 @@ A __tap__ refers to the [click][click] that gets counted: In `|4.|`, `.` is one 
 
 A __cut__ is a subdivision of a [beat][beats], also known as a tuplet. While there are six well-defined [clicks][click] that do duple meter, many more can be achieved using __cuts__.
 
-### Short Cut
-
-A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It works with small prime number tuplets: duplets, triplets, and quintuplets. The rules are as follows:
+The rules for cuts are as follows:
 
 * no whitespace exists between the [sounds][sounds]
 * [clicks][click] act as separators of the [sounds][sounds] in the __cut__
@@ -690,7 +695,8 @@ A __short cut__ is a quick and dirty way of defining a __cut__, pun intended. It
 * the total duration of all the [clicks][click] is the duration the __cut__ fills
 * a `'` can be used as a separator that does not add duration
 * quadruplets and sextuplets should be written as two duplets/triplets connected by a `'`
-* the unison `aa` may be used to signal that one or more [sounds][sounds] are held
+* __cuts__ may be nested by bracketing them with `[` `]`
+* the `aa` may be used to have a note or bracketed __cut__ take up more than one element
 
 Those rules add up to:
 
@@ -700,7 +706,7 @@ Those rules add up to:
         # one beat for =
         | ma=                             |
         # is equivalent to
-        | ma=__                           |
+        | ma=aa                           |
       2
         # two beats over =
         | ma-             ma-             |
@@ -738,19 +744,19 @@ Those rules add up to:
         | ma, ma, ma, ma, ma, ma, ma, ma, |
     —————————————————————————————————————————
 
-__Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks like using [clicks][click] on every [note][notes]:
+__Cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks like using [clicks][click] on every [note][notes]:
 
     ++*
     SCORE: Lute Suite in E Minor
     WORK: BWV 996
     SCRIBE: Bach
-    +++
+    ***
     TRACK: Bourrée
     VOICES:
       f: fingers
       t: thumb
     FORM: AABB
-    ***
+    +++
     @ JA XOV |4.| allegretto
 
     A
@@ -783,74 +789,6 @@ __Short cuts__ can greatly reduce visual noise. Consider what the Bourrée above
         t| &soSeva-        .       %A %B  |
 
     *++
-
-### Long Cut
-
-A __long cut__ uses square brackets with `'` between [sounds][sounds] and [clicks][click] at the end to slice up the [bar][bar].
-
-    —————————————————————————————————
-      @ |4.|
-      1
-        # one beat for =
-        | ma=                     |
-        # is equivalent to
-        |[ma'__]=                 |
-      2
-        # two beats over =
-        | ma-ma                   |
-        # is equivalent to
-        |[ma'ma]=                 |
-      3
-        # three beats over =
-        | ma-ma-ma                |
-        # is equivalent to
-        |[ma'ma'ma]=              |
-      4
-        # four beats over =
-        | ma-ma       ma-ma       |
-        # is equivalent to
-        | ma-ma'ma-ma             |
-        # and equivalent to
-        |[ma'ma]-    [ma'ma]-     |
-        # and equivalent to
-        |[ma'ma'ma'ma]=           |
-    —————————————————————————————————
-
-__Long cuts__ work in two places where __short cuts__ cannot: nested tuplets and across multiple bars.
-
-To nest a __cut__, just place a __Long cuts__ where a single sound would go:
-
-    —————————————————————————————————
-      @ |4.|
-      1
-        # triplet in triplet
-        |[ma'ma'[ma'ma'ma]]=      |
-        | ma-ma-[ma'ma'ma]        |
-    —————————————————————————————————
-
-If a nested __cut__ takes up more than one element of a tuplet, the [tie][tie] `__` is used: 
-
-    —————————————————————————————————
-      @ |4.|
-      1
-        # triplet in triplet
-        |[ma'[ma'ma'ma]'__]=      |
-        | ma-[ma'ma'ma]-__        |
-    —————————————————————————————————
-
-Because tuplets are treated as a block of one duration split evenly, the total duration must be present at the end even if it goes on longer than the [bar][bar] where it’s written. The `++` adds the duration beyond the current [bar][bar] and the unison `aa` takes the duration on the next one:
-
-    —————————————————————————————————
-      @ |4.|
-      1
-        # triplet over...
-        |[ma'ma'ma]++=            |
-      2
-        # ...2 bars
-        | aa=                     |
-    —————————————————————————————————
-
-The extra [click][click] `=` helps the performer see what how long the __cut__ is.
 
 ***
 
@@ -981,18 +919,30 @@ Sometimes the direction of movement by an interval is need to be talked about, i
     ———————————————————————————————————
       SPAN   INTERVAL   IPA   ENGLISH
     ———————————————————————————————————
-       FA      15↑      fa     'fah'
-       FZ      14↑      fɚz    'ferz'
-       FN     ♭14↑      fun    'foon'
-       FM      13↑      fom    'fohm'
-       FL     ♭13↑      fɛl    'felh'
-       FV      12↑      fiv    'feev'
-       FQ   ♯11/♭12↑    fɑ˞    'far'
-       FI      11↑      fi     'fee'
-       FE      10↑      fɛ     'feh'
-       FO     ♭10↑      fo     'foh'
-       FU       9↑      fu     'foo'
-       FR      ♭9↑      fɚ     'fer'
+       RA      22↑      ra     'rah'
+       RZ      21↑      rɚz    'rerz'
+       RN     ♭21↑      run    'roon'
+       RM      20↑      rom    'rohm'
+       RL     ♭20↑      rɛl    'relh'
+       RV      19↑      riv    'reev'
+       RQ   ♯18/♭19↑    rɑ˞    'rar'
+       RI      18↑      ri     'ree'
+       RE      17↑      rɛ     'reh'
+       RO     ♭17↑      ro     'roh'
+       RU      16↑      ru     'roo'
+       RR     ♭16↑      rɚ     'rer'
+       XA      15↑      ʃa     'shah'
+       XZ      14↑      ʃɚz    'sherz'
+       XN     ♭14↑      ʃun    'shoon'
+       XM      13↑      ʃom    'shohm'
+       XL     ♭13↑      ʃɛl    'shelh'
+       XV      12↑      ʃiv    'sheev'
+       XQ   ♯11/♭12↑    ʃɑ˞    'shar'
+       XI      11↑      ʃi     'shee'
+       XE      10↑      ʃɛ     'sheh'
+       XO     ♭10↑      ʃo     'shoh'
+       XU       9↑      ʃu     'shoo'
+       XR      ♭9↑      ʃɚ     'sher'
        YA       8↑      ja     'yah'
        YZ       7↑      jɚz    'yerz'
        YN      ♭7↑      jun    'yoon'
@@ -1018,18 +968,30 @@ Sometimes the direction of movement by an interval is need to be talked about, i
        WU      ♭7↓      wu     'woo'
        WR       7↓      wɚ     'wer'
        WA       8↓      wa     'wah'
-       BZ      ♭9↓      bɚz    'berz'
-       BN       9↓      bun    'boon'
-       BM     ♭10↓      bom    'bohm'
-       BL      10↓      bɛl    'behl'
-       BV      11↓      biv    'beev'
-       BQ   ♯11/♭12↓    bɑ˞    'bar'
-       BI      12↓      bi     'bee'
-       BE     ♭13↓      bɛ     'beh'
-       BO      13↓      bo     'boh'
-       BU     ♭14↓      bu     'boo'
-       BR      14↓      bɚ     'ber'
-       BA      15↓      ba     'bah'
+       FZ      ♭9↓      fɚz    'ferz'
+       FN       9↓      fun    'foon'
+       FM     ♭10↓      fom    'fohm'
+       FL      10↓      fɛl    'fehl'
+       FV      11↓      fiv    'feev'
+       FQ   ♯11/♭12↓    fɑ˞    'far'
+       FI      12↓      fi     'fee'
+       FE     ♭13↓      fɛ     'feh'
+       FO      13↓      fo     'foh'
+       FU     ♭14↓      fu     'foo'
+       FR      14↓      fɚ     'fer'
+       FA      15↓      fa     'fah'
+       BZ     ♭16↓      bɚz    'berz'
+       BN      16↓      bun    'boon'
+       BM     ♭17↓      bom    'bohm'
+       BL      17↓      bɛl    'behl'
+       BV      18↓      biv    'beev'
+       BQ   ♯18/♭19↓    bɑ˞    'bar'
+       BI      19↓      bi     'bee'
+       BE     ♭20↓      bɛ     'beh'
+       BO      20↓      bo     'boh'
+       BU     ♭21↓      bu     'boo'
+       BR      21↓      bɚ     'ber'
+       BA      22↓      ba     'bah'
     ——————————————————————————————————
 
 __Spans__ of both varieties are used in [ties][tie], [strands][strand], and [knits][knits] as [threads][thread] when lowercas.e
@@ -1113,18 +1075,18 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
     ———————————————————————————————
       GUITAR
       `rk` rake
-      `dt` deep tap
-      `lt` light tap
-      `dk` dark tick
-      `tk` bright tick
       `hk` handmute
       `sk` strum mute
+      `dk` dark tick
+      `tk` bright tick
+      `dt` deep tap
+      `lt` light tap
     ———————————————————————————————
       OTHER
       `rf` ref whistle
       `ah` scream
       `ws` Wilhelm scream
-      `rn` siren
+      `rw` siren
       `ck` crickets
       `tw` tweet, chirp
       `lc` the licc

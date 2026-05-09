@@ -281,9 +281,7 @@ The *tie* `++` can be used instead of *clicks* to extend the *note* to the next 
 
 ## Cuts
 
-In Counternote, *cuts* are groups of notes that slice some duration into equal parts. There are two kinds of *cuts*, long and short. It’s the *short cuts* that should be used most of the time.
-
-You’ll notice in the boring bars above, each of those notes takes up at least four spaces. The *short cut* makes each note only take up three spaces and cuts down on visual noise, so it’s aptly named.
+In Counternote, *cuts* are groups of notes that slice some duration into equal parts. You’ll notice in the boring bars above, each of those notes takes up at least four spaces. The *cut* makes each note only take up three spaces and cuts down on visual noise, so it’s aptly named.
 
 A triplet that takes up two beats in `|2.|` is notated like `| ma.ma.ma |` with no spaces between the notes and the clicks being added together. That works decently well for small prime numbers: duplets (two notes where one fits), triplets, quintuplets, but for quadruplets and sextuplets, duplets and triplets are connected with `'` which acts as a separator:
 
