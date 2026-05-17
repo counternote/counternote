@@ -1,0 +1,43 @@
+/* Counternote Minimal Grammar 0.10.3 */
+
+Start ::= '++*' Score
+Score ::= Stage? Track+ '*++'
+Stage ::= Just Sep Space Cap ':' ( Space ( Name | Low ) )+
+Sep ::= "'"
+Track ::= '+++'? ( Just | Stage | Round | Bar | Voice )+
+Round ::= Cap Dent Bar+
+Bar ::= Nume ( Dent+ Line )+
+Line ::= Low? ( Comp | Cue | Voice | Chant )
+Comp ::= '/' Space+ ( ( ( Chord | Braid) Space* ) '/' Click+ )+
+Cue ::= '!' Space+ Move* ( Tweak Space* Move* )+
+Voice ::= '|' Space+ Phrase '|'
+Chant ::= '\' ( Space+ Word* )*
+Move ::= '_' | '<' | '>'
+Phrase ::= ( ( Cut | Note | Run )+ Click* )+
+Cut ::= ( ( Note | Run ) Click ) ( ( Note | Run ) ( Click | Sep ) )* Note | Run
+Note ::= Sound Click
+Run ::= '[' Phrase ']'
+Tone ::= ToneStart ToneRhyme SpanRhyme?
+ToneStart ::= [mkdsjlhncztg]
+ToneRhyme ::= [qruoaeily]
+Rap ::= 'hh' | 'sw' | 'rp' 
+Stop ::= ( Note | Rap )+ Sep ( Note | Rap )
+Sound ::= ( Rap | Tone | Same | Strand | Braid | Stop )
+Click ::= [!;:,.] | '-' | [=?] | Tie
+Tie ::= '++'
+Same ::= 'aa'
+SpanStart ::= [bfwyxr]
+SpanRhyme ::= [aruoeiqvlmnz]
+Thread ::= SpanRhyme | 'x'
+Strand ::= Tone Span
+Braid ::= Tone Tone_Start_ Thread+
+Nume ::= [0-9_]+
+Dent ::= Just Space+
+Word ::= [A-Za-z] ( [A-Za-z] | '-' )
+Name ::= [A-Z][A-Za-z0-9_]*
+Cap ::= [A-Z][A-Z0-9_]*
+Low ::= [a-z][a-z0-9_]*
+Space ::= ' ' | '\t'
+Just ::= '\n'
+
+/* EOF */

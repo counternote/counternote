@@ -37,6 +37,36 @@ For shareability, everything is just a string of plaintext, easily shared via te
 
 ***
 
+# Road Map
+
+The future of Counternote:
++ Specification Stability: Hammer out remaining big and small details
+  + Spec: 80% complete
++ Minimum Viable Compiler: Translate a subset of Counternote to MIDI 1.0
+  + Lexer: 90% complete
+  + Parser: 10% complete
+  + Gener: 0% complete
++ Minimum Viable Playground: Webapp targeting Web Audio API
+  + Webapp: 0% complete
+  + Text Entry: 0% complete
+  + Web Audio: 0% complete
++ Medium Viable Compiler: Add struture, articulations, and staff export
+  + Structure: 40% complete
+  + Articulation: 0% complete
+  + Staff Export: 0% complete
++ Minimum Viable Synthesis Engine: Lightweight synth and effects
+  + Synth: 0% complete
+  + Effects: 0% complete
++ Medium Viable Playground: Live coding and aleatoric music
+  + Dynamic Cursor: 0% complete
+  + Random Variation: 0% complete
++ Maximum Viable Compiler: Add tweaks and scripting
+  + Tweaks: 0% complete
+  + Scripts: 0% complete
++ Maximum Viable Synthesis Engine: Robust synth and effects
+
+***
+
 # Quick Start
 
 Don’t let the idea that Counternote is a musical language trouble you. The way to learn Counternote is by practicing music, and practicing Counternote will help you learn music. If you are reading this, you are probably motivated to do one of those things.
@@ -411,17 +441,17 @@ Both kinds of *knits* consist of a *root* as the capitalized *tone start*, plus 
 There are obviously other details to go over, but it’s time to see some real music. This is the A-section of the track Bourrée from Bach’s Lute Suite in E Minor:
 
     ++*
-    SCORE: Lute Suite in E Minor
-    WORK: BWV 996
-    SCRIBE: Bach
+    ' SCORE: Lute Suite in E Minor
+    ' WORK: BWV 996
+    ' SCRIBE: Bach
     +++
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb
-    FORM: AABB
-    ***
-    @ JA XOV |4.| allegretto
+    ' TRACK: Bourrée
+    ' VOICES:
+    '   f: fingers
+    '   t: thumb
+    ' FORM: AABB
+
+    JA XOV |4.| allegretto
 
     A
       0
@@ -456,4 +486,4 @@ There are obviously other details to go over, but it’s time to see some real m
 
 ***
 
-Version 0.10.2
+Version 0.10.3

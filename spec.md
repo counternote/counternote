@@ -1,6 +1,6 @@
 ***
 
-#### Counternote Specification version 0.10.2
+#### Counternote Specification version 0.10.3
 
 This is a terse description of Counternote with definitions and examples.
 
@@ -27,12 +27,11 @@ Foundational elements
 Structural elements
 
 * [__score__][score]: an entire composition
-* [__set__][set]: score-level details
+* [__stage__][stage]: details on the score/track
   * [__scribe__][scribe]: a composer of the [score][score] or [track][track]
   * [__work__][work]: the collection a [score][score] or [track][track] belongs to
   * [__act__][act]: the performer of the [score][score] or [track][track]
 * [__track__][track]: an individual piece within a [score][score]
-* [__stage__][stage]: track-level details
   * [__key__][key]: the tonic of a [track][track]
   * [__mode__][mode]: the mode of a [track][track]
   * [__form__][form]: the song form of a [track][track]
@@ -133,12 +132,11 @@ Composer directives
 [blocks]: #blocks
 
 [score]: #score
-[set]: #set
+[stage]: #stage
   [scribe]: #scribe
   [work]: #work
   [act]: #act
 [track]: #track
-[stage]: #stage
   [key]: #key
   [mode]: #mode
   [form]: #form
@@ -315,11 +313,12 @@ A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word].
       SIGN    MEANING
     ———————————————————————————————
        ++*    start score
+       +++    start track
+       @@@    start def
+       $$$    start script
+       ###    start doc
+       &&&    start tweak
        *++    end score
-       +++    start/end stage
-       ***    start/end track
-       $$$    start/end script
-       ###    start/end doc
     ———————————————————————————————
 
 ***
@@ -329,17 +328,17 @@ A __sign__ is connected sequence of [glyphs][glyph] do not make a [word][word].
 __Blocks__ are structural elements of a composition and how such elements connect together. Here is the A-section of Bourrée by Bach:
 
     ++*
-    SCORE: Lute Suite in E Minor
-    WORK: BWV 996
-    SCRIBE: Bach
+    ' SCORE: Lute Suite in E Minor
+    ' WORK: BWV 996
+    ' SCRIBE: Bach
     +++
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb
-    FORM: AABB
-    ***
-    @ JA XOV |4.| allegretto
+    ' TRACK: Bourrée
+    ' VOICES:
+    '   f: fingers
+    '   t: thumb
+    ' FORM: AABB
+
+    JA XOV |4.| allegretto
 
     A
       0
@@ -367,8 +366,8 @@ __Blocks__ are structural elements of a composition and how such elements connec
         f| ne.   le.se de^^s.  ,se,|
         t| so.   ca.   ta.   ta.   |
       8
-        f| hh-         .     %A %B |
-        t| &soSeva-    .     %A %B |
+        f| hh-         .     @A @B |
+        t| &soSeva-    .     @A @B |
 
     *++
 
@@ -494,27 +493,27 @@ A __lap__ is a variation on a __bar__ to be played in different iterations of a 
 
 ### Jump
 
-A __jump__ is a directive on what part to play next. __Jumps__ are denoted by `%` followed by the __bar__ or __round__ to continue from.
+A __jump__ is a directive on what part to play next. __Jumps__ are denoted by `@` followed by the __bar__ or __round__ to continue from.
 
 ### Rep
 
-A __rep__ is a directive to repeat some number of [clicks][click] or [bars][bar]. It is denoted by `%%` to repeat the previous __bar__, `%%2` to repeat the previous two [bars][bar], or `%%...` to repeat the previous duration of three `po` [clicks][click].
+A __rep__ is a directive to repeat some number of [clicks][click] or [bars][bar]. It is denoted by `%` to repeat the previous __bar__, `%2` to repeat the previous two [bars][bar], or `%...` to repeat the previous duration of three `po` [clicks][click].
 
 ## Def
  
-A __def__ is instruction on definitions for parts of a track. It is denoted with `@` at the beginning of a line, `@@` to the end of a line, and `@@@` for multiline definitions.
+A __def__ is instruction on definitions for parts of a track. It is denoted with `@@` to the end of a line and `@@@` for multiline definitions.
 
 ## Script
 
-A __script__ contains the programmery bits. It is denoted with `$` at the beginning of a line, `$$` to the end of a line, and `$$$` for multiline code.
+A __script__ contains the programmery bits. It is denoted with `$$` to the end of a line and `$$$` for multiline code.
 
 ## Doc
 
-A __doc__ contains details not meant for the machine. It is denoted with `#` at the beginning of a line, `##` to the end of a line, and `###` for multiline comments.
+A __doc__ contains details not meant for the machine. It is denoted with `##` to the end of a line and `###` for multiline comments.
 
 ## Tweak
  
-A __tweak__ is an instruction on effects that occur. It is denoted with `&` at the beginning of a line, `&&` to the end of a line, and `&&&` for multiline instructions.
+A __tweak__ is an instruction on effects that occur. It is denoted with `&&` to the end of a line and `&&&` for multiline instructions.
 
 ***
 
@@ -717,17 +716,18 @@ Those rules add up to:
 __Cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks like using [clicks][click] on every [note][notes]:
 
     ++*
-    SCORE: Lute Suite in E Minor
-    WORK: BWV 996
-    SCRIBE: Bach
-    ***
-    TRACK: Bourrée
-    VOICES:
-      f: fingers
-      t: thumb
-    FORM: AABB
+    ' SCORE: Lute Suite in E Minor
+    ' WORK: BWV 996
+    ' SCRIBE: Bach
+
     +++
-    @ JA XOV |4.| allegretto
+    ' TRACK: Bourrée
+    ' VOICES:
+    '   f: fingers
+    '   t: thumb
+    ' FORM: AABB
+
+    JA XOV |4.| allegretto
 
     A
       0
@@ -755,8 +755,8 @@ __Cuts__ can greatly reduce visual noise. Consider what the Bourrée above looks
         f| ne.     le, se, de^^s.  ,   se,|
         t| so.     ca.     ta.     ta.    |
       8
-        f| hh-             .       %A %B  |
-        t| &soSeva-        .       %A %B  |
+        f| hh-             .       @A @B  |
+        t| &soSeva-        .       @A @B  |
 
     *++
 
@@ -1038,8 +1038,9 @@ A __rap__ is any [sound][sound] where [pitch][pitch] is indeterminate or inciden
       `jh` djembe open slap
       `jg` djembe closed slap
       `jd` djembe tap
+      `kb` cowbell
       `xk` shook
-      `cc` clap
+      `lp` clap
       `td` clave
       `sx` rainstick
     ———————————————————————————————
@@ -1300,4 +1301,3 @@ __Drag__ is a directive to play behind the beat. It is denoted by `>` before the
 
 A __Chant__ is a set of lyrics to be sung set below the [voice][voice] with its corresponding melody. It is enclosed in double straight quotes `"` with each syllable getting at least one [sound][sounds] and underscores `_` for multiple [sounds][sounds]. Speech is denoted by the [rap][rap] `sw` in the [voice][voice].
 
-***
